@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Comments>
+    <Comment ID="D331E093-56D8-43EF-A412-2B993140B836" Footnote="Yes" Color="0.949769 0.949769 0.949769"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 When these issues are also correlated with factors that are in turn correlated with the variable of interest, they can potentially bias results.}]]></Comment>
+    <Comment ID="86B948F6-F0EA-4907-83CA-4D64D856D97E" Footnote="Yes" Color="0.949769 0.949769 0.949769"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 And in any case, readability scores are perfect (or almost perfect) predictors of sentence and word length. Thus, the figures presented in this paper will always capture differences in the weighted averages of these two measures. And if women write shorter sentences and use simpler words, that's informative, on its own. See [][Alternatives] for a detailed discussion on interpreting gender differences in readability scores as actual gender differences in readability as opposed to simply gender differences in sentence and word length.}]]></Comment>
+    <Comment ID="6BEA3505-78D5-4A73-9B2B-4C7D09784D80" Footnote="Yes" Color="0.949769 0.949769 0.949769"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Note that readability measures more accurately capture a weighted average of vocabulary and, especially, sentence length. Measurement error is only introduced when we extrapolate from these to components and infer "readability".}]]></Comment>
+    <Comment ID="2464E2F6-5729-4FE5-8114-68B145794037" Footnote="Yes" Color="0.949769 0.949769 0.949769"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 It's worth nothing that none of the alternative readability measures perfectly capture "readability" either. Even the presumed gold standard---human judgement---itself suffers from a high degree of inconsistency[SOURCE]. Some research has even suggested that the cloze procedure, reading comprehension tests and even readability scores themselves are more accurate at gauging readability than humans in fact are[SOURCE].}]]></Comment>
+    <Comment ID="81360368-C9FC-4945-9F14-935229CE3769" Footnote="Yes" Number="37" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 At a bare minimum, no study (to my knowledge) has ever shown that any of the five scores used here are significantly inversely related to reading difficulty. Evidence from [#Begeny2014;] suggests the four grade-level readability scores, and particularly the SMOG and Dale-Chall scores, are more accurate for higher ability readers. (The study did not assess the Flesch Reading Ease score.)}]]></Comment>
+    <Comment ID="D3E2C34A-0C7D-43F3-B96E-C3676DAB4440" Footnote="Yes" Color="0.949769 0.949769 0.949769"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Similarly, intelligence tests predict intelligence but studying for intelligence tests does not actually create intelligence. Implicit bias tests predict biases but learning to perform well on one is unlikely to  cause one to be less biased.}]]></Comment>
+    <Comment ID="8BDF0E20-8C1F-4F63-A7B1-ADE47C0EF3B2" Footnote="Yes" Color="0.949769 0.949769 0.949769"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Please see [#Loughran2016;] for a detailed review of this literature.}]]></Comment>
+    <Comment ID="A6093454-E3E3-4E9A-AB83-C0CF66BA8284" Footnote="Yes" Color="0.949769 0.949769 0.949769"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 When the co-authoring relationship is between a senior and junior colleague, the junior tends to write the manuscript while the senior puts more effort into revising it. Since both writing the original draft and revising the manuscript influence readability, co-authors in both relationships likely influence the readability of a paper. [CONFIRM REFERENCE]}]]></Comment>
+    <Comment ID="9BA45E82-CD46-40E5-8430-D6A16D8CF2F2" Footnote="Yes" Color="0.949769 0.949769 0.949769"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 The cloze randomly deletes selected words in a particular passage of text and ranks texts by readers' ability to correctly enter the missing words.}]]></Comment>
+    <Comment ID="99A63E63-2F9B-4007-BF2F-3C7F439D433F" Footnote="Yes" Number="35" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 Specifically, 3,000 words understood by 80 percent of fourth-grade readers (aged 9-10).}]]></Comment>
+    <Comment ID="D08C9823-B307-4A94-9219-C0740EF4BF3E" Footnote="Yes" Color="0.949769 0.949769 0.949769"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Although several readability studies and measures already existed at the time, most relied exclusively on word lists and were developed for (and tested on) children. Interestingly, the earlist recorded attempt to quantify readability was from a group of Talmudists in 900 A.D.}]]></Comment>
+    <Comment ID="D7648057-B61A-42C7-8674-D8F6312E8DD5" Footnote="Yes" Color="0.949769 0.949769 0.949769"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 The Dale-Chall formula is intended for adults and chlidren above the 4th grade reading level. The Dale-Chall formula was updated in 1995. I use this updated formula throughout this paper.}]]></Comment>
+    <Comment ID="A58DC841-91AD-45AF-99BA-67BDB8875581" Footnote="Yes" Color="0.949769 0.949769 0.949769"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Flesch and Gunning's work had an enormous impact on journalism. Together, they helped bring down the reading grade level of front-page newspaper stories from the 16th grade level (*i.e.*, university-level) to the 11th grade level (*i.e.*, high school level).}]]></Comment>
+    <Comment ID="7ACAC5FE-7BFA-42E1-B8F9-92AA30088CE0" Footnote="Yes" Color="0.949769 0.949769 0.949769"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Alternative measures using alternative criteria to estimate word difficulty and/or sentence length have also been developed. They generally fall into two camps: those that use noisier criteria for these two components (but are easier to calculate), such as the Coleman-Liau index and those that use more conventional criteria to gauge reading difficulty but are more difficult to calculate. It has been repeatedly shown, however, that after controlling for sentence length and word complexity, adding additional features of the text does not improve the predictive value of scores. Moreover, the evidence on character counts as a proxy for readability is limited, and the evidence that does exist suggests it is a much noisier indicator than syllable counts and other more sophisticated factors meant to approximate word difficulty.}]]></Comment>
+    <Comment ID="C758B4BF-AB79-4367-8E09-4F44EB331D7B" Footnote="Yes" Color="0.949769 0.949769 0.949769"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 [#Ardoin2005;] found that all four scores were negatively correlated with their designated proxy for reading difficulty---words read correctly per minute---although the effects in the Flesch-Kincaid and Dale-Chall scores were not significant. }]]></Comment>
+    <Comment ID="71FD6E02-B0B3-4609-A2B3-55935DBBE987" Footnote="Yes" Color="0.949769 0.949769 0.949769"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 [#Beniot2017;] ask readers to compare two snippits of text and decide which is easier to read. They found that the Flesch Reading Ease ranking corresponded to the human comparison 56.8 percent of the time---*i.e.*, it performed about 6.8 percent better than chance. Note, however, that the snippits they use were very close in readability to one another. As a precondition for participating in the survey, participants had to correctly identify the more readable text between two snippits with much wider dispersion of readability scores. Thus, their lower accuracy is predominately a function of the nearness in readability in the two comparison texts. Given their setup, it is obvious that readability scores are much more accurate when comparing two different texts with a more noticable difference in readability.}]]></Comment>
+    <Comment ID="1906F6DB-CAC6-48B7-A70A-CC6A5D04B4B8" Footnote="Yes" Color="0.949769 0.949769 0.949769"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Syllables per word was not originally meant to capture word difficulty, per se, but instead to capture how abstract a word was, on the assumption that the more abstract a word or idea is, the more difficult it is to comprehend. Flesch originally measured word abstraction by counting affixes. Later, he switched to syllables, which were easier to count and tended to correlate highly with the original mesure}]]></Comment>
+    <Comment ID="806745E6-B62B-4B03-812A-48BDE474E7EE" Footnote="Yes" Color="0.949769 0.949769 0.949769"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 In fact, the use of word lists to classify the difficulty of written material in a scientific manner goes back as far as 900 A.D. to a group of Talmudists. They counted the words and individual ideas so that they could know how many times each word appeard in the scroll and how frequently each word appeared in an unusual sense. Among the reasons for the elaborate counting of the Torah were clarification of unusual meaning and the devision of the reading of the weakly portions into approximately equivalent comprehension units.}]]></Comment>
+    <Comment ID="881AA45C-D0AF-40DE-8C8B-62CE31BF7170" Footnote="Yes" Color="0.949769 0.949769 0.949769"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Of second order importance is the probability female authors are responsible for making editorial changes during peer review.}]]></Comment>
+    <Comment ID="31BA3BEA-0008-48E0-8A02-CF943E8DCD38" Footnote="Yes" Color="0.949769 0.949769 0.949769"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Standard errors are generally higher for the less inclusive measure and effect sizes tend to be smaller for the more inclusive measure.}]]></Comment>
+    <Comment ID="FED720A2-AEFD-4EF3-96DE-670184AA2D4D" Footnote="Yes" Color="0.949769 0.949769 0.949769"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Moreover, conducting the analysis in [][Matching] would mean restricting the sample to only those women with at least three 100% female-authored papers; there are only 22, and only an additional 26 women have two. Indeed, 26% of female authors with at least three top publications have always authored with at least one man.}]]></Comment>
+    <Comment ID="41EE38FD-BB7B-4B47-9EE6-7B842D9C6512" Footnote="Yes" Color="0.949769 0.949769 0.949769"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 One could also include in that designation papers with a female first author. I therefore designate the lead author has he who was listed first in a paper in which authors were listed non-alphabetically or he was listed as the "corresponding author" or "lead author" in the acknowledgements. Unfortunately, however, this added only another 35 (0.38 percent) "female" observations.}]]></Comment>
+    <Comment ID="F9ED84E5-6AD6-4C29-AEA2-8786B4642E52" Footnote="Yes" Number="132" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 Assuming no gender difference in acceptance rates at $t=3$ and given evidence that women are held to higher standards documented earlier, [](#figureA1) suggests---but does not prove---that manuscripts by junior female economists are disproportionately rejected.}]]></Comment>
+    <Comment ID="C1DABC7E-5B26-413D-BD6E-14C90E84E424" Footnote="Yes" Number="133" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 Consistent with [](#table7), readability may actually decline during peer review. As discussed in [][NBER], this may be an artifact specific to abstracts, which are edited for length in addition to readability. Alternatively, writing (too) well upfront satisfies the review group with the highest initial readability threshold. Because referee reports reveal $s$ (and therefore $\\widetilde R_i^s$), a readability decline after receiving an R&R indicates that a majority of groups have laxer standards. This explanation is consistent with the theoretical model in [][SEUModel].}]]></Comment>
+    <Comment ID="F633B9DE-F245-42F0-8F80-4CD479084B8A" Footnote="Yes" Number="134" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 <!--\\label\{Footnote132\}-->Alternatively, if desk rejection rates are gender neutral, authors subject to higher standards will undergo more arduous peer review. Greater scrutiny would therefore replace higher desk rejection rates when editors (or even referees) monitor and implement a policy of gender neutral acceptance rates.}]]></Comment>
+    <Comment ID="76D8ACF8-5670-4F6E-8C10-4009D580E8BF" Footnote="Yes" Number="133" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 Recall that the author recognises groups that reviewed his earlier papers even though the identities of the groups' individual members remain unknown to him.}]]></Comment>
+    <Comment ID="CC37DF27-A678-409B-9F0F-A11240243ECB" Footnote="Yes" Number="17" Color="0.992 0.929 0.525"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 Many thanks to Kevin Schnepel for suggesting this idea.}]]></Comment>
+    <Comment ID="1701DB54-F3E0-4BF9-AEFF-5B3FDCFDBC90" Footnote="Yes" Number="18" Color="0.992 0.929 0.525"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 A possible exception is *
+\i Behavioral Ecology
+\i0 *, which increased its number of female first-authored papers after switching to double-blind review in 2001[#Budden2008a]. Whether that increase was due to bias or the universal upward trend in female authorship, however, has been somewhat controversial[#Budden2008b,Budden2008c,Webb2008,Whittaker2008].}]]></Comment>
+    <Comment ID="587FEDF5-4943-4EF2-9CFA-18FCC26E2943" Footnote="Yes" Number="19" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 Predictably, giving birth slows down poor review. The coefficient on motherhood, however, is consistently negative (indicating a productivity boost) and almost always highly significant when subjected to several robustness checks. This result is provocative and discussed in [][Duration]. I encourage interpreting it with caution, however, given (i) counterintuitive results; (ii) the analysis did not intend to measure motherhood\'92s impact on review times; and especially (iii) only a small number of mothers with young children are published in *
+\i Econometrica
+\i0 *.}]]></Comment>
+    <Comment ID="4CD3C80B-913F-40BE-98FB-C257FA014C77" Footnote="Yes" Number="20" Color="0.992 0.929 0.525"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 Readability scores are highly correlated across an article's abstract, introduction and discussion sections[#Hartley2003a]. See [][Data] for further discussion.}]]></Comment>
+    <Comment ID="6482AE4F-E230-4387-9938-F1D7DBB35A3B" Footnote="Yes" Number="21" Color="0.992 0.929 0.525"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 For a discussion on the reliability of readability formulas, see [#DuBay2004;] and [][MeasuringReadability]. A sixth commonly used measure is the Lexile Framework. Because its formula and software are proprietary, I do not include it in the analysis.}]]></Comment>
+    <Comment ID="EED07C8F-D402-4FF1-9577-86A59ED7205C" Footnote="Yes" Number="22" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 Any female behaviour that also improves acceptance rates would result in female-authored papers being disproportionately represented in academic journals. They are not[#Ceci2014]. See [][alternatives] for further discussion on this point in the context of risk aversion.}]]></Comment>
+    <Comment ID="585B223C-22C5-41F7-BE8D-97AAE472E6D9" Footnote="Yes" Number="23" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\deftab720
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\partightenfactor0
+
+\f0\fs20 \cf0 This study investigates the revision process conditional on passing initial screening, at which point most manuscripts are ultimately accepted[#Duflo2016]. These conditions resemble [#Bartos2016;]'s "lemon-dropping" market---*i.e.*, average candidates are acceptable. In contrast, initial screening by scholarly journals more likely resembles "cherry-picking" markets, in that most manuscripts are not selected. Attention and labour market discrimination are inversely related in lemon-dropping markets, only.}]]></Comment>
+    <Comment ID="8DEA54BD-5316-42A3-8373-6FABF0CAC715" Footnote="Yes" Number="24" Color="0.992 0.929 0.525"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 While 1--6 percent seems small, it is based on a single paragraph. Assuming a similar standard applies to every paragraph in a paper and improving each one takes slightly more time, the accumulated impact may be substantial.}]]></Comment>
+    <Comment ID="CD0CCB2C-542C-42B1-A7B2-4DBCBA8B4E88" Footnote="Yes" Number="25" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 The underlying assumption driving the result is that women\'92s papers are more costly to evaluate. As discussed in [][AppendixModel], higher evaluation costs can be motivated by any of the three prominent theories of discrimination---
+\i *i.e.*
+\i0 , taste-based[#Becker1957], statistical[#Phelps1972,Arrow1973] or screening[#Cornell1996].}]]></Comment>
+    <Comment ID="2DD85BE7-FE34-4D2B-8EB5-46A257DF886B" Footnote="Yes" Number="26" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 Predictably, giving birth slows down poor review. The coefficient on motherhood, however, is consistently negative (indicating a productivity boost) and almost always highly significant when subjected to several robustness checks. This result is provocative and discussed in [][Duration]. I encourage interpreting it with caution, however, given (i) counterintuitive results; (ii) the analysis did not intend to measure motherhood\'92s impact on review times; and especially (iii) only a small number of mothers with young children are published in *
+\i Econometrica
+\i0 *.}]]></Comment>
+    <Comment ID="2CBCA0AC-F93D-4327-9D70-A064EC32F38D" Footnote="Yes" Number="27" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 Any female behaviour that also improves acceptance rates would result in female-authored papers being disproportionately represented in academic journals. They are not[#Ceci2014]. See [][alternatives] for further discussion on this point in the context of risk aversion.}]]></Comment>
+    <Comment ID="BBECB810-6583-4AC6-A216-A8B98DA17E33" Footnote="Yes" Number="28" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 At a bare minimum, women would not be expected to write *
+\i more
+\i0 * clearly with greater exposure to peer review.}]]></Comment>
+    <Comment ID="5548F4A7-095C-433D-896A-9BD72ED119AF" Footnote="Yes" Number="29" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\deftab720
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\partightenfactor0
+
+\f0\fs20 \cf0 This study investigates the revision process conditional on passing initial screening, at which point most manuscripts are ultimately accepted[#Duflo2016]. These conditions resemble [#Bartos2016;]'s "lemon-dropping" market---*i.e.*, average candidates are acceptable. In contrast, initial screening by scholarly journals more likely resembles "cherry-picking" markets, in that most manuscripts are not selected. Attention and labour market discrimination are inversely related in lemon-dropping markets, only.}]]></Comment>
+    <Comment ID="9EF1EF52-C4E0-4790-85C2-1C34D38B1219" Footnote="Yes" Number="30" Color="0.992 0.929 0.525"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 While 1--6 percent seems small, it is based on a single paragraph. Assuming a similar standard applies to every paragraph in a paper and improving each one takes slightly more time, the accumulated impact may be substantial.}]]></Comment>
+    <Comment ID="1B030DDC-E175-4D13-855C-8ED448C24D06" Footnote="Yes" Number="31" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 The underlying assumption driving the result is that women\'92s papers are more costly to evaluate. As discussed in [][AppendixModel], higher evaluation costs can be motivated by any of the three prominent theories of discrimination---
+\i *i.e.*
+\i0 , taste-based[#Becker1957], statistical[#Phelps1972,Arrow1973] or screening[#Cornell1996].}]]></Comment>
+    <Comment ID="B0BFF89F-DDE4-44B5-BF81-76B125641C8F" Footnote="Yes" Number="32" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 Predictably, giving birth slows down poor review. The coefficient on motherhood, however, is consistently negative (indicating a productivity boost) and almost always highly significant when subjected to several robustness checks. This result is provocative and discussed in [][Duration]. I encourage interpreting it with caution, however, given (i) counterintuitive results; (ii) the analysis did not intend to measure motherhood\'92s impact on review times; and especially (iii) only a small number of mothers with young children are published in *
+\i Econometrica
+\i0 *.}]]></Comment>
+    <Comment ID="E30D593F-1915-433C-A67E-B2D4E1D42098" Footnote="Yes" Number="12" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 Indeed, the discrimination documented in this paper could be described by a variety of theories: LIST.}]]></Comment>
+    <Comment ID="0FA9D4DC-61A2-454A-8BC6-FEF2C6032B77" Footnote="Yes" Number="14" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 [#Bloor2008;]'s analysis considers only full-time (or maximum part-time), salaried physicians in the U.K. Similar results are found in Canada and the U.S., where physicians are paid on a per-service basis[#CICH2005,Benedetti2004].}]]></Comment>
+    <Comment ID="128D5248-BD9B-4B2B-91FB-AB116814E184" Footnote="Yes" Number="15" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 [#Seagraves2013;] find that normal houses (*
+\i i.e.
+\i0 * homes not sold under special sales conditions, such as foreclosures, fixer-uppers, corporate-owned properties, transfers and estate sales) sell at a significantly higher price when listed by a female real estate agent. While the authors do find buyers pay less if they are represented by a male agent, the effect is only present for homes sold under special sales conditions. In an earlier study, [#Turnbull2007;] did not find any significant gender difference in selling performance for listing and selling agents.}]]></Comment>
+    <Comment ID="B1987B56-B04F-464B-B5BC-76285DDB2816" Footnote="Yes" Number="16" Color="0.992 0.929 0.525"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 The evidence on general accident rates (including non-fatal accidents) is mixed. [#McFadden1996;] found no difference in female vs. male accident rates after adjusting for pilot experience and age. [#Walton2016;] found female accident rates were *
+\i higher
+\i0 * among inexperienced pilots but *
+\i lower*
+\i0  among experienced pilots.}]]></Comment>
+    <Comment ID="AC96CC82-BEBC-4EED-92B2-EE1D07095FB7" Footnote="Yes" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 See also [][Discussion] where I more thoroughly address the possibility that female-authored manuscripts are systematically lower quality than male-authored papers.}]]></Comment>
+    <Comment ID="135BB0D4-6A88-4975-8F9A-995F839A9629" Footnote="Yes" Number="101" Color="0.992 0.929 0.525"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs22 \cf0 These findings are not universal. [#Schubert1999;] find evidence that men are more risk averse when lotteries are framed as losses.}]]></Comment>
+    <Comment ID="50C7D2A7-663E-40BD-861D-849F8A8D3A71" Footnote="Yes" Number="102" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 That is, risk averse authors thoroughly respond to referee reports---losing time but enjoying better acceptance odds; risk neutral ones don\'92t---saving time but at greater risk of being rejected. Although it is not always true that risk averse individuals pay more to reduce risk[see, *e.g.*,\\]\\[][#Eeckhoudt1997,Langlais2005], this directionality is needed (on average) to claim risk aversion induces better writing in female-authored papers.}]]></Comment>
+    <Comment ID="AF36FC1F-D8C3-4A72-9B5A-6144ED84EBC9" Footnote="Yes" Number="81" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 Please refer to the previous section for a more thorough review of the (substantial) prior research on gender neutrality and journals' acceptance rates. It too finds no female advantage in journals' acceptance rates.}]]></Comment>
+    <Comment ID="F3B0E623-4ADA-45C8-B033-9100F3749E40" Footnote="Yes" Number="42" Color="0.992 0.929 0.525"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 Prior research has found peer review slightly improves the readability of articles and abstracts}]]></Comment>
+    <Comment ID="A2E1E6E3-B699-4F06-BE75-2A5D072A037C" Footnote="Yes" Number="43" Color="0.992 0.929 0.525"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 Differences between men's and women's differences (columns 3 and 6) divided by men's difference.}]]></Comment>
+    <Comment ID="8CE8986A-99A1-4E4B-89AC-6727A4687FFB" Footnote="Yes" Number="12" Color="0.992 0.929 0.525"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 A possible exception is *
+\i Behavioral Ecology
+\i0 *, which increased its number of female first-authored papers after switching to double-blind review in 2001[#Budden2008a]. Whether that increase was due to bias or the universal upward trend in female authorship, however, has been somewhat controversial[#Budden2008b,Budden2008c,Webb2008,Whittaker2008].}]]></Comment>
+    <Comment ID="EDFE7883-FE13-4BA3-9BFE-A8A7F8A4982F" Footnote="Yes" Number="8" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 Any female behaviour that also improves acceptance rates would result in female-authored papers being disproportionately represented in academic journals. They are not[#Ceci2014]. See [][p3alternatives] for further discussion on this point in the context of risk aversion.}]]></Comment>
+    <Comment ID="60D1079C-CE49-41B5-A3B8-E10FB723FE02" Footnote="Yes" Number="9" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 These explanations are motivated either by (i) fixed biological differences between the sexes; or (ii) misinformation about the costs of writing well. In the latter case, women update posterior believes about its benefits after successive rounds of peer review---*
+\i i.e.
+\i0 *, readability declines over the course of their careers. In the former, readability may decline---as women adapt to environmental expectations---or remain constant. With no benefit to better writing, however, it does not increase. See [][p3Alternatives] for a fuller discussion.}]]></Comment>
+    <Comment ID="8098B1AF-77EA-475A-9A47-6658F6F56B80" Footnote="Yes" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 Members *within* a review group do not necessarily share these traits. For example, assume review groups are composed of two people and classified only by how well they know the author. Then every review group in which one member knew the author but the other didn't would be classified together.}]]></Comment>
+    <Comment ID="7D190C8A-C8B3-4A04-BB4D-ED2421FF25DA" Footnote="Yes" Number="69" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;\f1\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 That is, risk averse authors thoroughly respond to referee reports---losing time but enjoying better acceptance odds; risk neutral ones don't---saving time but at greater risk of being rejected. Although it is not always true that risk averse individuals pay more to reduce risk[see, *e.g.*,\\]\\[][#Eeckhoudt1997,Langlais2005], this directionality is needed (on average) to claim risk aversion induces better writing in female-authored papers. 
+\f1\fs22 These findings are not universal. [#Schubert1999;] find evidence that men are more risk averse when lotteries are framed as losses.}]]></Comment>
+    <Comment ID="078C03EB-9E34-4DAD-966F-E4BDCF8B1CE4" Footnote="Yes" Number="70" Color="0.992 0.929 0.525"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs22 \cf0 These findings are not universal. [#Schubert1999;] find evidence that men are more risk averse when lotteries are framed as losses.}]]></Comment>
+    <Comment ID="ACF96387-35BB-4F5D-980B-5E5BD09D702B" Footnote="Yes" Number="71" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 That is, risk averse authors thoroughly respond to referee reports---losing time but enjoying better acceptance odds; risk neutral ones don't---saving time but at greater risk of being rejected. Although it is not always true that risk averse individuals pay more to reduce risk[see, *e.g.*,\\]\\[][#Eeckhoudt1997,Langlais2005], this directionality is needed (on average) to claim risk aversion induces better writing in female-authored papers.}]]></Comment>
+</Comments>

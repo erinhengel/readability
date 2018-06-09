@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Comments>
+    <Comment ID="70FCC363-6911-4F98-9571-7E0A4DEFB748" Footnote="Yes" Number="25" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf390
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;\csgray\c100000;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs20 \cf0 Preference payments include most transfers to company directors (and connected persons) one (U.S.) or two (U.K.) years prior to insolvency.}]]></Comment>
+    <Comment ID="DACEBC7B-6A7E-48EF-B891-0C6990FA171D" Footnote="Yes" Number="26" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf390
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;\csgray\c100000;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs20 \cf0 For a discussion on voidable preferences in the U.K., see [\\]\\[][#Hill2014;]. In the U.S., paying directors to liquidate may also fall under[\\]\\[\'a7152(6)][#US18;]---otherwise know as the "bankruptcy bribery" statue. It states that "a person who knowingly and fraudulently gives, offers, receives or attempts to obtain any money or property, remuneration, compensation, reward, advantage or promise thereof for acting or forbearing to act in the case under title 11; [...] shall be fined under this title, imprisoned not more than 5 years, or both". (See also [\\]\\[\'a7727(a)(4)(C)][#US11;].)}]]></Comment>
+    <Comment ID="AC69C33B-E32A-4C3F-87B9-EA22164FDE48" Footnote="Yes" Number="27" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf390
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;\csgray\c100000;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs20 \cf0 In the U.K., all liquidations, regardless of solvency, are overseen by a liquidator with this responsibility. In the U.S., a liquidator is appointed only if the firm undergoes Chapter 7 liquidation or state-governed "Assignment for the Benefit of Creditors" (ABC) procedures. Yet, even if the borrower and creditor negotiate a settlement and liquidate assets outside official procedures, creditors may nevertheless recover preferences in bankruptcy court after concluding the sale. (For a discussion of this issue specific to ABC procedures---a generally weaker mechanism for recovering preferences---see[#Thorne2007;].)}]]></Comment>
+    <Comment ID="8645F815-5EC0-478C-A2A3-8DC16524E22A" Footnote="Yes" Number="28" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf390
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;\csgray\c100000;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs20 \cf0 Although altering the financial terms of a debt contract outside bankruptcy requires the unanimous consent of creditors[#UnitedStates1939], if accepted by at least a supra-majority, the firm can file for a pre-pack bankruptcy. Pre-pack bankruptcies fast-track approval of (or approve by default) workout agreements supported by a certain majority of creditors in each class.}]]></Comment>
+    <Comment ID="688F7DA0-2AA0-4EB8-947F-9A2968A843FA" Footnote="Yes" Number="29" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf390
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;\csgray\c100000;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs20 \cf0 <!--\\label\{p1footnote3\}-->This assumption effectively grants the entrepreneur all bargaining power in bankruptcy. It is made for tractability--- without further constraints, multiple equilibria are possible. As shown in [][p1AppendixBargainingPower], however, as long as entrepreneurs extract some surplus during debt renegotiations, all conclusions in this paper hold. Additionally, granting the entrepreneur full power is most consistent with the original motivation of rescue culture. It is also very likely to hold for viable firms---*
+\i i.e.
+\i0 *, those that had originally planned to operate two periods and more susceptible to the stigma of failure and side effects of sudden unemployment[see, *
+\i e.g.
+\i0 *,\\]\\[][#Linn1985,Fay2002].}]]></Comment>
+    <Comment ID="31B2B65F-B3D5-4A35-AA04-F5987B72B5D8" Footnote="Yes" Number="30" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf390
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;\csgray\c100000;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs20 \cf0 This discrepancy creates motive for strategic default [see\\]\\[][#Hart1998,Bolton1990]. As shown in [][p1appendixstrategicdefault], however, strategic default is only harmful when coupled with expensive reorganisation. Otherwise, it has no effect on the lending market and probably no effect on interim investment decisions.}]]></Comment>
+</Comments>

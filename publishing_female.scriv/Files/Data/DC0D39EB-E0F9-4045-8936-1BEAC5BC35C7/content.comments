@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Comments>
+    <Comment ID="3C068C2B-5004-4B7A-9A2B-92EEB9BB2E9B" Footnote="Yes" Number="85" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 Recall that $e_\{nit\}^s-e_\{nkt\}^s$ converges to 0, so for large enough $t$ [](#equation11) and/or [](#equation12) predict the direction of $D_\{ik\}$ even when errors remain gender-specific. (See discussions in the next section.)}]]></Comment>
+    <Comment ID="AAB6B05A-F00E-46C1-B8DA-82AFD0015846" Footnote="Yes" Number="86" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 Propensity scores were estimated using the entire sample (771 female authors; 6,105 male authors). Each female author with at least three publications was then matched to her nearest male neighbour (*
+\i i.e.
+\i0 *, the man with the closest propensity score, conditional on having at least three publications in the data). Matches were generated in Stata using `psmatch2` [#Leuven2003].}]]></Comment>
+    <Comment ID="C2C115FC-A08D-45E3-96DB-C39E7419F513" Footnote="Yes" Number="87" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 I eschewed means in favour of minimum order in an issue, maximum citation count and maximum institutional rank on the assumption that an author's "quality" is principally a function of his best paper.}]]></Comment>
+    <Comment ID="2B97DA35-3559-41DE-BE8D-354AAEA8A24E" Footnote="Yes" Number="88" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 That is, a dual-authored paper published in 2008 in the *
+\i American Economic Review
+\i0 * where $t=3$ for $i$ and his co-author and their institutions rank 48 and 54, respectively.}]]></Comment>
+    <Comment ID="07FE4966-C91A-4921-B192-AE4F806BB23A" Footnote="Yes" Number="89" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 Specifically, standard errors are inflated by a factor of 1.2.}]]></Comment>
+</Comments>

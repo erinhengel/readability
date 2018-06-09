@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SnapshotIndexes Version="1.0" BinderUUID="8BCB8FD2-8ED9-4A76-8887-A627F4E9F7AE">
+    <Snapshot Date="2015-06-15 18:55:52 +0100">
+        <Title>Original proofs</Title>
+        <Text>&lt;!--\begin{Proof}[\autoref{lem1}, by contradiction]\label{Proof:lem1}
+Let $E_1^R$ and $C_1^R$ denote expectations at time 1 of $E_2^R$ and $C_2^R$, respectively. Assume $C_1^L&lt;C_1^R$; the concavity of $C_1^R$ implies $$\min\l\{X_1+(1-Y)\l(\ol X+K_2\r),D\r\}&gt;\min\l\{X_1+K_0,D\r\}.$$ By extension,
+\myeqg
+\noindent The convexity of $E_1^R$ and \autoref{eq:eq1} together imply $E_1^R&gt;E_1^L$, which is false by the assumption $C_1^R&gt;C_1^L$ and the definition of bankruptcy. Since $E_1^L$, $E_1^R$, $C_1^L$ and $C_1^R$ exist, each party strictly prefers one outcome and preferences are distinct, $C_1^L&gt;C_1^R$ and $E_1^R&gt;E_1^L.$\qed
+\end{Proof}--&gt;
+
+&lt;!--\begin{Proof}[\autoref{lem2}]\label{Proof:lem2}
+The entrepreneur's expected returns in a workout are $$\myeqh,$$ where $C_1^N$ is the time 1 expected value of $C_2^N$. $E_1^N$ is decreasing in $C_1^N$; the entrepreneur wishes to set $C_1^N$ as low as possible. Because the creditor can always file for bankruptcy, $C_1^N\ge C_1^B$; therefore, the entrepreneur offers the creditor a workout such that $C_1^N=C_1^B$ and the creditor accepts.
+It remains to show that $\wt D\le D$. Assume the opposite: $\wt D &gt; D$. By definition, $C_1^L$, $C_1^$ and therefore $C_1^B$ are at most $D$. Because $C_1^N=C_1^B$, $C_1^N\le D$, or equivalently
+\myeqi
+\qed
+\end{Proof}--&gt;
+
+&lt;!--\begin{Proof}[\autoref{lem3}]\label{Proof:lem3}
+Assume $V_1^C\ge V_1^B$. Then $E_1^W\ge E_1^B.$ The entrepreneur prefers a workout to bankruptcy.
+Assume $V_1^C&lt;V_1^B$. Since $V_1^B$ is a weighted average of $V_1^L$ and $V_1^R$ and $V_1^R\le V_1^C,$ $V_1^L&gt;V_1^R$ making $$\myeqt$$ Since $E_1^L&gt;E_1^R,$ $E_1^L&gt;E_1^B$: the entrepreneur would rather voluntarily liquidate than file for bankruptcy.
+Because the creditor's returns are identical in a workout and bankruptcy, he is indifferent between the two options; from \autoref{lem1} he is always amenable to liquidation. The creditor agrees to the entrepreneur's settlement offer.
+Given the entrepreneur and creditor settle and the creditor accepts a workout or voluntary liquidation, the entrepreneur prefers the latter whenever $E_1^L&gt;E_1^W$; since limited liability requires $E_1^W\ge0,$ this inequality is only satisfied if $C_1^L=D,$ or equivalently, $$V_1^L-V_1^C&gt;D-C_1^B.$$
+\qed
+\end{Proof}--&gt;
+
+&lt;!--\begin{Proof}[\autoref{lem4}]\label{Proof:lem4}
+\end{Proof}--&gt;
+</Text>
+    </Snapshot>
+</SnapshotIndexes>

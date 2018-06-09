@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Comments>
+    <Comment ID="B7131E68-F7E8-44BE-A094-4965A9832F2C" Footnote="Yes" Number="90" Color="0.992 0.929 0.525"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 See [](#Footnote67) for a discussion of the limitations of using publication counts to proxy for acceptance rates. Please also refer to [][SEUEmpirical] for a more thorough review of the (substantial) prior research on gender neutrality and journals' acceptance rates. It too finds no female advantage in journals' acceptance rates.}]]></Comment>
+    <Comment ID="2A91CF7E-0441-4CA6-A3B9-B06F3D897351" Footnote="Yes" Number="91" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 The co-variates used to generate a match remain relatively balanced when the sample of observations is restricted to $\\underline D_\{ik\}\\ne0$ (see [][AppendixMatchingBalance] and the next section for a discussion).}]]></Comment>
+    <Comment ID="AE7B4789-47F8-41DB-9186-E97F4A198AC6" Footnote="Yes" Number="92" Color="0.992 0.929 0.525"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs22 \cf0 For 30--40 percent of pairs, neither member satisfied both Conditions 1 and 2, rendering [](#Theorem1)'s test for discrimination inconclusive.}]]></Comment>
+    <Comment ID="5D7F7F59-7F8B-4E11-8D4E-ED36FF4ED991" Footnote="Yes" Number="93" Color="0.992 0.929 0.525"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs22 \cf0 That is, if the experienced man writes more readably than the experienced woman, then the effect is always attributed to discrimination against men; if the experienced woman writes more readably than the experienced man, however, the effect is attributed to discrimination against women only if Condition 2 is likewise satisfied.}]]></Comment>
+    <Comment ID="02E236D8-BC58-48EE-8A60-787E8ECE541A" Footnote="Yes" Number="94" Color="0.992 0.929 0.525"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\deftab720
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\partightenfactor0
+
+\f0\fs20 \cf0 [](#table10), column (1) divided by the mean male $\\widehat R_\{k3\}$ ([][
+\fs22 AppendixConservative]).}]]></Comment>
+</Comments>

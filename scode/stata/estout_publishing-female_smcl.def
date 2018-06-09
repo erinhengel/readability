@@ -1,0 +1,152 @@
+*! estout_thesis_smcl.def, version 1.1.0  29jun2016 Erin Hengel
+*! -estout- style: thesis_smcl
+
+// comment or uncomment lines and replace "[...]" with the desired 
+// option's specifications
+
+// How to specify comments in this file:
+// - empty lines and lines beginning with * will be ignored
+// - // at the beginning of the line or preceded by one or more blanks 
+//   indicates that the rest of the line be ignored
+// - /// preceded by one or more blanks indicates that the rest of the line 
+//   be ignored and the next line be joined with the current line (line break)
+// - do NOT use the usual /* and */ comment delimiters
+
+// parameter statistics options
+
+cells               b se
+
+b_star              star
+b_fmt               2
+*b_label            [...]
+*b_par              [...]
+*b_vacant           [...]
+*b_keep             [...]
+*b_drop             [...]
+*b_pattern          [...]
+
+se_par              ( )
+se_fmt              3
+
+*t_abs              abs   //-abs- suboption only available for t-stats
+
+*drop               [...]
+omitted             noomitted
+baselevels          nobaselevels
+*keep               [...]
+*order              [...]
+*indicate           [...]
+indicatelabels      ✓ No
+*equations          [...]
+*eform              [...] //specify "eform" (without quotes) or a pattern of 0's and 1's
+*transform          [...]
+*transformpattern   [...]
+*margin             [...] //specify one of: margin, u, c, p 
+discrete            " (d)" for discrete change of dummy variable from 0 to 1
+*meqs               [...]
+*dropped            [...]
+
+// summary statistics options
+
+*stats              [...] //specify the scalar list without suboptions
+statsfmt            %9.0fc
+*statslabels        [...]
+*statslabelsnone    none
+*statslabelsprefix  [...]
+*statslabelssuffix  [...]
+*statslabelsbegin   [...]
+*statslabelsend     [...]
+statslabelsfirst    first
+statslabelslast     last
+*statsstar          [...]
+
+// significance stars options
+
+starlevels          * 0.1 ** 0.05 *** 0.01
+*stardetach         stardetach
+*starkeep           [...]
+*stardrop           [...]
+
+// layout options
+
+varwidth            20
+modelwidth          12
+abbrev              abbrev
+*wrap               wrap
+*unstack            unstack
+*begin              [...]
+delimiter           " "
+incelldelimiter     " "
+*end                [...]
+*dmarker            [...]
+*msign              [...]
+lz                  lz
+*extracols          [...]
+substitute          "#" "×" " . " "   " " ." "  " "\(" "" "\)" ""
+
+// labeling options
+
+legend              legend
+*prehead            [...]
+*posthead           [...]
+*prefoot            [...]
+*postfoot           [...]
+hlinechar           {hline 1}
+label               label
+interaction         "×"
+
+varlabels           _cons Constant
+*varlabelsnone      none
+*varlabelsprefix    [...]
+*varlabelssuffix    [...]
+*varlabelsbegin     [...]
+*varlabelsend       [...]
+*varlabelsblist     [...]
+*varlabelselist     [...]
+varlabelsfirst      first
+varlabelslast       last
+
+*refcat             [...]
+refcatlabel         ref.
+*refcatbelow        below
+
+*mlabels            [...] //a similar set of options may be specified 
+*mlabelsnone         none  //for collabels, eqlabels, and mgroups
+*mlabelsprefix      [...]
+*mlabelssuffix      [...]
+*mlabelsspan        span
+*mlabelsbegin       [...]
+*mlabelsend         [...]
+*mlabelserepeat     [...]
+
+*collabelsnone       none
+
+*eqlabelsnone		none
+
+*mlabelsnumbers     numbers //-numbers- suboption only available in mlabels()
+*mlabelsdepvars     depvars //-depvars- suboption only available in mlabels()
+*mlabelstitles      titles  //-titles- suboption only available in mlabels()
+
+*mgroupspattern     [...] //-pattern- suboption only available in mgroups()
+
+eqlabelsfirst       first
+eqlabelslast        last
+
+*numbers            [...]
+
+*labcol2            [...]
+*labcol2title       [...]
+*labcol2width       0
+
+// output options
+
+*replace            replace
+*append             append
+*type               type
+*showtabs           showtabs
+
+// smcl options
+smcltags            smcltags
+smclrules           smclrules
+noasis              noasis
+

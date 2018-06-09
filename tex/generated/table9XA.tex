@@ -1,0 +1,27 @@
+\begin{table}[H]
+    \footnotesize
+    \centering
+    \begin{threeparttable}
+        \caption{\autoref{table9}, Mahalanobis Matching}
+        \label{table9XA}
+        \sisetup{table-format=5.4,round-precision=3}
+        \begin{tabular}{p{3.5cm}S@{}S@{}S@{}S@{}S@{}}
+            \toprule
+            &{\crcell[b]{Flesch\\[-0.1cm]Reading\\[-0.1cm]Ease}}&{\crcell[b]{Flesch-\\[-0.1cm] Kincaid}}&{\crcell[b]{Gunning\\[-0.1cm]Fog}}&{SMOG}&{\crcell[b]{Dale-\\[-0.1cm]Chall}}\\
+            \midrule
+            \multicolumn{6}{l}{Condition 1}\\
+            \quad \(\widehat R_{i3}-\widehat R_{k3}\)&       2.372   &       0.718** &       0.957** &       0.642** &       0.177   \\
+                                          &     (1.572)   &     (0.330)   &     (0.392)   &     (0.286)   &     (0.139)   \\
+            \midrule\multicolumn{6}{l}{Condition 2}\\
+            \quad \(\widehat R_{i3}-\widehat R_{i1}\) (women)&       4.040***&       0.855***&       1.256***&       0.742***&      -0.036   \\
+                                          &     (1.544)   &     (0.316)   &     (0.388)   &     (0.285)   &     (0.133)   \\
+            \quad \(\widehat R_{k3}-\widehat R_{k1}\) (men)&      -1.508   &      -0.963***&      -1.033** &      -0.589** &      -0.257*  \\
+                                          &     (1.551)   &     (0.331)   &     (0.406)   &     (0.292)   &     (0.134)   \\
+            \bottomrule
+        \end{tabular}
+        \begin{tablenotes}
+            \tiny
+            \item \textit{Notes}. Sample matched pairs (and distinct men and women, respectively). Table displays estimates identical to those in~\autoref{table9}, except that a Mahalanobis distance is used to generate matched pairs. ***, ** and * statistically significant at 1\%, 5\% and 10\%, respectively.
+        \end{tablenotes}
+    \end{threeparttable}
+\end{table}

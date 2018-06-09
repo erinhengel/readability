@@ -1,0 +1,61 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset204 PTSerif-Regular;\f2\fnil\fcharset204 PTMono-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red0\green128\blue64;\red0\green0\blue128;}
+{\*\expandedcolortbl;;\csgenericrgb\c0\c50196\c25098;\csgenericrgb\c0\c0\c50196;}
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa200\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <$Scr_Ps::0>
+\f1\fs28 Readability scores fail to capture many elements relevant to reading comprehension, including grammar---*
+\i e.g.
+\i0 *, active vs. passive tense
+\f0\fs24 \cf2 <$Scr_Cs::1>
+\f2\fs28 [#Coleman1964,Coleman1965]
+\f0\fs24 \cf0 <!$Scr_Cs::1>
+\f1\fs28 ---legibility---*
+\i e.g.
+\i0 *, typeface and layout---and content---*
+\i e.g.
+\i0 *, coherence, organisation and general appeal{\field{\*\fldinst{HYPERLINK "scrivcmt://D71BF285-076F-4813-BC88-021C1E79A4A2"}}{\fldrslt 
+\f0\fs24 \cf2 <$Scr_Cs::1>
+\f2\fs28 [#Kintsch1984,Kemper1983,Meyer1982,Armbruster1984]
+\f0\fs24 \cf0 <!$Scr_Cs::1>
+\f1\fs28 . }}Nevertheless, "long sentences generally correspond to complex syntactic structures, infrequent words generally refer to complex concepts, and hard texts will generally lead to harder questions about their content"
+\f0\fs24 \cf2 <$Scr_Cs::1>
+\f2\fs28 [\\]\\[p. 222,][#Kintsch1984]
+\f0\fs24 \cf0 <!$Scr_Cs::1>
+\f1\fs28 . Moreover, combining readability scores with measures that capture omitted features does not significantly increase in their predictive power
+\f0\fs24 \cf2 <$Scr_Cs::1>
+\f2\fs28 [see, *e.g.*,\\]\\[][#Kemper1983]
+\f0\fs24 \cf0 <!$Scr_Cs::1>
+\f1\fs28 .\
+Readability scores are, however, prone to measurement error. If this error stems from the scores' low causal power and does not partially correlate with the variable of interest (gender), then the analytical results I present in this paper are biased toward zero (classical measurement error). Otherwise, my results will be systematically biased in an unknown direction (non-classical measurement error).\
+Sources of non-classical measurement error are threefold: (a) grammatical/spelling/transcription errors in the textual input; (b) bugs in the software that estimates vocabulary complexity and sentence length; or (c) embodied in the jump from using hard words and sentence length to infer readability.\
+Conditional on accurate calculation, readability scores do combine very precise estimates of vocabulary complexity with almost perfect measures of sentence length. As I argue in 
+\f0\fs24 \cf3 <$Scr_Cs::2>
+\f2\fs28 [][Discussion]
+\f0\fs24 \cf0 <!$Scr_Cs::2>
+\f1\fs28 , the weighted average of these two variables is informative in much the same way that inferences about readability are. Thus, measurement error related to (c) should only affect the superficial interpretation of observed gender differences. Fundamental conclusions deduced from them should remain intact.\
+A bigger threat to the identification mapped out in this paper is non-classical measurement error from (a) and (b). I have taken several steps to minimise them. First, I use abstracts---as opposed to the body of a paper---as textual {\field{\*\fldinst{HYPERLINK "scrivcmt://AA0E9643-DDD5-46A4-A972-A06BD2687CA7"}}{\fldrslt input.}} Abstracts are self-contained, universally summarise the research and are the first and most frequently read part of an article
+\f2 \cf2 [#King2006]
+\f1 \cf0 . Moreover, their layout is relatively standardised compared to other parts of a paper: abstracts tend to be surrounded by ample whitespace and most editorial management systems anyway reproduce them in pre-formatted cover pages. These factors suggest a relatively homogenous degree of review across journals and subject matter and limit the impact physical layout and surrounding tables, figures and text have on {\field{\*\fldinst{HYPERLINK "scrivcmt://AFF3D29D-1551-4333-B7F8-92803CAED019"}}{\fldrslt readability.}}\
+Abstracts are additionally ideal for minimising grammatical/spelling/transcription errors. They contain few of the features of text which can distort readability scores, *
+\i e.g.
+\i0 *, citations, abbreviations and equations. Additionally, most have already (and conveniently) been converted to accurate machine-readable text by digital libraries and bibliographic databases.\
+A third concern is that some programs that calculate readability scores rely on unclear, inconsistent and possibly inaccurate algorithms to count words and syllables, identify sentence terminations and determine whether a word is on Dale-Chall's easy word list
+\f2 \cf2 [for a discussion, see\\]\\[][#Sirico2007]
+\f1 \cf0 . Additionally, features of the text---particularly full stops used in abbreviations and decimals in numbers---frequently underestimate average words per sentence and syllables per {\field{\*\fldinst{HYPERLINK "scrivcmt://574997C9-8CE7-4954-99DA-88FBC1907322"}}{\fldrslt word.}} To transparently handle these issues and eliminate ambiguity in how the readability scores were calculated, I wrote the Python module `Textatistic`. Its code and detailed documentation is available at 
+\f2 \cf2 [GitHub]({\field{\*\fldinst{HYPERLINK "https://github.com/erinhengel/Textatistic"}}{\fldrslt \cf2 https://github.com/erinhengel/Textatistic}})
+\f1 \cf0 . A brief description is provided in 
+\f0\fs24 \cf3 <$Scr_Cs::2>
+\f2\fs28 [][AppendixTextatistic]
+\f0\fs24 \cf0 <!$Scr_Cs::2>
+\f1\fs28 .\
+As an additional robustness check, I calculate readability scores using the `R` 
+\f0\fs24 \cf3 <$Scr_Cs::2>
+\f2\fs28 [`readability` package]({\field{\*\fldinst{HYPERLINK "https://github.com/trinker/readability"}}{\fldrslt \cf3 https://github.com/trinker/readability}})
+\f0\fs24 \cf0 <!$Scr_Cs::2>
+\f1\fs28 . Not only does this alternative software confirm the validity of my own---results are very similar to those reported here---but since the algorithms it uses to calculate the scores is slightly different from my own---*
+\i e.g.
+\i0 *, it includes semi-colons among its sentence-ending characters---it suggests the results are robust to minor simplifying changes required when calculating readability scores via computer program instead of manually by a {\field{\*\fldinst{HYPERLINK "scrivcmt://FD233547-CED4-437F-B120-5D12F093D9A0"}}{\fldrslt human.
+\f0\fs24 <!$Scr_Ps::0>}}}

@@ -1,0 +1,80 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf120
+{\fonttbl\f0\fnil\fcharset0 PTSerif-Regular;\f1\fnil\fcharset0 PTMono-Regular;\f2\fswiss\fcharset0 Helvetica;
+}
+{\colortbl;\red255\green255\blue255;\red255\green128\blue0;\red0\green0\blue128;}
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa200\pardirnatural
+
+\f0\fs28 \cf0 I initially estimate 
+\f1 \cf2 $p$
+\f0 \cf0  and 
+\f1 \cf2 $Y$
+\f0 \cf0  with the following baseline {\field{\*\fldinst{HYPERLINK "scrivcmt://0FADCC8F-5926-4AEC-B027-D325325308E6"}}{\fldrslt regression:}}where subscript 
+\f1 \cf2 $j_i$
+\f0 \cf0  denotes the country 
+\f1 \cf2 $j$
+\f0 \cf0  in which firm 
+\f1 \cf2 $i$
+\f0 \cf0  operates, 
+\f1 \cf2 $k_i$
+\f0 \cf0  denotes the year 
+\f1 \cf2 $k$
+\f0 \cf0  firm 
+\f1 \cf2 $i$
+\f0 \cf0  was surveyed, 
+\f1 \cf2 $\\text\{firm char.\}_i$
+\f0 \cf0  is a 
+\f1 \cf2 $6\\times1$
+\f0 \cf0  vector of variables in 
+\f1 \cf3 [](#FirmSpecifics)
+\f0 \cf0  and 
+\f1 \cf2 $\\text\{country char.\}_\{i_j\}$
+\f0 \cf0  the 
+\f1 \cf2 $4\\times1$
+\f0 \cf0  vector of variables in 
+\f1 \cf3 [](#LendingEnvironment)
+\f0 \cf0 . 
+\f1 \cf2 $\\Phi$
+\f0 \cf0  is the standard normal cumulative distribution function.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa200\pardirnatural
+{\field{\*\fldinst{HYPERLINK "scrivcmt://AA61B0FB-55B2-4B33-A205-E9036C9B5A8C"}}{\fldrslt \cf0 [](#BaselineRegression)}} displays the average marginal effects from [](#eq:p2eq1). A full unit increase in the cost of enforcing a contract increases the probability firms' consider finance an obstacle by 0.967, *i.e.*, almost one-for-one. self-reported financing difficulties rise  *Cost to enforce a contract* In jurisdictions with and without a floating charge, higher enforcement costs mean more complains that financing is an obstacle. The result is highly significant. More credit information, on the other hand, reduces the incidence of self-reported financing obstacles. The magnitude of its impact, however, is much smaller: a full unit increase in the *Credit information index* decreases the probability finance is an obstacle by only 5.3 percent and the result is significant only at the 10 percent level.\
+Interestingly, a floating charge appears to heighten reports that finance is an obstacle---introducing it may make firms 13 percent more likely to have difficulty obtaining finance. Nevertheless, given the small number of countries with floating charges, this result should be viewed with caution. The other marginal effects mostly confirm expectations and the figures in [](#FirmCharacteristics) and [](#LendingEnvironment). Manufacturing, smaller and domestically owned firms are more likely to report finance an obstacle. Exporter and state-ownership status are no longer significant. Younger firms still report more financing obstacles, but that effect is negligible.\
+Lending environment variables have a small but significant impact on self-reported financing obstacles. As expected, higher GDP and lower inflation reduce financing constraints. The percent of firms using banks to finance obstacles has no discernible impact. But as domestic credit to the private sector and net income from abroad increase, financing obstacles counterintuitively increase. Firms appear more sensitive to financing obstacles when credit and remittances are more prevalent. As discussed in Section X, however, this may reflect several endogenous factors which bias these estimates.\
+But if [](#BaselineRegression) supports [](#prop5), it provides none of the nuance needed to support [](#prop6). [](#prop6) is ambiguous about the credit information's impact on one's ability to get credit. If a firm is viable, it will be negative, otherwise, positive. Unfortunately, viability is unidentifiable from the data. Thus, the results of the baseline regression can suggest, at most, what the effect of 
+\f1 \cf2 $p$
+\f0 \cf0  is on the average firm in the average country.\
+In order to better tease out the effect of 
+\f1 \cf2 $p$
+\f0 \cf0  given the unobserved heterogeneity in the data, I use a mixed logit model. The basic model 
+\f1 \cf3 [#Revelt1998]
+\f0 \cf0  was developed to address unobserved heterogeneity in consumer choice experiments. It creates a framework for analysing survey results from respondents who are presented with a series of alternatives over a number of choice occasions. Although my dataset does correspond exactly to those which typically exploit the mixed logit model, it does contain the same key features. That is, although the same firm is never repeatedly sampled, the same type of firm is. Additionally, a particular type of firm should not only be repeatedly sampled in one country, but across countries, thus facing different levels of 
+\f1 \cf2 $p$
+\f0 \cf0  and 
+\f1 \cf2 $Y$
+\f0 \cf0 .  Thus, if I can define a sub selection of firms who are similar enough to one another, I can recreate the choice occasion (is finance as an obstacle or not), over a number of different alternative specifications of 
+\f1 \cf2 $p$
+\f0 \cf0  and 
+\f1 \cf2 $Y$
+\f0 \cf0 . This specification is valuable, because it allows the coefficients themselves to be random variables---which is precisely what [](#prop6) predicts 
+\f1 \cf2 $p$
+\f0 \cf0  to be.\
+I first decomposed the dataset into 772 separate groups. Each group contains a number of firms that share the same approximate age, industry, size, exporter status, foreign-owned status and state-owned status, and live in a country with similar GDP per capita and inflation, where age, GDP per capita and inflation were subdivided into quartiles.  $p$ and $Y$ were averaged over all members in a group for those that considered financing an obstacle, and separately for those that did not. \
+The result is 772 \'93individuals\'94 with a choice of two alternatives---is financing an obstacle or not. The differentiating factor is the level of $p$ and $Y$. As illustrated by [#Train2009;], if I assume that the individual-specific random error component is distributed i.i.d. extreme value, the choice probability of the nth individual can be expressed as\
+\pard\tx706\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sa240\pardirnatural
+
+\f2 \cf0 $$P_n=\\int S_n\\l(\\beta\\r)f\\l(\\beta\\r)\\dd\\beta.$$\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa200\pardirnatural
+
+\f0 \cf0 where $S_n(\\beta)$ is the product of the logit probabilities over all observed choices evaluated at the parameter set $\\beta$ and $f(\\beta)$ is a density function. Thus, $P_n$ is weighted average of logit probabilities, and weights are determined by $f(\\beta)$.\
+Although the log likelihood of (11) has no analytic solution, it can be approximated via simulation. Table (6) presents the results. In both columns, the coefficient of $p$ is normally distributed. In the first column, the coefficient on $Y$ is held fixed; in the second column, it also is allowed to follow a normal distribution.\
+\pard\tx706\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sa240\pardirnatural
+
+\f2 \cf0 <!--\\input\{./padding/tab5.tex\}-->\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa200\pardirnatural
+
+\f0 \cf0 In the first column, the coefficient on $Y$ is again negative and significant, indicating quick and efficient reorganisation reduces financing obstacles. The coefficient on $p$ indicates that, on average, higher quality financial information increases financing obstacles. The standard deviation on the coefficient on $p$ is large relative to the mean, indicating that there is indeed a large amount of heterogeneity. In fact, approximately a third of firms find that greater information decreases financing obstacles ---roughly equivalent to what I found in the probit model with an interaction term.\
+The second column in Table (6) allows the coefficient on $Y$ to vary, as well. The standard deviation on the coefficient of $Y$ is not significant, indicating little heterogeneity. The coefficient on $p,$  however, continues to be  positive and exhibit significant heterogeneity---again, about a third of firms find greater information decreases financing obstacles.\
+As a final step, I estimate the baseline model on firms classified as liquidation-only. The results are represented in Table (7). Interestingly, $p$ has a negative effect on self-reported financing difficulties, and is significant in three out of the six models. This is in line with traditional theories of the impact of information on the lending market. [#Stiglitz1981;] showed that credit rationing exists thanks to information asymmetry between lenders and borrowers. Alleviating this asymmetry---via better publically available information on the financial health of a firm---aids lenders in evaluating loan applicants and will increase the supply of credit [#Pagano1993]. Indeed, previous empirical evidence supports this idea---greater information has been linked to larger lending markets [#Jappelli2002,Djankov2007], lower costs [#Brown2009] and greater lending to riskier borrowers [#Berger2005]. Thus, in markets in which reorganisation plays no role, this is exactly what one would expect to see.\
+The effect of $Y$ fluctuates between positive and negative values, depending on the control variables. It is only significant with the inclusion of FIRMFINANCE as a single control for the lending environment. It disappears once all lending environment controls are included.\
+\pard\tx706\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sa240\pardirnatural
+
+\f2 \cf0 <!--\\input\{./padding/tab3.tex\}-->}

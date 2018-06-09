@@ -1,0 +1,372 @@
+{smcl}
+{com}{sf}{ul off}{res}{title:Publishing while Female: Gender Differences in Peer Review Scrutiny}
+Erin Hengel
+ 9 Jun 2018, 10:59:11
+{txt}
+{com}. ********************************************
+. ************* Correlation table. ************
+. ********************************************
+. use `article', clear
+{txt}
+{com}. binscatter asinhCiteCount _flesch_score if Year>2000 ///
+>         , scheme(publishing-female) ///
+>         legend(off) ///
+>         name(female, replace) ///
+>         color(pfblue pfblue) ///
+>         xtitle("Flesch Reading Ease", placement(seast)) ytitle("") title("") subtitle("Citation count (asinh)", placement(nwest) size(vsmall))
+{res}{txt}
+{com}. 
+. graph export "`pdf_path'/asinhCiteCount.pdf", replace
+{txt}(file /Users/erinhengel/Dropbox/Readability/draft/pdf/asinhCiteCount.pdf written in PDF format)
+
+{com}. ********************************************
+. 
+. ********************************************
+. ************* Display Figure 1. ************
+. ********************************************
+. preserve
+{txt}
+{com}. replace Fem100 = FemRatio==1
+{txt}(860 real changes made)
+
+{com}. replace Fem50 = FemRatio>0.5
+{txt}(813 real changes made)
+
+{com}. generate Male = FemRatio==0
+{txt}
+{com}. collapse (mean) FemRatio Fem50 Female Fem100 Male, by(Year)
+{txt}
+{com}. tsset Year
+{res}{txt}{col 9}time variable:  {res}{col 25}Year, 1950 to 2015, but with a gap
+{txt}{col 17}delta:  {res}1 unit
+{txt}
+{com}. 
+. foreach v of varlist Fem* {c -(}
+{txt}  2{com}.         replace `v' = `v'*100
+{txt}  3{com}. {c )-}
+{txt}(53 real changes made)
+(51 real changes made)
+(53 real changes made)
+(51 real changes made)
+
+{com}. 
+. keep if Year>1985
+{txt}(34 observations deleted)
+
+{com}. tssmooth ma maFemRatio=FemRatio, window(5)
+{txt}The smoother applied was
+{res}{p 5 5 5}(1/5)*[x(t-5) + x(t-4) + x(t-3) + x(t-2) + x(t-1) + 0*x(t)]; x(t)= FemRatio{p_end}
+{txt}
+{com}. tssmooth ma maFem50=Fem50, window(5)
+{txt}The smoother applied was
+{res}{p 5 5 5}(1/5)*[x(t-5) + x(t-4) + x(t-3) + x(t-2) + x(t-1) + 0*x(t)]; x(t)= Fem50{p_end}
+{txt}
+{com}. tssmooth ma maFemale=Female, window(5)
+{txt}The smoother applied was
+{res}{p 5 5 5}(1/5)*[x(t-5) + x(t-4) + x(t-3) + x(t-2) + x(t-1) + 0*x(t)]; x(t)= Female{p_end}
+{txt}
+{com}. tssmooth ma maFem100=Fem100, window(5)
+{txt}The smoother applied was
+{res}{p 5 5 5}(1/5)*[x(t-5) + x(t-4) + x(t-3) + x(t-2) + x(t-1) + 0*x(t)]; x(t)= Fem100{p_end}
+{txt}
+{com}. tssmooth ma maMale=Male, window(5)
+{txt}The smoother applied was
+{res}{p 5 5 5}(1/5)*[x(t-5) + x(t-4) + x(t-3) + x(t-2) + x(t-1) + 0*x(t)]; x(t)= Male{p_end}
+{txt}
+{com}. graph twoway ///
+>         (line maFemRatio Year, color(pfyellow) lwidth(medium)) ///
+>         (line maFem100 Year, color(pfpink) lwidth(medium)) ///
+>         (line maFem50 Year, color(pfblue) lwidth(medium)) ///
+>         (line maFemale Year, color(pfteal) lwidth(medium)) ///
+>         , xlabel(1987(4)2015) ///
+>         legend(position(10) ///
+>                 order(4 "At least one female-author (% papers)" ///
+>                 1 "% female authors (per paper)" ///
+>                 3 "Majority female-authored (% papers)" ///
+>                 2 "100% female-authored (% papers)") ///
+>                 cols(1) rows(8) symxsize(2)) ///
+>         scheme(publishing-female) ///
+>         xtitle("") ///
+>         ytitle("") ///
+>         ylabel(5 "5%" 10 "10%" 15 "15%" 20 "20%" 25 "25%")
+{res}{txt}
+{com}. graph export "`pdf_path'/figure00.pdf", replace
+{txt}(file /Users/erinhengel/Dropbox/Readability/draft/pdf/figure00.pdf written in PDF format)
+
+{com}. restore
+{txt}
+{com}. ********************************************
+. 
+. ********************************************
+. ************* Meta analysis. ***************
+. ********************************************
+. import delimited ~/Dropbox/Readability/dta/correlations.txt, ///
+>         case(preserve) ///
+>         clear ///
+>         varnames(1) ///
+>         encoding("utf-8")
+{res}{text}(6 vars, 336 obs)
+
+{com}. 
+. preserve
+{txt}
+{com}. by TestType Source, sort: generate Study = cond(_n==1, 1, 0)
+{txt}
+{com}. table TestType, contents(median Correlation freq sum Study) replace
+
+{txt}{hline 10}{c TT}{hline 44}
+ TestType {c |} med(Correl~n)          Freq.     sum(Study)
+{hline 10}{c +}{hline 44}
+      ALT {c |}           {res}.78             62             15
+      {txt}ORF {c |}            {res}.2             27              4
+      {txt}RCT {c |}           {res}.64             24             15
+       {txt}RS {c |}           {res}.87            169             27
+    {txt}cloze {c |}          {res}.785             54             17
+{txt}{hline 10}{c BT}{hline 44}
+
+{com}. rename (table*) (median corrs studies)
+{res}{txt}
+{com}. sort median
+{txt}
+{com}. tempname bd
+{txt}
+{com}. mkmat median corrs studies, matrix(`bd') rownames(TestType)
+{res}{txt}
+{com}. restore
+{txt}
+{com}. 
+. graph box Correlation, ///
+>         over(TestType, ///
+>                 sort(1) ///
+>                 gap(85) ///
+>                 relabel(1 `""Human judgement{c -(}sup{c )-}{c -(}c 134{c )-}""' 2 `""Oral reading fluency""' 3 `""Comprehension tests""' 4 `""Readability scores""' 5 `""Cloze procedure""')) ///
+>         scheme(publishing-female) ///
+>         nooutsides ///
+>         note("") ///
+>         legend(off) ///
+>         title("") subtitle("Correlation", placement(nwest) size(vsmall)) ytitle("") ///
+>         asyvars showyvars ///
+>         medtype(cline) medline(lcolor(white) lwidth(vthin) lpattern(solid)) cwhiskers lines(lwidth(vthin)) alsize(0) ///
+>         intensity(90) lintensity(90) ///
+>         graphregion(margin(small)) ///
+>         box(1, color(pfblue)) ///
+>         box(2, color(pfblue)) ///
+>         box(3, color(pfblue)) ///
+>         box(4, color(pfyellow)) ///
+>         box(5, color(pfblue)) ///
+>         text(`"`: display `bd'[1,1]+0.001'"' 8 `"{c -(}it: N{c )-} = `: display `bd'[1,2]'"' " " "`: display `bd'[1,3]' studies", size(vsmall) color(white)) ///
+>         text(`"`: display `bd'[2,1]+0.002'"' 29 `"{c -(}it: N{c )-} = `: display `bd'[2,2]'"' " " "`: display `bd'[2,3]' studies", size(vsmall) color(white)) ///
+>         text(`"`: display `bd'[3,1]+0.002'"' 50 `"{c -(}it: N{c )-} = `: display `bd'[3,2]'"' " " "`: display `bd'[3,3]' studies", size(vsmall) color(white)) ///
+>         text(`"`: display `bd'[4,1]+0.004'"' 71 `"{c -(}it: N{c )-} = `: display `bd'[4,2]'"' " " "`: display `bd'[4,3]' studies", size(vsmall) color(white)) ///
+>         text(`"`: display `bd'[5,1]+0.003'"' 92 `"{c -(}it: N{c )-} = `: display `bd'[5,2]'"' " " "`: display `bd'[5,3]' studies", size(vsmall) color(black))
+{txt}{res}{txt}
+{com}. graph export "`pdf_path'/figure0X.pdf", replace
+{txt}(file /Users/erinhengel/Dropbox/Readability/draft/pdf/figure0X.pdf written in PDF format)
+
+{com}. ********************************************
+. 
+. ********************************************
+. ************* Readability by JEL. ***************
+. ********************************************
+. use `article_primary_jel', clear
+{txt}
+{com}. keep ArticleID JEL* _flesch_score Year
+{txt}
+{com}. reshape long JEL, i(ArticleID) j(jel) string
+{txt}(note: j = 1_A 1_B 1_C 1_D 1_E 1_F 1_G 1_H 1_I 1_J 1_K 1_L 1_M 1_N 1_O 1_P 1_Q 1_R 1_Z)
+
+Data{col 36}wide{col 43}->{col 48}long
+{hline 77}
+Number of obs.                 {res}    5216   {txt}->{res}   99104
+{txt}Number of variables            {res}      22   {txt}->{res}       5
+{txt}j variable (19 values)                    ->   {res}jel
+{txt}xij variables:
+               {res}JEL1_A JEL1_B ... JEL1_Z   {txt}->   {res}JEL
+{txt}{hline 77}
+
+{com}. drop if JEL==0
+{txt}(88,842 observations deleted)
+
+{com}. drop JEL
+{txt}
+{com}. rename jel JEL
+{res}{txt}
+{com}. 
+. replace JEL = regexs(1) if regexm(JEL, "1\_([A-Z])")
+{txt}(10,262 real changes made)
+
+{com}. 
+. replace JEL = "A General" if JEL=="A"
+{txt}variable {bf}JEL{sf} was {bf}{res}str3{sf}{txt} now {bf}{res}str9{sf}
+{txt}(30 real changes made)
+
+{com}. replace JEL = "B Methodology" if JEL=="B"
+{txt}variable {bf}JEL{sf} was {bf}{res}str9{sf}{txt} now {bf}{res}str13{sf}
+{txt}(26 real changes made)
+
+{com}. replace JEL = "C Quant. methods" if JEL=="C"
+{txt}variable {bf}JEL{sf} was {bf}{res}str13{sf}{txt} now {bf}{res}str16{sf}
+{txt}(1,084 real changes made)
+
+{com}. replace JEL = "D Microeconomics" if JEL=="D"
+{txt}(2,326 real changes made)
+
+{com}. replace JEL = "E Macroeconomics" if JEL=="E"
+{txt}(829 real changes made)
+
+{com}. replace JEL = "F International" if JEL=="F"
+{txt}(449 real changes made)
+
+{com}. replace JEL = "G Finance" if JEL=="G"
+{txt}(729 real changes made)
+
+{com}. replace JEL = "H Public" if JEL=="H"
+{txt}(481 real changes made)
+
+{com}. replace JEL = "I Health, welfare, edu." if JEL=="I"
+{txt}variable {bf}JEL{sf} was {bf}{res}str16{sf}{txt} now {bf}{res}str23{sf}
+{txt}(469 real changes made)
+
+{com}. replace JEL = "J Labour" if JEL=="J"
+{txt}(1,036 real changes made)
+
+{com}. replace JEL = "K Law and econ." if JEL=="K"
+{txt}(197 real changes made)
+
+{com}. replace JEL = "L Industrial org." if JEL=="L"
+{txt}(818 real changes made)
+
+{com}. replace JEL = "M Marketing, accounting" if JEL=="M"
+{txt}(175 real changes made)
+
+{com}. replace JEL = "N Economic history" if JEL=="N"
+{txt}(230 real changes made)
+
+{com}. replace JEL = "O Development" if JEL=="O"
+{txt}(715 real changes made)
+
+{com}. replace JEL = "P Economic systems" if JEL=="P"
+{txt}(114 real changes made)
+
+{com}. replace JEL = "Q Agri., environment" if JEL=="Q"
+{txt}(190 real changes made)
+
+{com}. replace JEL = "R Regional, transport" if JEL=="R"
+{txt}(226 real changes made)
+
+{com}. replace JEL = "Y Miscellaneous" if JEL=="Y"
+{txt}(0 real changes made)
+
+{com}. replace JEL = "Z Special topics" if JEL=="Z"
+{txt}(138 real changes made)
+
+{com}. 
+. graph hbar (mean) _flesch_score if Year>=1987, over(JEL) ///
+>         name(femratio, replace) ///
+>         scheme(publishing-female) ///
+>         ytitle("") ///
+>         aspectratio(2, placement(left))
+{res}{txt}
+{com}. graph export "`pdf_path'/read_jel.pdf", replace
+{txt}(file /Users/erinhengel/Dropbox/Readability/draft/pdf/read_jel.pdf written in PDF format)
+
+{com}. ********************************************
+. 
+. 
+. ********************************************
+. ************* Gender representation by JEL. ***************
+. ********************************************
+. use `article', clear
+{txt}
+{com}. summarize FemRatio if Journal==1
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 4}FemRatio {c |}{res}      2,083      .12526    .2698419          0          1
+{txt}
+{com}. local aer = round(r(mean)*100, 0.01)
+{txt}
+{com}. summarize FemRatio if Journal==2
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 4}FemRatio {c |}{res}      3,118    .0419607    .1618617          0          1
+{txt}
+{com}. local eca = round(r(mean)*100, 0.01)
+{txt}
+{com}. summarize FemRatio if Journal==3
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 4}FemRatio {c |}{res}      2,446    .0626601    .2109523          0          1
+{txt}
+{com}. local jpe = round(r(mean)*100, 0.01)
+{txt}
+{com}. summarize FemRatio if Journal==4
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 4}FemRatio {c |}{res}      1,475    .0992486    .2413705          0          1
+{txt}
+{com}. local qje = round(r(mean)*100, 0.01)
+{txt}
+{com}. 
+. use `author', clear
+{txt}
+{com}. generate Fem = Sex==0
+{txt}
+{com}. collapse (sum) Fem, by(Journal)
+{txt}
+{com}. graph pie Fem, ///
+>         scheme(publishing-female) ///
+>         over(Journal) ///
+>         plabel(1 "{c -(}it:AER{c )-}" "`aer' %", size(large)) ///
+>         plabel(2 "{c -(}it: Econometrica{c )-}" "`eca' %", size(large)) ///
+>         plabel(3 "{c -(}it:JPE{c )-}" "`jpe' %", size(large)) ///
+>         plabel(4 "{c -(}it:QJE{c )-}" "`qje' %", size(large)) ///
+>         pie(1, color(pfblue)) ///
+>         pie(2, color(pfyellow)) ///
+>         pie(3, color(pfpink)) ///
+>         pie(4, color(pfteal)) ///
+>         legend(off)
+{res}{txt}
+{com}. graph export "`pdf_path'/journal.pdf", replace
+{txt}(file /Users/erinhengel/Dropbox/Readability/draft/pdf/journal.pdf written in PDF format)
+
+{com}. 
+. ********************************************
+. ************* Readability by year. ***************
+. ********************************************
+. use `article', clear
+{txt}
+{com}. collapse (mean) _flesch_score _fleschkincaid_score _gunningfog_score _smog_score _dalechall_score, by(Year)
+{txt}
+{com}. tsset Year
+{res}{txt}{col 9}time variable:  {res}{col 25}Year, 1950 to 2015, but with a gap
+{txt}{col 17}delta:  {res}1 unit
+{txt}
+{com}. keep if Year>1985
+{txt}(34 observations deleted)
+
+{com}. tssmooth ma ma_flesch_score=_flesch_score, window(5)
+{txt}The smoother applied was
+{res}{p 5 5 5}(1/5)*[x(t-5) + x(t-4) + x(t-3) + x(t-2) + x(t-1) + 0*x(t)]; x(t)= _flesch_score{p_end}
+{txt}
+{com}. tssmooth ma ma_dalechall_score=_dalechall_score, window(5)
+{txt}The smoother applied was
+{res}{p 5 5 5}(1/5)*[x(t-5) + x(t-4) + x(t-3) + x(t-2) + x(t-1) + 0*x(t)]; x(t)= _dalechall_score{p_end}
+{txt}
+{com}. graph twoway ///
+>         (line ma_flesch_score Year, color(pfpink) lwidth(medium) yaxis(1)) ///
+>         (line ma_dalechall_score Year, color(pfteal) lwidth(medium) yaxis(2)) ///
+>         , xlabel(1990(5)2015) ///
+>         scheme(publishing-female) ///
+>         xtitle("") legend(off) ///
+>         ytitle("Flesch Reading Ease", axis(1)) ytitle("-1 ⨉ Dale-Chall", axis(2)) ///
+>         aspectratio(1.75, placement(west))
+{res}{txt}
+{com}. graph export "`pdf_path'/year.pdf", replace
+{txt}(file /Users/erinhengel/Dropbox/Readability/draft/pdf/year.pdf written in PDF format)
+
+{com}. {smcl}
+{com}{sf}{ul off}

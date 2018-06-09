@@ -1,0 +1,168 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504
+{\fonttbl\f0\fnil\fcharset0 PTSerif-Regular;\f1\fnil\fcharset0 PTMono-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green128\blue64;\red0\green0\blue128;\red255\green128\blue0;
+\red0\green128\blue64;\red0\green0\blue128;}
+{\*\expandedcolortbl;\csgray\c100000;\csgenericrgb\c0\c50196\c25098;\csgenericrgb\c0\c0\c50196;\csgenericrgb\c100000\c50196\c0;
+\csgenericrgb\c0\c50196\c25098;\csgenericrgb\c0\c0\c50196;}
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa200\pardirnatural
+
+\f0\fs28 \cf0 The data pre- and post-peer review make it possible to identify the contemporaneous effect of gender on peer review by eliminating selection bias---*
+\i i.e.
+\i0 *, the effect of omitted variables that are independent of immediate peer review, but correlated with gender. To isolate gender differences in readability pre-existing peer review from those incurred during it, I use two separate (yet analogous) estimation strategies based on a conceptual framework outlined by
+\f1 \cf2 [#Ashenfelter1994;]
+\f0 \cf0 .  The first strategy removes selection effects by regressing female ratio on the change in score via OLS. In the second strategy, selection effects are eliminated by differencing coefficients on female ratio from a feasible, generalised least squares (FGLS) regression on abstract readability of NBER working papers and, separately, their published versions.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa200\pardirnatural
+
+\f1 \cf3 [](#p3equationAX1)
+\f0 \cf0  defines the linear relationship between readability scores and non-peer reviewed articles. Its components shape writing clarity *
+\i before
+\i0 * external evaluators demand edits.\
+\pard\tx706\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\pardirnatural
+
+\f1\fs18 \cf4 <!--\\begin\{equation\}\\label\{p3equationAX1\}\
+\\text\{score\}_\{jW\}^s=\\beta_0+\\beta_1\\,\\text\{female ratio\}_j+\\bm\\uptheta\\,\\vect X_j+\\mu_j+\\vep_\{jW\},\
+\\end\{equation\}-->\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa200\pardirnatural
+
+\f0\fs28 \cf0  where 
+\f1 \cf4 $\\text\{score\}_\{jW\}^s$
+\f0 \cf0  is readability score 
+\f1 \cf4 $s$
+\f0 \cf0  for the working paper version (
+\f1 \cf4 $W$
+\f0 \cf0 ) of article 
+\f1 \cf4 $j$
+\f0 \cf0 , 
+\f1 \cf4 $\\vect X_j$
+\f0 \cf0  is a vector of version-invariant variables (publication year and productivity {\field{\*\fldinst{HYPERLINK "scrivcmt://A2E14D2E-6D96-4223-BF12-163E30AE3793"}}{\fldrslt effects)}} and 
+\f1 \cf4 $\\mu_j$
+\f0 \cf0  are article fixed effects. 
+\f1 \cf4 $\\vep_\{jW\}$
+\f0 \cf0  is version 
+\f1 \cf4 $W$
+\f0 \cf0 's unobserved error term.\
+Published articles are obviously revised versions of earlier papers. Their readability depends on 
+\f1 \cf4 $\\text\{score\}_\{jW\}^s$
+\f0 \cf0  as well as factors that affect writing clarity anytime after drafts are released as working papers. This relationship is shown in 
+\f1 \cf3 [](#p3equationAX2)
+\f0 \cf0 .\
+\pard\tx706\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\pardirnatural
+
+\f1\fs18 \cf4 <!--\\begin\{equation\}\\label\{p3equationAX2\}\
+\\text\{score\}_\{jP\}^s=\\text\{score\}_\{jW\}^s+\\beta_0^P+\\beta_1^P\\,\\text\{female ratio\}_j+\\bm\\upzeta\\,\\vect Z_\{jP\}+\\vep_\{jP\},\
+\\end\{equation\}-->\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa200\pardirnatural
+
+\f0\fs28 \cf0  where 
+\f1 \cf4 $\\beta_0^P$
+\f0 \cf0  is an additive constant specific to article 
+\f1 \cf4 $j$
+\f0 \cf0 's published version (
+\f1 \cf4 $P$
+\f0 \cf0 ), 
+\f1 \cf4 $\\beta_1^P$
+\f0 \cf0  reflects an additional impact 
+\f1 \cf4 $\\text\{female ratio\}_j$
+\f0 \cf0  may have in peer review and the vector 
+\f1 \cf4 $\\vect Z_\{jP\}$
+\f0 \cf0  contains factors that only influence version 
+\f1 \cf4 $P$
+\f0 \cf0  (editor, journal and journal-year interaction effects). 
+\f1 \cf4 $\\vep_\{jP\}$
+\f0 \cf0  is an error term specific to version 
+\f1 \cf4 $P$
+\f0 \cf0 ; 
+\f1 \cf4 $\\vep_\{jP\}$
+\f0 \cf0  and 
+\f1 \cf4 $\\vep_\{jW\}$
+\f0 \cf0  are uncorrelated.\
+The parameter of interest is 
+\f1 \cf4 $\\beta_1^P$
+\f0 \cf0 . 
+\f1 \cf4 $\\beta_1^P$
+\f0 \cf0  is not separately identified in 
+\f1 \cf3 [](#p3equationAX2)
+\f0 \cf0 ; furthermore, OLS estimates are biased by article fixed effects. Subtracting 
+\f1 \cf3 [](#p3equationAX1)
+\f0 \cf0  from 
+\f1 \cf3 [](#p3equationAX2)
+\f0 \cf0  deals with both issues. Fixed effects are removed; the coefficient on 
+\f1 \cf4 $\\text\{female ratio\}_j$
+\f0 \cf0  is specific to peer review:\
+\pard\tx706\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\pardirnatural
+
+\f1\fs18 \cf4 <!--\\begin\{equation\}\\label\{p3equationAX3\}\
+\\text\{score\}_\{jP\}^s-\\text\{score\}_\{jW\}^s=\\,\\beta_0^P+\\beta_1^P\\,\\text\{female ratio\}_j+\\bm\\upzeta\\,\\vect Z_\{jP\}+\\vep_\{jP\}.\
+\\end\{equation\}-->\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa200\pardirnatural
+
+\f0\fs28 \cf0  
+\f1 \cf3 [](#p3equationAX3)
+\f0 \cf0  is estimated via OLS.\
+A second method obtains 
+\f1 \cf4 $\\beta_1^P$
+\f0 \cf0  in stages. As mentioned, correlation between 
+\f1 \cf4 $\\mu_j$
+\f0 \cf0  and the observable variables biases OLS parameter estimates of 
+\f1 \cf3 [](#p3equationAX1)
+\f0 \cf0  and 
+\f1 \cf3 [](#p3equationAX2)
+\f0 \cf0 . To define that correlation, I adopt the general structure from
+\f1 \cf5 [#Ashenfelter1994;]
+\f0 \cf0 :\
+\pard\tx706\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\pardirnatural
+
+\f1\fs18 \cf4 <!--\\begin\{equation\}\\label\{p3equationAX4\}\
+\\mu_j=\\eta\\,\\text\{female ratio\}_j+\\bm\\updelta\\,\\vect X_j+\\bm\\upgamma\\,\\vect Z_\{jP\}+\\omega_j,\
+\\end\{equation\}-->\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa200\pardirnatural
+
+\f0\fs28 \cf0  where 
+\f1 \cf4 $\\omega_j$
+\f0 \cf0  is uncorrelated with 
+\f1 \cf4 $\\text\{female ratio\}_j$
+\f0 \cf0 , 
+\f1 \cf4 $\\vect Z_\{jP\}$
+\f0 \cf0  and 
+\f1 \cf4 $\\vect X_j$
+\f0 \cf0 . Substituting 
+\f1 \cf3 [](#p3equationAX4)
+\f0 \cf0  into 
+\f1 \cf3 [](#p3equationAX1)
+\f0 \cf0  generates the following reduced form representation of 
+\f1 \cf6 [](#p3equationAX1)
+\f0 \cf0 :\
+\pard\tx706\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\pardirnatural
+
+\f1\fs18 \cf4 <!--\\begin\{equation\}\\label\{p3equationAX5\}\
+\\text\{score\}_\{jW\}^s=\\beta_0+\\beta_1^\\prime\\,\\text\{female ratio\}_j+\\wt\{\\bm\\uptheta\}\\,\\vect X_j+\\bm\\upgamma\\,\\vect Z_\{jP\}+\\vep_\{jW\}^\\prime,\
+\\end\{equation\}-->
+\f0\fs28 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa200\pardirnatural
+\cf0  where 
+\f1 \cf4 $\\beta_1^\\prime=\\eta+\\beta_1$
+\f0 \cf0 , 
+\f1 \cf4 $\\wt\{\\bm\\uptheta\}=\\bm\\uptheta+\\bm\\updelta$
+\f0 \cf0  and 
+\f1 \cf4 $\\vep_\{jW\}^\\prime=\\omega_j+\\vep_\{jW\}$
+\f0 \cf0 . To obtain a reduced form for published article readability, substitute 
+\f1 \cf3 [](#p3equationAX5)
+\f0 \cf0  into 
+\f1 \cf3 [](#p3equationAX2)
+\f0 \cf0 :\
+\pard\tx706\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\pardirnatural
+
+\f1\fs18 \cf4 <!--\\begin\{equation\}\\label\{p3equationAX6\}\
+\\text\{score\}_\{jP\}^s=(\\beta_0+\\beta_0^P)+(\\beta_1^\\prime+\\beta_1^P)\\,\\text\{female ratio\}_j+\\wt\{\\bm\\uptheta\}\\,\\vect X_j+(\\bm\\upzeta+\\bm\\upgamma\\vect)\\,\\vect Z_\{jP\}+\\vep_\{jP\}^\\prime\
+\\end\{equation\}-->
+\f0\fs28 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa200\pardirnatural
+\cf0  where 
+\f1 \cf4 $\\vep_\{jP\}^\\prime=\\vep_\{jW\}^\\prime+\\vep_\{jP\}$
+\f0 \cf0 . 
+\f1 \cf3 [](#p3equationAX5)
+\f0 \cf0  and 
+\f1 \cf3 [](#p3equationAX6)
+\f0 \cf0  are explicitly estimated via FGLS. 
+\f1 \cf4 $\\beta_1^P$
+\f0 \cf0  is identifiable post-estimation by subtracting reduced form {\field{\*\fldinst{HYPERLINK "scrivcmt://572156B7-4BDE-4434-AEFF-2A7A4D65E88E"}}{\fldrslt coefficients.}}}

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SnapshotIndexes Version="1.0" BinderUUID="2B88AA6F-A936-48C0-AA27-E8C6CF055C86">
+    <Snapshot Date="2015-06-23 11:33:18 +0100">
+        <Title>Untitled Snapshot</Title>
+        <Text>Unfortunately, borrowing isn't guaranteed. A higher $D$ affects a loan's risk twofold: (i) it increases entrepreneurs' chances of default; and (ii) reduces their desire to liquidate. Both effects result in more workouts.
+Workouts either explicitly reduce project value or provide entrepreneurs with the irresistible opportunity to demand a discount on what they eventually repay creditors (or both). Regardless, $C_0$ declines, making it entirely possible it does not cover the creditor's initial outlay no matter what $D$ the entrepreneur is willing to pay. Credit is rationed ([](#lem4)).
+LEMMA
+The creditor is willing to lend if and only if there exists $\ol D\ge K_0$ such that
+$$\ol D\equiv\underset{D}{\mathrm{arg~sup}}\l(C_0=K_0\r).$$
+elem
+Credit rationing happens to both viable and non-viable firms. For the former, criteria are straightforward. Because $C_0$ is increasing in $D$, its supremum is its limit as $D$ tends to infinity, meaning viable firms are credit-rationed whenever
+$$!e[eqn9]\lim_{D\ra\iy}C_0=\int\!\lim_{D\ra\iy}C_1^B\,\dd\Pi=V_0^B&lt;K_0.e!$$
+Viable projects are funded only when their time 0 expected returns in bankruptcy are enough to cover the loan's principal. When it can't, the firm is credit-rationed (see [](#img:img3) for an illustration).
+![A credit-rationed viable firm ][img:img3]
+Ideally, every viable firm gets credit. The fact that many don't is a direct result of the deadweight cost of reorganisation in the context of limited liability which allow insolvent entrepreneurs to extract excessive violations to absolute priority.
+
+ In fact, they are a desirable consequence of renegotiation between firm and creditor. It is the payoff lenders make to trade the risky gamble of bankruptcy for the guaranteed desirable outcome of continuation.
+On their own, however, neither limited liability nor violations to absolute priority during workouts are enough to induce credit rationing ([](#corr1)). In fact, violations to absolute priority rules are a desirable consequence
+Bankruptcy is just a lottery and negotiating entrepreneurs are simply replacing creditors' uncertain returns in that lottery with their certainty equivalent of wealth. Creditors will prefer one outcome over another
+Any time creditors prefers one outcome over another in bankruptcy, insolvent entrepreneurs can 
+For viable firms, limited liability and asset depreciation are enough to make $D&gt;K_0$.
+For viable firms, limited liability and asset depreciation are enough to make $D&gt;K_0$. This means creditors strictly prefer one of bankruptcy's outcomes to another regardless of $Y$.
+When reorganisation costs nothing, bankruptcy still allows insolvent firms to push 
+Allowing an insolvent firm to continue operating means creditors' returns are subject to another round of limited liability risk.
+$V_1^R=V_1^C$; viable firms satisfy [](#eq:eqn11) and [](#eq:eqn9) is always false. 
+Gross expected returns---even in bankruptcy---are always enough to cover the upfront value of the loan. No viable firm is credit rationed.
+Nevertheless, $D&gt;K_0$ even when reorganisation is costless because 
+gross expected returns are enough to cover the upfront value of the loan
+Were it not for expensive reorganisation, however, all viable firms would get credit.
+In fact, were it not for high reorganisation costs, all viable firms would get credit.
+Credit rationing is actually less of a problem for non-viable projects. For a start, they are more likely liquidated in bankruptcy. As shown in the proof of [](#lem5),
+$$!e[eq10]C_0-K_0=C_0^B+\int_{\mc L}\!\l(D-C_1^B\r)\,\dd\Pi-K_0,e!$$
+ where $\mc L$ is the range of project values over which the entrepreneur opts for liquidation. When $D$ tends to infinity, every firm engages in a workout making [](#eq:eq9) also the limit of [](#eq:eq10). Because $q=1-p$, however, non-viable projects more easily attain $V_0^B\ge K_0$ than do viable ones for project parameters within a neighbourhood of $V_1^C=V_1^L$. Effectively, their higher probability of being liquidated in bankruptcy increases the value of creditors' outside option during a workout. Entrepreneurs have less scope to extract concessions ex interim and are rewarded with better lending opportunities ex ante.
+Lending to non-viable projects is safer for another reason: they sometimes forgo workouts in favour of liquidation. When loaning money to viable projects, creditors expect $C_0^B$; when lending to non-viable projects they earn $C_0^B$ plus a "bonus"---the integral in [](#eq:eq10)---pushing the supremum of [](#eq:eq10) beyond [](#eq:eq9). Even if judges reorganised non-viable and viable projects at the same rate, the latter would still have a tighter credit market than the former because their entrepreneurs insist on workouts only part of the time but those in charge of viable projects demand them always. From the creditor's perspective, workouts are riskier and returns are lower, so they clearly prefer lending to entrepreneurs who want them less often.
+[img:img3]: $IMG/img3.pdf width=10.2cm height=7.6cm
+On their own, violations to absolute priority are actually beneficial ([](#corr1). They are payoffs lenders make to trade the risky gamble of bankruptcy for a desirable outcome.
+CORRALLARY
+If $Y=0$, firms are not credit rationed.
+ecorr
+</Text>
+    </Snapshot>
+    <Snapshot Date="2015-07-31 19:26:29 +0100">
+        <Title>Untitled Snapshot</Title>
+        <Text>Unfortunately, borrowing isn't guaranteed. A higher $D$ affects risk twofold: (i) it increases entrepreneurs' chances of default; and (ii) reduces their desire to liquidate. Both effects result in more workouts and bankruptcy. Making either more probable reduces $\ol C_0$. It is entirely possible $\ol C_0$ does not cover the creditor's initial outlay no matter what $D$ the entrepreneur is willing to pay. Credit is rationed.
+PROPOSITION
+(i) If $\,\ol V_1^B\le\ol V_1^C$, some firms are credit rationed; the creditor is willing to lend if and only if $\,\sup_D\ol C_0\ge K_0$. (ii) If $\,\ol V_1^C&lt;\ol V_1^B$, creditors are always willing to lend at any $D$ on the extended real number line such that $E_2^R=0$ for all $X_1$, $X_2$.
+eprop
+Credit rationing per [](#prop2)(i) happens to both viable and non-viable firms. For the former, criteria are straightforward. Because $\ol C_0$ is increasing in $D$, its supremum is its limit as $D$ tends to infinity, meaning viable firms are credit-rationed whenever
+$$!e[eq9]\lim_{D\ra\iy}\ol C_0=\int\!\lim_{D\ra\iy}\ol C_1^B\,\dd\hat\Pi=\ol V_0^B&lt;K_0.e!$$
+Viable projects are funded only when their time 0 expected returns in bankruptcy are enough to cover the loan's principal. When it can't, the firm is credit-rationed (see [](#img:img3) for an illustration).
+![A credit-rationed viable firm ][img:img3]
+Credit rationing is actually less of a problem for non-viable projects. For a start, more are liquidated in bankruptcy. As shown in the proof of [](#prop2),
+$$!e[eq10]\ol C_0=\ol C_0^B+\int_{\mc{L^\star}}\!\l(D-\ol C_1^B\r)\,\dd\hat\Pi,e!$$
+ where $\mc{L^\star}$ is the set of outcomes in which the firm is voluntarily liquidated. When $D$ tends to infinity, every firm either engages in a workout or goes bankrupt, making [](#eq:eq9) also the limit of [](#eq:eq10). Because $q=1-p$, however, non-viable projects more easily attain $K_0\le\ol V_0^B$ than do viable ones for project parameters within a sufficiently small neighbourhood of $\ol V_1^C=V_1^L$. And although those that satisfy [](#prop2)(i) do not go bankrupt, their higher probability of being liquidated if they did increases the value of creditors' outside option during a workout. Entrepreneurs have less scope to extract concessions *ex interim*. They are rewarded with better lending opportunities *ex ante*.
+Lending to non-viable firms is safer for another reason: they often forgo workouts for voluntary liquidation. When loaning money to viable projects, creditors expect $\ol C_0^B$; when lending to non-viable projects they earn $\ol C_0^B$ plus a "bonus"---the integral in [](#eq:eq10)---pushing the supremum of [](#eq:eq10) beyond [](#eq:eq9). Even if judges reorganised non-viable and viable projects at the same rate, the latter would still have a tighter credit market. From the creditor's perspective, liquidation is safer so lending is safer when entrepreneurs want it more often.
+Arguably, one group of non-viable firms has no problem ever getting credit---those that sometimes file for bankruptcy ([](#prop2)(ii)). Any firm guaranteed to liquidate at time 1 is guaranteed a loan. With workouts on the table, however, this promise is not credible *ex ante* because lenders capitulate *ex interim*. For some that go bankrupt, however, creditors resist. Couple that resistance with an excessively high $D$, and entrepreneur returns in bankruptcy are exactly what they would be in liquidation: nothing. Assuming firms choose the efficient option when their earnings from doing so are no worse than the alternatives, liquidation at time 1 is guaranteed.
+Entrepreneurs take out high interest rate loans per [](#prop2)(ii) only as a last resort. Creditors, on the other hand, love them ([](#cor1)). They are risk-free, yet generate a long-run rate of return above the risk-free rate. Not bad for a zero-profit industry.
+COROLLARY
+Loans made per \autoref{prop2}(ii), $\ol E_0$, $K_0&lt;\ol C_0$ and $\,\p\ol C_0/\p\ol V_0^B\ge 0$.
+ecor
+Creditor profits are a by product of guaranteed liquidation. Lending is predicated on avoiding bankruptcy and exorbitant rates do this---but only by conferring the creditor absolute rights to $X_1$. Since creditor profits are a side effect rather than the source of lending, no amount of competition will drive them back to zero.
+[](#cor1) also points out that lenders have a hidden stake in the status quo. Creditor profitability is positively linked to the cost of bankruptcy. Expensive reorganisation reduces lending at reasonable rates, thereby pushing projects with larger initial earnings into a high rate alternative. Although the distributive consequences of bankruptcy are irrelevant for efficiency, their political implications may impact the eventual feasibility of bankruptcy reform.
+[img:img3]: $IMG/img3.pdf width=10.2cm height=7.6cm
+</Text>
+        <Comments>Because of limited liability, $\ol C_1^B\le D$ for all $X_1$, $X_2$ making the integral in [](#eq:eq10) non-negative.
+Note that $\ol V_1^C&lt;\ol V_1^B$ is not sufficient to guarantee loans are made as in [](#prop2)(ii)---only that such loans exist. Cheaper loans, if obtainable, are preferred ([](#lem3)).
+The real world relevance of [](#prop2)(ii) depends crucially on whether firms do actually liquidate under such conditions. Evidence in the home mortgage market suggests they do. Lenders are more frequently and quickly transferred ownership of houses from delinquent borrowers with little to no equity in their homes[#Ambrose1998,Pennington-Cross2010]. Borrowers' quick surrender may be especially likely when bankruptcy incurs a personal cost, such as lost time. See also [](#fnm:fn1) for a discussion on the likelihood of voluntary liquidation and the entrepreneur's original intent to liquidate.</Comments>
+    </Snapshot>
+    <Snapshot Date="2015-07-31 14:26:38 +0100">
+        <Title>Untitled Snapshot</Title>
+        <Text>Unfortunately, borrowing isn't guaranteed. A higher $D$ affects risk twofold: (i) it increases entrepreneurs' chances of default; and (ii) reduces their desire to liquidate. Both effects result in more workouts and bankruptcy. Making either more probable reduces $\ol C_0$. It is entirely possible $\ol C_0$ does not cover the creditor's initial outlay no matter what $D$ the entrepreneur is willing to pay. Credit is rationed.
+PROPOSITION
+(i) If $\,\ol V_1^B\le\ol V_1^C$, the creditor is willing to lend if and only if $\,\sup_D\ol C_0\ge K_0$. (ii) If $\,\ol V_1^C&lt;\ol V_1^B$, creditors are willing to lend at any $D$ on the extended real number line such that $E_2^R=0$ for all $X_1$, $X_2$.
+eprop
+Credit rationing per [](#prop2)(i) happens to both viable and non-viable firms. For the former, criteria are straightforward. Because $\ol C_0$ is increasing in $D$, its supremum is its limit as $D$ tends to infinity, meaning viable firms are credit-rationed whenever
+$$!e[eq9]\lim_{D\ra\iy}\ol C_0=\int\!\lim_{D\ra\iy}\ol C_1^B\,\dd\hat\Pi=\ol V_0^B&lt;K_0.e!$$
+Viable projects are funded only when their time 0 expected returns in bankruptcy are enough to cover the loan's principal. When it can't, the firm is credit-rationed (see [](#img:img3) for an illustration).
+![A credit-rationed viable firm ][img:img3]
+Credit rationing is actually less of a problem for non-viable projects. For a start, more are liquidated in bankruptcy. As shown in the proof of [](#prop2),
+$$!e[eq10]\ol C_0=\ol C_0^B+\int_{\mc{L^\star}}\!\l(D-\ol C_1^B\r)\,\dd\hat\Pi,e!$$
+ where $\mc{L^\star}$ is the set of outcomes in which the firm is voluntarily liquidated. When $D$ tends to infinity, every firm either engages in a workout or goes bankrupt, making [](#eq:eq9) also the limit of [](#eq:eq10). Because $q=1-p$, however, non-viable projects more easily attain $K_0\le\ol V_0^B$ than do viable ones for project parameters within a sufficiently small neighbourhood of $\ol V_1^C=V_1^L$. And although those that satisfy [](#prop2)(i) do not go bankrupt, their higher probability of being liquidated if they did increases the value of creditors' outside option during a workout. Entrepreneurs have less scope to extract concessions *ex interim*. They are rewarded with better lending opportunities *ex ante*.
+Lending to non-viable firms is safer for another reason: they often forgo workouts for voluntary liquidation. When loaning money to viable projects, creditors expect $\ol C_0^B$; when lending to non-viable projects they earn $\ol C_0^B$ plus a "bonus"---the integral in [](#eq:eq10)---pushing the supremum of [](#eq:eq10) beyond [](#eq:eq9). Even if judges reorganised non-viable and viable projects at the same rate, the latter would still have a tighter credit market. From the creditor's perspective, liquidation is safer so lending is safer when entrepreneurs want it more often.
+Arguably, one group of non-viable firms has no problem ever getting credit---those that sometimes file for bankruptcy ([](#prop2)(ii)). Any firm guaranteed to liquidate at time 1 is guaranteed a loan. With workouts on the table, however, this promise is not credible *ex ante* because lenders capitulate *ex interim*. For some that go bankrupt, however, creditors resist. Couple that resistance with an excessively high $D$, and entrepreneur returns in bankruptcy are exactly what they would be in liquidation: nothing. Assuming firms choose the efficient option when their earnings from doing so are no worse than the alternatives, liquidation at time 1 is guaranteed.
+Entrepreneurs take out high interest rate loans per [](#prop2)(ii) only as a last resort. Creditors, on the other hand, love them ([](#cor1)). They are risk-free, yet generate a long-run rate of return above the risk-free rate. Not bad for a zero-profit industry.
+COROLLARY
+If loan is made per \autoref{prop2}(ii), $\ol E_0=0$ and $K_0&lt;\ol C_0$. These loans are more profitable as $\ol V_0^B$ increases.
+ecor
+Creditor profits are a by product of a loan contract which guarantees liquidation. When lending is predicated on avoiding bankruptcy, exorbitant interest rates do this---but only by conferring the creditor absolute rights to $X_1$. Creditor profits are therefore a side effect of a necessary condition for lending, so no amount of competition will drive them back to zero.
+[](#cor1) also points out that lenders have a stake in the status quo. Creditor profitability is positively linked to the cost of bankruptcy. Expensive reorganisation reduces lending at reasonable rates, thereby pushing projects with larger initial earnings into a high rate alternative. Although the distributive consequences of bankruptcy are irrelevant for efficiency, their political implications may impact the feasibility of bankruptcy reform.
+but the credit industry's stake in the status quo may have a wider impact on the feasibility of bankruptcy reform.
+
+It suggests the credit industry may have a hidden stake in the status quo
+more entrepreneurs into the high rate alternative.
+The distributive consequences of bankruptcy are irrelevant for efficiency. Nevertheless, it may be of political concern that creditor profitability is positively linked to expensive reorganisation. Higher bankruptcy costs reduce lending at lower rates thereby pushing more firms to apply for a high rate alternative.
+
+Non-viable firms that satisfy $\ol V_1^C&lt;\ol V_1^B$ would rather get a loan at low interest rates. When they don't, it is only because $\ol V_0^B$ per [](#eq:eq10) is less than $K_0$. Higher bankruptcy costs reduce $\ol V_0^B$
+
+
+ lending at exorbitant interest rates is more profitable as reorganisation becomes more expensive.
+
+the *scope* of creditor's *scope* to extract rents per [](#prop2)(ii) increases as reorganisation becomes more expensive.
+Since liquidation is necessary to lend and profitability a by product of guarantee liquidation.
+Lending is predicated on completely avoiding bankruptcy but creditor profitability only a byproduct of guaranteed liquidation.
+
+Entrepreneurs opt for them only when lending is unprofitable at every other $D$. 
+
+To do so, however, they must confer the creditor absolute rights to $X_1$.
+To guarantee that liquidation, they must be made Conveniently for the creditor, they also confer him total right to the project's future earnings.
+guarantee liquidation only by transferring to the creditor the firm's entire future earnings. Entrepreneurs obviously go for them only when no other  contract is available.
+Creditors, on the other hand, love them. These loans are risk-free, issued by lenders in a perfectly competitive market yet can only be made if $\ol C_0&gt;K_0$. Because no $D$ satisfies $\ol C_0=K_0$ ([](#lem3)), their viability is predicated on completely avoiding bankruptcy. Given the motivations of both actors, however, any $D$ that earns the entrepreneur something in bankruptcy renders it possible. $D$ must therefore be so large that the entrepreneur's take in bankruptcy's lowest common denominator---reorganisation---is zero in every conceivable scenario. So this very high $D$ is both necessary to make lending profitable and, as a convenient side effect, actually makes lending profitable!
+[img:img3]: $IMG/img3.pdf width=10.2cm height=7.6cm
+</Text>
+        <Comments>Because of limited liability, $\ol C_1^B\le D$ for all $X_1$, $X_2$ making the integral in [](#eq:eq10) non-negative.
+Note that $\ol V_1^C&lt;\ol V_1^B$ is not sufficient to guarantee loans are made as in [](#prop2)(ii)---only that such loans exist. Cheaper loans, if obtainable, are preferred ([](#lem3)).
+The real world relevance of [](#prop2)(ii) depends crucially on whether firms do actually liquidate under such conditions. Evidence in the home mortgage market suggests they do. Lenders are more frequently and quickly transferred ownership of houses from delinquent borrowers with little to no equity in their homes[#Ambrose1998,Pennington-Cross2010]. Borrowers' quick surrender may be especially likely when bankruptcy incurs a personal cost, such as lost time. See also [](#fnm:fn1) for a discussion on the likelihood of voluntary liquidation and the entrepreneur's original intent to liquidate.</Comments>
+    </Snapshot>
+</SnapshotIndexes>

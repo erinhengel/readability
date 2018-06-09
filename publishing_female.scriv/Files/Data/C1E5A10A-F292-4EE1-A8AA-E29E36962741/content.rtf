@@ -1,0 +1,51 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf100
+{\fonttbl\f0\fnil\fcharset204 PTSerif-Regular;\f1\fnil\fcharset204 PTMono-Regular;}
+{\colortbl;\red255\green255\blue255;\red252\green226\blue33;}
+{\*\expandedcolortbl;;\cssrgb\c99200\c89800\c16100;}
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa200\pardirnatural
+
+\f0\fs28 \cf0 \
+ $\\alpha_i$ represents author-specific time-independent preferences and costs ($u_i$, $\\phi_i$, $c_i$); $\\mu_\{it\}$ are the time-dependent confounding factors picked up by $\\Pi_\{0it\}^s$ and $\\Pi_\{1it\}^s$. $\\vect X_\{it\}$ is a vector of observable variables that factor into referees' readability thresholds $\\widetilde r_\{0i\}^s$ and $\\widetilde R_i^s$. $\\beta_1$ is the impact of taste-based discrimination. $\\varepsilon_\{it\}$ is an ideosyncratic error that reflects the draw of referee group.\
+If author $i$ knew $(\\beta_1,\\bm\\uptheta)$, then he knows $\\widetilde r_\{0i\}^s$ and $\\widetilde R_i^s$, so $\\mu_\{it\}=0$. A fixed effects regression of [](#EquationXX1) would consistently estimate $\\beta_1$. Unfortunately, he does not know this parameter vector. However, past some point, he *will*---or at least he's on enough of the right track so that with each subsequent paper the impact of $\\mu_\{it\}$ gets smaller and smaller.\
+Assume that at time $t'$ $\\mu_\{it\}<\\mu_\{it'\}$ for all $t>t'$. Then the change in readability between times $t''<t'$ is exactly proportional to the initial impact on readability of the time varying confounding factors,\
+\pard\tx706\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa240\pardirnatural\qc
+
+\f1\fs18 \cf2 <!--\\input\{$PPATH/equations/equationXX1.tex\}-->
+\f0\fs28 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa200\pardirnatural
+\cf0 Because $\\mu_\{it'\}<\\mu_\{it''\}$, a positive [](#EquationXX1) implies $\\mu_\{it''\}<0$. Thus, confounding factors at time $t''$ caused author $i$ to underestimate the parameter vector $(\\beta_1,\\bm\\uptheta)$. At time $t'$ she has corrected her mistake so her readability is {\field{\*\fldinst{HYPERLINK "scrivcmt://24EA22CD-D24F-4EBA-850D-63A8700706E2"}}{\fldrslt higher.}} This also implies that for $i$, acceptance rates are higher at $R_\{it'\}$ than at $R_\{it''\}$---if they were the same, then the fact that $i$ chose $R_\{it''\}$ earlier means she prefers that readability to $R_\{it'\}$, all thing equal. A higher acceptance rate is the only reason she's motivated to choose the higher readability at time $t''$.\
+The difference in readability between matched pairs, is the effect of taste-based discrimination ($\\beta_1$) plus the degree to which their preferences differ:\
+\pard\tx706\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa240\pardirnatural\qc
+
+\f1\fs18 \cf2 <!--\\input\{$PPATH/equations/equationXX2.tex\}-->
+\f0\fs28 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa200\pardirnatural
+\cf0  Although it is is impossible to disentangle $\\beta_1$ from $\\Delta\\alpha_\{ik\}$, as long as [](#EquationXXX1) and [](#EquationXXX2) are both positive then either of the following must be true: $$R_\{it'\}>R_\{kt'\}\\ge R_\{it''\}$$ or $$R_\{it'\}>R_\{it''\}\\ge R_\{kt'\}.$$ If it's the first case, then $i$ would chose $R_\{kt'\}$ if she could get the same acceptance probability as she does at $R_\{it'\}$ because she'd choose $R_\{it''\}<R_\{kt'\}$ if she could get the same probability of acceptance at that level as she does at $R_\{it'\}$. Thus her probability of acceptance must be higher at $R_\{it'\}$ than it is at $R_\{kt'\}$. If the probability of acceptance for $k$ at $R_\{kt'\}$ is at least as high as it is for $i$ at $R_\{it'\}$ (Condition 1), then $\\beta_1$ must be positive.\
+But not only must $\\beta_1$ be positive, $R_\{it'\}-R_\{kt'\}$ *underestimates* it. If $R_\{kt'\}>$R_\{it''\}$ then $\\alpha_i<\\alpha_k$. Since $\\vect X_i=\\vect X_k$, $$R_\{kt'\}-R_\{it''\}=-\\beta_1+\\left(\\alpha_k-\\alpha_i\\right)+\\left(\\mu_\{kt'\}-\\mu_\{it''\}\\right)+\\left(\\varepsilon_\{kt'\}-\\varepsilon_\{it''\}\\right).$$ As we've already established, $\\mu_\{it''\}<0$. Assuming $k$ is at least as well informed at time $t'$ than $i$ was at time $t''<t'$ then $\\mu_\{kt'\}$ is smaller in absolute value than $\\mu_\{it''\}$ and their difference must be negative. Because we've already established that $\\beta_1$ is positive, $R_\{kt\}>R_\{it''\}$ only if $\\alpha_i\\le\\alpha_k$. Thus, $R_\{it'\}-R_\{kt'\}$ is a lower bound on $\\beta_1$.\
+On the other hand, if $R_\{it'\}>R_\{it''\}\\ge R_\{kt'\}$ then $i$ would choose $R_\{it''\}$ if she could get the same probability of acceptance at that level as she does at $R_\{it'\}$. Thus her probability of acceptance must be higher at $R_\{it'\}$ than it is at $R_\{it''\}$. If the probability of acceptance for $k$ at $R_\{kt'\}$, then again, $\\beta_1$ must be positive.\
+=======================================\
+[](#Theorem1)'s three conditions are sufficient to determine its sign---and therefore if peer review is biased against $i$.\
+To see this, note that the change in readability between times $t''$ and $t'$ for fixed $i$ is exactly proportional to the initial impact on readability of the time varying confounding factors,\
+\pard\tx706\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa240\pardirnatural\qc
+
+\f1\fs18 \cf2 <!--\\input\{$PPATH/equations/equationXX1.tex\}-->
+\f0\fs28 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa200\pardirnatural
+\cf0 When [](#EquationXX2) is positive (Condition 2), then $\\mu_\{it''\}<0$. At time $t''$ she did not know $\\beta_0$, $\\beta_1$ or $\\theta$ as well as she does at time $t'$\
+This means that $i$'s increase in readability between times $t''$ and $t'$ was driven by a correction of their earlier mis-information. She writes better at time $t''$ only because earlier she though she could achieve a certain acceptance rate with a lower $R_\{it\}$; now she knows she needs a higher $R_\{it\}$ to get that same rate, on average.\
+$i$ and $k$ are accepted at the same rate at time $t''$ (Condition 1) and \
+in [](#EquationXX2). Nevertheless, $i$ preferred the lower $R_\{i1\}$ when less experienced; she picks $R_\{i3\}>R_\{i1\}$ not because she prefers to write more readability, but because experience has taught her this is exactly how readable her papers need to be to achieve the acceptance rate she desires. Assuming $i$ and $k$ are accepted at the same rate with $R_\{k3\}$ and $R_\{i1\}$, then if $R_\{k3\}>R_\{i1\}$, $\\alpha_i<\\alpha_k$, so $R_\{i3\}-R_\{k3\}$ underestimates $\\beta_1$. \
+===================================\
+the change in readability over time for a fixed $i$ is exactly proportional to the initial impact on readability of the time varying confounding factors\
+\pard\tx706\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa240\pardirnatural\qc
+
+\f1\fs18 \cf2 <!--\\input\{$PPATH/equations/equationXX1.tex\}-->
+\f0\fs28 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa200\pardirnatural
+\cf0  \
+Although it is impossible to generate an unbiased estimate of $\\beta_1$, [](#Theorem1)'s three conditions are sufficient to ensure that $\\beta_1$ is strictly positive---and therefore biased against $i$. Assuming $i$ and $k$ are accepted at the same rate, then peer review is biased against $i$ when both [](#EquationXX1) and [](#EquationXX2) are positive.\
+If [](#EquationXX1) is positive, then $\\mu_\{i1\}<0$---meaning the time-varying confounding factors initially put downward pressure on readability. As the author gained experienced, she realised her readability needed to be better, so that with sufficient experience (*i.e.*, $\\mu_\{i3]=0$) she writes more clearly than previously.\
+\
+To control for factors that vary over $t$ in a way that may be correlated with gender---*e.g.*, journal, year, female ratio, *etc.*---I generated author-specific readability scores for fixed values of these variables. Specifically, I estimated [](#EquationXX) on female authors at $t=1$, female authors at $t=3$, male authors at $t=1$ and male authors at $t=3$.\
+Based the results, I predicted $\\varepsilon_\{it\}$ and with it reconstructed $R_\{it\}$ at median $t=3$ values of $\\text\{year\}_\{it\}$, $N_\{it\}$, $\\text\{inst. rank\}_\{it\}$ and $\\text\{max. inst. rank\}_\{it\}$ and $\\text\{female ratio\}_\{it\}$ equals 0 for men and 1 for women.\
+}

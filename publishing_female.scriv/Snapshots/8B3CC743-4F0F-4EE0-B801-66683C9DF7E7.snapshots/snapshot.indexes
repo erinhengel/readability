@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SnapshotIndexes Version="1.0" BinderUUID="8B3CC743-4F0F-4EE0-B801-66683C9DF7E7">
+    <Snapshot Date="2015-07-29 10:20:12 +0100">
+        <Title>Untitled Snapshot</Title>
+        <Text>Whatever the interim outcome, entrepreneurs' returns are aggregate earnings, $\ol V_0$, less the amount paid to creditors, $\ol C_0$, making their conditional expected value
+$$!e[eq7]\ol E_0=\ol V_0-\ol C_0.e!$$
+The optimal contract maximises $\ol E_0$, subject to the constraint that creditors' anticipate at least the principal amount of their loan, *i.e.*, $\ol C_0\ge K_0$. Given $\ol V_0$ and $\ol C_0$ are positive, it is obvious from [](#eq:eq7) that $\ol E_0$ is increasing in the former and decreasing in the latter; it is less obvious, however, how each reacts to $D$.
+Start with viable firms. Viable projects operate both periods whether solvent or not---expected aggregate earnings are constant, making $\p\ol V_0/\p D=0$. Solvent firms satisfy $X_1\ge D$ so in *any* outcome creditors receive $D$, meaning $\ol C_1^B=D$. Consequently, $\ol C_0=\ol C_0^B$, where $\ol C_0^B$ is the unconditional expected value of creditor returns in bankruptcy. Since $\ol C_0^B$ is increasing in $D$, $\ol E_0$ must be decreasing in it. Entrepreneurs optimally set $D$ as low as possible: $\ol C_0=K_0$.
+For non-viable firms it is no longer true that $\ol V_0$ is unaffected by $D$ or that $\ol C_0$ is always increasing in it. As shown in the proof of [](#lem4), the change in $\ol C_0$ with respect to $D$ is
+$$!e[eq8]\frac{\p\ol C_0}{\p D} = (1-\Pi(\mc R))\EE_0\!\l[\frac{\p C_1^L}{\p D}\Big|\mc L\r]+\Pi(\mc R)\,\EE_0\!\l[\frac{\p\ol C_1^R}{\p D}\Big|\mc R\r] + \frac{\p\ol V_0}{\p D},e!$$
+ where $\mc L$ and $\mc R$ are the set of project returns for which creditors accept payoffs consistent with liquidation and reorganisation, respectively.
+$\p\ol V_0/\p D$ is negative but $\p\ol C_1^R/\p D$ and $\p C_1^L/\p D$ are positive so $\p\ol C_0/\p D$ may be positive or negative. A larger $D$ increases creditors' claims to eventual earnings. This direct effect is the sum of the first two terms in [](#eq:eq8). A higher $D$, however, also makes workouts and bankruptcy more attractive, depressing $\ol V_0$ and thereby indirectly reducing $\ol C_0$: the third term of [](#eq:eq8).
+Combine [](#eq:eq8) with the partial derivative of [](#eq:eq7) with respect to $D$, and $\p\ol E_0/\p D$ is simply the negative direct effect $D$ has on creditors' returns. Although $D$ affects entrepreneurs' decisions at time 1, and that decision impacts expected project value at time 0, its cost is borne only by creditors so entrepreneurs ignore it and opt for the smallest $D$ they can; again, $\ol C_0=K_0$ ([](#lem4)).
+LEMMA
+The entrepreneur chooses the smallest $D$ such that $\ol C_0=K_0$.
+elem
+The main feature of the optimal contract is that every entrepreneur wants the cheapest loan he can get his hands on. He may have no choice---for viable projects $\p\ol C_0/\p D&gt;0$ meaning at most one $D$ exists such that $\ol C_0=K_0$. Possibilities are broader for non-viable projects. $\p\ol C_0/\p D$ is neither definitively positive or negative; it isn't necessarily even monotone. Consequently, the $D$ at which $\ol C_0=K_0$ may be on the upward or downward slope of $\ol C_0$ or even occur at several places. (See [](#img:img2) for an example of the latter scenario and [][Simulations] for numerous simulated results using a diverse set of probability density functions.)
+![Multiple $D$ at which $\ol C_0=K_0$. ][img:img2]
+[img:img2]: $IMG/img2.pdf width=10.2cm height=7.6cm</Text>
+        <Comments>Both $C_1^L$ and $\ol C_1^R$ are non-decreasing in $D$, making $\p \ol C_1^B/\p D\ge0$.
+There is one technical (and rather pedantic) exception: when $\ol C_0=K_0$ on a non-trivial closed interval.</Comments>
+    </Snapshot>
+</SnapshotIndexes>

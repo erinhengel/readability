@@ -1,0 +1,91 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf460
+{\fonttbl\f0\fnil\fcharset0 PTSerif-Regular;\f1\fnil\fcharset0 PTMono-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue64;\red255\green128\blue0;
+}
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa200\pardirnatural
+
+\f0\fs28 \cf0 A gender gap exists between the readability of male- and female-authored abstracts in top economics journals. It emerges only after authors' first publication, grows as they publish more papers and even widens when controlling for primary *
+\i JEL
+\i0 * classification. While several explanations are imaginable, one possibility is that referees demand more detailed revisions when reviewing papers by women---which in this section I show may well be the case.\
+To investigate this hypothesis, I compare the impact of gender on readability in two different versions of the same article: a "draft" released before the peer review process began and the published paper, which fully reflects changes made during peer review. A more pronounced gender gap in the latter probably means journal referees are tougher on women---or at least demand more from their prose---than they are on men.\
+A cursory glimpse of authors' institutional affiliations and papers' acknowledgements sections suggests a substantial portion of the articles in my dataset were originally released as National Bureau of Economic Research (NBER) working papers. NBER working papers "have not undergone the review accorded official NBER publications" and are "intended to make results of NBER research available to other economists in preliminary form to encourage discussion and suggestions for revision before publication" 
+\f1 \cf2 ([{\field{\*\fldinst{HYPERLINK "http://www.nber.com/papers"}}{\fldrslt \cf2 www.nber.com/papers}}]({\field{\*\fldinst{HYPERLINK "http://www.nber.org/papers.html"}}{\fldrslt \cf2 http://www.nber.org/papers.html}}))
+\f0 \cf0 , making them an excellent source of "drafts"---papers that have not yet (or at least, not yet fully) undergone official peer review.\
+I matched one-fifth of the articles in my dataset to an NBER working {\field{\*\fldinst{HYPERLINK "scrivcmt://2DBFA088-A04C-4652-9F6D-7BB3261F7AD2"}}{\fldrslt paper.}} Two facts confirm that (a) NBER working papers are indeed versions of articles pre-peer-review; and (b) abstracts are considerably altered during the revision process. First, NBER abstracts are significantly longer than the abstracts of published articles---they contain more sentences, characters, words, syllables, polysyllabic words, difficult words and words per sentence {\field{\*\fldinst{HYPERLINK "scrivcmt://7B8B9EC0-AFAB-4250-9942-561734BC9130"}}{\fldrslt (
+\f1 \cf2 [](#p3tableSUP4)
+\f0 \cf0 ).}} Second, working papers were released on average 2.1 years prior to publication---*
+\i i.e.
+\i0 *, at approximately the same time they were submitted to peer {\field{\*\fldinst{HYPERLINK "scrivcmt://DB549E7B-B32F-4E3F-953C-AA18AFF80FC8"}}{\fldrslt review.}}\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa200\pardirnatural
+{\field{\*\fldinst{HYPERLINK "scrivcmt://C6A4AF0A-8E6D-43BC-A963-16B7E97D0D3E"}}{\fldrslt 
+\f1 \cf2 [](#p3tableSUP2)}}displays coefficients on the ratio of female co-authors from 
+\f1 \cf2 [](#eq:p3eq1)
+\f0 \cf0  applied to the abstract readability of (1) published articles and (2) their working paper versions. (1) and (2) were estimated using feasible, generalised least squares to allow for error correlation across models. Dummies for years, journals and their interactions are included; because all papers in both samples share the same highest-ranked institution---NBER---institution fixed-effects are not.\
+Both female-authored published articles and working papers are better written; yet (and with the exception of the Dale-Chall score) the coefficient on the latter is estimated with far less precision---suggesting  a much more heterogeneous sample. Moreover, the gender readability gap is 1.5 to 9 times higher for the sample of published articles (third column). The difference is at least weakly significant for all five scores, providing reasonable evidence that journal referees do indeed apply tougher standards to women than they do men.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa200\pardirnatural
+{\field{\*\fldinst{HYPERLINK "scrivcmt://74088DF5-8879-4C91-B4F2-58829CD90120"}}{\fldrslt 
+\f1 \cf2 [](#p3tableSUP3)}} re-estimates 
+\f1 \cf2 [](#eq:p3eq1)
+\f0 \cf0  using the readability of a published article's NBER working paper to explicitly isolate differences pre-existing peer review from those incurred during it. Rows one and two display the estimated coefficients of interest. Unsurprisingly, the readability of a working paper is positively and highly significantly correlated with readability in its published version---a one point increase in the former corresponds to an 0.8 point increase in latter. Nevertheless, the ratio of female co-authors remains a stubbornly persistent explanatory factor and roughly in line with estimates in columns (2) to (5) from 
+\f1 \cf2 [](#p3table4b)
+\f0 \cf0 ---again plausibly suggesting the review process itself contributes to gender differences in readability.\
+As discussed in 
+\f1 \cf2 [the introduction][p3Introduction]
+\f0 \cf0 , writing simply and directly takes time meaning that *
+\i if
+\i0 * the readability gap widens (or forms) during peer review, *
+\i then
+\i0 * female-authored papers should take longer to make it through the revision process. Most journals maintain careful records
+\f1 \cf3 [see, *e.g.*,\\]\\[][#Ellison2002]
+\f0 \cf0  but only *
+\i Econometrica
+\i0 * makes any kind of disaggregated data on the revision process publicly available---printed at the end of every paper is the date it was first submitted and the date final revisions were {\field{\*\fldinst{HYPERLINK "scrivcmt://5526DD11-F113-4BE1-A080-AFAF6618866B"}}{\fldrslt received.}} I extracted this information from digitised articles using the open source command-line utility `pdftotext` and then estimated 
+\f1 \cf2 [](#eq:p3eqSUP1)
+\f0 \cf0  based on a similar exercise in {\field{\*\fldinst{HYPERLINK "scrivcmt://AFD65F5D-71ED-4CC7-BC83-F3C3B89D68A3"}}{\fldrslt 
+\f1 \cf3 [#Ellison2002;].}}where 
+\f1 \cf4 $\\text\{revision duration\}_j$
+\f0 \cf0  is the time, in months, between the date manuscript 
+\f1 \cf4 $j$
+\f0 \cf0  was first submitted to *
+\i Econometrica
+\i0 * and the date the editorial office received the version that was ultimately published, 
+\f1 \cf4 $\\text\{max no. prior papers\}_j$
+\f0 \cf0  is the number of prior papers published in any of the top four economics journals by article 
+\f1 \cf4 $j$
+\f0 \cf0 's most prolific co-author, 
+\f1 \cf4 $\\text\{no. pages\}_j$
+\f0 \cf0  refers to the page length of the published article, 
+\f1 \cf4 $\\text\{no. authors\}_j$
+\f0 \cf0  is article 
+\f1 \cf4 $j$
+\f0 \cf0 's co-author count and 
+\f1 \cf4 $\\text\{order in issue\}_j$
+\f0 \cf0  is the order in which article 
+\f1 \cf4 $j$
+\f0 \cf0  appeared in an {\field{\*\fldinst{HYPERLINK "scrivcmt://637882A2-2A08-4AFC-8471-CF1F49BF2718"}}{\fldrslt issue.}}\
+{\field{\*\fldinst{HYPERLINK "scrivcmt://32BECA41-18F5-4BA6-A4A3-060FAEE95E76"}}{\fldrslt 
+\f1 \cf2 [](#p3tableSUP1)}}displays the coefficients from estimating 
+\f1 \cf2 [](#eq:p3eqSUP1)
+\f0 \cf0 . Longer papers take more time to review, as do papers with more co-authors
+\f1 \cf3 [for a discussion, see \\]\\[][#Ellison2002]
+\f0 \cf0  and those that appeared earlier in an issue; authors with an established publication history enjoy marginally faster reviews. All coefficients are highly significant.\
+Now for the coefficient of interest. Every paper published in *
+\i Econometrica
+\i0 * undergoes extensive revision---but women bear the brunt of it. In 2015, the average male-authored paper took 19.4 months to complete the entire review process; those by females took almost five months {\field{\*\fldinst{HYPERLINK "scrivcmt://F3688071-A127-43FC-BE5A-F082C301C8C8"}}{\fldrslt longer.}} In fact, the paper to undergo the lengthiest revisions---Ms. Andrea Wilson's "Bounded Memory and Biases in Information Processing"---alludes to a particularly arduous editing {\field{\*\fldinst{HYPERLINK "scrivcmt://54EE7A1B-17E8-486D-A022-EEAD9DC9CDB2"}}{\fldrslt process.}}\
+>This is a radical revision of my job market paper that I presented on the 2003 Review of Economic Studies Tour. I am indebted to Wolfgang Pesendorfer for extremely valuable guidance and advice throughout this project. I also thank Faruk Gul for his help in developing some ideas in the paper, and Ariel Rubinstein, the initial and final co-editors, five anonymous referees of this journal, and many seminar participants for useful comments. Throughout this editing, I have profited from the continued support of senior colleagues as well as my wonderful dog, Mavi.\
+This result actually mirrors a finding by 
+\f1 \cf3 [#Ellison2002;]
+\f0 \cf0 . He finds male-authored papers published in the 1990s are accepted 57 days faster than are female-authored papers. The effect is weakly {\field{\*\fldinst{HYPERLINK "scrivcmt://7BF3F0B3-03F5-40BC-9E13-93BFA8F011A0"}}{\fldrslt significant.}}\
+It's worth asking whether longer revision times are actually correlated with higher readability scores---and whether that differs by gender. To tease this out, I again duplicated each article 
+\f1 \cf4 $m_j$
+\f0 \cf0  times per 
+\f1 \cf2 [](#eq:p3eq3)
+\f0 \cf0  and ran the fixed effects regression in {\field{\*\fldinst{HYPERLINK "scrivcmt://090C2A0F-D542-4699-BF56-A8C5DFC9343D"}}{\fldrslt 
+\f1 \cf2 [](#eq:p3eqSUP2)}}
+\f1 \cf2 [](#p3tableSUP2)
+\f0 \cf0  displays marginal effects for revision {\field{\*\fldinst{HYPERLINK "scrivcmt://E272BFED-113A-4083-AB31-36684BC97822"}}{\fldrslt duration.}} Male effects estimated for male authors co-authoring with no females (
+\f1 \cf4 $\\beta_\{2m\}$
+\f0 \cf0 ); female effects for female authors co-authoring with no males {\field{\*\fldinst{HYPERLINK "scrivcmt://F25D3FF4-9CB8-422A-8F0C-47D7C336EFA8"}}{\fldrslt (
+\f1 \cf4 $\\beta_\{2f\}+\\beta_\{3m\}$
+\f0 \cf0 ).}}\
+According to the Gunning Fog, SMOG and Dale-Chall scores, lengthier revisions have no impact on the readability of male-authored texts; the Flesch Reading Ease and Flesch-Kincaid scores suggest they may, in fact, be inversely related, although the evidence is weak. For women, on the other hand, all five scores suggest a longer revision process leads to better written text, although only three are significant. In any case, the difference is at least weakly significant for all five scores.}

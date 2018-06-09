@@ -1,0 +1,237 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
+{\fonttbl\f0\fnil\fcharset204 PTSerif-Regular;\f1\fswiss\fcharset0 Helvetica;\f2\fnil\fcharset204 PTMono-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue128;\red252\green226\blue33;\red255\green128\blue0;
+\red0\green128\blue64;}
+{\*\expandedcolortbl;;\csgenericrgb\c0\c0\c50196;\cssrgb\c99200\c89800\c16100;\csgenericrgb\c100000\c50196\c0;
+\csgenericrgb\c0\c50196\c25098;}
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa200\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0 The data pre- and post-review make it possible to isolate gender differences in readability pre-existing peer review from those incurred during it---and therefore identify gender's contemporaneous effect on peer review scrutiny. The key equation connects published articles to earlier versions of the same paper: scores depend on draft readability as well as factors that affect writing clarity any time *
+\i after
+\i0 * being released as working papers. 
+\f1\fs24 \cf2 <$Scr_Cs::0>
+\f2\fs28 [](#equation2)
+\f1\fs24 \cf0 <!$Scr_Cs::0>
+\f0\fs28  is the OLS representation of this relationship.\
+\pard\tx706\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa240\pardirnatural\qc\partightenfactor0
+
+\f2\fs18 \cf3 <!--\\input\{$HOME/Dropbox/Readability/draft/equations/equation2\}-->\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa200\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0  where 
+\f2 \cf4 $R_\{jP\}$
+\f0 \cf0  and 
+\f2 \cf4 $R_\{jW\}$
+\f0 \cf0  are readability scores for working (
+\f2 \cf4 $W$
+\f0 \cf0 ) and published (
+\f2 \cf4 $P$
+\f0 \cf0 ) versions of paper 
+\f2 \cf4 $j$
+\f0 \cf0 , respectively. 
+\f2 \cf4 $\\beta_\{0P\}$
+\f0 \cf0  is a constant specific to version 
+\f2 \cf4 $P$
+\f0 \cf0 ; 
+\f2 \cf4 $\\beta_\{1P\}$
+\f0 \cf0  is the coefficient of interest and reflects the particular impact 
+\f2 \cf4 $\\text\{female ratio\}_j$
+\f0 \cf0  has in peer review. 
+\f2 \cf4 $\\vect X_\{jP\}$
+\f0 \cf0  and 
+\f2 \cf4 $\\mu_\{jP\}$
+\f0 \cf0  are 
+\f2 \cf4 $P$
+\f0 \cf0 -specific observable (editor, journal, journal-year interactions and English language {\field{\*\fldinst{HYPERLINK "scrivcmt://577DB165-D4E3-455C-AF45-09DE84C97810"}}{\fldrslt dummies}} and 
+\f2 \cf4 $\\text\{max. \}t_j$
+\f0 \cf0 ) and unobservable components, {\field{\*\fldinst{HYPERLINK "scrivcmt://6EA74618-0B03-41BE-83AD-A6EF9B3F4F03"}}{\fldrslt respectively.}} 
+\f2 \cf4 $\\vep_\{jP\}$
+\f0 \cf0  is 
+\f2 \cf4 $P$
+\f0 \cf0 's error term.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa200\pardirnatural\partightenfactor0
+
+\f2 \cf4 $P$
+\f0 \cf0 -specific variables may be correlated with 
+\f2 \cf4 $R_\{jW\}$
+\f0 \cf0 . Even if 
+\f2 \cf4 $\\mu_\{jP\}$
+\f0 \cf0  and 
+\f2 \cf4 $\\text\{female ratio\}_j$
+\f0 \cf0  remain independent, positive correlation between 
+\f2 \cf4 $R_\{jW\}$
+\f0 \cf0  and 
+\f2 \cf2 [\cf4 $\\text\{female ratio\}_j$\cf2 ](#table6)
+\f0 \cf0  still biases OLS estimates of 
+\f2 \cf4 $\\beta_\{1P\}$
+\f0 \cf0  in a direction opposite to the bias on 
+\f2 \cf4 $R_\{jW\}$
+\f0 \cf0 . 
+\f1\fs24 \cf2 <$Scr_Cs::0>
+\f2\fs28 [](#equation3)
+\f1\fs24 \cf0 <!$Scr_Cs::0>
+\f0\fs28  eliminates the distortion by subtracting 
+\f2 \cf4 $R_\{jW\}$
+\f0 \cf0  from both sides of 
+\f1\fs24 \cf2 <$Scr_Cs::0>
+\f2\fs28 [](#equation2)
+\f1\fs24 \cf0 <!$Scr_Cs::0>
+\f0\fs28 :\
+\pard\tx706\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa240\pardirnatural\qc\partightenfactor0
+
+\f2\fs18 \cf3 <!--\\input\{$HOME/Dropbox/Readability/draft/equations/equation3\}-->\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa200\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0  Assuming zero partial correlation between 
+\f2 \cf4 $\\text\{female ratio\}_j$
+\f0 \cf0  and 
+\f2 \cf4 $\\mu_\{jP\}$
+\f0 \cf0 , OLS generates an unbiased estimate of 
+\f2 \cf4 $\\beta_\{1P\}$
+\f0 \cf0 .\
+An alternative strategy based on
+\f2 \cf5 [#Ashenfelter1994;]
+\f0 \cf0  separately estimates NBER working paper and published article readability using generalised least squares (GLS); 
+\f2 \cf4 $\\beta_\{1P\}$
+\f0 \cf0  is identified post-estimation by differencing coefficients. The set-up combines 
+\f1\fs24 \cf2 <$Scr_Cs::0>
+\f2\fs28 [](#equation2)
+\f1\fs24 \cf0 <!$Scr_Cs::0>
+\f0\fs28  with a relationship defining readability scores *
+\i before
+\i0 * external evaluators demand 
+\f2 \cf2 [edits](#equation4)
+\f0 \cf0 .\
+\pard\tx706\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa240\pardirnatural\qc\partightenfactor0
+
+\f2\fs18 \cf3 <!--\\input\{$HOME/Dropbox/Readability/draft/equations/equation4\}-->\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa200\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0  where 
+\f2 \cf4 $\\beta_\{0W\}$
+\f0 \cf0  is a constant specific to version 
+\f2 \cf4 $W$
+\f0 \cf0  and 
+\f2 \cf4 $\\beta_\{1W\}$
+\f0 \cf0  reflects 
+\f2 \cf4 $\\text\{female ratio\}_j$
+\f0 \cf0 's impact on readability prior to peer review. 
+\f2 \cf4 $\\vect X_\{jW\}$
+\f0 \cf0  and 
+\f2 \cf4 $\\mu_\{jW\}$
+\f0 \cf0  are version-invariant observable (publication year, citation count, *
+\i JEL
+\i0 * effects and 
+\f2 \cf4 $\\text\{max. \}T_j$
+\f0 \cf0 ) and unobservable components, {\field{\*\fldinst{HYPERLINK "scrivcmt://4F3AAF74-7F59-4311-BB49-E6845246F46A"}}{\fldrslt respectively.}} 
+\f2 \cf4 $\\vep_\{jW\}$
+\f0 \cf0  is version 
+\f2 \cf4 $W$
+\f0 \cf0 's error term.\
+OLS estimates of 
+\f1\fs24 \cf2 <$Scr_Cs::0>
+\f2\fs28 [](#equation4)
+\f1\fs24 \cf0 <!$Scr_Cs::0>
+\f0\fs28  may be biased by arbitrary correlation between 
+\f2 \cf4 $\\mu_\{jW\}$
+\f0 \cf0  and the explanatory variables. 
+\f1\fs24 \cf2 <$Scr_Cs::0>
+\f2\fs28 [](#equation5)
+\f1\fs24 \cf0 <!$Scr_Cs::0>
+\f0\fs28  defines a general structure for that correlation
+\f2 \cf5 [#Ashenfelter1994]
+\f0 \cf0 .\
+\pard\tx706\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa240\pardirnatural\qc\partightenfactor0
+
+\f2\fs18 \cf3 <!--\\input\{$HOME/Dropbox/Readability/draft/equations/equation5\}-->\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa200\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0  where 
+\f2 \cf4 $\\omega_j$
+\f0 \cf0  is uncorrelated with 
+\f2 \cf4 $\\text\{female ratio\}_j$
+\f0 \cf0 , 
+\f2 \cf4 $\\vect X_\{jW\}$
+\f0 \cf0  and 
+\f2 \cf4 $\\vect X_\{jP\}$
+\f0 \cf0 . Substituting 
+\f1\fs24 \cf2 <$Scr_Cs::0>
+\f2\fs28 [](#equation5)
+\f1\fs24 \cf0 <!$Scr_Cs::0>
+\f0\fs28  into 
+\f1\fs24 \cf2 <$Scr_Cs::0>
+\f2\fs28 [](#equation4)
+\f1\fs24 \cf0 <!$Scr_Cs::0>
+\f0\fs28  generates the following reduced form representation of 
+\f2 \cf4 $R_\{jW\}$
+\f0 \cf0 :\
+\pard\tx706\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa240\pardirnatural\qc\partightenfactor0
+
+\f2\fs18 \cf3 <!--\\input\{$HOME/Dropbox/Readability/draft/equations/equation6\}-->\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa200\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0  where 
+\f2 \cf4 $\\wt\\beta_\{0W\}=\\beta_\{0W\}+\\gamma$
+\f0 \cf0 , 
+\f2 \cf4 $\\wt\\beta_\{1W\}=\\beta_\{1W\}+\\eta$
+\f0 \cf0 , 
+\f2 \cf4 $\\wt\{\\bm\\uptheta\}_W=\\bm\\uptheta_W+\\bm\\updelta_W$
+\f0 \cf0  and 
+\f2 \cf4 $\\wt\\vep_\{jW\}=\\vep_\{jW\}+\\omega_j$
+\f0 \cf0 . Similarly, obtain 
+\f2 \cf4 $R_\{jP\}$
+\f0 \cf0 's reduced form by substituting 
+\f1\fs24 \cf2 <$Scr_Cs::0>
+\f2\fs28 [](#equation6)
+\f1\fs24 \cf0 <!$Scr_Cs::0>
+\f0\fs28  into 
+\f1\fs24 \cf2 <$Scr_Cs::0>
+\f2\fs28 [](#equation2)
+\f1\fs24 \cf0 <!$Scr_Cs::0>
+\f0\fs28 :\
+\pard\tx706\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa240\pardirnatural\qc\partightenfactor0
+
+\f2\fs18 \cf3 <!--\\input\{$HOME/Dropbox/Readability/draft/equations/equation7\}-->\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa200\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0  where 
+\f2 \cf4 $\\wt\{\\bm\\uptheta\}_P=\\bm\\uptheta_P+\\bm\\updelta_P$
+\f0 \cf0  and 
+\f2 \cf4 $\\wt\\vep_\{jP\}=\\wt\\vep_\{jW\}+\\vep_\{jP\}$
+\f0 \cf0 . 
+\f1\fs24 \cf2 <$Scr_Cs::0>
+\f2\fs28 [](#equation6)
+\f1\fs24 \cf0 <!$Scr_Cs::0>
+\f0\fs28  and 
+\f1\fs24 \cf2 <$Scr_Cs::0>
+\f2\fs28 [](#equation7)
+\f1\fs24 \cf0 <!$Scr_Cs::0>
+\f0\fs28  are explicitly estimated via feasible GLS (FGLS). 
+\f2 \cf4 $\\beta_\{1P\}$
+\f0 \cf0  is identifiable post-estimation by subtracting reduced form coefficients; assuming zero partial correlation between 
+\f2 \cf4 $\\mu_\{jP\}$
+\f0 \cf0  and 
+\f2 \cf4 $\\text\{female ratio\}_j$
+\f0 \cf0 , it is {\field{\*\fldinst{HYPERLINK "scrivcmt://30CAE130-64FF-4CB1-B384-013BBB83FB7A"}}{\fldrslt unbiased.}}\
+Both OLS estimation of 
+\f1\fs24 \cf2 <$Scr_Cs::0>
+\f2\fs28 [](#equation3)
+\f1\fs24 \cf0 <!$Scr_Cs::0>
+\f0\fs28  and FGLS estimation of 
+\f1\fs24 \cf2 <$Scr_Cs::0>
+\f2\fs28 [](#equation6)
+\f1\fs24 \cf0 <!$Scr_Cs::0>
+\f0\fs28  and 
+\f1\fs24 \cf2 <$Scr_Cs::0>
+\f2\fs28 [](#equation7)
+\f1\fs24 \cf0 <!$Scr_Cs::0>
+\f0\fs28  require zero partial correlation between 
+\f2 \cf4 $\\mu_\{jP\}$
+\f0 \cf0  and 
+\f2 \cf4 $\\text\{female ratio\}_j$
+\f0 \cf0  to obtain a valid {\field{\*\fldinst{HYPERLINK "scrivcmt://A339988E-821C-43C7-B083-52E31CC719E2"}}{\fldrslt 
+\f2 \cf4 $\\beta_\{1P\}$
+\f0 \cf0 .}} Roughly restated, non-peer review factors must be either independent of its timing (and therefore subsumed in version-invariant fixed effects) or unrelated to {\field{\*\fldinst{HYPERLINK "scrivcmt://567CFB8E-38BE-412E-8EDF-C9ED20640ACB"}}{\fldrslt gender.}} 
+\f2 \cf2 [][NBERResults]
+\f0 \cf0  evaluates this assumption; briefly, however, I could think of nothing that simultaneously (and convincingly) influences readability, coincides with peer review's timing and correlates with author {\field{\*\fldinst{HYPERLINK "scrivcmt://50EA14A0-C75E-440A-A782-393F324BEC37"}}{\fldrslt gender.}}}

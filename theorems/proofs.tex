@@ -1,0 +1,208 @@
+% Lemma 1.
+\begin{lemma}\label{Lemma1}
+	$\{(r_{0it}, R_{it})\}$ is bounded.
+\end{lemma}
+\begin{proof}
+Consider the sequence of initial readability choices, $\{r_{0it}\}$. I first show that $R_i^\star\le r_{0it}$ for all $t$. Recall $r_{0it}$ is chosen to maximise the author's subjective expected utility in~\autoref{equation9}. It satisfies the following first order condition
+\begin{equation}\label{equationA1}
+	\int_\Sigma\!\left(\pi_{0it}^s(r_{0it})v_{1it}^s+\Pi_{0it}^s(r_{0it})\frac{\pd v_{1it}^s}{\pd{r_{0it}}}\right)\dd\mu_i+\phi_i'(r_{0it})-c_i'(r_{0it})=0,
+\end{equation}
+where $v_{1it}^s$ represents \autoref{equation9} evaluated at the optimal $r_{1it}$. $\phi_{i|r_{0it}}(r_{1it})=\phi_i(R_{it})-\phi_i(r_{1it})$ and $c_{i|r_{0it}}(r_{1it})=c_i(R_{it})-c_i(r_{0it})$. Thus,
+\begin{align}\label{equationA2}
+	\frac{\pd v_{1it}^s}{\pd r_{0it}}&=\pi_{1it}^s(R_{it})u_i+\phi_i'(R_{it})-c_i'(R_{it})-\phi_i'(r_{0it})+c_i'(r_{0it})\nonumber\\
+	&=\frac{\pd v_{1it}^s}{\pd r_{1it}}+c_i'(r_{0it})-\phi_i'(r_{0it}).
+\end{align}
+
+Since $\phi_i'(R_i^\star)=c_i'(R_i^\star)$, $\pd v_{1it}^s/\pd r_{0it}=\pd v_{1it}^s/\pd r_{1it}$ when evaluated at $r_{0it}=R_i^\star$. The left hand side of~\autoref{equationA1} evaluated at $r_{0it}=R_i^\star$ is correspondingly equivalent to
+\begin{equation}\label{equationA3}
+	\int_\Sigma\!\left(\pi_{0it}^s(r_{0it})v_{1it}^s+\Pi_{0it}^s(r_{0it})\frac{\pd v_{1it}^s}{\pd r_{1it}}\right)\dd\mu_i.
+\end{equation}
+$v_{1it}^s$ is non-negative;\footnote{\autoref{equation8} evaluated at $r_{1it}=0$ is non-negative. Since $r_{1it}$ maximises~\autoref{equation8}, $v_{1it}^s$ is likewise non-negative.} optimising behaviour at stage 1 implies $\pd v_{1it}^s/\pd r_{1it}\ge0$: either an $r_{1it}$ exists that satisfies $\pd v_{1it}^s/\pd r_{1it}=0$, or the author chooses $r_{1it}=0$ and $\pd v_{1it}^s/\pd r_{1it}=\pi_{1it}^s(R_{it})u_i$ is non-negative. Thus,~\autoref{equationA3} is non-negative. Since $c_i'(r)<\phi_i'(r)$ for all $r<R_i^\star$, the left-hand side of~\autoref{equationA1} is strictly positive for all $r<R_i^\star$, so $r_{0it}$ must be at least as large as $R_i^\star$.
+
+I now show that $\{r_{0it}\}$ is bounded from above. As $r_{0}$ tends to infinity, authors choose not to make any changes at stage 1. Thus,
+\begin{equation}\label{equationA4}
+	\lim_{r_0\rightarrow\infty}\,\Pi_{0it}^s(r_0)v_{1it}^s=\overline\Pi_{0it}^s\overline\Pi_{1it}^s u_i,
+\end{equation}
+where $\overline\Pi_{0it}^s$ and $\overline\Pi_{1it}^s$ are some upper bounds on the author's subjective probability of receiving an R\&R and then being accepted in state $s$ at time $t$. Since both are no more than 1, $u_i$ is finite and $\phi_i(r)-c_i(r)$ is strictly decreasing for all $r>R_i^\star$,
+\begin{equation}\label{equationA5}
+	\lim_{r_0\rightarrow\infty}\left\{\int_\Sigma\!\Pi_{0it}^s(r_0)v_{1it}^s\,\dd\mu_i+\phi_i(r_0)-c_i(r_0)\right\}=-\infty.
+\end{equation}
+
+Similarly, because $\Pi_{0it}^s(r_{0it})\Pi_{1it}^s(R_{it})\le1$ for all $s$ and $\phi_i(r)$ and $c_i(r)$ are finite at all $r<\infty$,~\autoref{equation9} is likewise finite for all $r<\infty$. Thus,
+\begin{equation*}
+	\sup\left\{\argmax_{r_{0it}}\,\int_\Sigma\!\Pi_{0it}^s(r_{0it})v_{1it}^s\,\dd\mu_i+\phi_i(r_{0it})-c_i(r_{0it})\right\}<\infty,
+\end{equation*}
+so $\{r_{0it}\}$ is bounded.
+
+It remains to show that $\{R_{it}\}$ is likewise bounded. Since $r_{1it}\ge0$ and $R_{it}=r_{0it}+r_{1it}$, $R_{it}$ is bounded below by $r_{0it}$, which, as just shown, is itself bounded. Additionally, the author opts for $r_{1it}=0$ if~\autoref{equation8} is less than 0 for all $r_{1it}>0$. Since $R_i^\star\le r_{0it}$ and $\Pi_{1it}^s(R_{it})\le1$
+\begin{align}\label{equationA6}
+&\Pi_{1it}^s(R_{it})u_i+\phi_i(R_{it})-\phi_i(r_{0it})-c_i(R_{it})+c_i(r_{0it})\nonumber\\
+&\quad\le u_i+\phi_i(R_{it})-c_i(R_{it}).
+\end{align}
+\autoref{equationA6} is strictly decreasing in $R$ for all $R\ge R_i^\star$. The author will not choose any $R$ strictly greater than the one that equates~\autoref{equationA6} to 0. Thus, $\{R_{it}\}$ is bounded from above.
+
+Because $\{r_{0it}\}$ and $\{R_{it}\}$ are bounded, the sequence $\{(r_{0it},R_{it})\}$ in $\RR^2$ is likewise bounded. Thus, all is proved.
+\end{proof}
+
+% Lemma 2.
+\begin{lemma}\label{Lemma2}
+	$r_{0i}\le r_{0it}$ and $R_i^s\le R_{it}^s$ for all $t>t''$.
+\end{lemma}
+\begin{proof}
+Bounded infinite sequences have at least one cluster point and at least one subsequence that converges to each cluster point (Bolzano-Weierstrass). Let $\{(r_{0it},R_{it}^{q^\star})\}$ denote the complete subsequence of $\{(r_{0it},R_{it})\}$ in which state $q$ is reached. Thus,
+\begin{equation*}
+	\left\{\left(r_{0it},R_{it}^{s^\star}\right)\right\}\bigcap\limits_{s^\star\ne q^\star}\left\{\left(r_{0it},R_{it}^{q^\star}\right)\right\}=\varnothing\quad\text{and}\quad\bigcup\limits_{q^\star\in\Sigma}\left\{\left(r_{0it},R_{it}^{q^\star}\right)\right\}=\left\{\left(r_{0it},R_{it}\right)\right\}.
+\end{equation*}
+
+Fix state $s$. Because $\Sigma$ is finite, $\{(r_{0it},R_{it}^{s^\star})\}$ likewise forms a bounded infinite sequence and therefore converges to at least one cluster point. Fix one such cluster point, $(r_{0i}, R_i^s)$, and let $\{(r_{0it},R_{it}^s)\}$ denote the subsequence of $\{(r_{0it},R_{it}^{s^\star})\}$ that converges to it.
+
+Consider first the proposition that $R_i^s\le R_{it}^s$ for all $t>t''$. By way of a contradiction, assume $R_{it}^s<R_i^s$ for all $t>t''$ and some fixed $r_{0it}^s$. Thus, $r_{1it}^s<r_{1it+1}^s$ for all $t>t''$. A positive $r_{1it}^s$ implies that $R_{it}^s$ satisfies
+\begin{equation}\label{equationA7}
+	\pi_{1it}^s(R_{it}^s)=\frac{1}{u_i}\left(c_i'(R_{it}^s)-\phi_i'(R_{it}^s)\right).
+\end{equation}
+
+Let $\pi_{1i}^s$ denote the terminal value of $\pi_{1it}^s$ as $t$ tends to $\infty$. $\pi_{1i}^s$ is finite; thus, $\{\pi_{1it}^s\}$ itself converges: if $\widetilde R_i^s<R_i^s$, then $\pi_{1it}^s(R_{it}^s)=0$ for all $t>t''$, where $t''$ has been redefined to assure $\widetilde R_i^s\le R_{it}^s$; if $R_i^s\le\widetilde R_i^s$ and $\pi_{1i}^s(R_i^s)=\infty$, then $\pi_{1i}^s(R)=0$ for all $R>R_i^s$, a contradiction (see~\autoref{Footnote70}). % You previously wrote "A violation of Assumption X." Erin, what the *fuck* is Assumption X? You need to go back and fix this. I think it has something to do with footnote 70---that's at least what I wrote!
+
+Convergence by $\{\pi_{1it}^s\}$ and $\{R_{it}^s\}$ means
+\begin{equation*}
+	\lim_{t\rightarrow\infty}\,\Big|\pi_{1it+1}^s(R_{it+1}^s)-\pi_{it}^s(R_{it}^s)\Big|=0.
+\end{equation*}
+Yet~\autoref{equationA7} implies
+\begin{align}\label{equationA8}
+	&\lim_{t\rightarrow\infty}\,\Big|\pi_{1it+1}^s(R_{it+1}^s)-\pi_{it}^s(R_{it}^s)\Big|\nonumber\\
+	&\quad=\lim_{\varepsilon\rightarrow0}\,\frac{1}{u_i}\Big(\left[c_i'(R_{it}^s+\varepsilon)-c_i'(R_{it}^s)\right]-\left[\phi_i'(R_{it}^s+\varepsilon)-\phi_i'(R_{it}^s)\right]\Big)\nonumber\\
+	&\qquad=\frac{1}{u_i}\left(c_i''(R_i^s)-\phi_i''(R_i^s)\right),
+\end{align}
+where $R_{it}^s\rightarrow R_i^s$ guarantees that for all (sufficiently small) $\varepsilon>0$ there exists $R_{it+1}^s=R_{it}^s+\varepsilon$. $u_i>0$, $c_i''(R)>0$ and $\phi_i''(R)<0$ by assumption; thus,~\autoref{equationA8} is strictly positive. According to~\autoref{equationA8}, $\{\pi_{1it}^s\}$ does not converge, a contradiction.
+
+Consider now the proposition that $r_{0i}\le r_{0it}$ for all $t$ past some $t''$. As before, I proceed with a contradiction. Suppose $r_{0it}<r_{0i}$ for all $t>t'$, where $t'$ is large enough that $\widetilde r_{0i}^q\not\in(r_{0it'},r_{0i})$ for all $q\ne s$ and $r_{1it+1}^s\le r_{1it}^s$ for all $s\in\Sigma$.
+
+At time $t$, the author chooses $r_{0it}$. This choice is governed by the first-order condition in~\autoref{equationA1}:
+\begin{equation}\label{equationA9}
+	K+\mu_i^s\left(\pi_{0it}^s(r_{0it})v_{1it}^s+\Pi_{0it}^s(r_{0it})\frac{\pd v_{1it}^s}{\pd{r_{0it}}}\right)=c_i'(r_{0it})-\phi_i'(r_{0it})
+\end{equation}
+where $\mu_i^s$ is the probability of drawing state $s$ and $$K=\int_{\Sigma\setminus s}\!\left(\pi_{0it}^q(r_{0it})v_{1it}^q+\Pi_{0it}^q(r_{0it})\frac{\pd v_{1it}^q}{\pd{r_{0it}}}\right)\dd\mu_i$$ is the marginal change in expected stage 1 subjective utility in all states $q\ne s$.
+
+If $r_{1it+1}^s>0$ then $r_{1it}^s>0$. Thus $\pd v_{1it}^s/\pd r_{1it}=0$; from~\autoref{equationA2},~\autoref{equationA9} is equivalent to
+\begin{equation}\label{equationA10}
+	K+\mu_i^s\pi_{0it}^s(r_{0it})v_{1it}^s=\Big(1-\mu_i^s\Pi_{0it}^s(r_{0it})\Big)\Big(c_i'(r_{0it})-\phi_i'(r_{0it})\Big).
+\end{equation}
+If $r_{1it}^s=0$ then $r_{1it+1}^s=0$, and $\pd v_{1it}^s/\pd r_{1it}=\pi_{1it}^s(R_{it}^s)u_i$.\footnote{If $r_{1it}^s>0$ and $r_{1it+1}^s=0$, redefine $t'$ as $t'+1$. $r_{1it+1}^s\le r_{1it+1}^s$ for all $t>t'$ precludes $r_{1it}^s=0$ and $r_{1it+1}^s>0$.} In this case,~\autoref{equationA9} is equivalent to
+\begin{equation}\label{equationA11}
+	K+\mu_i^s\Big(\pi_{0it}^s(r_{0it})v_{1it}^s+\Pi_{0it}^s(r_{0it})\pi_{1it}^s(R_{it}^s)u_i\Big)=c_i'(r_{0it})-\phi_i'(r_{0it}).
+\end{equation}
+
+By the monotone convergence theorem, $\{v_{1it}^s\}$ and $\{\Pi_{0it}^s\}$ converge.\footnote{$\pd v_{1it}^s/\pd r_{0it}\ge0$ and $v_{1it}^s$ is bounded below by zero and above by $u_i+\max\{\phi_i(R_i^\star)-c_i(R_i^\star),0\}$. $\pi_{0it}^s(r_{0it})\ge0$ since $r_{0it}<r_{0it+1}$ (by assumption) and $\Pi_{0it}^s$ is bounded by 0 and 1 (by definition).} If $\widetilde r_{0i}^s<r_{0i}$, then $\pi_{0it}^s(r_{0it})=0$ for all $t>t'$, where $t'$ has been redefined to assure $\widetilde r_{0i}^s\le r_{0it}$; if $r_{0i}\le\widetilde r_{0i}^s$, then
+\begin{equation}\label{equationA12}
+	\lim_{t\rightarrow\infty}\,\Pi_{0it}^s(r_{0it})=\lim_{t\rightarrow\infty}\,\sum_{r\in\Omega_t}\pi_{0it}^s(r)=\pi_{0i}^s(r_{0i}),
+\end{equation}
+where $\Omega_t=(r_{0it-1},r_{0it}]$. $\pi_{0i}^s(r_{0i})=\infty$ implies $\lim\Pi_{0it}^s=\infty$, which is impossible given $\Pi_{0it}^s$, by definition, is a bounded function. Hence, $\{\pi_{0it}^s\}$ is likewise convergent, so
+\begin{align*}
+	&\lim_{t\rightarrow\infty}\,\Big|\mu_i^s\left(\pi_{0it+1}^s(r_{0it+1})v_{1it+1}^s-\pi_{0it}^s(r_{0it})v_{1it}^s\right)\Big|\\
+	&\quad=\mu_i^s\left(\lim_{t\rightarrow\infty}\pi_{0it+1}^s(r_{0it+1})\lim_{t\rightarrow\infty}v_{1it+1}^s-\lim_{t\rightarrow\infty}\pi_{0it}^s(r_{0it})\lim_{t\rightarrow\infty}v_{1it}^s\right)\\
+	&\qquad=0
+\end{align*}
+and
+\begin{align*}
+	&\lim_{t\rightarrow\infty}\,\Big|\mu_i^su_i\left(\Pi_{0it+1}^s(r_{0it+1})\pi_{1it+1}^s(R_{it+1}^s)-\Pi_{0it}^s(r_{0it})\pi_{1it}^s(R_{it}^s)\right)\Big|\\
+	&\quad=\mu_i^s\,u_i\left(\lim_{t\rightarrow\infty}\,\Pi_{0it+1}^s(r_{0it+1})\lim_{t\rightarrow\infty}\,\pi_{1it+1}^s(R_{it+1}^s)-\lim_{t\rightarrow\infty}\,\Pi_{0it}^s(r_{0it})\lim_{t\rightarrow\infty}\,\pi_{1it}^s(R_{it}^s)\right)\\
+	&\qquad=0.
+\end{align*}
+% where absolute value signs are omitted in the second line of each equation because the right hand side of~\autoref{equationA11} is larger at $t+1$ so aggregated components of the left-hand side must as well.
+
+For the moment, assume there exists $t''$ such that for all $r\in(r_{0it''},r_{0i})$, $K$ is constant.\footnote{Effectively, this assumes $\pi_{0it}^q(r)=0$ for all $r\in(r_{0it''},r_{0i})$ and $q\ne s$ and (i) $\Pi_{0it}^q(r)=0$ for all $q$ in which $r_{0i}<\widetilde r_{0i}^q$; (ii) $\Pi_{0it}^q(r)=1$ and $\pi_{1it}^q(R_{it}^q)=0$ for all $q$ in which $\widetilde r_{0i}^q<r_{0i}$; and (iii) $\widetilde r_{0i}^q\ne r_{0i}$ for any $q$. Collectively, these assumptions imply convergence of $\{\pi_{0it}^q\}$, $\{R_{it}^q\}$ and $\{\pi_{1it}^q\}$ in every state $q\ne s$ and no change to the author's marginal stage 1 objective function given a small increase in $r$ in any state but $s$. } Thus, changes over time to the left-hand sides of~\autoref{equationA10} and~\autoref{equationA11} converge to 0. Yet the right-hand sides of~\autoref{equationA10} and~\autoref{equationA11} do not, since
+\begin{equation*}
+	\lim_{t\rightarrow\infty}\,\mu_i^s\Pi_{0it}^s(r_{0it})=\mu_i^s\Pi_{0i}^s(r_{0i})
+\end{equation*}
+is strictly less than 1, where $\Pi_{0i}^s$ is the finite limit of $\{\Pi_{0it}^s\}$, while
+\begin{align*}
+	&\lim_{t\rightarrow\infty}\,\Big|\left(c_i'(r_{0it+1})-c_i'(r_{0it})\right)-\left(\phi_i'(r_{0it+1})-\phi_i'(r_{0it})\right)\Big|\\
+	&\quad=\lim_{\varepsilon\rightarrow0}\,\left(c_i'(r_{0it}+\varepsilon)-c_i'(r_{0it})\right)-\left(\phi_i'(r_{0it}+\varepsilon)-\phi_i'(r_{0it})\right)\\
+	&\qquad=c_i''(r_{0i})-\phi_i''(r_{0i})
+\end{align*}
+is strictly greater than 0, where convergence of $\{r_{0it}\}$ guarantees that for all (sufficiently small) $\varepsilon>0$ there exists $r_{0it+1}=r_{0it}+\varepsilon$.\footnote{Although the change in $1-\mu_i^s\Pi_{0it}^s(r_{0it})$ between time $t$ and $t+1$ converges to 0, it cannot converge faster than $c_i'(r_{0it})-\phi_i'(r_{0it})$ unless $\pi_{0it}^s(r_{0i})=\infty$, which~\autoref{equationA12} shows is not possible.} Thus, a contradiction.
+	
+Although the contradiction depends on the existence of $t''$, the finite sum of convergent sequences is also convergent. Thus, for any finite number of states in which $\pi_{0it}^q\ne0$ changes to the left-hand sides of~\autoref{equationA10} and~\autoref{equationA11} converge to 0 while changes to their right-hand sides do not. Because the number of states is finite by assumption, this establishes the general contradiction.
+\end{proof}
+
+\begin{lemma}\label{Lemma3}
+$\Pi_{0it}^s(r_{0it})\rightarrow\bm 1_{0i}^s(r_{0i})$ and $\Pi_{1it}^s(R_{it}^s)\rightarrow\bm 1_{1i}^s(R_i^s)$.
+\end{lemma}
+\begin{proof}
+As established in~\autoref{Lemma2}, $R_i^s\le R_{it}^s$ for all $t>t''$. If $R_i^s<\widetilde R_i^s$ then $R_{it}^s<\widetilde R_i^s$ for all $t>t''$ where $t''$ has been redefined to satisfy the latter inequality. Thus, the paper is rejected for all $t>t''$ and $\Pi_{1it}^s(R)=0$ for all $R\le R_{it''}^s$ and $t>t''$. If $\widetilde R_i^s\le R_i^s$, then $\widetilde R_i^s\le R_{it}^s$ for all $t>t''$ (again $t''$ redefined to satisfy this inequality). Thus, the paper is accepted for all $t>t''$. $\Pi_{1it+1}^s(R)=1$ for all $R\ge R_{it}^s$ and $t>t''$; $\Pi_{1it}^s(R_{it}^s)$ converges to 1 at the limit.
+
+Also from~\autoref{Lemma2}, $r_{0i}\le r_{0it}$ for all $t>t'$. If $r_{0i}<\widetilde r_{0i}^s$, then the paper is rejected at stage 0 for all $t>t'$, where $t'$ is defined so that $r_{0it}<\widetilde r_{0i}^s$ for all $t>t'$. Define $t''>t'$ such that for all $t>t''$, the probability of having reached state $s$ is 1; thus, $\Pi_{it}^s(r_{0it})=0$ for all $t>t''$. If $\widetilde r_{0i}^s\le r_{0i}$, then redefine $t''$ so that $\widetilde r_{0i}^s\le r_{0it}$ for all $t>t''$. The paper is accepted, $s$ is revealed and $\Pi_{0it+1}^s(r)=1$ for all $r\ge r_{0it}$ and $t>t''$; $\Pi_{0it}^s(r_{0i})$ converges to 1 at the limit. Thus, all is proved.
+\end{proof}
+
+\begin{lemma}\label{Lemma4}
+There exists a unique cluster point of $\{(r_{0it},R_{it}^{s^\star})\}$ for every $s^\star\in\Sigma$.
+\end{lemma}
+\begin{proof}
+Suppose $\{(r_{0it},R_{it}^{s^\star})\}$ has two cluster points: $(r_{0i}',R_i^{s\prime})$ and $(r_{0i}'',R_i^{s\prime\prime})$. Denote their respective convergent subsequences by $\{(r_{0it}',R_{it}^{s\prime})\}$ and $\{(r_{0it}'',R_{it}^{s\prime\prime})\}$. Given the concavity of $\phi_i$ and convexity of $c_i$, a unique readability at each stage maximises~\autoref{equation8} and~\autoref{equation9} for fixed $\Pi_{0it}^s$ and $\Pi_{1it}^s$. Thus, $r_{0i0}'=r_{0i0}''$ and $R_{i0}^{s\prime}=R_{i0}^{s\prime\prime}$ at time 0.
+				
+Assume at time $t$ the author has chosen $r_{0il}'=r_{0il}''$ and $R_{il}^{s\prime}=R_{il}^{s\prime\prime}$ for all $l<t$; thus, $\Pi_{0it}^{s\prime}(r)=\Pi_{0it}^{s\prime\prime}(r)$ and $\Pi_{1it}^{s\prime}(R)=\Pi_{1it}^{s\prime\prime}(R)$ for all $r$ and $R$, so the author chooses $r_{0it}'=r_{0it}''$ and $R_{it}^{s\prime}=R_{it}^{s\prime\prime}$ at time $t$ as well. By the axiom of induction, $\{(r_{0it}',R_{it}^{s\prime})\}=\{(r_{0it}'',R_{it}^{s\prime\prime})\}$ for all $t$ so $(r_{0i}, R_i^s)$ is unique.\footnote{Note that $r_{0it}$ is chosen before $s$ is realised, meaning $r_{0i}$ is the unique cluster point of $\{r_{0it}\}$ regardless of $s$.} Since the choice of $s$ was arbitrary exists a unique cluster point of $\{(r_{0it},R_{it}^{s^\star})\}$ for every $s^\star\in\Sigma$.
+\end{proof}
+
+\begin{lemma}\label{Lemma5}
+	Consider two equivalent authors, $i$ and $k$, such that
+	\begin{enumerate}
+		\item for at least one $t''<t'$, $(r_{0it''},R_{it''})<(r_{0it'},R_{it'})$ and there exists $K''>0$ such that for no $t>t'$, $||(r_{0it},R_{it})-(r_{0it''},R_{it''})||<K''$; and
+		\item $(r_{0kt},R_{kt})\le(r_{0it},R_{it})$ for all $s\in\Sigma_{A_{it}}$ and $t>t'$ and there exists $K'>0$ such that for at least one $s\in\Sigma_{A_{it}}$ and no $t>t'$, $||(r_{0it},R_{it})-(r_{0kt},R_{kt})||<K'$.
+	\end{enumerate}
+	If $\widetilde r_{0i}^s=\widetilde r_{0k}^s$, $\widetilde R_i^s=\widetilde R_k^s$ and $\mu_i^s=\mu_k^s$ for all $s\in\Sigma$, then
+\begin{equation}\label{equationA13}
+	\int_\Sigma\!\bm1_{0k}^s(r_{0kt})\bm1_{1k}^s(R_{kt})\,\dd\mu_k<\int_\Sigma\!\bm1_{0i}^s(r_{0it})\bm1_{1it}^s(R_{it})\,\dd\mu_i.
+\end{equation}
+\end{lemma}
+\begin{proof}
+	Suppose for the moment that $\Sigma_{A_{it}}$ contains only state $q$ and assume $r_{0kt}=r_{0it}$. Since $q$ is the only state in $\Sigma_{A_{it}}$, $R_{kt}^q<R_{it}^q$. As a result,
+\begin{equation*}
+	\bm1_{0k}^s(r_{0kt})\bm1_{1k}^s(R_{kt}^s)=\bm1_{0i}^s(r_{0it})\bm1_{1i}^s(R_{it}^s)=0\text{ for all } s\ne q,
+\end{equation*}
+and
+\begin{equation}\label{equationA14}
+	\bm1_{0k}^s(r_{0kt})\bm1_{1k}^s(R_{kt}^s)\le\bm1_{0i}^s(r_{0it})\bm1_{1i}^s(R_{it}^s)=1\text{ for }s=q.
+\end{equation}
+If I show that the inequality in~\autoref{equationA14} is strict, then~\autoref{equationA13} is true. By way of a contradiction, assume it holds as an equality. Thus, $\widetilde R_i^q\le R_k^q<R_i^q$, where $R_{kt}^q\rightarrow R_k^q$ and $R_{it}^q\rightarrow R_i^q$ (\autoref{Lemma4}). Together with $R_i^\star\le r_{0it''}<R_i^q$, this implies
+\begin{equation}\label{equationA15}
+	\lim_{\varepsilon\rightarrow0-}\Pi_{1i}^q(R_i^q+\varepsilon)<1.\footnote{That is, $\Pi_{0i}^q(R)=1$ for all $R\ge R_i^q$. Because he chose $R_i^\star\le R_{it''}<R_i^q$ at some earlier date, the author's marginal benefit from a higher $R$ is decreasing when the probability of acceptance remains constant. Thus, if he optimally chooses $R_i^q>\max\{R_{it''},R_k^q\}$, it must be because there is no smaller $R$ that satisfies~\autoref{equationA7}. This is only possible if there is a jump discontinuity in $\Pi_{0i}^q$ at $R_i^q$, as illustrated in~\autoref{equationA15}.}
+\end{equation}
+
+Meanwhile, author $i$ observes author $k$'s prior readability choices, publication history and paper count. From this, he discovers
+\begin{equation}\label{equationA16}
+	\lim_{N_k\rightarrow\infty}\frac{N_{A_k}}{N_k}=\mu_i^q,
+\end{equation}
+where $N_{A_k}$ and $N_k$ are author $k$'s accepted and total paper counts, respectively. Because $i$ updates $\Pi_{1it}^s$ when he observes with probability 1 that in state $s$, $k$ is accepted at some $R\ne R_i^s$ (see~\autoref{Footnote64}),~\autoref{equationA16} necessarily implies
+\begin{equation*}
+	\lim_{\varepsilon\rightarrow0-}\Pi_{1i}^s(R_i^s+\varepsilon)=1,
+\end{equation*}
+a contradiction.
+
+Similar proofs by contradiction show that the inequality in~\autoref{equationA14} must also be strict when $R_{kt}^q=R_{it}^q$ and $r_{0kt}<r_{0it}$ in state $q$ and when $\Sigma_{A_{it}}$ contains more than one state.
+\end{proof}
+
+\begin{proof}[Proof of Corollary 1]
+	I first show that~\autoref{equation11} conservatively estimates $D_{ik}$ when $\Sigma_{A_{it}}\subset\Sigma_{A_{kt}}$. Let $r_{0it}<R_{it}$. From~\autoref{equation10} and the definition of $\delta_{1ik}^s$,
+	\begin{align}\label{equationA17}
+		R_{it} - R_{kt}	&=		\widetilde R_i^s + e_{1it} - \max\left\{R_k^\star,\widetilde r_{0k}^{\overline s_k} + e_{0kt},\widetilde R_k^s + e_{1kt}\right\}\nonumber\\
+						&\le	\widetilde R_i^s - \widetilde R_k^s + e_{1it} - e_{1kt}\nonumber\\
+						&=	\delta_{1ik}^s + e_{1it} - e_{1kt}.
+	\end{align}
+	where $\overline s_k$ is the review group in $\Sigma_{A_{kt}}$ for which $\widetilde r_{0k}^s$ is highest. When $R_{it}=r_{0it}$, however,~\autoref{equation10} and the definition of $\delta_{0ik}^s$ instead imply:
+	\begin{align}\label{equationA18}
+		R_{it} - R_{kt}	&=		\max\left\{R_i^\star, \widetilde r_{0i}^{\overline s_i} + e_{0it}\right\} - \max\left\{R_k^\star,\widetilde r_{0k}^{\overline s_k} + e_{0kt},\widetilde R_k^s + e_{1kt}\right\}\nonumber\\
+						&\le	\max\left\{R_i^\star, \widetilde r_{0i}^{\overline s_i} + e_{0it}\right\} - \widetilde r_{0k}^{\overline s_k} - e_{0kt},
+	\end{align}
+	where $\overline s_i$ is the review group in $\Sigma_{A_{it}}$ for which $\widetilde r_{0i}^s$ is highest. From~\autoref{Theorem1}'s second condition, $R_{it''}<R_{it}$ for some $t''<t$. Thus, $R_{it''}<r_{0it}$. Because $R_i^\star$ is a lower bound on $r_{0it}$ for all $s$ and $t$ (\autoref{Lemma1}), $R_i^\star<r_{0it}$;~\autoref{equationA18} is equivalent to
+	\begin{align}\label{equationA19}
+		R_{it} - R_{kt}	&\le	\widetilde r_{0i}^{\overline s_i} - \widetilde r_{0k}^{\overline s_k} + e_{0it} - e_{0kt}\nonumber\\
+						&=		\delta_{0ik}^{\overline s_i} + \widetilde r_{0k}^{\overline s_i} - \widetilde r_{0k}^{\overline s_k} + e_{0it} - e_{0kt}.
+	\end{align}
+	$e_{0it}=e_{0kt}$ and $e_{1it}=e_{1kt}$ (by assumption). Because $\Sigma_{A_{it}}\subset\Sigma_{A_{kt}}$, $\widetilde r_{0k}^{\overline s_i}\le\widetilde r_{0k}^{\overline s_k}$ (by definition);~\autoref{equationA19} implies $R_{it}-R_{kt}\le\delta_{0ik}^{\overline s_i}$ if $R_{it}=r_{0it}$. Meanwhile,~\autoref{equationA17} implies $R_{it}-R_{kt}\le\delta_{1ik}^s$ if $r_{0it}<R_{it}$.
+	
+	It remains to show that~\autoref{equation12} conservatively estimates $D_{ik}$ under \autoref{Theorem1}'s weaker Condition 3. Let $R_{it''}\le R_{kt}$. Differences in $i$ and $k$'s preferences might influence readability---but only up to $R_{it''}$. $R_{it''}<R_{it}$ is motivated by $i$'s desire to increase his acceptance rate. Since $i$'s unconditional acceptance rate is identical to $k$'s, any $s'$ in $\Sigma_{A_{it}}$ but not in $\Sigma_{A_{kt}}$---\textit{e.g.}, because $i$'s utility of acceptance is higher or cost of writing lower---is perfectly offset by some other $s''$ such that---because $s''$ discriminates against $i$---$s''$ is in $\Sigma_{A_{kt}}$ but not in $\Sigma_{A_{it}}$. Thus, $R_{it}-R_{kt}$ remains a conservative estimate $D_{ik}$.
+	
+	Now let $R_{kt}<R_{it''}$. Since $i$'s unconditional acceptance rate at $R_{it}$ is identical to $k$'s at $R_{kt}$, $k$'s acceptance rate at $R_{it''}$ must be at least as high as $i$'s at $R_{it}$. Without loss of generality, assume they are identical. Preferences are time independent, so holding acceptance rates constant, $i$ prefers $R_{it''}$ to $R_{it}$. A time $t$ choice of $R_{it}$ over $R_{it''}$ reveals a higher probability of acceptance for the former---and a necessarily lower probability of acceptance for $i$ than $k$ at $R_{it''}$. Given $i$ and $k$ are equivalent, this difference is due to $\delta_{0ik}^{\overline s_i}$ or $\delta_{1ik}^s$. $R_{it}-R_{it''}$ is a conservative estimate of $R_{ik}$. Thus, all is proved.
+
+\end{proof}
+

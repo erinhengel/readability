@@ -1,0 +1,24 @@
+\begin{table}[H]
+    \footnotesize
+    \centering
+    \begin{threeparttable}
+        \caption{\autoref{table8}, equality test statistics}
+        \label{tableC6}
+        \sisetup{round-precision=3}
+        \begin{tabular}{p{3cm}S@{}S@{}S@{}S@{}S@{}S@{}}
+            \toprule
+            &{\(t=1\) vs. 2}&{\(t=1\) vs. 3}&{\(t=1\) vs. 4--5}&{\(t=1\) vs. \(\ge6\)}&{\(t=2\) vs. 3}\\
+            \midrule
+            Flesch Reading Ease &       0.570&       4.571&       0.100&       0.093&       1.010\\
+            Flesch-Kincaid      &       0.040&       1.061&       0.227&       0.897&       0.279\\
+            Gunning Fog         &       0.042&       0.179&       0.144&       1.061&       0.018\\
+            SMOG                &       0.196&       0.373&       0.659&       0.420&       0.014\\
+            Dale-Chall          &       2.825&       1.117&       0.019&       0.106&       4.054\\
+            \bottomrule
+        \end{tabular}
+        \begin{tablenotes}
+            \tiny
+            \item \textit{Notes}. \(\chi^2\) test statistics from Wald tests of \(\beta_1\) (\autoref{equation1}) equality across estimation results in~\autoref{table8}.
+        \end{tablenotes}
+    \end{threeparttable}
+\end{table}

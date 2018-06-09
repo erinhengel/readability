@@ -1,0 +1,38 @@
+\begin{table}
+    \footnotesize
+    \centering
+    \begin{threeparttable}
+        \caption{Gender gap in readability at increasing \(t\)}
+        \label{table8}
+        \begin{tabular}{p{3cm}S@{}S@{}S@{}S@{}S@{}S@{}S@{}}
+            \toprule
+            &{\(t=1\)}&{\(t=2\)}&{\(t=3\)}&{\(t=4\text{--}5\)}&{\(t\ge6\)}&{All}\\
+            \midrule
+            Flesch Reading Ease           &        0.24   &        1.56*  &        4.71***&        2.73   &        3.35   &        1.65** \\
+                                          &      (0.63)   &      (0.91)   &      (1.13)   &      (1.97)   &      (2.14)   &      (0.72)   \\
+            Flesch-Kincaid                &        0.07   &        0.17   &        0.83***&        0.58   &        0.62   &        0.21   \\
+                                          &      (0.14)   &      (0.21)   &      (0.25)   &      (0.41)   &      (0.44)   &      (0.15)   \\
+            Gunning Fog                   &        0.20   &        0.38   &        1.11***&        0.83*  &        0.88   &        0.43** \\
+                                          &      (0.16)   &      (0.25)   &      (0.30)   &      (0.47)   &      (0.54)   &      (0.18)   \\
+            SMOG                          &        0.11   &        0.26   &        0.74***&        0.64*  &        0.66*  &        0.33** \\
+                                          &      (0.12)   &      (0.17)   &      (0.21)   &      (0.37)   &      (0.38)   &      (0.13)   \\
+            Dale-Chall                    &        0.07   &        0.10   &        0.34***&        0.29*  &        0.43*  &        0.17** \\
+                                          &      (0.06)   &      (0.08)   &      (0.12)   &      (0.17)   &      (0.24)   &      (0.07)   \\
+            \midrule
+            No. observations              &       6,876   &       2,827   &       1,674   &       1,908   &       2,777   &      12,013   \\
+            \(N_j\)                       &           {\ding{51}}   &           {\ding{51}}   &           {\ding{51}}   &           {\ding{51}}   &           {\ding{51}}   &           {\ding{51}}   \\
+            Editor effects                &           {\ding{51}}   &           {\ding{51}}   &           {\ding{51}}   &           {\ding{51}}   &           {\ding{51}}   &           {\ding{51}}   \\
+            Journal effects               &           {\ding{51}}   &           {\ding{51}}   &           {\ding{51}}   &           {\ding{51}}   &           {\ding{51}}   &           {\ding{51}}   \\
+            Year effects                  &           {\ding{51}}   &           {\ding{51}}   &           {\ding{51}}   &           {\ding{51}}   &           {\ding{51}}   &           {\ding{51}}   \\
+            Journal\(\times\)Year effects          &               &               &               &               &               &           {\ding{51}}   \\
+            Institution effects           &           {\ding{51}}   &           {\ding{51}}   &           {\ding{51}}   &           {\ding{51}}   &           {\ding{51}}   &           {\ding{51}}   \\
+            Quality controls              &          {\(\text{\ding{51}}^4\)}   &          {\(\text{\ding{51}}^4\)}   &          {\(\text{\ding{51}}^4\)}   &          {\(\text{\ding{51}}^4\)}   &          {\(\text{\ding{51}}^4\)}   &          {\(\text{\ding{51}}^1\)}   \\
+            Native speaker                &           {\ding{51}}   &           {\ding{51}}   &           {\ding{51}}   &           {\ding{51}}   &           {\ding{51}}   &           {\ding{51}}   \\
+            \bottomrule
+        \end{tabular}
+        \begin{tablenotes}
+            \tiny
+            \item \textit{Notes}. \(\beta_1\) from FGLS estimation of~\autoref{equation1} without lagged dependent variable. First column restricts sample to authors' first publication in the data (\(t=1\)), second column to their second (\(t=2\)), \textit{etc.} Regressions weighted by \(1/N_j\) (see~\autoref{authorlevel}). Standard errors (in parentheses) adjusted for two-way clustering (editor and author) and cross-model correlation. Final column estimates from an unweighted population-averaged regression; error correlations specified by an auto-regressive process of order one and standard errors (in parentheses) adjusted for one-way clustering on author. Quality controls denoted by \(\text{\ding{51}}^1\) include citation count and \(\text{max. }T_j\) fixed effects; \(\text{\ding{51}}^4\) includes citation count, only. ***, ** and * statistically significant at 1\%, 5\% and 10\%, respectively.
+        \end{tablenotes}
+    \end{threeparttable}
+\end{table}

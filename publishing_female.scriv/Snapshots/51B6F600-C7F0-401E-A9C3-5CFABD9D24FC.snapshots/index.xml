@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Snapshots Version="1.0">
+    <Snapshot>
+        <Title>Untitled Snapshot</Title>
+        <Date>2015-09-04 18:21:06 +0200</Date>
+        <Comments>
+            <Comment ID="44E708DE-F011-42CD-B11E-94583D674CAA" Footnote="Yes" Number="46" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf120
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs20 \cf0 <!--\\label\{fnm:fn2\}-->The WES were actually conducted prior to 2005. Survey questions prior to 2005 are not strictly compatible to those posed afterwards---specifically, older data do not consistently report firm size. Nevertheless, the question of interest---whether access to finance is an obstacle or not---was asked in a largely consistent manner since 2002. I have therefore pooled these data with the later dataset; the results are consistent with the analysis presented here and are shown in Appendix X.}]]></Comment>
+            <Comment ID="121652F4-C222-4131-AEBA-667BBA17779E" Footnote="Yes" Number="47" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf120
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs20 \cf0 The WES surveys only the non-agricultural private sector. Fully state-owned enterprises are excluded.}]]></Comment>
+            <Comment ID="0B221619-DD35-4F42-8099-51984277B64C" Color="0.992 0.929 0.525"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf120
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs20 \cf0 \\input\{/Users/erinhengel/Dropbox/Thesis/db/tables/table1.tex\}}]]></Comment>
+            <Comment ID="24ED971F-6A59-4330-99C2-F10BFC02A790" Footnote="Yes" Number="48" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf120
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs20 \cf0 <!--\\label\{fnm:fn4\}-->Data are originally sourced from national accounts and international financial statistics compiled or estimated by the OECD, World Bank and/or IMF. Uzbek and South Sudanese data on credit to the private sector from [#EBRD2009,EBRD2013;] and [#IMF2014;], respectively. WES data are merged with nearest year for which a lending environment indicator exists.}]]></Comment>
+            <Comment ID="F92EEA5D-F828-44EA-B338-8831B087EE8F" Color="0.992 0.929 0.525"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf120
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs20 \cf0 \\input\{/Users/erinhengel/Dropbox/Thesis/db/tables/table2.tex\}}]]></Comment>
+            <Comment ID="9B501E56-B543-473B-B800-ABAE13B83947" Footnote="Yes" Number="49" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf120
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs20 \cf0 Weighted world averages from the [World Bank](https://datahelpdesk.worldbank.org/knowledgebase/articles/198549-what-methods-are-used-to-calculate-aggregates-for).}]]></Comment>
+            <Comment ID="1D775463-DC82-4318-943D-8863AFFCC81C" Footnote="Yes" Number="50" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf120
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs20 \cf0 Doing Business also publishes a measure of the average cost of bankruptcy proceedings. Unfortunately, this measure is not available for several countries. Additionally, the data is based on a highly stylised case study specific to viable firms and presented as a percentage of the bankrupt business's market value: at least 100 times income per capita---$5.4 million in the U.S. in 2013. The Cost of enforcing contracts measure, on the other hand, records many of the same fees associated with bankruptcy---court costs, attorney fees and eventual sale of the disputed asset---but as a percent of a much narrower base (2 times income per capita, or about $100,000 in the U.S. in 2013). It has the added benefit of being available in all countries.}]]></Comment>
+            <Comment ID="58A22C39-20C2-4784-896F-5D603449C370" Color="0.992 0.929 0.525"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf120
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs20 \cf0 \\input\{/Users/erinhengel/Dropbox/Thesis/db/eqns/eqn2.tex\}}]]></Comment>
+            <Comment ID="D67F26B1-BEA5-4EA5-87D8-796F28C8C5A8" Footnote="Yes" Number="51" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf120
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs20 \cf0 <!--\\label\{fnm:fn3\}-->The depth of credit information index was revised in 2015 but backward updated only for 2014. The previous methodology scored countries based on six criteria; the new methodology appends two more features.}]]></Comment>
+            <Comment ID="FE90D0FC-D94F-4028-8B3F-ED3F7563FD11" Color="0.992 0.929 0.525"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf120
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs20 \cf0 \\input\{/Users/erinhengel/Dropbox/Thesis/db/tables/table5.tex\}}]]></Comment>
+            <Comment ID="721280CD-660D-4A64-B63F-E19B935FC69C" Footnote="Yes" Number="52" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf120
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs20 \cf0 Simple average of 189 economies covered in the Doing Business database.}]]></Comment>
+            <Comment ID="69AFC2F3-7519-4451-AAE9-FA71C2E639B8" Footnote="Yes" Number="53" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf120
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs20 \cf0 Values above 1 indicate resolving a commercial dispute costs more than the value of the underlying claim.}]]></Comment>
+            <Comment ID="31046C5E-E1F3-4D8D-82DE-D3334BA5E7B7" Footnote="Yes" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf120
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs20 \cf0 Because of methodological changes, only questionnaires pre-2013 asked specifically about the existence of an automatic stay for secured creditors. Those responses were applied to subsequent years and then updated according to reforms listed on the Doing Business [website](http://www.doingbusiness.org/reforms/overview/topic/getting-credit).}]]></Comment>
+            <Comment ID="2A023112-6C96-4E9D-A581-5A78CD593EDF" Footnote="Yes" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf120
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs20 \cf0 Disaggregated data are publicly available on the Doing Business website only in the current year.}]]></Comment>
+        </Comments>
+    </Snapshot>
+</Snapshots>

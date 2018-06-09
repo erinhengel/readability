@@ -1,0 +1,27 @@
+\begin{table}
+    \footnotesize
+    \centering
+    \begin{threeparttable}
+        \caption{\(\widehat R_{i3}-\widehat R_{k3}\) (Condition 1) and \(\widehat R_{i3}-\widehat R_{i1}\) (Condition 2)}
+        \label{table9}
+        \sisetup{table-format=5.4,round-precision=3}
+        \begin{tabular}{p{3.5cm}S@{}S@{}S@{}S@{}S@{}}
+            \toprule
+            &{\crcell[b]{Flesch\\[-0.1cm]Reading\\[-0.1cm]Ease}}&{\crcell[b]{Flesch-\\[-0.1cm] Kincaid}}&{\crcell[b]{Gunning\\[-0.1cm]Fog}}&{SMOG}&{\crcell[b]{Dale-\\[-0.1cm]Chall}}\\
+            \midrule
+            \multicolumn{6}{l}{Condition 1}\\
+            \quad \(\widehat R_{i3}-\widehat R_{k3}\)&       8.077***&       2.648***&       2.762***&       1.417***&       0.513***\\
+                                          &     (1.507)   &     (0.369)   &     (0.409)   &     (0.281)   &     (0.143)   \\
+            \midrule\multicolumn{6}{l}{Condition 2}\\
+            \quad \(\widehat R_{i3}-\widehat R_{i1}\) (women)&       3.736** &       0.790** &       1.180***&       0.685** &      -0.057   \\
+                                          &     (1.544)   &     (0.316)   &     (0.388)   &     (0.285)   &     (0.133)   \\
+            \quad \(\widehat R_{k3}-\widehat R_{k1}\) (men)&      -5.356***&      -1.748***&      -2.085***&      -1.086***&      -0.057   \\
+                                          &     (1.370)   &     (0.331)   &     (0.362)   &     (0.246)   &     (0.124)   \\
+            \bottomrule
+        \end{tabular}
+        \begin{tablenotes}
+            \tiny
+            \item \textit{Notes}. Sample 121 matched pairs (106 and 121 distinct men and women, respectively). \(\widehat R_{it}\) and \(\widehat R_{kt}\) are observation-specific readability scores estimated at female ratio equal to 0 for men, 1 for women and \(t=3\) median values of remaining \(t\)-dependent co-variates (see~\aref{appendixmatchingbalance} and text for more details). Figures are weighted by the frequency observations are used in a match. Degrees-of-freedom corrected standard errors in parentheses. ***, ** and * statistically significant at 1\%, 5\% and 10\%, respectively.
+        \end{tablenotes}
+    \end{threeparttable}
+\end{table}

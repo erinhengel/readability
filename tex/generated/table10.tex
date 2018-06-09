@@ -1,0 +1,28 @@
+\begin{table}
+    \footnotesize
+    \centering
+    \begin{threeparttable}
+        \caption{\(\underline D_{ik}\),~\autoref{equation11}}
+        \label{table10}
+        \begin{tabular}{p{3cm}S[table-format=3.3]@{}S[table-format=3.3]@{}S[table-format=3.2]@{}S[table-format=4.3]@{}S[table-format=3.3]@{}S[table-format=3.1]@{}S@{}S@{}}
+            \toprule
+            &\multicolumn{3}{c}{{\crcell[b]{Discrimination against\\[-0.1cm]women (\(\underline{D}_{ik}>0\))}}}&\multicolumn{3}{c}{{\crcell[b]{Discrimination against\\[-0.1cm]men (\(\underline{D}_{ik}<0\))}}}&\multicolumn{2}{c}{{\crcell[b]{Mean, all\\[-0.1cm]observations}}}\\\cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-9}&{{Mean}}&{{S.D.}}&{{\(N\)}}&{{Mean}}&{{S.D.}}&{{\(N\)}}&{{(1)}}&{{(2)}}\\
+            \midrule
+            Flesch Reading Ease           &       14.92&        9.92&          57&      -10.51&        9.71&          13&        5.86***&        4.76***\\
+                                          &            &            &            &            &            &            &      (1.30)   &      (1.40)   \\
+            Flesch Kincaid                &        3.76&        2.47&          70&       -2.43&        1.62&          12&        2.06***&        1.91***\\
+                                          &            &            &            &            &            &            &      (0.34)   &      (0.35)   \\
+            Gunning Fog                   &        4.23&        2.63&          66&       -3.26&        1.97&          10&        2.16***&        1.93***\\
+                                          &            &            &            &            &            &            &      (0.36)   &      (0.39)   \\
+            SMOG                          &        2.88&        1.73&          61&       -2.53&        1.58&          15&        1.17***&        0.99***\\
+                                          &            &            &            &            &            &            &      (0.25)   &      (0.27)   \\
+            Dale-Chall                    &        1.47&        0.94&          43&       -0.91&        0.77&          27&        0.33** &        0.26*  \\
+                                          &            &            &            &            &            &            &      (0.13)   &      (0.14)   \\
+            \bottomrule
+        \end{tabular}
+        \begin{tablenotes}
+            \tiny
+            \item \textit{Notes}. Sample 121 matched pairs (106 and 121 distinct men and women, respectively). First and second panels display conditional means, standard deviations and observation counts of \(\underline D_{ik}\) (\autoref{equation11}) from subpopulations of matched pairs in which the woman or man, respectively, satisfies Conditions 1 and 2. Third panel displays mean \(\underline D_{ik}\) over all observations. To account for the 30--40 percent of pairs for which ~\autoref{Theorem1} is inconclusive, (1) sets \(\underline D_{ik}=0\), while (2) sets \(\underline D_{ik}=\widehat R_{i3}-\widehat R_{k3}\) if \(\widehat R_{i3}<\widehat R_{k3}\) (\(i\) female, \(k\) male) and zero, otherwise. Male scores are subtracted from female scores; \(\underline D_{ik}\) is positive in panel one and negative in panel two. \(\underline D_{ik}\) weighted by frequency observations are used in a match; degrees-of-freedom corrected standard errors in parentheses (panel three, only). ***, ** and * statistically significant at 1\%, 5\% and 10\%, respectively.
+        \end{tablenotes}
+    \end{threeparttable}
+\end{table}

@@ -1,0 +1,92 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf120
+{\fonttbl\f0\fnil\fcharset0 PTSerif-Regular;\f1\fnil\fcharset0 PTMono-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue128;\red255\green128\blue0;}
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa200\pardirnatural
+
+\f0\fs28 \cf0 In this section, I test the validity of 
+\f1 \cf2 [](#prop5)
+\f0 \cf0  and 
+\f1 \cf2 [](#prop6)
+\f0 \cf0 . To account for credit-rationing and control for firm-specific characteristics, I use data from the World Enterprise Surveys (WES). The WES are a series of company surveys conducted by the World Bank and the EBRD. They cover business constraints in emerging and developing markets. The surveys start in 2005 and are generally repeated every three {\field{\*\fldinst{HYPERLINK "scrivcmt://44E708DE-F011-42CD-B11E-94583D674CAA"}}{\fldrslt years.}} They contain 117,105 observations from 135 countries.\
+One question asks the degree to which access to finance---including interest rates, fees and collateral---is an obstacle to business operations. Answers range from 0 (no obstacle) to 4 (very severe obstacle). I define 
+\f1 \cf3 $\\text\{Obstacle\}_i$
+\f0 \cf0  as a binary variable equal to 1 if the response was moderate (2) or above---roughly half of all firms.\
+Additionally, I control for several firm-specific characteristics. 
+\f1 \cf3 $\\text\{Age\}_i$
+\f0 \cf0  is the difference between the year firm 
+\f1 \cf3 $i$
+\f0 \cf0  was established and the year in which the survey took place. 
+\f1 \cf3 $\\text\{Size\}_i$
+\f0 \cf0  distinguishes between small (fewer than 20 employees), medium and large (more than 100 employees) companies in ascending order from 0 to 2. 
+\f1 \cf3 $\\text\{Exporter\}_i$
+\f0 \cf0  is a binary variable equal to 1 if the firm exports all or part of its output; 
+\f1 \cf3 $\\text\{Foreign-owned\}_i$
+\f0 \cf0  and 
+\f1 \cf3 $\\text\{State-owned\}_i$
+\f0 \cf0  equal 1 if the firm is partly or wholly foreign- or state-owned, {\field{\*\fldinst{HYPERLINK "scrivcmt://121652F4-C222-4131-AEBA-667BBA17779E"}}{\fldrslt respectively.}} 
+\f1 \cf3 $\\text\{Manufacturing\}_i$
+\f0 \cf0  equals 1 if firm 
+\f1 \cf3 $i$
+\f0 \cf0  operates in the manufacturing industry.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa200\pardirnatural
+{\field{\*\fldinst{HYPERLINK "scrivcmt://0B221619-DD35-4F42-8099-51984277B64C"}}{\fldrslt \cf0 [](#FirmSpecifics)}}summarises these variables. Surveyed firms tend to be small, privately owned operations that produce for the domestic market. Exporter status, foreign ownership and size are the same for firms reporting finance as an obstacle compared to those that don't. State-owned firms are less likely to find financing an obstacle, but the difference is slight. Younger firms and those in manufacturing, however, report a tougher time accessing finance than their older, service-oriented peers. \
+I also include several controls for a country's general lending environment. Data on inflation, domestic credit to the private sector, GDP per capita and income from abroad per capita are culled from the World Bank's World Development Indicators (WDI) {\field{\*\fldinst{HYPERLINK "scrivcmt://24ED971F-6A59-4330-99C2-F10BFC02A790"}}{\fldrslt database.}} The percentage of firms using banks to finance investment is drawn from survey responses in the WES. Data are summarised in {\field{\*\fldinst{HYPERLINK "scrivcmt://F92EEA5D-F828-44EA-B338-8831B087EE8F"}}{\fldrslt [](#LendingEnvironment).}}\
+Lending environment averages in countries covered by the WES reflect their focus on developing and emerging markets. Mean inflation is 6.2 percent, about 3.8 percentage points above the 2014 world {\field{\*\fldinst{HYPERLINK "scrivcmt://9B501E56-B543-473B-B800-ABAE13B83947"}}{\fldrslt average.}} Domestic credit to the private sector is considerably lower than the world average: 37.9 percent as opposed to 125.2 percent. GDP per capita is about half: $5,367 versus $10,803. Income from abroad is negative, in contrast to a positive world average of $54.\
+To measure 
+\f1 \cf3 $Y$
+\f0 \cf0  and 
+\f1 \cf3 $p$
+\f0 \cf0 , I use the World Bank's Doing Business data. Doing Business indicators cover the cost and complexity of complying with business-related administrative procedures and regulations. They are estimated based on responses to a set of standardised, hypothetical scenarios posed to accountants, lawyers and other relevant local experts. \
+The Doing Business's "cost of enforcing contracts" proxies for 
+\f1 \cf3 $Y$
+\f0 \cf0 . It aggregates attorney, court and enforcement fees needed to resolve a commercial dispute. The final figure reflects those costs as a percentage of the claim in {\field{\*\fldinst{HYPERLINK "scrivcmt://1D775463-DC82-4318-943D-8863AFFCC81C"}}{\fldrslt question.}} For 
+\f1 \cf3 $p$
+\f0 \cf0 , I construct an index of the depth, coverage and quality of financial information available on individuals and firms in a country. It is calculated per {\field{\*\fldinst{HYPERLINK "scrivcmt://58A22C39-20C2-4784-896F-5D603449C370"}}{\fldrslt [](#eq:p2eq2):}}
+\f1 \cf3 $\\text\{Public registry\}_\{jt\}$
+\f0 \cf0  is the Doing Business's "credit registry coverage"---the percentage of individuals covered by a public data registry for country 
+\f1 \cf3 $j$
+\f0 \cf0  in year 
+\f1 \cf3 $t$
+\f0 \cf0 . 
+\f1 \cf3 $\\text\{Private bureau\}_\{jt\}$
+\f0 \cf0  is its "credit bureau coverage"---the corresponding coverage of a private data bureau. 
+\f1 \cf3 $\\text\{Depth of credit info. index\}_\{jt\}$
+\f0 \cf0  is the Doing Business's "depth of credit information index". It measures the comprehensiveness of credit-related data in the economy; 
+\f1 \cf3 $S_t$
+\f0 \cf0  divides it by 6 for years prior to 2014 and 8 thereafter to account for methodological changes made in 2015 and retroactively applied only to 2014 {\field{\*\fldinst{HYPERLINK "scrivcmt://D67F26B1-BEA5-4EA5-87D8-796F28C8C5A8"}}{\fldrslt data.}}\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa200\pardirnatural
+{\field{\*\fldinst{HYPERLINK "scrivcmt://FE90D0FC-D94F-4028-8B3F-ED3F7563FD11"}}{\fldrslt \cf0 [](#ExplanatoryVariables)}}summarises these variables. On average, resolving a financial dispute costs 37.3 percent of the underlying claim in the countries surveyed by the WES, slightly above the 2014 global average of 33.5 {\field{\*\fldinst{HYPERLINK "scrivcmt://721280CD-660D-4A64-B63F-E19B935FC69C"}}{\fldrslt percent.}} Values range between 0 and {\field{\*\fldinst{HYPERLINK "scrivcmt://69AFC2F3-7519-4451-AAE9-FA71C2E639B8"}}{\fldrslt 1.63.}} The latter distinction goes to East Timor in 2009; the former to Bhutan that same year.\
+The credit information index ranges between 0 and 1. In a given year, roughly half of the WES countries have the minimum value. Argentina scored 1 in 2006 and 2010; Honduras and Uruguay in 2010. The mean is 18.5 percent---more than ten points lower than the 2014 global average (27.7 percent).  This difference mainly reflects limited private bureau coverage in WES countries (global average 27.3 percent) and a lower rating on the depth of credit information index (global average 49.0 percent). WES countries surpass the global average in public registry coverage (10.1 percent).\
+From 
+\f1 \cf2 [](#prop4)
+\f0 \cf0  from 
+\f1 \cf2 [][Rescue Culture]
+\f0 \cf0 , finance obstacles should disappear when creditors have freedom to circumvent formal bankruptcy. Practically, this translates to the lack of an automatic stay coupled with the freedom to pledge an entire business to collateralise a loan. To identify the presence of both, I again turn to Doing Business data.\
+Although the definition of a floating charge is relatively straightforward, diagnosing its effective existence is not so. For example, several countries superficially posses legislation which grants this right but simultaneously prevent those securities from automatically including future assets, proceeds and inventories.  Without that guarantee, bypassing formal bankruptcy is no longer assured. For this reason, I assume a floating charge exists in a country only when the four following criteria are met:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\li360\sl288\slmult1\sa200\pardirnatural
+\cf0 1. Moveable assets may be pledged as collateral.\
+2. An entire business can serve as collateral.\
+3. Securities can automatically extend to future/after-acquired assets.\
+4. A general description of the security is permissible.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa200\pardirnatural
+\cf0 Data on automatic stays and floating charges were obtained from questionnaire responses used to generate Doing Business's "strength of legal rights {\field{\*\fldinst{HYPERLINK "scrivcmt://31046C5E-E1F3-4D8D-82DE-D3334BA5E7B7"}}{\fldrslt index".}} 2012 and 2015 responses were scrapped directly from the Doing Business website using a custom python script. Data for 2010, 2011, 2013 and 2014 were scrapped from internet archives curtesy of {\field{\*\fldinst{HYPERLINK "scrivcmt://2A023112-6C96-4E9D-A581-5A78CD593EDF"}}{\fldrslt [web.archive.org](http://web.archive.org).}} Data between 2006-2009 were based on 2010 data updated to incorporate reforms listed on the Doing Business [website]({\field{\*\fldinst{HYPERLINK "http://www.doingbusiness.org/reforms/overview/topic/getting-credit"}}{\fldrslt http://www.doingbusiness.org/reforms/overview/topic/getting-credit}}).\
+Forty-three countries surveyed by the WES permitted floating charges to act as collateral and 97 did not. They were not allowed in Georgia, Montenegro, Namibia and Senegal during the first surveyed year; legislative changes permitted them by the second. Bulgaria allowed floating charges when surveyed in 2007 and 2009 but banned them before it was surveyed a third time in 2013.\
+Fifty-six countries exempted secured creditors' claims from an automatic stay during formal bankruptcy procedures. Eighty countries did not. Ghana disposed of automatic stays in 2008; it was surveyed once both before and after this reform.\
+\
+\
+Although the definition of a floating charge is relatively straightforward, identifying whether one is functionally operational may not be. Countries use different terms for this concept, including "enterprise charge", or "pledge of business". Certain countries also define floating charges more narrowly, e.g., by excluding inventory from the pool of pledged assets.\
+ Specifically, some countries permit pledging the entirety of current business assets as collateral but prevent automatic inclusion of its future assets. I assume a floating charge lien is permissiable if the following conditions hold:\
+1. Moveable assets may be used as collateral.\
+2. An entire business can serve as collateral.\
+3. Securities can automatically extend to future assets.\
+4. \
+a local insolvency practionner answered positively to the follwoing five questions posed by Doing Business in its annual survey of local insolvency practionners. questionnaire responses by local insolvency practitioners\
+\
+ I rely on several questions posed by Doing Business to local insolvency practioners about their local insolvency regime.\
+\
+\
+vanish in the presence of receivership procedures similar to those present in the U.K. prior to 2003. Importantly, bankruptcy must grant secu creditor full power to bypass bankruptcy entirely and determine for himself the insolvent firm's proper resolution.\
+Unfortunately, identifying whether a country possesses a floating charge To determine whether this is the case, I again rely on Doing Business indicators.\
+\
+Appendix X details my methodology explicitly, but roughly corresponds to whether floating charge liens are legally permissible, have absolute priority in bankruptcy, are not subject to an automatic stay and may be enforced out-of-court.\
+Fourteen countries employed a floating charge lien in at least one year; 132 did not. In the 187 countries in the Doing Business for which data are available, 15 used a floating charge. That is, the majority of countries with a well-functioning receivership regime are covered by the WES.}

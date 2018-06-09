@@ -1,0 +1,419 @@
+{smcl}
+{com}{sf}{ul off}{res}{title:Publishing while Female: Gender Differences in Peer Review Scrutiny}
+Erin Hengel
+17 Dec 2017, 17:58:10
+{txt}
+{com}. quietly {c -(}
+{res}
+{txt}{title:Table 1: Article count, by journal and decade} 
+{txt}{hline 77}
+{txt}                      AER          ECA          JPE          QJE        Total
+{txt}{hline 77}
+{txt}1950--59    {res}                       120                                    120{txt}
+{txt}1960--69    {res}                       343          184                       527{txt}
+{txt}1970--79    {res}                       660          633            1        1,294{txt}
+{txt}1980--89    {res}          180          648          562          401        1,791{txt}
+{txt}1990--99    {res}          476          443          478          409        1,806{txt}
+{txt}2000--09    {res}          695          520          408          413        2,036{txt}
+{txt}2010--15    {res}          732          384          181          251        1,548{txt}
+{txt}Total       {res}        2,083        3,118        2,446        1,475        9,122{txt}
+{txt}{hline 77}
+{txt}{p 0 0 0 75} Included is every article published between January 1950 and December 2015 for which an English abstract was found (i) on journal websites or websites of third party digital libraries or (ii) printed in the article itself. Papers published in the May issue of {it:AER} ({it:Papers & Proceedings}) are excluded. Final row and column display total article counts by journal and decade, respectively. {p_end}
+
+{com}. {txt}
+{com}. quietly {c -(}
+{res}
+{txt}{title:Table 3: Textual characteristics per sentence, by gender} 
+{txt}{hline 67}
+{txt}                                   Men        Women   Difference   
+{txt}{hline 67}
+{txt}No. characters           {res}       134.73       130.27         4.46***{txt}
+                         {res}       (0.43)       (1.45)       (1.57)   {txt}
+{txt}No. words                {res}        24.16        23.06         1.10***{txt}
+                         {res}       (0.08)       (0.27)       (0.29)   {txt}
+{txt}No. syllables            {res}        40.65        38.65         2.01***{txt}
+                         {res}       (0.13)       (0.45)       (0.48)   {txt}
+{txt}No. polysyllabic words   {res}         4.69         4.31         0.39***{txt}
+                         {res}       (0.02)       (0.07)       (0.08)   {txt}
+{txt}No. difficult words      {res}         9.38         8.91         0.48***{txt}
+                         {res}       (0.03)       (0.12)       (0.13)   {txt}
+{txt}{hline 67}
+{txt}{p 0 0 0 65} Sample 9,122 articles. Figures from an OLS regression of female ratio on each characteristic divided by sentence count. Male effects estimated at a ratio of zero; female effects estimated at a ratio of one. Robust standard errors in parentheses. {p_end}
+{txt}* p<0.1, ** p<0.05, *** p<0.01
+{res}
+{txt}Percent difference, male and female scores
+{txt}{hline 111}
+{txt}                                1            2            3            4            5            6            6
+{txt}{hline 111}
+{txt}Flesch Reading Ease {res}         2.28         2.19         2.11         2.04         2.45         1.28         2.27{txt}
+{txt}Flesch-Kincaid      {res}         1.38         1.31         1.32         1.37         1.61         1.67         1.83{txt}
+{txt}Gunning Fog         {res}         1.90         1.88         1.91         1.91         2.11         1.98         2.08{txt}
+{txt}SMOG                {res}         1.38         1.38         1.41         1.36         1.51         1.23         1.50{txt}
+{txt}Dale-Chall          {res}         0.92         0.91         0.88         0.86         1.00         0.86         1.18{txt}
+{txt}{hline 111}
+{res}
+{txt}{title:Table 4: Gender differences in readability, article-level analysis} 
+{txt}{hline 137}
+{txt}                                   (1)             (2)             (3)             (4)             (5)             (6)             (7)   
+{txt}{hline 137}
+{txt}Flesch Reading Ease      {res}         0.90*           0.87*           0.83*           0.81            0.97*           0.52            0.92   {txt}
+                         {res}       (0.48)          (0.48)          (0.50)          (0.48)          (0.50)          (0.53)          (0.71)   {txt}
+{txt}Flesch-Kincaid           {res}         0.19*           0.18            0.18            0.19*           0.22*           0.23*           0.25*  {txt}
+                         {res}       (0.11)          (0.11)          (0.11)          (0.11)          (0.12)          (0.12)          (0.14)   {txt}
+{txt}Gunning Fog              {res}         0.33***         0.33***         0.33***         0.33***         0.37***         0.34**          0.36** {txt}
+                         {res}       (0.12)          (0.12)          (0.12)          (0.13)          (0.14)          (0.14)          (0.16)   {txt}
+{txt}SMOG                     {res}         0.21**          0.21**          0.22**          0.21**          0.23**          0.19*           0.23*  {txt}
+                         {res}       (0.09)          (0.09)          (0.09)          (0.09)          (0.10)          (0.10)          (0.12)   {txt}
+{txt}Dale-Chall               {res}         0.10**          0.10**          0.10**          0.09**          0.11**          0.09*           0.13** {txt}
+                         {res}       (0.04)          (0.04)          (0.05)          (0.04)          (0.05)          (0.05)          (0.06)   {txt}
+{txt}{hline 137}
+{txt}Editor effects           {res}            ✓               ✓               ✓               ✓               ✓               ✓               ✓   {txt}
+{txt}Journal effects          {res}            ✓               ✓               ✓               ✓               ✓               ✓               ✓   {txt}
+{txt}Year effects             {res}                            ✓               ✓               ✓               ✓               ✓               ✓   {txt}
+{txt}Journal×Year effects     {res}                                            ✓               ✓               ✓               ✓               ✓   {txt}
+{txt}Institution effects      {res}                                                            ✓               ✓               ✓               ✓   {txt}
+{txt}Quality controls         {res}                                                                           ✓¹              ✓¹              ✓¹   {txt}
+{txt}Native speaker           {res}                                                                            ✓               ✓               ✓   {txt}
+{txt}JEL (primary) effects    {res}                                                                                            ✓                   {txt}
+{txt}JEL (tertiary) effects   {res}                                                                                                            ✓   {txt}
+{txt}{hline 137}
+{txt}{p 0 0 0 100} 9,122 articles in (1)--(5); 5,216 articles in (6); 5,777 articles---including 561 from {it:AER Papers & Proceedings} (see {bf:footnote34})---in (7). Figures represent the coefficient on female ratio from an OLS regression on the relevant readability score. Quality controls denoted by ✓¹ include citation count and Tⱼ fixed effects. Standard errors clustered on editor in parentheses. {p_end}
+{txt}* p<0.1, ** p<0.05, *** p<0.01
+{res}Figure 1 sample size:     5,777
+Figure 1 P&P sample size:       561
+Figure 1 average female ratio coefficient: 0.129 (standard error 0.046)
+{txt}
+{com}. {txt}
+{com}. quietly {c -(}
+flesch
+fleschkincaid
+gunningfog
+smog
+dalechall
+{res}
+{txt}Percent difference, male and female scores
+{txt}{hline 33}
+{txt}                     % Difference
+{txt}{hline 33}
+{txt}Flesch Reading Ease {res}         5.96{txt}
+{txt}Flesch-Kincaid      {res}         2.59{txt}
+{txt}Gunning Fog         {res}         3.78{txt}
+{txt}SMOG                {res}         3.12{txt}
+{txt}Dale-Chall          {res}         2.13{txt}
+{txt}{hline 33}
+{res}
+{txt}{title:Table 6: Gender differences in readability, author-level analysis} 
+{txt}{hline 105}
+{txt}                          Flesch Rea~e    Flesch Kin~d     Gunning Fog            SMOG      Dale-Chall   
+{txt}{hline 105}
+{txt}Female ratio (women)     {res}         2.37**          0.35*           0.66***         0.48**          0.23** {txt}
+                         {res}       (1.00)          (0.20)          (0.24)          (0.19)          (0.10)   {txt}
+{txt}Female ratio (men)       {res}         0.57            0.09            0.15            0.09            0.10   {txt}
+                         {res}       (1.31)          (0.25)          (0.30)          (0.21)          (0.11)   {txt}
+{txt}Female ratio×male        {res}        -1.80           -0.26           -0.50           -0.38           -0.14   {txt}
+                         {res}       (1.53)          (0.32)          (0.37)          (0.27)          (0.13)   {txt}
+{txt}Lagged score             {res}         0.03**          0.04***         0.03*           0.03*           0.03** {txt}
+                         {res}       (0.02)          (0.01)          (0.02)          (0.02)          (0.01)   {txt}
+{txt}{hline 105}
+{txt}z Order 1                {res}       -20.26          -15.97          -17.14          -19.93          -20.75   {txt}
+{txt}z Order 2                {res}         0.56           -0.22            0.08            0.19           -0.73   {txt}
+{txt}N                        {res}            ✓               ✓               ✓               ✓               ✓   {txt}
+{txt}Editor effects           {res}            ✓               ✓               ✓               ✓               ✓   {txt}
+{txt}Journal effects          {res}            ✓               ✓               ✓               ✓               ✓   {txt}
+{txt}Year effects             {res}            ✓               ✓               ✓               ✓               ✓   {txt}
+{txt}Journal×Year effects     {res}            ✓               ✓               ✓               ✓               ✓   {txt}
+{txt}Institution effects      {res}            ✓               ✓               ✓               ✓               ✓   {txt}
+{txt}Quality controls         {res}           ✓¹              ✓¹              ✓¹              ✓¹              ✓¹   {txt}
+{txt}Native speaker           {res}            ✓               ✓               ✓               ✓               ✓   {txt}
+{txt}{hline 105}
+{txt}{p 0 0 0 100} Sample 9,186 observations (2,827 authors). Figures from first-differenced, IV estimation of {bf:equation1} ~ \citep{Arellano1995,Blundell1998}   Female ratio (women): contemporaneous marginal effect of a paper's female co-author ratio for female authors (β₁); female ratio (men): analogous effect for male authors (β₁+β₂). {it:z} -statistics for first- and second-order autocorrelation in the first-differenced errors {bf:Arellano1991} ; null hypothesis no autocorrelation. Quality controls denoted by ✓¹ include citation count and Tⱼ fixed effects. Regressions weighted by 1/ Nⱼ; standard errors adjusted for two-way clustering on editor and author (in parentheses). {p_end}
+{txt}* p<0.1, ** p<0.05, *** p<0.01
+
+{com}. exit
+{txt}
+{com}. quietly {c -(}
+{res}No. distinct NBER working papers: 1988
+No. distinct published articles: 1986
+
+{txt}Percent difference, male vs. female scores
+{txt}{hline 59}
+{txt}                              Men        Women Men vs. Wo~n
+{txt}{hline 59}
+{txt}No. sentences       {res}       -21.24       -25.26        24.42{txt}
+{txt}No. characters      {res}       -24.67       -29.91        27.55{txt}
+{txt}No. words           {res}       -25.69       -30.90        27.02{txt}
+{txt}No. syllables       {res}       -24.77       -30.20        27.63{txt}
+{txt}No. polysyllabic w~s{res}       -23.08       -28.71        26.93{txt}
+{txt}No. difficult words {res}       -23.74       -29.75        29.21{txt}
+{txt}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}
+No. words / senten~t{res}        -4.71        -7.29        56.14{txt}
+{txt}No. polysyllabic w~c{res}       -26.13       -30.06        15.47{txt}
+{txt}No. syllables / wo~t{res}         1.08         0.92       -15.27{txt}
+{txt}No. polysyllabic w~t{res}         3.03         2.54       -19.01{txt}
+{txt}No. difficult word~t{res}         2.36         1.50       -38.11{txt}
+{txt}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}
+Flesch Reading Ease {res}        -0.80         1.33      -270.11{txt}
+{txt}Flesch-Kincaid      {res}        -1.79        -3.92       118.14{txt}
+{txt}Gunning Fog         {res}        -1.40        -3.19       125.60{txt}
+{txt}SMOG                {res}        -0.89        -2.18       141.74{txt}
+{txt}Dale-Chall          {res}         0.77        -0.03      -103.27{txt}
+{txt}{hline 59}
+{res}
+{txt}{title:Table 7: Textual characteristics, published papers vs. drafts} 
+{txt}{hline 109}
+{txt}                          {ul:Men}                                  {ul:Women}                               
+{txt}                          Working pa~r Published ~e   Difference    Working pa~r Published ~e   Difference   
+{txt}{hline 109}
+{txt}No. sentences            {res}         6.47         5.10       -1.375***         6.77         5.06       -1.711***{txt}
+                         {res}       (0.06)       (0.04)      (0.054)          (0.15)       (0.08)      (0.139)   {txt}
+{txt}No. characters           {res}       862.45       649.68     -212.767***       907.36       635.97     -271.385***{txt}
+                         {res}       (7.19)       (4.67)      (7.160)         (18.53)      (10.31)     (18.439)   {txt}
+{txt}No. words                {res}       155.70       115.70      -40.004***       164.45       113.63      -50.813***{txt}
+                         {res}       (1.32)       (0.85)      (1.323)          (3.42)       (1.91)      (3.428)   {txt}
+{txt}No. syllables            {res}       257.01       193.36      -63.653***       269.02       187.78      -81.242***{txt}
+                         {res}       (2.15)       (1.40)      (2.135)          (5.54)       (3.08)      (5.504)   {txt}
+{txt}No. polysyllabic words   {res}        28.36        21.81       -6.545***        28.93        20.63       -8.308***{txt}
+                         {res}       (0.28)       (0.18)      (0.245)          (0.71)       (0.41)      (0.627)   {txt}
+{txt}No. difficult words      {res}        58.51        44.61      -13.892***        60.32        42.37      -17.949***{txt}
+                         {res}       (0.51)       (0.33)      (0.482)          (1.30)       (0.74)      (1.204)   {txt}
+{txt}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}
+No. words / sentence co~t{res}        24.74        23.58       -1.166***        24.98        23.16       -1.820***{txt}
+                         {res}       (0.14)       (0.12)      (0.124)          (0.33)       (0.27)      (0.302)   {txt}
+{txt}No. polysyllabic words ~c{res}         6.03         4.45       -1.576***         6.05         4.23       -1.819***{txt}
+                         {res}       (0.07)       (0.03)      (0.060)          (0.18)       (0.08)      (0.155)   {txt}
+{txt}No. syllables / word co~t{res}         1.66         1.68        0.018***         1.64         1.66        0.015***{txt}
+                         {res}       (0.00)       (0.00)      (0.002)          (0.01)       (0.00)      (0.004)   {txt}
+{txt}No. polysyllabic words ~t{res}         0.18         0.19        0.006***         0.18         0.18        0.005** {txt}
+                         {res}       (0.00)       (0.00)      (0.001)          (0.00)       (0.00)      (0.002)   {txt}
+{txt}No. difficult words / w~t{res}         0.38         0.39        0.009***         0.37         0.37        0.006** {txt}
+                         {res}       (0.00)       (0.00)      (0.001)          (0.00)       (0.00)      (0.002)   {txt}
+{txt}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}{hline 1}
+Flesch Reading Ease      {res}        41.46        41.13       -0.332*          42.51        43.08        0.564   {txt}
+                         {res}       (0.26)       (0.18)      (0.185)          (0.66)       (0.43)      (0.452)   {txt}
+{txt}Flesch-Kincaid           {res}       -13.62       -13.38        0.243***       -13.53       -13.00        0.531***{txt}
+                         {res}       (0.06)       (0.05)      (0.050)          (0.15)       (0.11)      (0.122)   {txt}
+{txt}Gunning Fog              {res}       -17.28       -17.04        0.242***       -17.13       -16.58        0.547***{txt}
+                         {res}       (0.07)       (0.05)      (0.055)          (0.18)       (0.13)      (0.140)   {txt}
+{txt}SMOG                     {res}       -15.14       -15.00        0.135***       -15.02       -14.70        0.327***{txt}
+                         {res}       (0.05)       (0.03)      (0.035)          (0.13)       (0.09)      (0.095)   {txt}
+{txt}Dale-Chall               {res}       -10.85       -10.93       -0.084***       -10.71       -10.70        0.003   {txt}
+                         {res}       (0.02)       (0.02)      (0.016)          (0.06)       (0.04)      (0.037)   {txt}
+{txt}{hline 109}
+{txt}{p 0 0 0 115} Sample 1,714 published articles authored by more than 50 percent men (1,715 NBER working papers); 272 published articles authored by at least 50 percent women (273 NBER working papers). Figures are means of textual characteristics by sex for NBER working papers and published articles. Third and sixth columns subtract working paper figures (columns 1 and 4) from published article figures (columns 2 and 5) for men and women. Standard errors in parentheses. {p_end}
+{txt}* p<0.1, ** p<0.05, *** p<0.01
+{res}
+{txt}Percent of gap caused in peer review
+{txt}{hline 33}
+{txt}                                %
+{txt}{hline 33}
+{txt}Flesch Reading Ease {res}        29.62{txt}
+{txt}Flesch-Kincaid      {res}        58.36{txt}
+{txt}Gunning Fog         {res}        48.54{txt}
+{txt}SMOG                {res}        41.92{txt}
+{txt}Dale-Chall          {res}        28.61{txt}
+{txt}Average             {res}        41.41{txt}
+{txt}{hline 33}
+{res}
+{txt}{title:Table 8: The impact of gender, specific to peer review} 
+{txt}{hline 105}
+{txt}                                   OLS            FGLS                                             OLS   
+{txt}                          Published ~e    Working pa~r    Published ~e      Difference         ∆ score   
+{txt}{hline 105}
+{txt}Flesch Reading Ease      {res}         1.33**          2.26**          3.21***         0.95*           0.94   {txt}
+                         {res}      (0.580)         (1.005)         (1.215)         (0.575)         (0.600)   {txt}
+{txt}Flesch-Kincaid           {res}         0.52***         0.31            0.76***         0.44**          0.44** {txt}
+                         {res}      (0.177)         (0.226)         (0.280)         (0.182)         (0.189)   {txt}
+{txt}Gunning Fog              {res}         0.52***         0.44*           0.86***         0.42**          0.42** {txt}
+                         {res}      (0.188)         (0.243)         (0.292)         (0.190)         (0.198)   {txt}
+{txt}SMOG                     {res}         0.30**          0.33**          0.56***         0.24**          0.24*  {txt}
+                         {res}      (0.129)         (0.155)         (0.189)         (0.118)         (0.123)   {txt}
+{txt}Dale-Chall               {res}         0.18***         0.32***         0.45***         0.13**          0.13** {txt}
+                         {res}      (0.054)         (0.102)         (0.106)         (0.050)         (0.053)   {txt}
+{txt}{hline 105}
+{txt}Editor effects           {res}            ✓               ✓               ✓                               ✓   {txt}
+{txt}Journal effects          {res}            ✓               ✓               ✓                               ✓   {txt}
+{txt}Year effects             {res}            ✓               ✓               ✓                                   {txt}
+{txt}Journal×Year effects     {res}            ✓               ✓               ✓                               ✓   {txt}
+{txt}Quality controls         {res}           ✓³              ✓³              ✓³                              ✓⁴   {txt}
+{txt}Native speaker           {res}            ✓               ✓               ✓                               ✓   {txt}
+{txt}{hline 105}
+{txt}{p 0 0 0 100} Sample 1,709 NBER working papers; 1,707 published articles. Estimates exclude 279 pre-internet double-blind reviewed articles (see {bf:Footnote51}). Column one displays coefficients on female ratio (β₁P) from estimating {bf:equation2} directly via OLS (see {bf:appendixdraftcorr} for coefficients on RⱼW); standard errors clustered by editor in parentheses. Columns two and three display β̃₁W and β̃₁W+β₁P from FGLS estimation of {bf:equation6} and {bf:equation7} , respectively; standard errors clusterd by year and robust to cross-model correlation in parentheses. Their difference (β₁P) is shown in column four. Column five displays β₁P from OLS estimation of {bf:equation3} ; standard errors clustered by year in parentheses. Quality controls denoted by ✓³ include citation count, Tⱼ and tⱼ; ✓⁴ includes tⱼ, only (see {bf:Footnote46}). {p_end}
+{txt}* p<0.1, ** p<0.05, *** p<0.01
+{res}1
+2
+3
+4
+5
+{txt}
+{com}. {txt}
+{com}. quietly {c -(}
+{res}
+{txt}{title:Table 10: Gender gap in readability at increasing t} 
+{txt}{hline 121}
+{txt}                                   t=1             t=2             t=3           t=4–5             t≥6             All   
+{txt}{hline 121}
+{txt}Flesch Reading Ease      {res}         0.26            1.57*           4.67***         2.73            3.35            1.66** {txt}
+                         {res}       (0.63)          (0.91)          (1.14)          (1.97)          (2.14)          (0.72)   {txt}
+{txt}Flesch-Kincaid           {res}         0.07            0.18            0.82***         0.58            0.62            0.21   {txt}
+                         {res}       (0.15)          (0.21)          (0.25)          (0.41)          (0.43)          (0.15)   {txt}
+{txt}Gunning Fog              {res}         0.20            0.38            1.10***         0.83*           0.88            0.44** {txt}
+                         {res}       (0.16)          (0.25)          (0.30)          (0.47)          (0.54)          (0.18)   {txt}
+{txt}SMOG                     {res}         0.11            0.27            0.73***         0.64*           0.66*           0.33** {txt}
+                         {res}       (0.12)          (0.17)          (0.21)          (0.37)          (0.38)          (0.13)   {txt}
+{txt}Dale-Chall               {res}         0.07            0.10            0.34***         0.29*           0.43*           0.17** {txt}
+                         {res}       (0.06)          (0.08)          (0.12)          (0.17)          (0.24)          (0.07)   {txt}
+{txt}{hline 121}
+{txt}No. observations         {res}        6,876           2,827           1,674           1,908           2,777          12,013   {txt}
+{txt}N                        {res}            ✓               ✓               ✓               ✓               ✓               ✓   {txt}
+{txt}Editor effects           {res}            ✓               ✓               ✓               ✓               ✓               ✓   {txt}
+{txt}Journal effects          {res}            ✓               ✓               ✓               ✓               ✓               ✓   {txt}
+{txt}Year effects             {res}            ✓               ✓               ✓               ✓               ✓               ✓   {txt}
+{txt}Journal×Year effects     {res}                                                                                            ✓   {txt}
+{txt}Institution effects      {res}            ✓               ✓               ✓               ✓               ✓               ✓   {txt}
+{txt}Quality controls         {res}           ✓⁵              ✓⁵              ✓⁵              ✓⁵              ✓⁵              ✓¹   {txt}
+{txt}Native speaker           {res}            ✓               ✓               ✓               ✓               ✓               ✓   {txt}
+{txt}{hline 121}
+{txt}{p 0 0 0 125} β₁ from FGLS estimation of {bf:equation1} without lagged dependent variable. First column restricts sample to authors' first publication in the data (t=1), second column to their second (t=2), {it:etc.} Regressions weighted by 1/ Nⱼ (see {bf:authorlevel}). Standard errors (in parentheses) adjusted for two-way clustering (editor and author) and cross-model correlation. Final column estimates from an unweighted population-averaged regression; error correlations specified by an auto-regressive process of order one and standard errors (in parentheses) adjusted for one-way clustering on author. Quality controls denoted by ✓¹ include citation count and Tⱼ fixed effects; ✓⁵ includes citation count, only. {p_end}
+{txt}* p<0.1, ** p<0.05, *** p<0.01
+{res}
+{txt}Percent difference, male and female scores
+{txt}{hline 98}
+{txt}                              t=1          t=2          t=3        t=4–5          t≥6          All
+{txt}{hline 98}
+{txt}Flesch Reading Ease {res}         0.65         3.98        11.79         6.90         8.40         4.17{txt}
+{txt}Flesch-Kincaid      {res}        -0.52        -1.28        -5.99        -4.24        -4.60        -1.53{txt}
+{txt}Gunning Fog         {res}        -1.17        -2.18        -6.34        -4.79        -5.10        -2.50{txt}
+{txt}SMOG                {res}        -0.75        -1.74        -4.80        -4.21        -4.34        -2.14{txt}
+{txt}Dale-Chall          {res}        -0.67        -0.91        -3.11        -2.59        -3.88        -1.58{txt}
+{txt}{hline 98}
+
+{com}. exit
+{txt}
+{com}. quietly {c -(}
+{res}Average proportional effect on discrimination (1): 8.9
+Average ratio of observations above and below zero: 7.1
+Average percentage of observations exhibiting evidence of discrimination: 65.12
+Conditional on discrimination, percentage of pairs discriminating against women: 74.04
+Conditional on discrimination, ratio of female to male measures of discrimination: 1.68
+
+{txt}{title:Table 9:  Ȓᵢ3- Ȓk3 (Condition 1) and  Ȓᵢ3-\widehat R_{i1}  (Condition 2)} 
+{txt}{hline 105}
+{txt}                          Flesch Rea~e    Flesch Kin~d     Gunning Fog            SMOG      Dale-Chall   
+{txt}{hline 105}
+{txt}Cond. 1: Ȓᵢ₃-Ȓk₃         {res}        8.798***        1.610***        2.629***        1.876***        0.844***{txt}
+                         {res}      (1.729)         (0.360)         (0.438)         (0.313)         (0.162)   {txt}
+{txt}Cond. 2: Ȓᵢ₃-Ȓᵢ₁ (women) {res}        4.290***        0.892***        1.310***        0.792***        0.004   {txt}
+                         {res}      (1.544)         (0.316)         (0.388)         (0.285)         (0.133)   {txt}
+{txt}Cond. 2: Ȓk₃-Ȓk₁ (men)   {res}       -3.216**        -0.722**        -1.275***       -0.893***       -0.544***{txt}
+                         {res}      (1.397)         (0.304)         (0.349)         (0.243)         (0.115)   {txt}
+{txt}{hline 105}
+{txt}{p 0 0 0 100} Sample 121 matched pairs (104 and 121 distinct men and women, respectively). Ȓᵢt and Ȓkt are observation-specific readability scores estimated at female ratio equal to 0 for men, 1 for women and t=3 median values of remaining t-dependent co-variates (see {bf:appendixmatchingbalance} and text for more details). Figures are weighted by the frequency observations are used in a match. Degrees-of-freedom corrected standard errors in parentheses. {p_end}
+{txt}* p<0.1, ** p<0.05, *** p<0.01
+{res}
+{txt}{title:Table 10:  Ḏᵢk, {bf:equation11} } 
+{txt}{hline 109}
+{txt}                     Women                              Men                                          Means   
+{txt}                      Mean       S.D.          N       Mean       S.D.          N                            
+{txt}{hline 109}
+{txt}Flesch Readin~e{res}      18.32      12.94         58     -12.42      10.58         21       6.69***       6.02***{txt}
+               {res}                                                                       (1.62)        (1.68)   {txt}
+{txt}Flesch Kincaid {res}       3.70       2.68         61      -2.05       2.11         25       1.40***       1.22***{txt}
+               {res}                                                                       (0.34)        (0.35)   {txt}
+{txt}Gunning Fog    {res}       5.11       3.31         62      -3.12       2.57         17       2.23***       2.03***{txt}
+               {res}                                                                       (0.42)        (0.44)   {txt}
+{txt}SMOG           {res}       3.64       2.35         63      -2.44       1.95         16       1.58***       1.44***{txt}
+               {res}                                                                       (0.30)        (0.32)   {txt}
+{txt}Dale-Chall     {res}       1.94       1.30         48      -0.96       0.65         23       0.57***       0.51***{txt}
+               {res}                                                                       (0.15)        (0.16)   {txt}
+{txt}{hline 109}
+{txt}{p 0 0 0 100} Sample 121 matched pairs (104 and 121 distinct men and women, respectively). First and second panels display conditional means, standard deviations and observation counts of Ḏᵢk ({bf:equation11}) from subpopulations of matched pairs in which the woman or man, respectively, satisfies Conditions 1 and 2. Third panel displays mean Ḏᵢk over all observations. To account for the 30--40 percent of pairs for which {bf:Theorem1} is inconclusive, (1) sets Ḏᵢk=0, while (2) sets Ḏᵢk= Ȓᵢ3- Ȓk3 if Ȓᵢ3< Ȓk3 (i female, k male) and zero, otherwise. Male scores are subtracted from female scores; Ḏᵢk is positive in panel one and negative in panel two. Ḏᵢk weighted by frequency observations are used in a match; degrees-of-freedom corrected standard errors in parentheses (panel three, only). {p_end}
+{txt}* p<0.1, ** p<0.05, *** p<0.01
+
+{com}. {txt}
+{com}. quietly {c -(}
+Age threshold 3, papers by mothers: 11; papers with births:  9
+Age threshold 4, papers by mothers: 14; papers with births:  9
+Age threshold 5, papers by mothers: 16; papers with births:  9
+{title:Age threshold 5}
+Male review time:  18.47 (standard error: 0.102)
+Papers by women:   49
+Papers by women with review times below 25th percentile:  4
+Papers by women with review times above 75th percentile: 23
+Women's ratio 75th/25th:   5.75
+Age threshold 10, papers by mothers: 17; papers with births:  9
+Age threshold 18, papers by mothers: 19; papers with births:  9
+{res}
+{txt}{title:Table 9: Revision duration at {it:Econometrica} } 
+{txt}{hline 111}
+{txt}                         (1)             (2)             (3)             (4)             (5)             (6)   
+{txt}{hline 111}
+{txt}Female ratio   {res}        5.290**         6.632***        6.636***        5.541***        6.654***        8.797***{txt}
+               {res}      (2.011)         (2.164)         (2.144)         (2.051)         (2.150)         (2.719)   {txt}
+{txt}Max. t_j       {res}       -0.163**        -0.169**        -0.164**        -0.164**        -0.163**        -0.169*  {txt}
+               {res}      (0.070)         (0.071)         (0.070)         (0.070)         (0.070)         (0.087)   {txt}
+{txt}No. pages      {res}        0.180***        0.179***        0.178***        0.180***        0.178***        0.206***{txt}
+               {res}      (0.026)         (0.026)         (0.026)         (0.026)         (0.026)         (0.042)   {txt}
+{txt}N              {res}        1.020**         0.973**         0.963**         1.007**         0.970**         1.149   {txt}
+               {res}      (0.443)         (0.442)         (0.443)         (0.443)         (0.443)         (0.698)   {txt}
+{txt}Order          {res}        0.223**         0.221**         0.218**         0.221**         0.220**         0.496** {txt}
+               {res}      (0.089)         (0.090)         (0.089)         (0.089)         (0.089)         (0.218)   {txt}
+{txt}No. citations  {res}        0.000           0.000           0.000           0.000           0.000          -0.004***{txt}
+               {res}      (0.000)         (0.000)         (0.000)         (0.000)         (0.000)         (0.001)   {txt}
+{txt}Mother         {res}                                       -6.660**                       -10.934***      -17.672***{txt}
+               {res}                                      (2.681)                         (3.212)         (3.285)   {txt}
+{txt}Birth          {res}                                                       -2.252           7.579*         12.337** {txt}
+               {res}                                                      (3.360)         (4.167)         (5.588)   {txt}
+{txt}Constant       {res}       37.708***       37.596***       37.787***       37.692***       37.892***       14.853***{txt}
+               {res}      (2.038)         (2.080)         (2.045)         (2.047)         (2.057)         (2.791)   {txt}
+{txt}{hline 111}
+{txt}Editor effects {res}            ✓               ✓               ✓               ✓               ✓               ✓   {txt}
+{txt}Year effects   {res}            ✓               ✓               ✓               ✓               ✓               ✓   {txt}
+{txt}Institution e~s{res}            ✓               ✓               ✓               ✓               ✓               ✓   {txt}
+{txt}JEL (primary)~s{res}                                                                                            ✓   {txt}
+{txt}No. observati~s{res}        2,626           2,610           2,626           2,626           2,626           1,281   {txt}
+{txt}{hline 111}
+{txt}{p 0 0 0 125} Sample 2,626 articles. Coefficients from OLS estimation of {bf:equation13} ; (2) excludes papers authored only by women who gave birth (9 articles) and/or had a child younger than five (16 articles) at some point during peer review. Standard errors clustered by year in parentheses. {p_end}
+{txt}* p<0.1, ** p<0.05, *** p<0.01
+
+{com}. {txt}
+{com}. quietly {c -(}
+{res}
+{txt}{title:Percentage change from first score}
+{txt}{hline 77}
+{txt}             Flesch Rea~e Flesch Kin~d  Gunning Fog         SMOG   Dale-Chall
+{txt}{hline 77}
+{res}% change first to mean score                                                 {txt}
+{txt}Women       {res}        5.116       -3.243       -2.553       -1.693       -0.855{txt}
+{txt}Men         {res}        0.551       -0.613       -0.733       -0.539        0.183{txt}
+{txt}{hline 77}
+{res}% change first to final score                                                {txt}
+{txt}Women       {res}        7.136       -5.140       -4.487       -3.445       -0.881{txt}
+{txt}Men         {res}        0.395       -0.444       -0.785       -0.681        0.801{txt}
+{txt}{hline 77}
+{res}
+{txt}{title:Table B.3: Average first, mean and final paper scores} 
+{txt}{hline 90}
+{txt}                          Flesch Rea~e Flesch Kin~d  Gunning Fog         SMOG   Dale-Chall
+{txt}{hline 90}
+{res}Average first paper score                                                                 {txt}
+{txt}Women                    {res}        39.20       -13.81       -17.36       -15.18       -11.00{txt}
+                         {res}      (1.152)      (0.238)      (0.289)      (0.210)      (0.097){txt}
+{txt}Men                      {res}        39.37       -13.77       -17.54       -15.35       -11.00{txt}
+                         {res}      (0.307)      (0.072)      (0.082)      (0.055)      (0.026){txt}
+{txt}{hline 90}
+{res}Average mean score                                                                        {txt}
+{txt}Women                    {res}        41.20       -13.36       -16.92       -14.92       -10.91{txt}
+                         {res}      (0.720)      (0.147)      (0.185)      (0.135)      (0.067){txt}
+{txt}Men                      {res}        39.59       -13.69       -17.42       -15.27       -11.02{txt}
+                         {res}      (0.186)      (0.043)      (0.048)      (0.033)      (0.016){txt}
+{txt}{hline 90}
+{res}Average final paper score                                                                 {txt}
+{txt}Women                    {res}        41.99       -13.10       -16.58       -14.66       -10.90{txt}
+                         {res}      (1.060)      (0.215)      (0.253)      (0.182)      (0.107){txt}
+{txt}Men                      {res}        39.53       -13.71       -17.41       -15.24       -11.08{txt}
+                         {res}      (0.325)      (0.080)      (0.090)      (0.059)      (0.026){txt}
+{txt}{hline 90}
+{txt}{p 0 0 0 100} Sample 1,674 authors; includes only authors with three or more publications. Figures are average readability scores for authors' first, mean and last published articles. Grade-level scores have been multiplied by negative one (see {bf:measuringreadability}). Standard errors in parentheses. {p_end}
+
+{com}. {smcl}
+{com}{sf}{ul off}

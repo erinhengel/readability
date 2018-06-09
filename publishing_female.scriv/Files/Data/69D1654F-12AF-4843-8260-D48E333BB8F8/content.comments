@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Comments>
+    <Comment ID="1D775463-DC82-4318-943D-8863AFFCC81C" Footnote="Yes" Number="57" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf390
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;\csgray\c100000;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs20 \cf0 Doing Business also publishes a measure of the average cost of bankruptcy proceedings. Unfortunately, the data is based on a highly stylised case study of a viable firm and is calculated conditional on  specific bankruptcy procedures without explicitly mentioning what those procedures are. The cost of enforcing contracts, on the other hand, records many of the same fees associated with reorganisation---court costs, attorney fees and eventual sale of the disputed asset---thus proxying for its price while remaining independent of its use. Unlike the average cost of bankruptcy measure, it is also available for all WES countries.}]]></Comment>
+    <Comment ID="58A22C39-20C2-4784-896F-5D603449C370" Color="0.992 0.929 0.525"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf390
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;\csgray\c100000;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs20 \cf0 \\input\{$PPATH/p2/equations/p2equation1\}}]]></Comment>
+    <Comment ID="F002B005-B25A-4CA5-A99C-76776BE3B366" Footnote="Yes" Number="58" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf390
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;\csgray\c100000;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs20 \cf0 $t$ corresponds to the year in which data are collected---generally the year prior to their publication.}]]></Comment>
+    <Comment ID="62E9C378-CA4C-4681-896E-D5355280F1CC" Footnote="Yes" Number="59" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf390
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;\csgray\c100000;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs20 \cf0 <!--\\label\{p2footnote2\}-->The depth of credit information index was revised in 2014 but backwardly updated only to a single year. The previous methodology scored countries based on six criteria; the new methodology appends two more features.}]]></Comment>
+    <Comment ID="FE90D0FC-D94F-4028-8B3F-ED3F7563FD11" Color="0.992 0.929 0.525"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf390
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;\csgray\c100000;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs20 \cf0 \\input\{$PPATH/p2/tables/tex/p2table3\}}]]></Comment>
+    <Comment ID="721280CD-660D-4A64-B63F-E19B935FC69C" Footnote="Yes" Number="60" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf390
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;\csgray\c100000;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs20 \cf0 Simple average of 189 economies covered in the Doing Business database.}]]></Comment>
+    <Comment ID="69AFC2F3-7519-4451-AAE9-FA71C2E639B8" Footnote="Yes" Number="61" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf390
+{\fonttbl\f0\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;\csgray\c100000;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs20 \cf0 Values above 1 indicate resolving a commercial dispute costs more than the value of the underlying claim.}]]></Comment>
+</Comments>
