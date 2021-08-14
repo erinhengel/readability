@@ -12,7 +12,7 @@ Data
 
 Almost all figures and tables in Hengel (2021) were generated using the raw data in `0-data/fixed/read.db`. `read.db` is an SQLite database of bibliographic and author information for articles published in top-five economics journals. It contains 11 tables. Their contents and provenance are described below; Table 1 describes each column; Figure 1 displays `read.db`'s entity-relationship diagram. Please see Hengel (2021), Section 2 and Appendices C and D for additional information on data provenance and variable construction.
 
-![Entity-relationship diagram for `read.db`](0-images/fixed/database-diagram.pdf)
+![Entity-relationship diagram for `read.db`](https://github.com/erinhengel/readability/blob/main/0-images/fixed/database-diagram.pdf?raw=true)
 
 *	**Article**. The Article table contains bibliographic information from every English-language article published with an abstract in the *American Economic Review*, *Econometrica*, *Journal of Political Economy* and the *Quarterly Journal of Economics* between January 1950 and December 2015 (inclusive) and *Review of Economic Studies* articles published with submit and accept dates.
 	
