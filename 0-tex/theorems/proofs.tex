@@ -1,0 +1,96 @@
+\begin{lemma}
+	$\Pi_{it}^s(R_{it})$ converges uniformly to $\bm1_i^s(R_i)$.
+	\label{lemma2}
+\end{lemma}
+
+\begin{proof}	
+	By assumption, the sequence $\{\pi_{it}^{s}(R)\}$ converges uniformly. Because $\Pi_{it}^{s}(R)$ converges for some $R$, $\Pi_{it}^{s}(R)$ also converges uniformly on a closed interval containing $R$ and on which $\Pi_{it}^s$ is differentiable~\citep[Theorem 7.17]{Rudin1976}. For example, if $i$ is rejected at time $t'$ with readability $R$ by review group $s$, then $\Pi_{it}^{s}(R)=0$ for all $t>t'$ and $[R',R]$  is the closed interval on which $\Pi_{it}^s$ is differentiable, where $R'$ is some arbitrary number smaller than $R$. Similarly, if $i$ is accepted at time $t'$, then $\Pi_{it}^s(R)=0$ for all $t>t'$ and the closed interval on which $\Pi_{it}^s$ is differentiable is $[R,R']$ where this time $R'$ is an arbitrary number greater than $R$. (Note that in the second case, $R$ may equal $\widetilde R_i^s$.)
+	
+	% If R=\tilde R then i's paper is accepted, Pi(R)=1 for all R<\tilde R and the closed interval on which Pi is differentiable is [\tilde R, whatever>\tilde R].
+	% If R=\tilde R-\epsilon, then i's paper is rejected, Pi(R)=0 for all R<\tilde R+epsilon and the closed interval on which Pi is differentiable is []
+	
+	By the Cauchy criterion for uniform convergence~\citep[Theorem 7.8]{Rudin1976}, for every $\varepsilon>0$ there exists an integer $N$ such that $t\ge N$ implies
+	\begin{equation}
+		\left|\Pi_{it}^{s}(R)-\Pi_{it+1}^{s}(R)\right|\le\varepsilon.
+		\label{eq:cauchy}
+	\end{equation}
+	Because $i$ updates $\Pi_{it}^{s}$ based on past experience in peer review, $\Pi_{it+1}^{s}(R)=\bm1_i^{s}(R)$, where $\bm1_i^{s}(R)$ equals 1 if $R\ge\widetilde R_{i}^s$ and 0, otherwise. Thus, \autoref{eq:cauchy} is equivalent to
+	\begin{equation*}
+		\left|\Pi_{it}^{s}(R)-\bm1_i^s(R)\right|\le\varepsilon,
+		\label{eq:cauchy0}
+	\end{equation*}
+	and therefore implies that $\Pi_{it}^{s}(R)$ converges uniformly to $\bm1_i^{s}(R)$.
+	
+	It remains to show that $R_{it}$ converges. At every $t$, $i$'s optimal choice of $R_{it}$ maximises \autoref{eq:EU}. It is found by solving the following first order condition:
+	\begin{equation}
+		\int_\Sigma\!\pi_{it}^{s}(R_{it})\,u_i\,\mathrm d\mu_i=c_i'(R_{it})-\phi_i'(R_{it}).
+		\label{eq:foc0}
+	\end{equation}
+	
+	Define $\Sigma_{A_{it}}$ as the set of $s\in\Sigma$ with $\mu_i^s>0$ and $\Pi_{it}^s(R_{it})>0$ (\textit{i.e.}, the set of potential review groups that $i$ believes has some chance of accepting his $t$th paper). Let $\bar s$ denote the review group in $\Sigma_{A_{it}}$ such that $i$ believes $\widetilde R_i^{\bar s}$ is highest (\textit{i.e.}, $\Pi_{it}^{\bar s}(R)\le\Pi_{it}^s(R)$ for every $R$ and all $s\in\Sigma_{A_{it}}$). Without loss of generality, \autoref{eq:foc0} is equivalent to\footnote{One could think of $\Pi_{it}^{\bar s}(R_{it})$ as summarising $i$'s beliefs across all or some review groups (\textit{e.g.}, $\Pi_{it}^{\bar s}(R_{it})=\int\Pi_{it}^s(R_{it})\mathrm d\mu_i$). Alternatively, recall that $i$ updates his beliefs based on past experience in peer review. Thus, if $i$ is accepted at time $t$ by review group $s$, he will observe that $\widetilde R_i^s\le R_{it}$. For large enough $t$, $i$ will therefore know with probability 1 that $\widetilde R_i^s\le R_{it}$ (and so $\pi_{it}^{s}(R_{it})=0$) for all $s\in\Sigma_{A_{it}}$ such that $s\neq\bar s$; the only remaining uncertainty at time $t$ is whether $\widetilde R_i^{\bar s}\le R_{it}$ as well.} 
+	\begin{equation}
+		\pi_{it}^{\bar s}(R_{it})=\frac{c_i'(R_{it})-\phi_i'(R_{it})}{\mu_i^{\bar s}\,u_i}.
+		\label{eq:foc}
+	\end{equation}
+	
+	Applying the Cauchy criterion for uniform convergence to $\pi_{it}^{\bar s}(R)$, for every $\varepsilon>0$ there exists an integer $N$ such that $t\ge N$ implies
+	\begin{equation}
+		\left|\pi_{it}^{\bar s}(R_{it})-\pi_{it+1}^{\bar s}(R_{it})\right|\le\varepsilon\quad\text{and}\quad\left|\pi_{it+1}^{\bar s}(R_{it+1})-\pi_{it+2}^{\bar s}(R_{it+1})\right|\le\varepsilon.
+		\label{eq:cauchy1}
+	\end{equation}
+	Since $i$ updates $\Pi_{it}^{\bar s}$ based on past experience in peer review, $\Pi_{it+1}^{\bar s}(R_{it})=\bm1_i^{\bar s}(R_{it})$ and $\Pi_{it+2}^{\bar s}(R_{it+1})=\bm1_i^{\bar s}(R_{it+1})$. Suppose $R_{it}$ or $R_{it+1}$ equal $\widetilde R_i^{\bar s}$. Then either $i$ updates his belief that $\bar s$ is the review group in $\Sigma_{A_{it}}$ with the highest $\widetilde R_i^s$, or he optimally sets $R_{it'}=\widetilde R_i^{\bar s}$ for all $t'>t$, so $R_{it}$ converges to $\widetilde R_i^s$, as required. Suppose neither $R_{it}$ nor $R_{it+1}$ equal $\widetilde R_i^{\bar s}$. Then $\pi_{it+1}^{\bar s}(R_{it})=\pi_{it+2}^{\bar s}(R_{it+1})=0$; thus \autoref{eq:cauchy1} implies
+	\begin{equation}
+		\left|\pi_{it}^{\bar s}(R_{it})-\pi_{it+1}^{\bar s}(R_{it+1})\right|\le\varepsilon.
+		\label{eq:cauchy2}
+	\end{equation}
+	\autoref{eq:cauchy2} combined with \autoref{eq:foc} means that for every $\varepsilon>0$ there exists an integer $N$ such that $t\ge N$ implies
+	\begin{equation}
+		\left|\frac{\left(c_i'(R_{it}))-c_i'(R_{it+1})\right)-\left(\phi_i'(R_{it})-\phi_i'(R_{it+1})\right)}{\mu_i^{\bar s}\,u_i}\right|\le\varepsilon.
+		\label{eq:cauchy3}
+	\end{equation}
+
+	According to \autoref{eq:foc}, the optimal $R_i^\star$ solves $c_i'(R_i^\star)=\phi_i'(R_i^\star)$ in the absence of uncertainty. When uncertainty is present, however, the optimal $R_{it}$ is strictly greater than $R_i^\star$. Thus, $R_{it}\ge R_i^\star$ for all $t$. If $R_{it}$ were unbounded from above, then the numerator in \autoref{eq:cauchy3} would not converge to zero, since $c_i''(R)-\phi_i''(R)>0$ for all $R>R^\star$. Thus, \autoref{eq:cauchy3} is only true for every $\varepsilon>0$ and $t\ge N$ if the sequence $\{R_{it}\}$ converges.
+	
+	Let $R_i$ denote the limit of $R_{it}$. Given $\Pi_{it}^{\bar s}(R_{it})$ converges uniformly to $\bm1_i^{\bar s}(R_{it})$ and $R_{it}$ converges to $R_i$, $\Pi_{it}^{\bar s}(R_{it})$ converges uniformly to $\bm1_i^{\bar s}(R_i)$, as desired.
+\end{proof}
+
+\begin{proof}[Proof of \autoref{Theorem1}]
+	Having established that $\Pi_{it}^s(R_{it})$ converges uniformly to $\bm1_i^s(R_i)$ (\autoref{lemma2}), we prove Theorem 1 at the limit. From Condition 1 we know that $R_i>R_k$. Thus, if $\widetilde R_i^s=\widetilde R_k^s$ for all $s\in\Sigma$, then the following is also true for all $s\in\Sigma$:
+	\begin{equation}
+		\bm1_i^s(R_i)\ge\bm1_k^s(R_k).
+		\label{eq:inequality1}
+	\end{equation}
+	
+	Suppose \autoref{eq:inequality1} holds as an equality for all $s\in\Sigma$ for which $\mu_i^s>0$. From Condition 2, we know $R_i>R_{it''}>R_i^\star$. Thus, $i$ chooses $R_i$ over his previously optimal choice $R_{it''}$ only because it increases his probability of acceptance. Moreover, because he observes the readability choices and publication outcomes of $k$, he also knows $\bm1_k^s(R_k)$ for all $s\in\Sigma$. But if $\mu_i^s=\mu_k^s$ and $\bm1_i^s(R_i)=\bm1_k^s(R_k)$ for all $s\in\Sigma$ where $\mu_i^s>0$, then $i$'s optimal choice of readability at the limit is $R_i\le R_k$, contradicting Condition 1.
+	
+	Suppose instead that the inequality in \autoref{eq:inequality1} is strict for at least one $s\in\Sigma$ for which $\mu_i^s>0$. Assuming $\mu_i^s=\mu_k^s$ for all $s\in\Sigma$, this implies
+	\begin{equation}
+		\int_\Sigma\!\bm1_i^s(R_i)\,\mathrm d\mu_i>\int_\Sigma\!\bm1_k^s(R_k)\,\mathrm d\mu_k,
+		\label{eq:inequality2}
+	\end{equation}
+	contradicting Condition 3. Thus, all is proved.
+\end{proof}
+
+\begin{proof}[Proof of \autoref{Corollary1}]
+	
+	From Condition 2 of~\autoref{Theorem1} we know that $R_{it''}<R_{it'}$. Since $i$ would never choose $R<R_i^\star$, it must be the case that $R_i^\star\le R_{it''}$ and hence $R_i^\star<R_{it'}$. Thus, $i$ optimally minimises $R$ conditional on acceptance rate and therefore sets $R_{it}=\widetilde R_i^{\bar s}+e_{it}$, where $e_{it}$ is the error in $i$'s time $t$ beliefs about $\widetilde R_i^{\bar s}$, $\bar s\in\Sigma_{A_{it'}}$ is the readability threshold of the toughest review group that $i$ believes will still accept his paper and $\Sigma_{A_{it'}}$ is the set of review groups that $i$ believes will accept his paper at time $t'$.
+	
+	Suppose $R_{it''}\le R_{kt'}$ and recall that $e_{it}=e_{kt}$ by Assumption 4. If $i$ and $k$ were held to identical standards, then $\widetilde R_i^{\bar s}=\widetilde R_k^{\bar s}$. Thus, $i$'s optimal choice of readability at time $t'$ is
+	\begin{align*}
+		R&=\widetilde R_i^{\bar s}+e_{it'}\\
+		&=\widetilde R_k^{\bar s} + e_{kt'}\\
+		&\le\max\left\{R_k^\star,R_k^{\bar s} + e_{kt'}\right\}\\
+		&=R_{kt'}.
+	\end{align*}
+	Thus, if $i$ and $k$ were subject to identical standards, then $i$ would not optimally set $R$ above $R_{kt'}$. Suppose instead $R_{kt'}<R_{it''}$. Then $i$'s optimal choice of readability at time $t'$ is
+	\begin{align*}
+		R&=\max\left\{R_i^\star,\widetilde R_i^{\bar s}+e_{it'}\right\} \\
+		&=\max\left\{R_i^\star,\widetilde R_k^{\bar s}+e_{kt'}\right\}\\
+		&=\max\left\{R_i^\star,R_{kt'}\right\}\\
+		&\le\max\left\{R_i^\star, R_{it''}\right\} \\
+		&=R_{it''}.
+	\end{align*}
+	Thus, if $i$ and $k$ were subject to identical standards, then $i$ would not optimally set $R$ above $R_{it''}$.
+	
+	In sum, when $i$ and $k$ are held to the same standards, then $R_{kt'}$ is a lower bound on $R$ when $R_{it''}\le R_{kt'}$ and $R_{it''}$ is a lower bound on $R$ when $R_{kt'}<R_{it''}$. As a result, $\max\left\{R_{it''},R_{kt'}\right\}$ is a lower bound on $R$ and so $$D_{ik}\equiv R_{it'}-\max\{R_{it''},R_{kt'}\}$$ is a lower bound on the difference between the readability choice $i$ makes when he is subject to different standards compared to $k$ ($R_{it'}$) and the readability choice he makes when he is subject to the same standards as $k$ ($\max\{R_{it''},R_{kt'}\}$).
+\end{proof}

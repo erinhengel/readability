@@ -27,10 +27,18 @@
             </Replacement>
         </Replacements>
         <Options>
+            <ResampleImages DPI="72">No</ResampleImages>
             <DeleteStruckThroughText>Yes</DeleteStruckThroughText>
             <Links>
                 <ConvertDocumentLinksToHTML>Yes</ConvertDocumentLinksToHTML>
             </Links>
+            <PDF>
+                <Cover Source="FrontMatter" Bleed="9.0" BleedUnits="pt"/>
+                <Compression Enabled="No">
+                    <ImageResolutionCompressionType>None</ImageResolutionCompressionType>
+                    <ImageResolution>300</ImageResolution>
+                </Compression>
+            </PDF>
             <Scriptwriting>
                 <IncludeTitles>Yes</IncludeTitles>
                 <IncludeSynopses>Yes</IncludeSynopses>
@@ -40,11 +48,11 @@
             <Ebook>
                 <StartAfterFrontMatter>Yes</StartAfterFrontMatter>
                 <Cover>
-                    <ImageDocument Source="FrontMatter"></ImageDocument>
+                    <ImageDocument Source="FrontMatter"/>
                     <Title>Cover</Title>
                     <SVG Width="600" Height="800"><![CDATA[]]></SVG>
                 </Cover>
-                <TOC>
+                <TOC PandocDepth="3">
                     <HTML Generate="Yes">
                         <Title>Contents</Title>
                     </HTML>
@@ -69,16 +77,16 @@
                 <Value Key="My Short Title"><![CDATA[<$projecttitle>]]></Value>
                 <Value Key="My Subtitle"><![CDATA[Are women held to higher standards? Evidence from peer review.]]></Value>
                 <Value Key="Author"><![CDATA[<$author>]]></Value>
-                <Value Key="My Abstract"><![CDATA[I use readability scores to test if women are held to higher standards in academic peer review. I find: (i) female-authored papers are 1--6 percent better written than equivalent papers by men; (ii) the gap is almost two times higher in the published articles than in the pre-print drafts (and no gap in papers subjected to double-blind review before the internet); (iii) women's writing gradually improves but men's does not---meaning the readability gap grows over authors' careers. Within a subjective expected utility framework, I exploit authors' decisions to show that tougher editorial standards and/or biased referee assignment are uniquely consistent with the observed pattern of choices. A conservative causal estimate derived from the model suggests senior female economists write at least 9 percent more clearly than they otherwise would. I then document evidence that higher standards affect behaviour and lower productivity. First, female-authored papers take half a year longer in peer review. Second, as women update beliefs about referees' standards, they increasingly meet those standards before peer review. The latter response disguises external thresholds as personal choice; the former reduces women's output. Both whitewash discrimination. More generally, tougher standards impose a quantity/quality tradeoff that characterises many instances of female output. They could resolve persistently lower---otherwise unexplained---female productivity in many high-skill occupations.]]></Value>
                 <Value Key="My Date"><![CDATA[<$longmonth> <$year>]]></Value>
+                <Value Key="Org Date"><![CDATA[(First version: September 2015)]]></Value>
                 <Value Key="Address"><![CDATA[Chatham Street, Liverpool L69 7ZH, U.K.]]></Value>
                 <Value Key="Telephone"><![CDATA[+44 (0)7 824 863 784]]></Value>
                 <Value Key="Affiliation"><![CDATA[University of Liverpool]]></Value>
                 <Value Key="Department"><![CDATA[Department of Economics]]></Value>
                 <Value Key="Position"><![CDATA[Lecturer in Economics]]></Value>
-                <Value Key="Email"><![CDATA[erin.hengel@liverpool.ac.uk]]></Value>
-                <Value Key="Thanks Bitches"><![CDATA[This paper is a revised version of the third chapter of my dissertation (University of Cambridge, September 2015). I am grateful to my supervisor Christopher Harris for (a) excellent guidance and (b) thinking this was a good idea. I am similarly indebted to Jeremy Edwards and my examination committee (Leonardo Felli and Hamish Low) for considerable input and advice. I also thank Oriana Bandiera, Anne Boring, Cheryl Carleton, Gary Cook, Dominique Demougin, Harris Dellas, Carola Frege, Olga Gorelkina, Jane Hunt, John Leahy, Brendan McCabe, Reshef Meir, Imran Rasul, Ludovic Renou, Kevin Schnepel, Joel Sobel, Jarrod Zhang, audience members at the Econometric Society European Winter Meeting, the Eastern Economic Association Conference, the Royal Economic Society Annual Conference, the European Meeting of the Econometric Society, the American Economic Association Annual Meeting, the Review of Economics and Statistics Centenary Conference and seminar participants at the University of Liverpool and the University of Cardiff for useful comments. This paper could not have been written without substantial careful research assistance by Michael Hengel (my dad) and Eileen Hengel (my sister). All errors, of course, are mine.]]></Value>
-                <Value Key="Keywords"><![CDATA[gender, readability, discrimination]]></Value>
+                <Value Key="Email"><![CDATA[erin.hengel@gmail.com]]></Value>
+                <Value Key="Thanks Bitches"><![CDATA[This paper is a revised version of the third chapter of my dissertation (University of Cambridge, September 2015). I am grateful to my supervisor Christopher Harris for (a) excellent guidance and (b) thinking this was a good idea. I am similarly indebted to Jeremy Edwards and my examination committee (Leonardo Felli and Hamish Low) for considerable input and advice. I also thank Miguel Almunia, Carolina Alves, Oriana Bandiera, Anne Boring, Cheryl Carleton, Gary Cook, Dominique Demougin, Harris Dellas, Carola Frege, Claudia Goldin, Olga Gorelkina, Jane Hunt, Ali Ismail, Adam Jaffe, Katya Kartashova, John Leahy, Brendan McCabe, Reshef Meir, Imran Rasul, Ludovic Renou, Kevin Schnepel, Joel Sobel, Heidi Williams, Jarrod Zhang, numerous anonymous referees and editors, and participants at many seminars, workshops and conferences. Finally, this paper could not have been written without substantial, careful research assistance by Michael Hengel (my dad), Eileen Hengel (my sister) and Lunna Ai (my actual research assistant). All errors, of course, are mine.]]></Value>
+                <Value Key="Keywords"><![CDATA[gender, readability, discrimination, bias, academic publishing]]></Value>
                 <Value Key="Subject"><![CDATA[Gender bias]]></Value>
                 <Value Key="JEL"><![CDATA[A11, J16, J24]]></Value>
                 <Value Key="Word Count"><![CDATA[20,300]]></Value>
@@ -90,6 +98,11 @@
     </ProjectSettings>
     <CurrentFileType>mmd</CurrentFileType>
     <FormatSettings>
+        <Format ID="enumerated-outline">
+            <FrontAndBackMatter>
+                <DefaultFrontMatter Add="Yes">7F311019-A771-4CA6-82C1-66C7C5C6EC4F</DefaultFrontMatter>
+            </FrontAndBackMatter>
+        </Format>
         <Format ID="2F8B12CB-3341-40A2-86E4-4D4E05D35A5F">
             <SectionLayouts>
                 <Type ID="898A80BF-10CC-47E6-BF9F-EBA82E4C3B93">AS-IS</Type>
@@ -105,11 +118,6 @@
             </FrontAndBackMatter>
         </Format>
         <Format ID="markdown-outline">
-            <FrontAndBackMatter>
-                <DefaultFrontMatter Add="Yes">7F311019-A771-4CA6-82C1-66C7C5C6EC4F</DefaultFrontMatter>
-            </FrontAndBackMatter>
-        </Format>
-        <Format ID="enumerated-outline">
             <FrontAndBackMatter>
                 <DefaultFrontMatter Add="Yes">7F311019-A771-4CA6-82C1-66C7C5C6EC4F</DefaultFrontMatter>
             </FrontAndBackMatter>

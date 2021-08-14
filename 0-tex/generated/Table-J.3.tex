@@ -1,0 +1,48 @@
+\begin{table}[H]
+    \footnotesize
+    \centering
+    \begin{threeparttable}
+        \caption{Regression output generating \(\widehat R_{it}\) (\autoref{equation14})}
+        \label{Rit_regresults}
+        \sisetup{group-separator={}}
+        \begin{tabular}{p{2.5cm}SSSS}
+            \toprule
+            &\multicolumn{2}{c}{{Women}}&\multicolumn{2}{c}{{Men}}\\\cmidrule(lr){2-3}\cmidrule(lr){4-5}&{{\(t=1\)}}&{{\(t=3\)}}&{{\(t=1\)}}&{{\(t=3\)}}\\
+            \midrule
+            \multicolumn{5}{l}{{\textbf{Flesch Reading Ease}}}\\
+            \quad Female ratio            &        0.23   &        1.82   &      -12.57   &       -2.56   \\
+                                          &      (3.29)   &      (2.70)   &      (9.70)   &      (6.02)   \\
+            \quad Constant                &       39.04***&       42.03***&       38.18***&       39.11***\\
+                                          &      (2.46)   &      (1.65)   &      (1.12)   &      (1.18)   \\
+            \midrule
+            \multicolumn{5}{l}{{\textbf{Flesch Kincaid}}}\\
+            \quad Female ratio            &       -0.28   &        0.35   &       -0.66   &        0.89   \\
+                                          &      (0.68)   &      (0.54)   &      (2.12)   &      (1.27)   \\
+            \quad Constant                &      -13.62***&      -13.22***&      -14.03***&      -14.01***\\
+                                          &      (0.51)   &      (0.33)   &      (0.25)   &      (0.25)   \\
+            \midrule
+            \multicolumn{5}{l}{{\textbf{Gunning Fog}}}\\
+            \quad Female ratio            &       -0.40   &        0.64   &       -3.04   &        0.83   \\
+                                          &      (0.82)   &      (0.67)   &      (2.36)   &      (1.53)   \\
+            \quad Constant                &      -17.10***&      -16.94***&      -17.79***&      -17.57***\\
+                                          &      (0.62)   &      (0.41)   &      (0.27)   &      (0.30)   \\
+            \midrule
+            \multicolumn{5}{l}{{\textbf{SMOG}}}\\
+            \quad Female ratio            &       -0.22   &        0.42   &       -2.08   &        0.37   \\
+                                          &      (0.60)   &      (0.50)   &      (1.64)   &      (1.09)   \\
+            \quad Constant                &      -15.04***&      -14.96***&      -15.57***&      -15.32***\\
+                                          &      (0.45)   &      (0.30)   &      (0.19)   &      (0.22)   \\
+            \midrule
+            \multicolumn{5}{l}{{\textbf{Dale-Chall}}}\\
+            \quad Female ratio            &       -0.19   &        0.20   &       -3.48***&        0.14   \\
+                                          &      (0.28)   &      (0.27)   &      (0.90)   &      (0.43)   \\
+            \quad Constant                &      -10.88***&      -10.93***&      -11.07***&      -11.14***\\
+                                          &      (0.21)   &      (0.16)   &      (0.10)   &      (0.08)   \\
+            \bottomrule
+        \end{tabular}
+        \begin{tablenotes}
+            \tiny
+            \item \textit{Notes}. Sample restricted to matched authors. See~\autoref{matchingestimation} for details on how matches were made. Regressions weighted by the frequency observations are used in a match. Standard errors in parentheses. ***, ** and * statistically significant at 1\%, 5\% and 10\%, respectively.
+        \end{tablenotes}
+    \end{threeparttable}
+\end{table}

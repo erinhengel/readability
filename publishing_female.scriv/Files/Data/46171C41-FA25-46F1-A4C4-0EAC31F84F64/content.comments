@@ -1,24 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Comments>
-    <Comment ID="1CF7B5F8-EB44-43AC-A1A2-44B538E88890" Footnote="Yes" Number="49" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
-{\fonttbl\f0\fnil\fcharset0 Verdana;}
+    <Comment ID="1A82841D-3993-440E-97AD-7F8CD60059F1" Author="Erin Hengel" Footnote="Yes" Color="0.949769 0.949769 0.949769"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
 {\colortbl;\red255\green255\blue255;}
 {\*\expandedcolortbl;;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
-\f0\fs20 \cf0 Assigning equal weight to all observations results in quantitatively and qualitatively similar results[see\\]\\[pp. 44--45][#Hengel2016].}]]></Comment>
-    <Comment ID="9E25BFB6-1199-4576-8E18-FEBF362D6361" Footnote="Yes" Number="50" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
-{\fonttbl\f0\fnil\fcharset0 Verdana;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
-
-\f0\fs20 \cf0 Quotient of $\\beta_1$ divided by the total effect for men co-authoring with no women (female ratio of zero) estimated at other co-variates\'92 observed values (see [][AppendixAuthorMale]).}]]></Comment>
-    <Comment ID="41A2CFB8-1468-4224-9BB4-B9184F5ECF67" Footnote="Yes" Number="51" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
-{\fonttbl\f0\fnil\fcharset0 Verdana;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
-
-\f0\fs20 \cf0 On average, the female ratio for men is 0.04 (0.05 excluding solo-authored papers). When excluding articles written entirely by men, their average ratio is still only 0.39. By default, women always author with at least one woman---themselves; the average female ratio of their papers is 0.6 (0.46 and 0.53 excluding articles written entirely by women and solo-authored papers, respectively).}]]></Comment>
+\f0\fs20 \cf0 To reduce the number of instruments (and thanks to a high degree of correlation with editor fixed effects) year fixed effects are omitted. Results are similar when they are included [see, *e.g.*,\\]\\[p. 17][#Hengel2017].}]]></Comment>
 </Comments>

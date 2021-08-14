@@ -1,0 +1,14 @@
+\begin{theorem}\label{Theorem1}
+	Consider two authors, $i$ and $k$, and assume:
+	\begin{enumerate}[label=Assumption \arabic*., leftmargin=*, widest*=2]
+		\item $i$ choses $R_{it}$ each $t$ to maximise \autoref{eq:EU}.
+		\item $i$ and $k$ write papers that are identical with respect to topic, novelty and quality but potentially differ on readability.
+		\item $\pi_{it}^s(R_{it})$ converges uniformly on some closed interval $\mathcal R$ where $R_{it}\in\mathcal R$.
+	\end{enumerate}
+	When the following three conditions are satisfied, then referee assignment is biased in favour of $k$, referee/editor scrutiny is biased against $i$, or both.
+	\begin{enumerate}[label=Condition \arabic*., leftmargin=*, widest*=2]
+		\item $i$'s papers are persistently more readable than $k$'s papers: $R_{kt}\le R_{it}$ for all $t>t'$ and there exists $K'>0$ such that for no $t>t'$, $|R_{it}-R_{kt}|<K'$.
+		\item $i$'s future papers are more readable than at least one of his past papers: for at least one $t''<t'$, $R_{it''}< R_{it'}$ and there exists $K''>0$ such that for no $t>t'$, $|R_{it}-R_{it''}|<K''$.
+		\item $i$'s papers are not accepted more often than $k$'s papers: $\int_\Sigma\!\bm1_{i}^s(R_{it})\,\mathrm d\mu_i\le \int_\Sigma\!\bm1_{k}^s(R_{kt})\,\mathrm d\mu_k$ for all $t>t'$, where $\bm1_{i}^s(R_{it})$ is an indicator function equal to 1 if $\widetilde R_i^s\le R_{it}$.
+	\end{enumerate}
+\end{theorem}

@@ -1,49 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Comments>
-    <Comment ID="E3E26478-AA29-4B9D-9F0A-DBC7B642BE45" Footnote="Yes" Number="95" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
-{\fonttbl\f0\fnil\fcharset0 Verdana;}
+    <Comment ID="9100EBC6-4121-4A49-95A6-9EA8B05492A4" Author="Erin Hengel" Footnote="Yes" Color="0.949769 0.949769 0.949769"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
 {\colortbl;\red255\green255\blue255;}
 {\*\expandedcolortbl;;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
-\f0\fs20 \cf0 <!--\\label\{Footnote84\}-->I use "error" and "mistake" to refer to anything that would cause authors to write more (or less) clearly than they would if $\\widetilde r_\{0i\}^s$ and $\\widetilde R_i^s$ were known. This includes actual mistakes in judgement as well as character components---*
-\i e.g.
-\i0 *, conscientiousness or risk aversion---that impact beliefs and/or the optimal choice set under uncertainty.}]]></Comment>
-    <Comment ID="D0379D4A-4D77-410D-8381-AEA00FBA9A74" Footnote="Yes" Number="97" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
-{\fonttbl\f0\fnil\fcharset0 Verdana;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
-
-\f0\fs20 \cf0 Women are the better writers in 73 percent of matched pairs. In 34 percent of those, however, the woman did not improve her writing between $t=1$ and $t=3$ (Condition 2), thus rendering [](#Theorem1)'s test for discrimination inconclusive.}]]></Comment>
-    <Comment ID="23A3E1D8-DAC2-4CD0-AC3F-1D0ED56A7CA7" Footnote="Yes" Number="98" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
-{\fonttbl\f0\fnil\fcharset0 Verdana;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\deftab720
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\partightenfactor0
-
-\f0\fs20 \cf0 [](#table10), first column divided by the mean male $\\widehat R_\{k3\}$ ([][
-\fs22 AppendixConservative]).}]]></Comment>
-    <Comment ID="8D092555-7AAF-494F-BE72-EF02458CCD05" Footnote="Yes" Number="99" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
-{\fonttbl\f0\fnil\fcharset0 Verdana;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
-
-\f0\fs20 \cf0 $\\underline D_\{ik\}$ actually remains a causal, conservative estimate of the impact of discrimination against women under the weaker assumption $e_\{ni3\}^s\\le e_\{nk3\}^s$, $n=0,1$ ($i$ female, $k$ male). See the proof of [](#Corollary1) in [][AppendixProofs].}]]></Comment>
-    <Comment ID="D8CC358F-86D6-412D-912B-437EBB006356" Footnote="Yes" Number="100" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
-{\fonttbl\f0\fnil\fcharset0 Verdana;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
-
-\f0\fs20 \cf0 Specifically, this assumption is violated if at $t=3$ the women listed in [][AppendixMatchingNames] make more (positive) mistakes about $\\widetilde r_\{0i\}^s$ and/or $\\widetilde R_i^s$ than the men they are matched to. For $\\underline D_\{ik\}$ to remain a *conservative* estimate of $D_\{ik\}$, women's mistakes must be no greater than men's mistakes at $t=3$.}]]></Comment>
-    <Comment ID="F00DC296-9A5C-4343-BE7E-6718B97FDE9B" Footnote="Yes" Number="101" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
-{\fonttbl\f0\fnil\fcharset0 Verdana;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
-
-\f0\fs20 \cf0 For a description of this downward bias, see the discussion on [](#Corollary1) in [][SEUModel] and the proof of [](#Corollary1) in [][AppendixProofs].}]]></Comment>
+\f0\fs20 \cf0 See [\\]\\[pp. 30--33][#Hengel2017;] for propensity score matches from a probit model performed with replacement and using a wider array of co-variates.}]]></Comment>
 </Comments>

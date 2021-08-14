@@ -1,96 +1,166 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
-{\fonttbl\f0\fnil\fcharset204 PTSerif-Regular;\f1\fnil\fcharset204 PTMono-Regular;\f2\fswiss\fcharset0 Helvetica;
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset204 PTSerif-Regular;\f1\fswiss\fcharset0 Helvetica;\f2\fnil\fcharset204 PTMono-Regular;
 }
-{\colortbl;\red255\green255\blue255;\red255\green128\blue0;\red0\green0\blue128;\red252\green226\blue33;
+{\colortbl;\red255\green255\blue255;\red255\green128\blue0;\red0\green0\blue128;\red16\green128\blue214;
 \red0\green128\blue64;}
-{\*\expandedcolortbl;;\csgenericrgb\c100000\c50196\c0;\csgenericrgb\c0\c0\c50196;\cssrgb\c99200\c89800\c16100;
+{\*\expandedcolortbl;;\csgenericrgb\c100000\c50196\c0;\csgenericrgb\c0\c0\c50196;\csgenericrgb\c6100\c50000\c84000;
 \csgenericrgb\c0\c50196\c25098;}
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa200\pardirnatural\partightenfactor0
 
-\f0\fs28 \cf0 I next analyse readability at the author-level. To disaggregate the data, each article is duplicated 
-\f1 \cf2 $N_j$
-\f0 \cf0  times, where 
-\f1 \cf2 $N_j$
-\f0 \cf0  is article 
-\f1 \cf2 $j$
-\f0 \cf0 's number of co-authors; observation 
-\f1 \cf2 $j_k\\in\\\{1,\\ldots,N_j\\\}$
-\f0 \cf0  is assigned article 
-\f1 \cf2 $j$
-\f0 \cf0 's 
-\f1 \cf2 $k\\text\{th\}$
-\f0 \cf0  author. I then estimate the dynamic panel model in 
-\f2\fs24 \cf3 <$Scr_Cs::0>
-\f1\fs28 [](#equation1)
-\f2\fs24 <!$Scr_Cs::0>
-\f1\fs28 :\
+\f0\fs28 \cf0 In this appendix, I analyse readability at the author-level. To disaggregate the data, each article is duplicated 
+\f1\fs24 \cf2 <$Scr_Cs::2>
+\f2\fs28 $N_j$
+\f1\fs24 \cf0 <!$Scr_Cs::2>
+\f0\fs28  times, where 
+\f1\fs24 \cf2 <$Scr_Cs::2>
+\f2\fs28 $N_j$
+\f1\fs24 \cf0 <!$Scr_Cs::2>
+\f0\fs28  is article 
+\f1\fs24 \cf2 <$Scr_Cs::2>
+\f2\fs28 $j$
+\f1\fs24 \cf0 <!$Scr_Cs::2>
+\f0\fs28 's number of co-authors; observation 
+\f1\fs24 \cf2 <$Scr_Cs::2>
+\f2\fs28 $j_k\\in\\\{1,\\ldots,N_j\\\}$
+\f1\fs24 \cf0 <!$Scr_Cs::2>
+\f0\fs28  is assigned article 
+\f1\fs24 \cf2 <$Scr_Cs::2>
+\f2\fs28 $j$
+\f1\fs24 \cf0 <!$Scr_Cs::2>
+\f0\fs28 's 
+\f1\fs24 \cf2 <$Scr_Cs::2>
+\f2\fs28 $k\\text\{th\}$
+\f1\fs24 \cf0 <!$Scr_Cs::2>
+\f0\fs28  author. I then estimate the dynamic panel model in 
+\f1\fs24 \cf3 <$Scr_Cs::3>
+\f2\fs28 [](#equation1)
+\f1\fs24 <!$Scr_Cs::3>
+\f2\fs28 :\
 \pard\tx706\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa240\pardirnatural\qc\partightenfactor0
 
-\fs18 \cf4 <!--\\input\{$HOME/Dropbox/Readability/draft/equations/equation1\}-->\
+\f1\fs24 \cf4 <$Scr_Ps::0>
+\f2\fs18 <!--\\input\{$HOME/Dropbox/Readability/draft/0-tex/equations/equationF1\}-->\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa200\pardirnatural\partightenfactor0
 
-\f0\fs28 \cf0  
-\f1 \cf2 $R_\{j_\{it\}\}$
-\f0 \cf0  is the readability score for article 
-\f1 \cf2 $j$
-\f0 \cf0 ---author 
-\f1 \cf2 $i$
-\f0 \cf0 's 
-\f1 \cf2 $t$
-\f0 \cf0 th publication; 
-\f1 \cf2 $R_\{it-1\}$
-\f0 \cf0  is the corresponding value of author 
-\f1 \cf2 $i$
-\f0 \cf0 's 
-\f1 \cf2 $t-1$
-\f0 \cf0 th paper. Gender enters twice---the binary variable 
-\f1 \cf2 $\\text\{male\}_i$
-\f0 \cf0  and 
-\f1 \cf2 $\\text\{female ratio\}_j$
-\f0 \cf0 ---to account for author 
-\f1 \cf2 $i$
-\f0 \cf0 's sex and the sex of his co-authors, respectively. 
-\f1 \cf2 $\\vect X_j$
-\f0 \cf0  is a vector of observable controls. It includes: editor, journal, year, journal 
-\f1 \cf2 $\\times$
-\f0 \cf0  year, institution and English fluency dummies; quality controls---citation count and 
-\f1 \cf2 $\\text\{max. \}T_j$
-\f0 \cf0  fixed effects; and 
-\f1 \cf2 $N_j$
-\f0 \cf0  to account for author 
-\f1 \cf2 $i$
-\f0 \cf0 's proportional contribution to paper 
-\f1 \cf2 $j$
-\f0 \cf0 . 
-\f1 \cf2 $\\alpha_i$
-\f0 \cf0  are author-specific effects and 
-\f1 \cf2 $\\vep_\{it\}$
-\f0 \cf0  is an idiosyncratic error. 
-\f1 \cf2 $\\alpha_i$
-\f0 \cf0  are eliminated by first-differencing; endogeneity in the lagged dependant variable is instrumented with earlier lags
-\f1 \cf5 [#Arellano1995,Blundell1998]
-\f0 \cf0 . To account for duplicate articles, the regression is weighted by {\field{\*\fldinst{HYPERLINK "scrivcmt://1CF7B5F8-EB44-43AC-A1A2-44B538E88890"}}{\fldrslt 
-\f1 \cf2 $1/N_j$
-\f0 \cf0 .}} Standard errors are adjusted for two-way clustering on editor and author.\
-\pard\tx706\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa240\pardirnatural\qc\partightenfactor0
-
-\f1\fs18 \cf4 <!--\\input\{$HOME/Dropbox/Readability/draft/tex/generated/table5\}-->
-\f0\fs28 \cf0 \
+\f1\fs24 \cf0 <!$Scr_Ps::0>
+\f0\fs28  
+\f1\fs24 \cf2 <$Scr_Cs::2>
+\f2\fs28 $R_\{j_\{it\}\}$
+\f1\fs24 \cf0 <!$Scr_Cs::2>
+\f0\fs28  is the readability score for article 
+\f1\fs24 \cf2 <$Scr_Cs::2>
+\f2\fs28 $j$
+\f1\fs24 \cf0 <!$Scr_Cs::2>
+\f0\fs28 ---author 
+\f1\fs24 \cf2 <$Scr_Cs::2>
+\f2\fs28 $i$
+\f1\fs24 \cf0 <!$Scr_Cs::2>
+\f0\fs28 's 
+\f1\fs24 \cf2 <$Scr_Cs::2>
+\f2\fs28 $t$
+\f1\fs24 \cf0 <!$Scr_Cs::2>
+\f0\fs28 th top-four publication; 
+\f1\fs24 \cf2 <$Scr_Cs::2>
+\f2\fs28 $R_\{it-1\}$
+\f1\fs24 \cf0 <!$Scr_Cs::2>
+\f0\fs28  is the corresponding value of author 
+\f1\fs24 \cf2 <$Scr_Cs::2>
+\f2\fs28 $i$
+\f1\fs24 \cf0 <!$Scr_Cs::2>
+\f0\fs28 's 
+\f1\fs24 \cf2 <$Scr_Cs::2>
+\f2\fs28 $t-1$
+\f1\fs24 \cf0 <!$Scr_Cs::2>
+\f0\fs28 th top-four paper. Gender enters twice---the binary variable 
+\f1\fs24 \cf2 <$Scr_Cs::2>
+\f2\fs28 $\\text\{male\}_i$
+\f1\fs24 \cf0 <!$Scr_Cs::2>
+\f0\fs28  and 
+\f1\fs24 \cf2 <$Scr_Cs::2>
+\f2\fs28 $\\text\{female ratio\}_j$
+\f1\fs24 \cf0 <!$Scr_Cs::2>
+\f0\fs28 ---to account for author 
+\f1\fs24 \cf2 <$Scr_Cs::2>
+\f2\fs28 $i$
+\f1\fs24 \cf0 <!$Scr_Cs::2>
+\f0\fs28 's sex and the sex of his co-authors, respectively (papers with fewer than 50 percent female authors are classified as male, see [][Gender]). 
+\f1\fs24 \cf2 <$Scr_Cs::2>
+\f2\fs28 $\\vect X_j$
+\f1\fs24 \cf0 <!$Scr_Cs::2>
+\f0\fs28  is a vector of observable controls. It includes: editor, journal, institution and English fluency dummies, controls for blind review and quality---citation count (asinh), 
+\f1\fs24 \cf2 <$Scr_Cs::2>
+\f2\fs28 $\\text\{max. \}T$
+\f1\fs24 \cf0 <!$Scr_Cs::2>
+\f0\fs28  (author prominence) and 
+\f1\fs24 \cf2 <$Scr_Cs::2>
+\f2\fs28 $\\text\{max. \}t$
+\f1\fs24 \cf0 <!$Scr_Cs::2>
+\f0\fs28  (author seniority)---and 
+\f1\fs24 \cf2 <$Scr_Cs::2>
+\f2\fs28 $N_j$
+\f1\fs24 \cf0 <!$Scr_Cs::2>
+\f0\fs28  to control for author 
+\f1\fs24 \cf2 <$Scr_Cs::2>
+\f2\fs28 $i$
+\f1\fs24 \cf0 <!$Scr_Cs::2>
+\f0\fs28 's proportional contribution to paper {\field{\*\fldinst{HYPERLINK "scrivcmt://1A82841D-3993-440E-97AD-7F8CD60059F1"}}{\fldrslt 
+\f1\fs24 \cf2 <$Scr_Cs::2>
+\f2\fs28 $j$
+\f1\fs24 \cf0 <!$Scr_Cs::2>
+\f0\fs28 .}} 
+\f1\fs24 \cf2 <$Scr_Cs::2>
+\f2\fs28 $\\alpha_i$
+\f1\fs24 \cf0 <!$Scr_Cs::2>
+\f0\fs28  are author-specific effects and 
+\f1\fs24 \cf2 <$Scr_Cs::2>
+\f2\fs28 $\\vep_\{it\}$
+\f1\fs24 \cf0 <!$Scr_Cs::2>
+\f0\fs28  is an idiosyncratic error. 
+\f1\fs24 \cf2 <$Scr_Cs::2>
+\f2\fs28 $\\alpha_i$
+\f1\fs24 \cf0 <!$Scr_Cs::2>
+\f0\fs28  are eliminated by first-differencing. For each time period, endogeneity in the lagged dependant variable is instrumented with up to five earlier lags
+\f1\fs24 \cf5 <$Scr_Cs::4>
+\f2\fs28 [#Arellano1995,Blundell1998]
+\f1\fs24 \cf0 <!$Scr_Cs::4>
+\f0\fs28 . To account for duplicate articles, the regression is weighted by 
+\f1\fs24 \cf2 <$Scr_Cs::2>
+\f2\fs28 $1/N_j$
+\f1\fs24 \cf0 <!$Scr_Cs::2>
+\f0\fs28 . Standard errors are clustered at the level of the author.
+\f2\fs18 \cf4 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\sl288\slmult1\sa200\pardirnatural\partightenfactor0
 
-\f1 \cf3 [](#table5)
-\f0 \cf0  displays results. Rows one and two present contemporaneous marginal effects on co-authoring with women for female (
-\f1 \cf2 $\\beta_1$
-\f0 \cf0 ) and male (
-\f1 \cf2 $\\beta_1+\\beta_2$
-\f0 \cf0 ) authors, respectively. Both estimates are positive---everyone writes more clearly when collaborating with women. Marginal effects for women are highly significant and at least twice as large as those in 
-\f1 \cf3 [](#table4)
-\f0 \cf0 ---women write 2--6 percent better than {\field{\*\fldinst{HYPERLINK "scrivcmt://9E25BFB6-1199-4576-8E18-FEBF362D6361"}}{\fldrslt men.}} When men write with women, however, marginal effects are smaller and less precise.\
-Men and women co-authoring together experience an identical rise (or fall) in readability, so the effect for one should mirror the other. Yet, 
-\f1 \cf3 [](#table5)
-\f0 \cf0  suggests they don't. While the interaction terms (
-\f1 \cf2 $\\beta_2$
-\f0 \cf0 ) are insignificant---*
-\i i.e.
-\i0 *, the observed disparity is plausibly due to chance---the difference may reveal an increasing, convex relationship between female ratio and readability. Men's smaller effect potentially reflects their disproportionate tendency to co-author exclusively with other men---precisely where the marginal impact of an additional woman is {\field{\*\fldinst{HYPERLINK "scrivcmt://41A2CFB8-1468-4224-9BB4-B9184F5ECF67"}}{\fldrslt low.}}\
-Tests for serial correlation indicate no model misspecification. Coefficients on the lagged dependant variables are small, suggesting readability is mostly determined contemporaneously. Nevertheless, their uniform positivity and significance indicate modest persistence.}
+\f1\fs24 \cf3 <$Scr_Cs::3>
+\f2\fs28 [](#table4_FemRatio)
+\f1\fs24 \cf0 <!$Scr_Cs::3>
+\f0\fs28  displays results. Rows one and two present contemporaneous marginal effects on co-authoring with women for female (
+\f1\fs24 \cf2 <$Scr_Cs::2>
+\f2\fs28 $\\beta_1$
+\f1\fs24 \cf0 <!$Scr_Cs::2>
+\f0\fs28 ) and male (
+\f1\fs24 \cf2 <$Scr_Cs::2>
+\f2\fs28 $\\beta_1+\\beta_2$
+\f1\fs24 \cf0 <!$Scr_Cs::2>
+\f0\fs28 ) authors, respectively. Both estimates are positive---everyone writes more clearly when collaborating with women---although statistically significant only for female authors. Marginal effects for women are up to twice as large as those shown in 
+\f1\fs24 \cf3 <$Scr_Cs::3>
+\f2\fs28 [](#table3_FemRatio)
+\f1\fs24 \cf0 <!$Scr_Cs::3>
+\f0\fs28 ; they suggest women write 2--6 percent better than men.\
+Coefficients on the lagged dependant variables are small, suggesting readability is mostly determined contemporaneously. Nevertheless, their uniform positivity and occasional significance indicate some persistence. 
+\f1\fs24 \cf3 <$Scr_Cs::3>
+\f2\fs28 [](#table4_FemRatio)
+\f1\fs24 \cf0 <!$Scr_Cs::3>
+\f0\fs28 's second panel reports test statistics of model fit. Tests for serial correlation indicate no model misspecification. 
+\f1\fs24 \cf2 <$Scr_Cs::2>
+\f2\fs28 $p$
+\f1\fs24 \cf0 <!$Scr_Cs::2>
+\f0\fs28 -values on the overall Hansen test statistic hover between 0.79--0.96, thus failing to reject that the instruments are valid; however, their very high values suggests the model may suffer from instrument proliferations which weakens the test[for a discussion, see\\]\\[][#Roodman2009a]. The $p$-value on the Sargan test also fails to reject that the instruments are valid at traditional significance thresholds; but although it is not vulnerable to instrument proliferation, it does require homoskedastic errors. Additional tests (available on request) suggest results are not sensitive to including the full set of (non-collapsed) instruments or to reductions in the number of instruments. Given the possibility of instrument proliferation, however, results in [](#table4_FemRatio) should be interpreted with caution.\
+\pard\tx706\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf4 <$Scr_Ps::1>
+\f2\fs18 <!--\
+\\input\{$HOME/Dropbox/Readability/draft/0-tex/generated/Table-F.2-FemRatio\}\
+\\clearpage\
+-->
+\f1\fs24 <!$Scr_Ps::1>}

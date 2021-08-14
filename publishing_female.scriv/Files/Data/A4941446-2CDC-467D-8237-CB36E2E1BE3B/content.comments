@@ -1,40 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Comments>
-    <Comment ID="D71BF285-076F-4813-BC88-021C1E79A4A2" Footnote="Yes" Color="0.949769 0.949769 0.949769"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+    <Comment ID="9DAF6B82-C1BD-4588-A9F7-E2DE276F4133" Author="Erin Hengel" Footnote="Yes" Color="0.949769 0.949769 0.949769"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
 {\colortbl;\red255\green255\blue255;}
 {\*\expandedcolortbl;;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 Like intelligence tests, implicit association tests and machine learning algorithms, readability scores are low in causal power.}]]></Comment>
-    <Comment ID="AA0E9643-DDD5-46A4-A972-A06BD2687CA7" Footnote="Yes" Color="0.949769 0.949769 0.949769"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+\f0\fs20 \cf0 For comparison, I randomly assigned abstracts to introductions in 1,000 simulated samples. The average coefficient of correlation between abstract text readability and the readability of a passage of text from a randomly selected introduction was -0.0006 for the Gunning Fog score and 0.0007 for the Flesch-Kincaid score.}]]></Comment>
+    <Comment ID="6761B48D-B326-4318-B14D-6528B457FD92" Author="Erin Hengel" Footnote="Yes" Color="0.949769 0.949769 0.949769"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Oblique;}
 {\colortbl;\red255\green255\blue255;}
 {\*\expandedcolortbl;;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 Prior research has found authors write in a stylistically consistent manner across the abstract, introduction and discussion sections of a paper[#Hartley2003b, Plaven-Sigray2017].}]]></Comment>
-    <Comment ID="AFF3D29D-1551-4333-B7F8-92803CAED019" Footnote="Yes" Color="0.949769 0.949769 0.949769"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+\f0\fs20 \cf0 *
+\f1\i E.g.
+\f0\i0 *, words in transcribed text are often inappropriately hyphenated---typically because the word was divided at the end of the line in the original text. }]]></Comment>
+    <Comment ID="00E17AB3-7653-4CB3-A6FD-618B92B93F28" Author="Erin Hengel" Footnote="Yes" Color="0.949769 0.949769 0.949769"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Oblique;}
 {\colortbl;\red255\green255\blue255;}
 {\*\expandedcolortbl;;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 Additionally, all four journals have explicit text layout instructions for submissions; this should further limit the impact layout differences may have had on readability.}]]></Comment>
-    <Comment ID="574997C9-8CE7-4954-99DA-88FBC1907322" Footnote="Yes" Number="38" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
-{\fonttbl\f0\fnil\fcharset0 Verdana;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
-
-\f0\fs20 \cf0 Typesetting code used to render equations---common in *
-\i Econometrica
-\i0 * abstracts published before 1980---also affects the accuracy of readability scores. I therefore manually replaced all such code with equivalent unicode characters. When no exact replacement existed, characters were chosen that mimicked as much as possible the equation's original intent while maintaining the same character and word counts. Readability scores were determined using the modified text.}]]></Comment>
-    <Comment ID="FD233547-CED4-437F-B120-5D12F093D9A0" Footnote="Yes" Color="0.949769 0.949769 0.949769"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
-
-\f0\fs24 \cf0 All five readability scores suggest counting as sentences each grammatically independent unit of thought, not just the groups of words set off by terminal punctuation. Therefore, if a writer uses a semicolon or a dash to connect two independent clauses, that counts as two sentences. Unfortunately, semi-colons are not always used in this manner. They are also used to differentiate items in a list, items which are not, however, independent thoughts. When generating readability scores manually, this is less of an issue---humans can easily determine if a semi-colon is being used in one way or the other. Machines, however, have more difficulty with this task.}]]></Comment>
+\f0\fs20 \cf0 When no exact replacement existed, characters were chosen that mimicked as much as possible the equation's original intent while maintaining the same character and word counts. (Equations in abstracts generally only occur in *
+\f1\i Econometrica
+\f0\i0 * articles published before 1980.)}]]></Comment>
 </Comments>

@@ -1,57 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Comments>
-    <Comment ID="577DB165-D4E3-455C-AF45-09DE84C97810" Footnote="Yes" Color="0.949769 0.949769 0.949769"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
-{\fonttbl\f0\fnil\fcharset0 Verdana;\f1\fswiss\fcharset0 Helvetica;}
+    <Comment ID="246A4DED-BC95-4731-859C-9A3F4AAEB30E" Author="Erin Hengel" Footnote="Yes" Color="0.949769 0.949769 0.949769"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Oblique;}
 {\colortbl;\red255\green255\blue255;}
 {\*\expandedcolortbl;;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
-\f0\fs20 \cf0 <!--\\label\{Footnote121\}-->
-\f1\fs24 Research may be easier to explain in certain fields. If so, then field affects a published paper's readability because it affects the readability of the underlying working paper and is therefore not due to peer review. By differencing these scores, [](#equation2) therefore implicitly already controls for field.}]]></Comment>
-    <Comment ID="6EA74618-0B03-41BE-83AD-A6EF9B3F4F03" Footnote="Yes" Number="55" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
-{\fonttbl\f0\fnil\fcharset0 Verdana;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
-
-\f0\fs20 \cf0 <!--\\label\{Footnote46\}-->$\\text\{max. \}t_j$ is the number of prior papers published in any of the top four economics journals by article $j$'s most prolific co-author. It and the English language dummy are considered $P$-specific because they may influence the degree to which editors and/or referees scrutinise the paper. Because all papers in both samples share the same highest-ranked institution (NBER), authors' institutions---which presumably have a similar effect---are omitted.}]]></Comment>
-    <Comment ID="4F3AAF74-7F59-4311-BB49-E6845246F46A" Footnote="Yes" Number="56" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
-{\fonttbl\f0\fnil\fcharset0 Verdana;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
-
-\f0\fs20 \cf0 I assume the duration between a paper's NBER release and its publication is too short to influence aggregate time trends; publication year dummies are applied to both working paper and published versions.}]]></Comment>
-    <Comment ID="30CAE130-64FF-4CB1-B384-013BBB83FB7A" Footnote="Yes" Number="57" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
-{\fonttbl\f0\fnil\fcharset0 Verdana;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
-
-\f0\fs20 \cf0 $\\mu_\{jP\}$ may be correlated with $\\wt\\vep_\{jW\}$ via $\\omega_j$ and/or $\\vep_\{jW\}$ without biasing the FGLS estimate of $\\beta_\{1P\}$ because both are uncorrelated with the explanatory variables in [](#equation4) (by assumption) and [](#equation6) (by definition).}]]></Comment>
-    <Comment ID="A339988E-821C-43C7-B083-52E31CC719E2" Footnote="Yes" Number="58" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
-{\fonttbl\f0\fnil\fcharset0 Verdana;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
-
-\f0\fs20 \cf0 Unbiased estimation of $\\beta_\{1P\}$ in [](#equation7) requires zero partial correlation between $\\mu_\{jP\}$ and $\\text\{female ratio\}_j$ after controlling for $\\vect X_\{jW\}$ and $\\vect X_\{jP\}$; [](#equation3) requires zero partial correlation after controlling for $\\vect X_\{jP\}$, only.}]]></Comment>
-    <Comment ID="567CFB8E-38BE-412E-8EDF-C9ED20640ACB" Footnote="Yes" Number="59" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
-{\fonttbl\f0\fnil\fcharset0 Verdana;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
-
-\f0\fs20 \cf0 <!--\\label\{footnote46\}-->This phrasing is slightly inaccurate but convenient for exposition. Zero correlation between $\\text\{female ratio\}_j$ and $\\mu_\{jP\}$ does not preclude biased estimates of $\\beta_\{1P\}$ when $\\mu_\{jP\}$ is correlated with other explanatory variables that are, in turn, correlated with $\\text\{female ratio\}_j$ by some factor independent of $\\mu_\{jP\}$. Unbiasedness instead requires zero *
-\i partial
-\i0 * correlation between $\\mu_\{jP\}$ and $\\text\{female ratio\}_j$.}]]></Comment>
-    <Comment ID="50EA14A0-C75E-440A-A782-393F324BEC37" Footnote="Yes" Number="60" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
-{\fonttbl\f0\fnil\fcharset0 Verdana;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
-
-\f0\fs20 \cf0 A possible exception is external feedback solicited outside of peer review---*
-\i e.g.
-\i0 *, during conferences and seminars. As the next section points out, however, the population of people who provide such feedback overlaps with the population of journal referees. It seems unlikely that this population is biased only in one setting---especially given both settings emphasise gender neutrality.}]]></Comment>
+\f0\fs20 \cf0 <!--\\label\{FootnoteColliders\}-->Note that zero correlation between $\\text\{female ratio\}_j$ and $\\mu_\{jP\}$ does not preclude biased estimates of $\\beta_\{1P\}$ when $\\mu_\{jP\}$ is correlated with other explanatory variables that are, in turn, correlated with $\\text\{female ratio\}_j$ by some factor independent of $\\mu_\{jP\}$. Unbiasedness instead requires zero *
+\f1\i partial
+\f0\i0 * correlation between $\\mu_\{jP\}$ and $\\text\{female ratio\}_j$.}]]></Comment>
 </Comments>

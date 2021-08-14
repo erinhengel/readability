@@ -1,0 +1,23 @@
+\begin{table}
+	\footnotesize
+	\centering
+	\begin{threeparttable}
+		\caption{Readability formulas}
+		\label{tab:formulas}
+		\begin{tabular}{ll}
+			\toprule
+			Score&Formula\\
+			\midrule
+			Flesch Reading Ease&$206.84-1.02\times\frac{\text{words}}{\text{sentences}}-84.60\times\frac{\text{syllables}}{\text{words}}$\\
+			Flesch-Kincaid&$-15.59+0.39\times\frac{\text{words}}{\text{sentences}}+11.80\times\frac{\text{syllables}}{\text{words}}$\\
+			Gunning Fog&$0.40\times\big(\frac{\text{words}}{\text{sentences}}+100\times\frac{\text{polysyllabic words}}{\text{words}}\big)$\\
+			SMOG&$3.13+5.71\times\sqrt{\frac{\text{polysyllabic words}}{\text{sentences}}}$\\
+			Dale-Chall&$3.64+0.05\times\frac{\text{words}}{\text{sentences}}+15.79\times\frac{\text{difficult words}}{\text{words}}$\\
+			\bottomrule
+		\end{tabular}
+		\begin{tablenotes}
+			\tiny
+			\item \textit{Notes}. Table displays formulas used to calculate readability scores. Polysyllabic words refer to words with three or more syllables; difficult words are those not found on a list of 3,000 words understood by 80 percent of fourth-grade readers (aged 9--10)~\citep{Chall1995}.
+		\end{tablenotes}
+	\end{threeparttable}
+\end{table}

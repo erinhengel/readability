@@ -1,0 +1,20 @@
+\begin{sidewaystable}[H]
+	\footnotesize
+	\centering
+	\begin{threeparttable}
+		\caption{Summary of alternative proxies for female-authored papers}
+		\label{SampleSummaries}
+		\begin{tabular}{L{3cm}L{2cm}L{6cm}L{6cm}L{5cm}}
+			\toprule
+			Proxy for female-authorship&Appendix&Description&Sample restrictions&Additional notes\\
+			\midrule
+			Female solo-authored papers&\aref{appendixsolo}&Article gender is represented by a dummy variable equal to 1 if the paper is solo-authored by a woman and 0 if it is solo-authored by a man.&Co-authored papers are excluded in all tables except~\autoref{table4_FemSolo} where they are classified as male-authored papers in order to increase within-author variation.&\\
+			Senior-female authored papers&\aref{appendixsenior}&Article gender is represented by the interaction between female ratio and a dummy variable equal to 1 if a female author had at least as many top-five papers as her co-authors at the time the paper was published.&Mixed-gendered papers without a senior female co-author are excluded in all tables except~\autoref{table4_FemSenior} where they are classified as male-authored papers in order to increase within-author variation.&\\
+			Majority female-authored papers&\aref{appendixmajority}&Article gender is represented by a dummy variable equal to 1 if at least half of all authors are female.&Mixed-gendered papers with a strict minority of female authors are excluded in all tables except~\autoref{table4_Fem50} where they are classified as male-authored papers in order to increase within-author variation.&\\
+			Papers with at least one female author&\aref{appendixminority}&Article gender is represented by a dummy variable equal to 1 if at least one author on a paper is female.&&\\
+			Exclusively female-authored papers&\aref{appendixexclusive}&Article gender is represented by a dummy variable equal to 1 if all authors on a paper are female.&Mixed-gendered papers are excluded in all tables except~\autoref{table4_Fem100} where they are classified as male-authored papers in order to increase within-author variation.&\\
+			Senior female-authored papers, sample of less experienced authors&\aref{appendixjunior}&Article gender is represented by the interaction between female ratio and a dummy variable equal to 1 if a female author had at least as many top-five papers as her co-authors at the time the paper was published.&Mixed-gendered papers without a senior female co-author and all papers by authors with more than three top-five papers are excluded in all tables.&\autoref{tableH2_FemRatio} and \autoref{table4_FemRatio} are not estimated. NBER has released very few working papers in which a woman with only one or two top papers is the most senior author on a paper with more than one author. Results in \autoref{table6_FemJunior} should therefore be interpreted with caution.\\
+			\bottomrule
+		\end{tabular}
+	\end{threeparttable}
+\end{sidewaystable}

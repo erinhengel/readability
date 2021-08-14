@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Identifier="6C989E04-3073-40FD-A1B0-54DE5B5AB4DB" Version="2.0" Creator="SCRMAC-3.0.2-1506" Device="iMac" Author="Erin Hengel" Modified="2018-06-09 10:41:54 +0100" ModID="CDF5F8A1-64F2-404C-B9C8-EC2F6BB36BF1">
+<ScrivenerProject Identifier="6C989E04-3073-40FD-A1B0-54DE5B5AB4DB" Version="2.0" Creator="SCRMAC-3.2.2-14632" Device="iMac" Author="Erin Hengel" Modified="2021-08-14 16:02:32 +0100" ModID="09CB3DD0-B8D0-4098-8D8D-0A675C43F790">
     <Binder>
         <BinderItem UUID="C2F868D5-0993-468D-9BA1-B1B3CCDD11B6" Type="DraftFolder" Created="2014-05-30 04:13:20 +0100" Modified="2017-12-06 14:47:21 +0000">
             <Title>Publishing while female</Title>
@@ -7,12 +7,12 @@
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
             <Children>
-                <BinderItem UUID="B4274C52-4B25-452A-92C4-11AB5031CDD2" Type="Text" Created="2015-05-28 07:43:33 +0100" Modified="2018-03-18 22:20:42 +0000">
+                <BinderItem UUID="3BF9D3D3-7E94-45F7-9978-1132940BDF45" Type="Text" Created="2017-11-13 17:39:27 +0000" Modified="2021-08-13 12:47:34 +0100">
                     <Title>Introduction</Title>
                     <MetaData>
                         <SectionType>53F8322E-F0AD-4A73-8B6B-DD79B4D66754</SectionType>
                         <IncludeInCompile>Yes</IncludeInCompile>
-                        <IconFileName>Reviewer Comments.tiff</IconFileName>
+                        <IconFileName>Reviewer Comments</IconFileName>
                         <CustomMetaData>
                             <MetaDataItem>
                                 <FieldID>customid</FieldID>
@@ -21,141 +21,98 @@
                         </CustomMetaData>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>348,0</TextSelection>
+                        <TextSelection>6055,0</TextSelection>
                     </TextSettings>
                     <Bookmarks>
                         <Bookmark BinderUUID="7F311019-A771-4CA6-82C1-66C7C5C6EC4F">publishing_female</Bookmark>
                     </Bookmarks>
                 </BinderItem>
-                <BinderItem UUID="3BF9D3D3-7E94-45F7-9978-1132940BDF45" Type="Text" Created="2017-11-13 17:39:27 +0000" Modified="2018-03-18 22:01:38 +0000">
-                    <Title>Introduction-1</Title>
-                    <MetaData>
-                        <SectionType>5A4CC707-C8B9-49CC-8769-6D2499D10EDE</SectionType>
-                        <IncludeInCompile>Yes</IncludeInCompile>
-                        <IconFileName>Reviewer Comments.tiff</IconFileName>
-                        <CustomMetaData>
-                            <MetaDataItem>
-                                <FieldID>customid</FieldID>
-                                <Value>Introduction1</Value>
-                            </MetaDataItem>
-                        </CustomMetaData>
-                    </MetaData>
-                    <TextSettings>
-                        <TextSelection>3387,0</TextSelection>
-                    </TextSettings>
-                    <Bookmarks>
-                        <Bookmark BinderUUID="7F311019-A771-4CA6-82C1-66C7C5C6EC4F">publishing_female</Bookmark>
-                    </Bookmarks>
-                </BinderItem>
-                <BinderItem UUID="0AA73007-2541-415F-A159-0C285887C000" Type="Text" Created="2017-11-13 14:47:38 +0000" Modified="2018-03-22 11:26:29 +0000">
-                    <Title>Introduction-2</Title>
-                    <MetaData>
-                        <SectionType>5A4CC707-C8B9-49CC-8769-6D2499D10EDE</SectionType>
-                        <IncludeInCompile>Yes</IncludeInCompile>
-                        <IconFileName>Reviewer Comments.tiff</IconFileName>
-                        <CustomMetaData>
-                            <MetaDataItem>
-                                <FieldID>customid</FieldID>
-                                <Value>Introduction2</Value>
-                            </MetaDataItem>
-                        </CustomMetaData>
-                    </MetaData>
-                    <TextSettings>
-                        <TextSelection>6713,0</TextSelection>
-                    </TextSettings>
-                    <Bookmarks>
-                        <Bookmark BinderUUID="7F311019-A771-4CA6-82C1-66C7C5C6EC4F">publishing_female</Bookmark>
-                    </Bookmarks>
-                </BinderItem>
-                <BinderItem UUID="92C41DA9-4B7F-4A75-9ED9-5FE82D5E7B71" Type="Text" Created="2015-05-28 07:45:01 +0100" Modified="2018-06-05 11:11:34 +0100">
-                    <Title>Readability scores</Title>
-                    <MetaData>
-                        <SectionType>53F8322E-F0AD-4A73-8B6B-DD79B4D66754</SectionType>
-                        <IncludeInCompile>Yes</IncludeInCompile>
-                        <CustomMetaData>
-                            <MetaDataItem>
-                                <FieldID>customid</FieldID>
-                                <Value>MeasuringReadability</Value>
-                            </MetaDataItem>
-                        </CustomMetaData>
-                    </MetaData>
-                    <TextSettings>
-                        <TextSelection>1192,0</TextSelection>
-                    </TextSettings>
-                    <Children>
-                        <BinderItem UUID="A4941446-2CDC-467D-8237-CB36E2E1BE3B" Type="Text" Created="2018-04-08 12:22:39 +0100" Modified="2018-06-07 12:34:03 +0100">
-                            <Title>Measurement error</Title>
-                            <MetaData>
-                                <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
-                                <IncludeInCompile>Yes</IncludeInCompile>
-                                <CustomMetaData>
-                                    <MetaDataItem>
-                                        <FieldID>customid</FieldID>
-                                        <Value>Calculation</Value>
-                                    </MetaDataItem>
-                                </CustomMetaData>
-                            </MetaData>
-                            <TextSettings>
-                                <TextSelection>3171,0</TextSelection>
-                            </TextSettings>
-                        </BinderItem>
-                    </Children>
-                </BinderItem>
-                <BinderItem UUID="EAA52082-F700-45E5-B5C7-E000FBF4FA4A" Type="Text" Created="2018-03-22 09:52:35 +0000" Modified="2018-06-01 11:23:47 +0100">
+                <BinderItem UUID="EAA52082-F700-45E5-B5C7-E000FBF4FA4A" Type="Folder" Created="2018-03-22 09:52:35 +0000" Modified="2021-08-13 12:53:24 +0100">
                     <Title>Data</Title>
                     <MetaData>
                         <SectionType>53F8322E-F0AD-4A73-8B6B-DD79B4D66754</SectionType>
                         <IncludeInCompile>Yes</IncludeInCompile>
-                        <IconFileName>To Do (Unticked).tiff</IconFileName>
+                        <IconFileName>Statistics</IconFileName>
                         <CustomMetaData>
                             <MetaDataItem>
                                 <FieldID>customid</FieldID>
-                                <Value>Abstracts</Value>
+                                <Value>Data</Value>
                             </MetaDataItem>
                         </CustomMetaData>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>1737,0</TextSelection>
+                        <TextSelection>514,0</TextSelection>
                     </TextSettings>
                     <Children>
-                        <BinderItem UUID="2608C4D4-3A6F-4D5D-80BD-764A4848ACBA" Type="Text" Created="2018-02-15 16:21:56 +0000" Modified="2018-06-01 11:15:50 +0100">
-                            <Title>Gender</Title>
+                        <BinderItem UUID="39237732-77A0-4FEE-A26D-77ECE8A9EA9F" Type="Text" Created="2019-12-25 17:21:09 +0000" Modified="2021-08-11 17:17:12 +0100">
+                            <Title>Readability scores</Title>
                             <MetaData>
                                 <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
                                 <IncludeInCompile>Yes</IncludeInCompile>
-                                <IconFileName>To Do (Unticked).tiff</IconFileName>
                                 <CustomMetaData>
                                     <MetaDataItem>
                                         <FieldID>customid</FieldID>
-                                        <Value>Data</Value>
+                                        <Value>Readability</Value>
                                     </MetaDataItem>
                                 </CustomMetaData>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>677,0</TextSelection>
+                                <TextSelection>310,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="2608C4D4-3A6F-4D5D-80BD-764A4848ACBA" Type="Text" Created="2018-02-15 16:21:56 +0000" Modified="2021-08-14 11:26:08 +0100">
+                            <Title>Gender</Title>
+                            <MetaData>
+                                <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <CustomMetaData>
+                                    <MetaDataItem>
+                                        <FieldID>customid</FieldID>
+                                        <Value>Gender</Value>
+                                    </MetaDataItem>
+                                </CustomMetaData>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>2224,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
                     </Children>
                 </BinderItem>
-                <BinderItem UUID="91D308F1-FCC7-4479-94C4-1AFE4E664CB2" Type="Text" Created="2015-05-30 05:26:20 +0100" Modified="2017-12-17 14:54:12 +0000">
-                    <Title>Analyses and results</Title>
+                <BinderItem UUID="91D308F1-FCC7-4479-94C4-1AFE4E664CB2" Type="Text" Created="2015-05-30 05:26:20 +0100" Modified="2021-06-12 14:37:00 +0100">
+                    <Title>Stylised facts</Title>
                     <MetaData>
                         <SectionType>53F8322E-F0AD-4A73-8B6B-DD79B4D66754</SectionType>
                         <IncludeInCompile>Yes</IncludeInCompile>
-                        <IconFileName>Blackboard.tiff</IconFileName>
+                        <IconFileName>Blackboard</IconFileName>
                         <CustomMetaData>
                             <MetaDataItem>
                                 <FieldID>customid</FieldID>
-                                <Value>Results</Value>
+                                <Value>StylisedFacts</Value>
                             </MetaDataItem>
                         </CustomMetaData>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>1374,0</TextSelection>
+                        <TextSelection>0,0</TextSelection>
                     </TextSettings>
                     <Children>
-                        <BinderItem UUID="CA03D0ED-0104-442B-9711-F2B3AEB42E3D" Type="Text" Created="2017-09-05 09:59:34 +0100" Modified="2018-05-31 18:45:48 +0100">
-                            <Title>Article-level analysis</Title>
+                        <BinderItem UUID="D46F9339-CF33-4A6A-912C-955BC643A9E9" Type="Text" Created="2021-06-11 13:22:50 +0100" Modified="2021-08-10 15:13:49 +0100">
+                            <Title>Women are under-represented in top-four economics journals</Title>
+                            <MetaData>
+                                <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <CustomMetaData>
+                                    <MetaDataItem>
+                                        <FieldID>customid</FieldID>
+                                        <Value>Underrepresentation</Value>
+                                    </MetaDataItem>
+                                </CustomMetaData>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>947,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="CA03D0ED-0104-442B-9711-F2B3AEB42E3D" Type="Text" Created="2017-09-05 09:59:34 +0100" Modified="2021-08-13 12:57:55 +0100">
+                            <Title>Women's papers are more readable</Title>
                             <MetaData>
                                 <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
                                 <IncludeInCompile>Yes</IncludeInCompile>
@@ -167,27 +124,11 @@
                                 </CustomMetaData>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>685,0</TextSelection>
+                                <TextSelection>640,89</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem UUID="46171C41-FA25-46F1-A4C4-0EAC31F84F64" Type="Text" Created="2016-05-04 23:34:33 +0100" Modified="2017-12-17 15:04:01 +0000">
-                            <Title>Author-level analysis</Title>
-                            <MetaData>
-                                <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
-                                <IncludeInCompile>Yes</IncludeInCompile>
-                                <CustomMetaData>
-                                    <MetaDataItem>
-                                        <FieldID>customid</FieldID>
-                                        <Value>AuthorLevel</Value>
-                                    </MetaDataItem>
-                                </CustomMetaData>
-                            </MetaData>
-                            <TextSettings>
-                                <TextSelection>2807,0</TextSelection>
-                            </TextSettings>
-                        </BinderItem>
-                        <BinderItem UUID="C68D3686-72FF-47AB-BF44-37CC33B9B14C" Type="Text" Created="2016-05-13 03:31:44 +0100" Modified="2017-12-16 13:29:24 +0000">
-                            <Title>Comparing abstracts pre- and post-review.</Title>
+                        <BinderItem UUID="C68D3686-72FF-47AB-BF44-37CC33B9B14C" Type="Folder" Created="2016-05-13 03:31:44 +0100" Modified="2021-06-11 14:10:35 +0100">
+                            <Title>Women's papers improve more during peer review</Title>
                             <MetaData>
                                 <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
                                 <IncludeInCompile>Yes</IncludeInCompile>
@@ -199,20 +140,11 @@
                                 </CustomMetaData>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>689,0</TextSelection>
+                                <TextSelection>0,0</TextSelection>
                             </TextSettings>
                             <Children>
-                                <BinderItem UUID="D61D4703-AFC6-424B-BADE-B0F242136E96" Type="Text" Created="2018-05-30 13:37:27 +0100" Modified="2018-05-30 13:38:43 +0100">
-                                    <Title>Summary statistics</Title>
-                                    <MetaData>
-                                        <IncludeInCompile>Yes</IncludeInCompile>
-                                    </MetaData>
-                                    <TextSettings>
-                                        <TextSelection>4771,0</TextSelection>
-                                    </TextSettings>
-                                </BinderItem>
-                                <BinderItem UUID="FF57AED3-6EAB-4B34-9983-D1C235D464C7" Type="Text" Created="2016-09-20 03:52:54 +0100" Modified="2018-03-18 22:53:45 +0000">
-                                    <Title>Identification</Title>
+                                <BinderItem UUID="FF57AED3-6EAB-4B34-9983-D1C235D464C7" Type="Text" Created="2016-09-20 03:52:54 +0100" Modified="2021-08-12 17:15:08 +0100">
+                                    <Title>Estimation strategy</Title>
                                     <MetaData>
                                         <SectionType>A905BA4D-55C0-421A-9C19-8ACF9997FD14</SectionType>
                                         <IncludeInCompile>Yes</IncludeInCompile>
@@ -224,10 +156,10 @@
                                         </CustomMetaData>
                                     </MetaData>
                                     <TextSettings>
-                                        <TextSelection>420,0</TextSelection>
+                                        <TextSelection>1040,0</TextSelection>
                                     </TextSettings>
                                 </BinderItem>
-                                <BinderItem UUID="1D724DCE-7C3F-4B21-928C-A6E7D99D4CA0" Type="Text" Created="2016-09-20 03:56:12 +0100" Modified="2018-03-18 22:57:44 +0000">
+                                <BinderItem UUID="1D724DCE-7C3F-4B21-928C-A6E7D99D4CA0" Type="Text" Created="2016-09-20 03:56:12 +0100" Modified="2021-08-14 11:13:07 +0100">
                                     <Title>Results</Title>
                                     <MetaData>
                                         <SectionType>A905BA4D-55C0-421A-9C19-8ACF9997FD14</SectionType>
@@ -240,34 +172,14 @@
                                         </CustomMetaData>
                                     </MetaData>
                                     <TextSettings>
-                                        <TextSelection>3349,0</TextSelection>
+                                        <TextSelection>3369,0</TextSelection>
                                     </TextSettings>
-                                    <Children>
-                                        <BinderItem UUID="0F42141D-7EF3-42ED-8A99-7BA16F18625B" Type="Text" Created="2018-02-27 14:49:31 +0000" Modified="2018-03-18 22:49:20 +0000">
-                                            <Title>Double-blind review before the internet</Title>
-                                            <MetaData>
-                                                <SectionType>42ADD088-5C1D-4C60-8B56-7D60C9F425F9</SectionType>
-                                                <IncludeInCompile>Yes</IncludeInCompile>
-                                                <IconFileName>To Do (Unticked).tiff</IconFileName>
-                                                <CustomMetaData>
-                                                    <MetaDataItem>
-                                                        <FieldID>customid</FieldID>
-                                                        <Value>DoubleBlind</Value>
-                                                    </MetaDataItem>
-                                                </CustomMetaData>
-                                            </MetaData>
-                                            <TextSettings>
-                                                <TextSelection>1458,68</TextSelection>
-                                            </TextSettings>
-                                        </BinderItem>
-                                    </Children>
                                 </BinderItem>
-                                <BinderItem UUID="1A7A1607-1167-44C7-ABAB-AC899C53BF8D" Type="Text" Created="2017-11-22 13:48:44 +0000" Modified="2018-03-22 10:54:04 +0000">
+                                <BinderItem UUID="1A7A1607-1167-44C7-ABAB-AC899C53BF8D" Type="Text" Created="2017-11-22 13:48:44 +0000" Modified="2021-08-10 17:15:08 +0100">
                                     <Title>Robustness</Title>
                                     <MetaData>
                                         <SectionType>A905BA4D-55C0-421A-9C19-8ACF9997FD14</SectionType>
                                         <IncludeInCompile>Yes</IncludeInCompile>
-                                        <IconFileName>To Do (Unticked).tiff</IconFileName>
                                         <CustomMetaData>
                                             <MetaDataItem>
                                                 <FieldID>customid</FieldID>
@@ -276,169 +188,15 @@
                                         </CustomMetaData>
                                     </MetaData>
                                     <TextSettings>
-                                        <TextSelection>1004,0</TextSelection>
+                                        <TextSelection>1376,0</TextSelection>
                                     </TextSettings>
                                 </BinderItem>
                             </Children>
                         </BinderItem>
-                        <BinderItem UUID="F97F3B14-C5E0-4BC4-8E55-A73A9617216A" Type="Text" Created="2017-08-31 12:28:10 +0100" Modified="2017-12-03 17:47:43 +0000">
-                            <Title>Investigating readability over authors' lifetimes</Title>
+                        <BinderItem UUID="7CCF514E-E6AE-4E0B-A543-CB9AD657BFD3" Type="Folder" Created="2016-05-13 03:31:28 +0100" Modified="2021-08-12 17:15:57 +0100">
+                            <Title>Women's papers spend longer under review</Title>
                             <MetaData>
-                                <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
-                                <IncludeInCompile>Yes</IncludeInCompile>
-                                <CustomMetaData>
-                                    <MetaDataItem>
-                                        <FieldID>customid</FieldID>
-                                        <Value>Experience</Value>
-                                    </MetaDataItem>
-                                </CustomMetaData>
-                            </MetaData>
-                            <TextSettings>
-                                <TextSelection>709,0</TextSelection>
-                            </TextSettings>
-                            <Children>
-                                <BinderItem UUID="E0305587-9547-4338-BCF1-EC4994D166D6" Type="Text" Created="2017-08-15 18:49:42 +0100" Modified="2017-12-20 12:39:51 +0000">
-                                    <Title>Theoretical framework</Title>
-                                    <MetaData>
-                                        <SectionType>A905BA4D-55C0-421A-9C19-8ACF9997FD14</SectionType>
-                                        <IncludeInCompile>Yes</IncludeInCompile>
-                                        <CustomMetaData>
-                                            <MetaDataItem>
-                                                <FieldID>customid</FieldID>
-                                                <Value>SEUModel</Value>
-                                            </MetaDataItem>
-                                        </CustomMetaData>
-                                    </MetaData>
-                                    <TextSettings>
-                                        <TextSelection>5141,0</TextSelection>
-                                    </TextSettings>
-                                    <Children>
-                                        <BinderItem UUID="13474993-1A32-496D-A5D5-6E852669517B" Type="Text" Created="2017-10-16 15:31:40 +0100" Modified="2017-12-17 18:13:11 +0000">
-                                            <Title>Measuring discrimination</Title>
-                                            <MetaData>
-                                                <SectionType>42ADD088-5C1D-4C60-8B56-7D60C9F425F9</SectionType>
-                                                <IncludeInCompile>Yes</IncludeInCompile>
-                                                <CustomMetaData>
-                                                    <MetaDataItem>
-                                                        <FieldID>customid</FieldID>
-                                                        <Value>MatchingIdentificaiton</Value>
-                                                    </MetaDataItem>
-                                                </CustomMetaData>
-                                            </MetaData>
-                                            <TextSettings>
-                                                <TextSelection>3367,0</TextSelection>
-                                            </TextSettings>
-                                        </BinderItem>
-                                    </Children>
-                                </BinderItem>
-                                <BinderItem UUID="28B4E2C9-F726-4822-A245-EF9F1C2B7CDE" Type="Text" Created="2017-10-09 16:14:33 +0100" Modified="2017-12-16 15:47:47 +0000">
-                                    <Title>Matching</Title>
-                                    <MetaData>
-                                        <SectionType>A905BA4D-55C0-421A-9C19-8ACF9997FD14</SectionType>
-                                        <IncludeInCompile>Yes</IncludeInCompile>
-                                        <CustomMetaData>
-                                            <MetaDataItem>
-                                                <FieldID>customid</FieldID>
-                                                <Value>SEUMatching</Value>
-                                            </MetaDataItem>
-                                        </CustomMetaData>
-                                    </MetaData>
-                                    <TextSettings>
-                                        <TextSelection>581,0</TextSelection>
-                                    </TextSettings>
-                                    <Children>
-                                        <BinderItem UUID="DC0D39EB-E0F9-4045-8936-1BEAC5BC35C7" Type="Text" Created="2017-10-12 15:45:18 +0100" Modified="2018-03-20 15:34:38 +0000">
-                                            <Title>Estimation strategy</Title>
-                                            <MetaData>
-                                                <SectionType>42ADD088-5C1D-4C60-8B56-7D60C9F425F9</SectionType>
-                                                <IncludeInCompile>Yes</IncludeInCompile>
-                                                <CustomMetaData>
-                                                    <MetaDataItem>
-                                                        <FieldID>customid</FieldID>
-                                                        <Value>MatchingEstimation</Value>
-                                                    </MetaDataItem>
-                                                </CustomMetaData>
-                                            </MetaData>
-                                            <TextSettings>
-                                                <TextSelection>520,0</TextSelection>
-                                            </TextSettings>
-                                        </BinderItem>
-                                        <BinderItem UUID="1E7FDF0C-FEAE-488C-804A-8632B4A3F129" Type="Text" Created="2017-10-26 13:44:59 +0100" Modified="2018-04-08 20:36:49 +0100">
-                                            <Title>Results</Title>
-                                            <MetaData>
-                                                <SectionType>42ADD088-5C1D-4C60-8B56-7D60C9F425F9</SectionType>
-                                                <IncludeInCompile>Yes</IncludeInCompile>
-                                                <CustomMetaData>
-                                                    <MetaDataItem>
-                                                        <FieldID>customid</FieldID>
-                                                        <Value>MatchingResults</Value>
-                                                    </MetaDataItem>
-                                                </CustomMetaData>
-                                            </MetaData>
-                                            <TextSettings>
-                                                <TextSelection>295,0</TextSelection>
-                                            </TextSettings>
-                                        </BinderItem>
-                                        <BinderItem UUID="3D4820AE-D0B6-4745-94A3-34AFDB24DBA2" Type="Text" Created="2017-11-11 10:49:51 +0000" Modified="2018-03-18 22:46:06 +0000">
-                                            <Title>Robustness</Title>
-                                            <MetaData>
-                                                <SectionType>42ADD088-5C1D-4C60-8B56-7D60C9F425F9</SectionType>
-                                                <IncludeInCompile>Yes</IncludeInCompile>
-                                                <CustomMetaData>
-                                                    <MetaDataItem>
-                                                        <FieldID>customid</FieldID>
-                                                        <Value>MatchingLimitations</Value>
-                                                    </MetaDataItem>
-                                                </CustomMetaData>
-                                            </MetaData>
-                                            <TextSettings>
-                                                <TextSelection>1421,74</TextSelection>
-                                            </TextSettings>
-                                        </BinderItem>
-                                    </Children>
-                                </BinderItem>
-                            </Children>
-                        </BinderItem>
-                        <BinderItem UUID="B8F4B6D9-7AB3-427A-8FF5-9DB01D5CD64B" Type="Text" Created="2017-11-12 11:03:29 +0000" Modified="2017-12-17 18:49:54 +0000">
-                            <Title>Indirect effect of higher standards</Title>
-                            <MetaData>
-                                <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
-                                <LabelID>1</LabelID>
-                                <IncludeInCompile>Yes</IncludeInCompile>
-                                <CustomMetaData>
-                                    <MetaDataItem>
-                                        <FieldID>customid</FieldID>
-                                        <Value>IndirectEffect</Value>
-                                    </MetaDataItem>
-                                </CustomMetaData>
-                            </MetaData>
-                            <TextSettings>
-                                <TextSelection>0,0</TextSelection>
-                            </TextSettings>
-                            <Children>
-                                <BinderItem UUID="7B75AF10-D60E-4946-A17B-AA58B5A61C3F" Type="Text" Created="2017-12-15 13:42:33 +0000" Modified="2018-03-18 22:59:15 +0000">
-                                    <Title>Impact on identifing discrimination</Title>
-                                    <MetaData>
-                                        <SectionType>42ADD088-5C1D-4C60-8B56-7D60C9F425F9</SectionType>
-                                        <LabelID>1</LabelID>
-                                        <IncludeInCompile>Yes</IncludeInCompile>
-                                        <CustomMetaData>
-                                            <MetaDataItem>
-                                                <FieldID>customid</FieldID>
-                                                <Value>IdentificationImpact</Value>
-                                            </MetaDataItem>
-                                        </CustomMetaData>
-                                    </MetaData>
-                                    <TextSettings>
-                                        <TextSelection>635,0</TextSelection>
-                                    </TextSettings>
-                                </BinderItem>
-                            </Children>
-                        </BinderItem>
-                        <BinderItem UUID="7CCF514E-E6AE-4E0B-A543-CB9AD657BFD3" Type="Text" Created="2016-05-13 03:31:28 +0100" Modified="2018-04-08 20:36:49 +0100">
-                            <Title>Duration of peer review</Title>
-                            <MetaData>
-                                <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                <SectionType ChildDefault="26D4FE5E-2303-436B-B293-425787FA5C19">26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
                                 <IncludeInCompile>Yes</IncludeInCompile>
                                 <CustomMetaData>
                                     <MetaDataItem>
@@ -448,46 +206,181 @@
                                 </CustomMetaData>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>2915,7</TextSelection>
+                                <TextSelection>1497,0</TextSelection>
                             </TextSettings>
+                            <Children>
+                                <BinderItem UUID="2441C81C-90C3-4585-B581-A7FCCCC66C0D" Type="Text" Created="2020-01-04 19:02:34 +0000" Modified="2021-08-14 11:10:08 +0100">
+                                    <Title>Estimation strategy and results</Title>
+                                    <MetaData>
+                                        <SectionType>A905BA4D-55C0-421A-9C19-8ACF9997FD14</SectionType>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>DurationResults</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>308,89</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                            </Children>
                         </BinderItem>
                     </Children>
                 </BinderItem>
-                <BinderItem UUID="2898D675-9504-4E38-8828-5B4B5EED218D" Type="Text" Created="2016-05-18 01:01:06 +0100" Modified="2018-06-06 14:36:11 +0100">
-                    <Title>Discussion</Title>
+                <BinderItem UUID="F97F3B14-C5E0-4BC4-8E55-A73A9617216A" Type="Folder" Created="2017-08-31 12:28:10 +0100" Modified="2021-08-02 10:50:23 +0100">
+                    <Title>Mechanisms</Title>
                     <MetaData>
                         <SectionType>53F8322E-F0AD-4A73-8B6B-DD79B4D66754</SectionType>
                         <IncludeInCompile>Yes</IncludeInCompile>
+                        <IconFileName>Test Tube</IconFileName>
                         <CustomMetaData>
                             <MetaDataItem>
                                 <FieldID>customid</FieldID>
-                                <Value>Discussion</Value>
+                                <Value>Mechanisms</Value>
                             </MetaDataItem>
                         </CustomMetaData>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>10328,0</TextSelection>
+                        <TextSelection>0,0</TextSelection>
                     </TextSettings>
                     <Children>
-                        <BinderItem UUID="2D388486-9B1B-481D-8613-4488645916E0" Type="Text" Created="2017-11-06 15:39:51 +0000" Modified="2017-12-20 14:17:56 +0000">
-                            <Title>Open review</Title>
+                        <BinderItem UUID="E0305587-9547-4338-BCF1-EC4994D166D6" Type="Text" Created="2017-08-15 18:49:42 +0100" Modified="2021-08-12 17:16:48 +0100">
+                            <Title>Theoretical framework</Title>
                             <MetaData>
                                 <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
                                 <IncludeInCompile>Yes</IncludeInCompile>
                                 <CustomMetaData>
                                     <MetaDataItem>
                                         <FieldID>customid</FieldID>
-                                        <Value>OpenReview</Value>
+                                        <Value>SEUModel</Value>
                                     </MetaDataItem>
                                 </CustomMetaData>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>1144,26</TextSelection>
+                                <TextSelection>2578,0</TextSelection>
                             </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="0E7D4589-611F-442D-850A-17258698B6E2" Type="Text" Created="2021-06-30 15:09:15 +0100" Modified="2021-08-14 11:17:21 +0100">
+                            <Title>Suggestive descriptive evidence</Title>
+                            <MetaData>
+                                <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <CustomMetaData>
+                                    <MetaDataItem>
+                                        <FieldID>customid</FieldID>
+                                        <Value>MechanismsDescriptive</Value>
+                                    </MetaDataItem>
+                                </CustomMetaData>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>2084,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="E00827F0-A403-45E5-AF50-679ACC49059D" Type="Folder" Created="2021-04-06 18:33:17 +0100" Modified="2021-08-10 14:41:15 +0100">
+                            <Title>Quantifying the counterfactual</Title>
+                            <MetaData>
+                                <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <CustomMetaData>
+                                    <MetaDataItem>
+                                        <FieldID>customid</FieldID>
+                                        <Value>Quantification</Value>
+                                    </MetaDataItem>
+                                </CustomMetaData>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>0,0</TextSelection>
+                            </TextSettings>
+                            <Children>
+                                <BinderItem UUID="BBEAE4B9-77E2-4D9A-9159-B37801964FD4" Type="Text" Created="2021-06-30 15:23:40 +0100" Modified="2021-08-09 18:03:10 +0100">
+                                    <Title>Theoretical strategy</Title>
+                                    <MetaData>
+                                        <SectionType>A905BA4D-55C0-421A-9C19-8ACF9997FD14</SectionType>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>MatchingTheory</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>1696,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="DC0D39EB-E0F9-4045-8936-1BEAC5BC35C7" Type="Text" Created="2017-10-12 15:45:18 +0100" Modified="2021-08-13 13:35:09 +0100">
+                                    <Title>Estimation strategy</Title>
+                                    <MetaData>
+                                        <SectionType>A905BA4D-55C0-421A-9C19-8ACF9997FD14</SectionType>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>MatchingEstimation</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>2267,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="1E7FDF0C-FEAE-488C-804A-8632B4A3F129" Type="Text" Created="2017-10-26 13:44:59 +0100" Modified="2021-08-11 19:12:45 +0100">
+                                    <Title>Results</Title>
+                                    <MetaData>
+                                        <SectionType>A905BA4D-55C0-421A-9C19-8ACF9997FD14</SectionType>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>MatchingResults</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>1934,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                            </Children>
+                        </BinderItem>
+                        <BinderItem UUID="B8F4B6D9-7AB3-427A-8FF5-9DB01D5CD64B" Type="Folder" Created="2017-11-12 11:03:29 +0000" Modified="2021-08-13 13:52:45 +0100">
+                            <Title>Understanding how women respond to higher standards</Title>
+                            <MetaData>
+                                <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <CustomMetaData>
+                                    <MetaDataItem>
+                                        <FieldID>customid</FieldID>
+                                        <Value>IndirectEffect</Value>
+                                    </MetaDataItem>
+                                </CustomMetaData>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>375,0</TextSelection>
+                            </TextSettings>
+                            <Children>
+                                <BinderItem UUID="119B1A81-EB7C-4F6C-AE03-CB1C45C9FA1C" Type="Text" Created="2020-01-19 16:29:12 +0000" Modified="2021-08-12 16:06:05 +0100">
+                                    <Title>Interpretation</Title>
+                                    <MetaData>
+                                        <SectionType>A905BA4D-55C0-421A-9C19-8ACF9997FD14</SectionType>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>IndirectEffectInterpretation</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>223,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                            </Children>
                         </BinderItem>
                     </Children>
                 </BinderItem>
-                <BinderItem UUID="7EC30A3C-D3B1-4696-8D15-77F10174FB53" Type="Text" Created="2016-05-20 04:46:49 +0100" Modified="2017-12-10 16:21:18 +0000">
+                <BinderItem UUID="2898D675-9504-4E38-8828-5B4B5EED218D" Type="Text" Created="2016-05-18 01:01:06 +0100" Modified="2021-07-22 15:42:33 +0100">
                     <Title>Conclusion</Title>
                     <MetaData>
                         <SectionType>53F8322E-F0AD-4A73-8B6B-DD79B4D66754</SectionType>
@@ -500,7 +393,7 @@
                         </CustomMetaData>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>651,0</TextSelection>
+                        <TextSelection>4041,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
                 <BinderItem UUID="1BD4AF95-951B-446B-8D6F-BA28F0445598" Type="Folder" Created="2015-09-23 05:07:43 +0100" Modified="2017-12-03 18:11:41 +0000">
@@ -509,7 +402,7 @@
                         <SectionType>C9C80C80-2A85-4060-B14E-8716C038AADB</SectionType>
                         <LabelID>1</LabelID>
                         <IncludeInCompile>Yes</IncludeInCompile>
-                        <IconFileName>Tables.tiff</IconFileName>
+                        <IconFileName>Tables</IconFileName>
                         <CustomMetaData>
                             <MetaDataItem>
                                 <FieldID>customid</FieldID>
@@ -521,7 +414,7 @@
                         <TextSelection>0,0</TextSelection>
                     </TextSettings>
                     <Children>
-                        <BinderItem UUID="53EF818D-92E4-43C2-8C5A-A012C5E98E9A" Type="Text" Created="2017-08-27 14:14:21 +0100" Modified="2018-04-08 20:36:49 +0100">
+                        <BinderItem UUID="53EF818D-92E4-43C2-8C5A-A012C5E98E9A" Type="Text" Created="2017-08-27 14:14:21 +0100" Modified="2021-08-09 18:03:22 +0100">
                             <Title>Proofs</Title>
                             <MetaData>
                                 <SectionType>53F8322E-F0AD-4A73-8B6B-DD79B4D66754</SectionType>
@@ -535,27 +428,27 @@
                                 </CustomMetaData>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>351,0</TextSelection>
+                                <TextSelection>50,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem UUID="35E34F9E-C912-4C4C-AF35-EEB8D22B5720" Type="Text" Created="2018-02-15 16:25:12 +0000" Modified="2018-04-06 18:25:00 +0100">
-                            <Title>`Textatistic`</Title>
+                        <BinderItem UUID="754D37AA-57F4-4150-AB74-190131E7CE56" Type="Text" Created="2021-08-01 15:02:29 +0100" Modified="2021-08-10 14:32:57 +0100">
+                            <Title>Readability data coverage</Title>
                             <MetaData>
                                 <SectionType>53F8322E-F0AD-4A73-8B6B-DD79B4D66754</SectionType>
                                 <IncludeInCompile>Yes</IncludeInCompile>
                                 <CustomMetaData>
                                     <MetaDataItem>
                                         <FieldID>customid</FieldID>
-                                        <Value>AppendixTextatistic</Value>
+                                        <Value>AppendixArticleCount</Value>
                                     </MetaDataItem>
                                 </CustomMetaData>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>232,0</TextSelection>
+                                <TextSelection>155,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem UUID="6B416027-752E-4EE0-AADB-3EEA6C218A10" Type="Text" Created="2018-02-15 16:22:28 +0000" Modified="2018-04-06 18:26:14 +0100">
-                            <Title>Controls</Title>
+                        <BinderItem UUID="6B416027-752E-4EE0-AADB-3EEA6C218A10" Type="Folder" Created="2018-02-15 16:22:28 +0000" Modified="2018-12-09 16:50:10 +0000">
+                            <Title>Description of control variables</Title>
                             <MetaData>
                                 <SectionType>53F8322E-F0AD-4A73-8B6B-DD79B4D66754</SectionType>
                                 <IncludeInCompile>Yes</IncludeInCompile>
@@ -567,110 +460,723 @@
                                 </CustomMetaData>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>3038,0</TextSelection>
+                                <TextSelection>0,0</TextSelection>
                             </TextSettings>
+                            <Children>
+                                <BinderItem UUID="2B8F28F0-5F53-4FE6-B84B-F6F3007EECE7" Type="Text" Created="2018-12-09 16:49:49 +0000" Modified="2021-08-01 12:53:15 +0100">
+                                    <Title>Institutions</Title>
+                                    <MetaData>
+                                        <SectionType>42ADD088-5C1D-4C60-8B56-7D60C9F425F9</SectionType>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>AppendixControlsInstitutions</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>705,7</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="AD3EFF8F-2949-4CF4-ABE8-69514717A082" Type="Text" Created="2018-12-09 16:47:44 +0000" Modified="2018-12-09 16:55:30 +0000">
+                                    <Title>Citations</Title>
+                                    <MetaData>
+                                        <SectionType>42ADD088-5C1D-4C60-8B56-7D60C9F425F9</SectionType>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>AppendixControlsCitations</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>213,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="780763A2-6960-4C0D-8436-57C20440F28A" Type="Text" Created="2018-12-09 16:50:27 +0000" Modified="2021-08-01 12:54:01 +0100">
+                                    <Title>Author prominence</Title>
+                                    <MetaData>
+                                        <SectionType>42ADD088-5C1D-4C60-8B56-7D60C9F425F9</SectionType>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>AppendixControlsProminence</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>278,10</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="368582DB-A926-4377-A113-433CA3E708E6" Type="Text" Created="2018-12-09 16:50:46 +0000" Modified="2021-08-01 12:52:34 +0100">
+                                    <Title>Author seniority</Title>
+                                    <MetaData>
+                                        <SectionType>42ADD088-5C1D-4C60-8B56-7D60C9F425F9</SectionType>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>AppendixControlsSeniority</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>267,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="18029C4D-D238-4F64-9727-102F69C6CA43" Type="Text" Created="2018-12-09 16:50:55 +0000" Modified="2021-08-01 12:54:23 +0100">
+                                    <Title>English fluency</Title>
+                                    <MetaData>
+                                        <SectionType>42ADD088-5C1D-4C60-8B56-7D60C9F425F9</SectionType>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>AppendixControlsEnglish</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>804,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="9EF0B983-B683-4E55-9C24-45C99343DA21" Type="Text" Created="2018-12-09 16:51:13 +0000" Modified="2021-08-09 17:59:23 +0100">
+                                    <Title>Field</Title>
+                                    <MetaData>
+                                        <SectionType>42ADD088-5C1D-4C60-8B56-7D60C9F425F9</SectionType>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>AppendixControlsField</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>1331,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="3647574A-8EE1-45C3-B993-32CBA73B91B4" Type="Text" Created="2018-12-09 16:51:25 +0000" Modified="2021-08-01 12:55:26 +0100">
+                                    <Title>Editorial policy</Title>
+                                    <MetaData>
+                                        <SectionType>42ADD088-5C1D-4C60-8B56-7D60C9F425F9</SectionType>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>AppendixControlsEditorial</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>316,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="65E90209-1D4A-4125-AC52-233E54319A29" Type="Text" Created="2018-12-09 16:51:40 +0000" Modified="2021-08-01 13:41:38 +0100">
+                                    <Title>Family commitments</Title>
+                                    <MetaData>
+                                        <SectionType>42ADD088-5C1D-4C60-8B56-7D60C9F425F9</SectionType>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>AppendixControlsFamily</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>730,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                            </Children>
                         </BinderItem>
-                        <BinderItem UUID="B30AEF02-62BB-4CAF-A417-1D257EA9867E" Type="Text" Created="2016-10-08 09:29:58 +0100" Modified="2018-04-08 20:36:49 +0100">
-                            <Title>Average first, mean and final paper scores</Title>
+                        <BinderItem UUID="92C41DA9-4B7F-4A75-9ED9-5FE82D5E7B71" Type="Folder" Created="2015-05-28 07:45:01 +0100" Modified="2021-08-11 15:49:24 +0100">
+                            <Title>Readability scores</Title>
                             <MetaData>
                                 <SectionType>53F8322E-F0AD-4A73-8B6B-DD79B4D66754</SectionType>
-                                <LabelID>1</LabelID>
                                 <IncludeInCompile>Yes</IncludeInCompile>
                                 <CustomMetaData>
                                     <MetaDataItem>
                                         <FieldID>customid</FieldID>
-                                        <Value>AppendixFirstLast</Value>
+                                        <Value>AppendixReadability</Value>
                                     </MetaDataItem>
                                 </CustomMetaData>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>297,68</TextSelection>
+                                <TextSelection>1,0</TextSelection>
                             </TextSettings>
+                            <Children>
+                                <BinderItem UUID="26F43626-DC8D-4D5C-873E-3F3E457A59B2" Type="Text" Created="2019-12-27 17:53:50 +0000" Modified="2021-08-09 17:58:25 +0100">
+                                    <Title>Validity</Title>
+                                    <MetaData>
+                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>AppendixValidity</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>3832,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="A4941446-2CDC-467D-8237-CB36E2E1BE3B" Type="Text" Created="2018-04-08 12:22:39 +0100" Modified="2021-08-09 17:58:25 +0100">
+                                    <Title>Measurement error</Title>
+                                    <MetaData>
+                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>AppendixMeasurementError</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>3352,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="35E34F9E-C912-4C4C-AF35-EEB8D22B5720" Type="Text" Created="2018-02-15 16:25:12 +0000" Modified="2020-01-19 18:43:20 +0000">
+                                    <Title>`Textatistic`</Title>
+                                    <MetaData>
+                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>AppendixTextatistic</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>0,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="5ABF8EA6-409A-467F-A815-FC4437CE8E10" Type="Text" Created="2018-05-03 14:49:11 +0100" Modified="2021-08-09 17:59:24 +0100">
+                                    <Title>Studies included in meta analysis</Title>
+                                    <MetaData>
+                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>AppendixMetaAnalysis</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>872,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                            </Children>
                         </BinderItem>
-                        <BinderItem UUID="B574767E-5F2C-433A-8F56-2F2577254B6C" Type="Text" Created="2018-02-27 16:05:20 +0000" Modified="2018-04-08 20:36:49 +0100">
-                            <Title>Double-blind review</Title>
+                        <BinderItem UUID="33054FFA-2997-4165-94F9-0FD0E66C0167" Type="Text" Created="2018-07-28 18:07:14 +0100" Modified="2021-08-02 14:41:55 +0100">
+                            <Title>Discussion of potential alternative mechanisms</Title>
                             <MetaData>
                                 <SectionType>53F8322E-F0AD-4A73-8B6B-DD79B4D66754</SectionType>
                                 <IncludeInCompile>Yes</IncludeInCompile>
-                                <IconFileName>To Do (Unticked).tiff</IconFileName>
                                 <CustomMetaData>
                                     <MetaDataItem>
                                         <FieldID>customid</FieldID>
-                                        <Value>AppendixDoubleBlind</Value>
+                                        <Value>AppendixAlternatives</Value>
                                     </MetaDataItem>
                                 </CustomMetaData>
                             </MetaData>
                             <TextSettings>
-                                <TextSelection>1021,0</TextSelection>
+                                <TextSelection>6013,0</TextSelection>
                             </TextSettings>
                         </BinderItem>
-                        <BinderItem UUID="65CC5F5E-498B-453A-8A20-433A92BAF329" Type="Text" Created="2018-03-16 14:05:36 +0000" Modified="2018-04-06 18:26:24 +0100">
-                            <Title>Analysis by *JEL* code</Title>
+                        <BinderItem UUID="1B6066FF-ADC1-48E0-A984-5C708FCDF967" Type="Folder" Created="2018-06-10 14:32:08 +0100" Modified="2019-11-30 18:33:34 +0000">
+                            <Title>[][ArticleLevel], suplemental output</Title>
                             <MetaData>
                                 <SectionType>53F8322E-F0AD-4A73-8B6B-DD79B4D66754</SectionType>
                                 <IncludeInCompile>Yes</IncludeInCompile>
                                 <CustomMetaData>
                                     <MetaDataItem>
                                         <FieldID>customid</FieldID>
-                                        <Value>AppendixJEL</Value>
-                                    </MetaDataItem>
-                                </CustomMetaData>
-                            </MetaData>
-                            <TextSettings>
-                                <TextSelection>359,0</TextSelection>
-                            </TextSettings>
-                        </BinderItem>
-                        <BinderItem UUID="7DB3228B-44E4-4081-AD8B-DD93EE91A189" Type="Text" Created="2018-03-04 17:25:56 +0000" Modified="2018-04-08 20:36:49 +0100">
-                            <Title>Abstract word limits</Title>
-                            <MetaData>
-                                <SectionType>53F8322E-F0AD-4A73-8B6B-DD79B4D66754</SectionType>
-                                <IncludeInCompile>Yes</IncludeInCompile>
-                                <IconFileName>To Do (Unticked).tiff</IconFileName>
-                                <CustomMetaData>
-                                    <MetaDataItem>
-                                        <FieldID>customid</FieldID>
-                                        <Value>AppendixWordLimits</Value>
-                                    </MetaDataItem>
-                                </CustomMetaData>
-                            </MetaData>
-                            <TextSettings>
-                                <TextSelection>1720,8</TextSelection>
-                            </TextSettings>
-                        </BinderItem>
-                        <BinderItem UUID="6242A060-EDB5-404F-9160-EACCE6C41F6E" Type="Text" Created="2017-09-27 12:37:31 +0100" Modified="2018-04-09 06:03:27 +0100">
-                            <Title>Empirical consistency</Title>
-                            <MetaData>
-                                <SectionType>53F8322E-F0AD-4A73-8B6B-DD79B4D66754</SectionType>
-                                <IncludeInCompile>Yes</IncludeInCompile>
-                                <CustomMetaData>
-                                    <MetaDataItem>
-                                        <FieldID>customid</FieldID>
-                                        <Value>SEUEmpirical</Value>
-                                    </MetaDataItem>
-                                </CustomMetaData>
-                            </MetaData>
-                            <TextSettings>
-                                <TextSelection>757,0</TextSelection>
-                            </TextSettings>
-                        </BinderItem>
-                        <BinderItem UUID="5ABF8EA6-409A-467F-A815-FC4437CE8E10" Type="Text" Created="2018-05-03 14:49:11 +0100" Modified="2018-06-03 15:49:08 +0100">
-                            <Title>Readability meta-analysis</Title>
-                            <MetaData>
-                                <SectionType>53F8322E-F0AD-4A73-8B6B-DD79B4D66754</SectionType>
-                                <IncludeInCompile>Yes</IncludeInCompile>
-                                <CustomMetaData>
-                                    <MetaDataItem>
-                                        <FieldID>customid</FieldID>
-                                        <Value>AppendixMetaAnalysis</Value>
+                                        <Value>AppendixArticleLevel</Value>
                                     </MetaDataItem>
                                 </CustomMetaData>
                             </MetaData>
                             <TextSettings>
                                 <TextSelection>0,0</TextSelection>
                             </TextSettings>
+                            <Children>
+                                <BinderItem UUID="3EDF16EB-93A7-4221-8FCF-5D0874FAE5C2" Type="Text" Created="2019-11-30 18:32:56 +0000" Modified="2021-08-09 17:59:23 +0100">
+                                    <Title>Readability differences across journals</Title>
+                                    <MetaData>
+                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>AppendixJournal</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>96,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="65CC5F5E-498B-453A-8A20-433A92BAF329" Type="Text" Created="2018-03-16 14:05:36 +0000" Modified="2021-08-13 18:40:34 +0100">
+                                    <Title>Gender and readability, by *JEL* code</Title>
+                                    <MetaData>
+                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>AppendixJEL</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>2737,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="46171C41-FA25-46F1-A4C4-0EAC31F84F64" Type="Text" Created="2016-05-04 23:34:33 +0100" Modified="2021-08-14 11:27:01 +0100">
+                                    <Title>Author-level analysis</Title>
+                                    <MetaData>
+                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>AppendixAuthorLevel</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>2064,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                            </Children>
                         </BinderItem>
-                        <BinderItem UUID="959D7027-8576-46E3-A7A1-19AD065607C6" Type="Folder" Created="2018-04-06 15:45:36 +0100" Modified="2018-05-19 12:27:50 +0100">
-                            <Title>Alternative measures of an article's "gender"</Title>
+                        <BinderItem UUID="8D97AAB2-10CC-429C-9080-177F0B18C0FD" Type="Folder" Created="2018-04-06 15:50:53 +0100" Modified="2018-07-04 14:50:14 +0100">
+                            <Title>[][NBER], suplemental output</Title>
+                            <MetaData>
+                                <SectionType>53F8322E-F0AD-4A73-8B6B-DD79B4D66754</SectionType>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <CustomMetaData>
+                                    <MetaDataItem>
+                                        <FieldID>customid</FieldID>
+                                        <Value>AppendixNBER</Value>
+                                    </MetaDataItem>
+                                </CustomMetaData>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>0,0</TextSelection>
+                            </TextSettings>
+                            <Children>
+                                <BinderItem UUID="0D157A8A-4F7E-4FAC-BA03-572162E1537B" Type="Text" Created="2016-09-20 03:05:37 +0100" Modified="2021-08-14 11:30:53 +0100">
+                                    <Title>[](#table6_FemRatio), full output (first and final columns)</Title>
+                                    <MetaData>
+                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                        <LabelID>1</LabelID>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>AppendixDraftCorr</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>294,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="D06F6684-AD5E-4D28-8703-9F31A3CDC3CE" Type="Text" Created="2018-03-17 19:11:00 +0000" Modified="2021-08-09 17:59:23 +0100">
+                                    <Title>[](#table6_FemRatio), accounting for field</Title>
+                                    <MetaData>
+                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>AppendixNBERfield</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>612,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="0477AD99-CF5A-40D7-86C0-1AB71F370AFA" Type="Text" Created="2021-06-15 13:25:15 +0100" Modified="2021-08-09 17:58:25 +0100">
+                                    <Title>Blind review event study</Title>
+                                    <MetaData>
+                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>AppendixEventStudy</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>965,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="B574767E-5F2C-433A-8F56-2F2577254B6C" Type="Text" Created="2018-02-27 16:05:20 +0000" Modified="2021-08-14 11:50:09 +0100">
+                                    <Title>Semi-blind review</Title>
+                                    <MetaData>
+                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>AppendixDoubleBlind</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>563,89</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="2F7CF3CD-4205-4C06-9BCD-570342589891" Type="Text" Created="2019-09-17 13:50:04 +0100" Modified="2021-08-09 17:58:43 +0100">
+                                    <Title>Time between working paper release and journal submission</Title>
+                                    <MetaData>
+                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>AppendixTiming</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>834,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="7DB3228B-44E4-4081-AD8B-DD93EE91A189" Type="Text" Created="2018-03-04 17:25:56 +0000" Modified="2021-08-09 17:59:23 +0100">
+                                    <Title>Abstract word limits</Title>
+                                    <MetaData>
+                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>AppendixWordLimits</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>993,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                            </Children>
+                        </BinderItem>
+                        <BinderItem UUID="ECC1FB8B-17EA-40D7-B78A-7433F847347C" Type="Folder" Created="2018-04-06 15:52:54 +0100" Modified="2018-07-04 14:50:24 +0100">
+                            <Title>[][Duration], supplemental output</Title>
+                            <MetaData>
+                                <SectionType>53F8322E-F0AD-4A73-8B6B-DD79B4D66754</SectionType>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <CustomMetaData>
+                                    <MetaDataItem>
+                                        <FieldID>customid</FieldID>
+                                        <Value>AppendixDuration</Value>
+                                    </MetaDataItem>
+                                </CustomMetaData>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>0,0</TextSelection>
+                            </TextSettings>
+                            <Children>
+                                <BinderItem UUID="446183A8-F5D9-4C49-8821-3FF368B70629" Type="Text" Created="2018-03-20 12:58:21 +0000" Modified="2021-08-09 17:59:23 +0100">
+                                    <Title>Alternative year fixed effects</Title>
+                                    <MetaData>
+                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>AppendixAlternativeYear</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>53,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="29A31DD2-C169-4A85-822A-D29E31F6BA9F" Type="Text" Created="2016-09-18 07:38:32 +0100" Modified="2021-08-09 17:59:23 +0100">
+                                    <Title>Alternative thresholds for \\(\text{mother}_j\\)</Title>
+                                    <MetaData>
+                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                        <LabelID>1</LabelID>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>AppendixMotherhood</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>373,0</TextSelection>
+                                    </TextSettings>
+                                    <Bookmarks>
+                                        <Bookmark BinderUUID="B6599A7A-F4BD-4E4B-8210-5FB9A4C2C83B"/>
+                                    </Bookmarks>
+                                </BinderItem>
+                                <BinderItem UUID="B6599A7A-F4BD-4E4B-8210-5FB9A4C2C83B" Type="Text" Created="2019-05-26 14:37:38 +0100" Modified="2021-08-09 17:59:23 +0100">
+                                    <Title>Quantile regression</Title>
+                                    <MetaData>
+                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>AppendixQuantile</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>674,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                            </Children>
+                        </BinderItem>
+                        <BinderItem UUID="1DA036F0-69BD-4B4F-9848-2BFAF0681621" Type="Folder" Created="2018-04-06 15:56:48 +0100" Modified="2021-07-21 11:51:06 +0100">
+                            <Title>[][MechanismsDescriptive], supplemental output</Title>
+                            <MetaData>
+                                <SectionType>53F8322E-F0AD-4A73-8B6B-DD79B4D66754</SectionType>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <CustomMetaData>
+                                    <MetaDataItem>
+                                        <FieldID>customid</FieldID>
+                                        <Value>AppendixSEUMatching</Value>
+                                    </MetaDataItem>
+                                </CustomMetaData>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>0,0</TextSelection>
+                            </TextSettings>
+                            <Children>
+                                <BinderItem UUID="2AA5D637-7E4D-47EC-B6D7-24B613D651E2" Type="Text" Created="2021-06-19 16:13:10 +0100" Modified="2021-08-09 17:58:43 +0100">
+                                    <Title>Studies evaluating gender differences in acceptance rates</Title>
+                                    <MetaData>
+                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>AppendixAcceptance</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>79,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="6242A060-EDB5-404F-9160-EACCE6C41F6E" Type="Text" Created="2017-09-27 12:37:31 +0100" Modified="2021-08-09 17:59:23 +0100">
+                                    <Title>Authors' average readability scores for their first, mean and final papers</Title>
+                                    <MetaData>
+                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>AppendixSEUEmpirical</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>108,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="7BC6299C-6393-4E8D-9B04-050656159485" Type="Text" Created="2020-01-16 16:04:09 +0000" Modified="2021-08-12 15:56:40 +0100">
+                                    <Title>[](#tableH2_FemRatio), tests of coefficient equality</Title>
+                                    <MetaData>
+                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>AppendixEquality</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>168,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                            </Children>
+                        </BinderItem>
+                        <BinderItem UUID="9FC896E1-7B41-4A06-88F0-211DC8101806" Type="Folder" Created="2021-07-21 11:43:49 +0100" Modified="2021-07-21 11:52:36 +0100">
+                            <Title>[][Quantification], supplemental output</Title>
+                            <MetaData>
+                                <SectionType>53F8322E-F0AD-4A73-8B6B-DD79B4D66754</SectionType>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <CustomMetaData>
+                                    <MetaDataItem>
+                                        <FieldID>customid</FieldID>
+                                        <Value>AppendixQuantification</Value>
+                                    </MetaDataItem>
+                                </CustomMetaData>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>0,0</TextSelection>
+                            </TextSettings>
+                            <Children>
+                                <BinderItem UUID="4CF1715E-BCE1-4286-83D4-C9323DB533BE" Type="Text" Created="2017-10-25 15:14:43 +0100" Modified="2021-08-09 17:59:23 +0100">
+                                    <Title>Co-variate balance</Title>
+                                    <MetaData>
+                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                        <LabelID>1</LabelID>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>AppendixMatchingBalance</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>631,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="3595D8FE-749A-4AED-BBAF-7FDFA16280A3" Type="Text" Created="2017-11-09 13:08:32 +0000" Modified="2021-08-09 17:59:23 +0100">
+                                    <Title>List of authors in each matched pair</Title>
+                                    <MetaData>
+                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                        <LabelID>1</LabelID>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>AppendixMatchingNames</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>4,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="DAFC1B78-BEAA-4FDB-BCFD-EDC5F3230177" Type="Text" Created="2017-10-26 18:57:16 +0100" Modified="2021-08-09 17:59:23 +0100">
+                                    <Title>$\widehat R_{it}$ regression output</Title>
+                                    <MetaData>
+                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                        <LabelID>1</LabelID>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>AppendixReconstruction</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>83,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="9F847DA0-8962-40D9-BFA9-CA2FF3FD54BD" Type="Text" Created="2018-08-05 20:30:49 +0100" Modified="2021-08-09 17:59:23 +0100">
+                                    <Title>$\widehat R_{it}$, controlling for *JEL* category</Title>
+                                    <MetaData>
+                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>AppendixSEUJEL</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>408,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="610A19BE-EEC0-447E-9D4F-A6F55990F6DD" Type="Text" Created="2018-08-05 20:30:49 +0100" Modified="2021-08-09 17:59:23 +0100">
+                                    <Title>Unadjusted $R_{it}$</Title>
+                                    <MetaData>
+                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>AppendixSEUR</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>324,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="3D4820AE-D0B6-4745-94A3-34AFDB24DBA2" Type="Text" Created="2017-11-11 10:49:51 +0000" Modified="2021-08-08 13:22:17 +0100">
+                                    <Title>Robustness</Title>
+                                    <MetaData>
+                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>AppendixMatchingLimitations</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>342,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                            </Children>
+                        </BinderItem>
+                        <BinderItem UUID="F24572C5-14EA-4BC5-948F-71584CDA9167" Type="Folder" Created="2021-07-21 11:45:11 +0100" Modified="2021-07-21 11:52:45 +0100">
+                            <Title>[][IndirectEffect], supplemental output</Title>
+                            <MetaData>
+                                <SectionType>53F8322E-F0AD-4A73-8B6B-DD79B4D66754</SectionType>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <CustomMetaData>
+                                    <MetaDataItem>
+                                        <FieldID>customid</FieldID>
+                                        <Value>AppendixIndirectEffect</Value>
+                                    </MetaDataItem>
+                                </CustomMetaData>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>0,0</TextSelection>
+                            </TextSettings>
+                            <Children>
+                                <BinderItem UUID="2CD510B8-DC99-4C58-8939-92490FC7BEE6" Type="Text" Created="2021-06-27 17:20:18 +0100" Modified="2021-08-09 17:58:43 +0100">
+                                    <Title>Experience and review times</Title>
+                                    <MetaData>
+                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>AppendixTimeExp</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>444,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                            </Children>
+                        </BinderItem>
+                        <BinderItem UUID="10F9894E-55C7-4312-92A8-7A7F80C9058D" Type="Text" Created="2018-04-06 15:47:58 +0100" Modified="2021-08-09 19:17:00 +0100">
+                            <Title>Alternative program for calculating readability scores</Title>
+                            <MetaData>
+                                <SectionType>53F8322E-F0AD-4A73-8B6B-DD79B4D66754</SectionType>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <CustomMetaData>
+                                    <MetaDataItem>
+                                        <FieldID>customid</FieldID>
+                                        <Value>AppendixAlternativeReadability</Value>
+                                    </MetaDataItem>
+                                </CustomMetaData>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>863,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="959D7027-8576-46E3-A7A1-19AD065607C6" Type="Folder" Created="2018-04-06 15:45:36 +0100" Modified="2021-08-09 17:58:43 +0100">
+                            <Title>Alternative proxies for article gender</Title>
                             <MetaData>
                                 <SectionType>53F8322E-F0AD-4A73-8B6B-DD79B4D66754</SectionType>
                                 <IncludeInCompile>Yes</IncludeInCompile>
@@ -685,7 +1191,39 @@
                                 <TextSelection>0,0</TextSelection>
                             </TextSettings>
                             <Children>
-                                <BinderItem UUID="F0A739EF-20B6-42C6-86F4-2312EA990C73" Type="Text" Created="2018-04-08 19:36:58 +0100" Modified="2018-04-09 23:10:22 +0100">
+                                <BinderItem UUID="9FF77E42-25B4-48AC-92C9-B6AC81BFE131" Type="Text" Created="2020-02-06 16:46:41 +0000" Modified="2021-08-09 17:59:23 +0100">
+                                    <Title>Solo-authored</Title>
+                                    <MetaData>
+                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>AppendixSolo</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>513,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="18500215-43BF-4A40-9C02-0E4034ABF985" Type="Text" Created="2018-12-08 18:13:42 +0000" Modified="2021-08-09 17:59:23 +0100">
+                                    <Title>Senior female author</Title>
+                                    <MetaData>
+                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                        <IncludeInCompile>Yes</IncludeInCompile>
+                                        <CustomMetaData>
+                                            <MetaDataItem>
+                                                <FieldID>customid</FieldID>
+                                                <Value>AppendixSenior</Value>
+                                            </MetaDataItem>
+                                        </CustomMetaData>
+                                    </MetaData>
+                                    <TextSettings>
+                                        <TextSelection>479,0</TextSelection>
+                                    </TextSettings>
+                                </BinderItem>
+                                <BinderItem UUID="F0A739EF-20B6-42C6-86F4-2312EA990C73" Type="Text" Created="2018-04-08 19:36:58 +0100" Modified="2021-08-09 17:59:23 +0100">
                                     <Title>Majority female-authored</Title>
                                     <MetaData>
                                         <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
@@ -693,15 +1231,15 @@
                                         <CustomMetaData>
                                             <MetaDataItem>
                                                 <FieldID>customid</FieldID>
-                                                <Value>AppendixMajoirty</Value>
+                                                <Value>AppendixMajority</Value>
                                             </MetaDataItem>
                                         </CustomMetaData>
                                     </MetaData>
                                     <TextSettings>
-                                        <TextSelection>348,0</TextSelection>
+                                        <TextSelection>470,0</TextSelection>
                                     </TextSettings>
                                 </BinderItem>
-                                <BinderItem UUID="175B78D7-2A1B-4F7D-8780-739D8F2651D6" Type="Text" Created="2018-04-08 19:39:06 +0100" Modified="2018-04-09 23:13:40 +0100">
+                                <BinderItem UUID="175B78D7-2A1B-4F7D-8780-739D8F2651D6" Type="Text" Created="2018-04-08 19:39:06 +0100" Modified="2021-08-09 17:59:23 +0100">
                                     <Title>At least one female author</Title>
                                     <MetaData>
                                         <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
@@ -714,10 +1252,10 @@
                                         </CustomMetaData>
                                     </MetaData>
                                     <TextSettings>
-                                        <TextSelection>317,0</TextSelection>
+                                        <TextSelection>495,0</TextSelection>
                                     </TextSettings>
                                 </BinderItem>
-                                <BinderItem UUID="0B4EE5DC-9826-447C-83FE-33CBE62B4D6C" Type="Text" Created="2018-04-08 19:41:08 +0100" Modified="2018-04-09 23:13:22 +0100">
+                                <BinderItem UUID="0B4EE5DC-9826-447C-83FE-33CBE62B4D6C" Type="Text" Created="2018-04-08 19:41:08 +0100" Modified="2021-08-09 17:59:23 +0100">
                                     <Title>Exclusively female-authored</Title>
                                     <MetaData>
                                         <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
@@ -730,294 +1268,23 @@
                                         </CustomMetaData>
                                     </MetaData>
                                     <TextSettings>
-                                        <TextSelection>229,0</TextSelection>
+                                        <TextSelection>507,0</TextSelection>
                                     </TextSettings>
                                 </BinderItem>
-                            </Children>
-                        </BinderItem>
-                        <BinderItem UUID="10F9894E-55C7-4312-92A8-7A7F80C9058D" Type="Text" Created="2018-04-06 15:47:58 +0100" Modified="2018-04-09 23:02:57 +0100">
-                            <Title>Alternative program for calculating readability scores</Title>
-                            <MetaData>
-                                <SectionType>53F8322E-F0AD-4A73-8B6B-DD79B4D66754</SectionType>
-                                <IncludeInCompile>Yes</IncludeInCompile>
-                                <CustomMetaData>
-                                    <MetaDataItem>
-                                        <FieldID>customid</FieldID>
-                                        <Value>AppendixAlternativeReadability</Value>
-                                    </MetaDataItem>
-                                </CustomMetaData>
-                            </MetaData>
-                            <TextSettings>
-                                <TextSelection>732,0</TextSelection>
-                            </TextSettings>
-                        </BinderItem>
-                        <BinderItem UUID="8D97AAB2-10CC-429C-9080-177F0B18C0FD" Type="Folder" Created="2018-04-06 15:50:53 +0100" Modified="2018-04-06 18:30:15 +0100">
-                            <Title>[][NBER], suplemental output</Title>
-                            <MetaData>
-                                <SectionType>53F8322E-F0AD-4A73-8B6B-DD79B4D66754</SectionType>
-                                <IncludeInCompile>Yes</IncludeInCompile>
-                            </MetaData>
-                            <TextSettings>
-                                <TextSelection>0,0</TextSelection>
-                            </TextSettings>
-                            <Children>
-                                <BinderItem UUID="0D157A8A-4F7E-4FAC-BA03-572162E1537B" Type="Text" Created="2016-09-20 03:05:37 +0100" Modified="2018-04-08 20:36:49 +0100">
-                                    <Title>[](#table7) (first column), full output</Title>
-                                    <MetaData>
-                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
-                                        <LabelID>1</LabelID>
-                                        <IncludeInCompile>Yes</IncludeInCompile>
-                                        <CustomMetaData>
-                                            <MetaDataItem>
-                                                <FieldID>customid</FieldID>
-                                                <Value>AppendixDraftCorr</Value>
-                                            </MetaDataItem>
-                                        </CustomMetaData>
-                                    </MetaData>
-                                    <TextSettings>
-                                        <TextSelection>679,7</TextSelection>
-                                    </TextSettings>
-                                </BinderItem>
-                                <BinderItem UUID="D06F6684-AD5E-4D28-8703-9F31A3CDC3CE" Type="Text" Created="2018-03-17 19:11:00 +0000" Modified="2018-04-08 20:36:49 +0100">
-                                    <Title>[](#table7), accounting for field</Title>
-                                    <MetaData>
-                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
-                                        <IncludeInCompile>Yes</IncludeInCompile>
-                                        <IconFileName>To Do (Unticked).tiff</IconFileName>
-                                        <CustomMetaData>
-                                            <MetaDataItem>
-                                                <FieldID>customid</FieldID>
-                                                <Value>AppendixNBERfield</Value>
-                                            </MetaDataItem>
-                                        </CustomMetaData>
-                                    </MetaData>
-                                    <TextSettings>
-                                        <TextSelection>273,0</TextSelection>
-                                    </TextSettings>
-                                </BinderItem>
-                                <BinderItem UUID="C17ED5AA-791B-418B-A8AF-022A6F9AF7B0" Type="Text" Created="2018-03-04 15:24:50 +0000" Modified="2018-04-06 18:30:27 +0100">
-                                    <Title>NBER working paper release dates vis-à-vis Journal submission dates</Title>
-                                    <MetaData>
-                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
-                                        <IncludeInCompile>Yes</IncludeInCompile>
-                                        <IconFileName>To Do (Unticked).tiff</IconFileName>
-                                        <CustomMetaData>
-                                            <MetaDataItem>
-                                                <FieldID>customid</FieldID>
-                                                <Value>AppendixSubmitRelease</Value>
-                                            </MetaDataItem>
-                                        </CustomMetaData>
-                                    </MetaData>
-                                    <TextSettings>
-                                        <TextSelection>1124,0</TextSelection>
-                                    </TextSettings>
-                                </BinderItem>
-                            </Children>
-                        </BinderItem>
-                        <BinderItem UUID="ECC1FB8B-17EA-40D7-B78A-7433F847347C" Type="Folder" Created="2018-04-06 15:52:54 +0100" Modified="2018-04-06 18:30:31 +0100">
-                            <Title>[][Duration], supplemental output</Title>
-                            <MetaData>
-                                <SectionType>53F8322E-F0AD-4A73-8B6B-DD79B4D66754</SectionType>
-                                <IncludeInCompile>Yes</IncludeInCompile>
-                            </MetaData>
-                            <TextSettings>
-                                <TextSelection>0,0</TextSelection>
-                            </TextSettings>
-                            <Children>
-                                <BinderItem UUID="446183A8-F5D9-4C49-8821-3FF368B70629" Type="Text" Created="2018-03-20 12:58:21 +0000" Modified="2018-04-08 20:36:49 +0100">
-                                    <Title>[](#table11), submission year fixed effects</Title>
+                                <BinderItem UUID="98172269-46CB-4743-B9F8-470C64155500" Type="Text" Created="2019-03-02 17:11:30 +0000" Modified="2021-08-09 17:59:23 +0100">
+                                    <Title>Senior female author, sample of less experienced authors</Title>
                                     <MetaData>
                                         <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
                                         <IncludeInCompile>Yes</IncludeInCompile>
                                         <CustomMetaData>
                                             <MetaDataItem>
                                                 <FieldID>customid</FieldID>
-                                                <Value>AppendixSubmissionYear</Value>
+                                                <Value>AppendixJunior</Value>
                                             </MetaDataItem>
                                         </CustomMetaData>
                                     </MetaData>
                                     <TextSettings>
-                                        <TextSelection>295,0</TextSelection>
-                                    </TextSettings>
-                                </BinderItem>
-                                <BinderItem UUID="29A31DD2-C169-4A85-822A-D29E31F6BA9F" Type="Text" Created="2016-09-18 07:38:32 +0100" Modified="2018-04-08 20:36:48 +0100">
-                                    <Title>[](#table11), alternative thresholds for \\(\text{mother}_j\\)</Title>
-                                    <MetaData>
-                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
-                                        <LabelID>1</LabelID>
-                                        <IncludeInCompile>Yes</IncludeInCompile>
-                                        <CustomMetaData>
-                                            <MetaDataItem>
-                                                <FieldID>customid</FieldID>
-                                                <Value>AppendixMotherhood</Value>
-                                            </MetaDataItem>
-                                        </CustomMetaData>
-                                    </MetaData>
-                                    <TextSettings>
-                                        <TextSelection>0,630</TextSelection>
-                                    </TextSettings>
-                                </BinderItem>
-                            </Children>
-                        </BinderItem>
-                        <BinderItem UUID="1DA036F0-69BD-4B4F-9848-2BFAF0681621" Type="Folder" Created="2018-04-06 15:56:48 +0100" Modified="2018-04-09 06:01:26 +0100">
-                            <Title>[][SEUMatching], supplemental anlysis</Title>
-                            <MetaData>
-                                <SectionType>53F8322E-F0AD-4A73-8B6B-DD79B4D66754</SectionType>
-                                <IncludeInCompile>Yes</IncludeInCompile>
-                            </MetaData>
-                            <TextSettings>
-                                <TextSelection>0,0</TextSelection>
-                            </TextSettings>
-                            <Children>
-                                <BinderItem UUID="4CF1715E-BCE1-4286-83D4-C9323DB533BE" Type="Text" Created="2017-10-25 15:14:43 +0100" Modified="2018-04-09 06:01:05 +0100">
-                                    <Title>[][SEUMatching], co-variate balance</Title>
-                                    <MetaData>
-                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
-                                        <LabelID>1</LabelID>
-                                        <IncludeInCompile>Yes</IncludeInCompile>
-                                        <CustomMetaData>
-                                            <MetaDataItem>
-                                                <FieldID>customid</FieldID>
-                                                <Value>AppendixMatchingBalance</Value>
-                                            </MetaDataItem>
-                                        </CustomMetaData>
-                                    </MetaData>
-                                    <TextSettings>
-                                        <TextSelection>1210,0</TextSelection>
-                                    </TextSettings>
-                                </BinderItem>
-                                <BinderItem UUID="DAFC1B78-BEAA-4FDB-BCFD-EDC5F3230177" Type="Text" Created="2017-10-26 18:57:16 +0100" Modified="2018-04-09 06:01:10 +0100">
-                                    <Title>[][SEUMatching], $\widehat R_{it}$ regression output</Title>
-                                    <MetaData>
-                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
-                                        <LabelID>1</LabelID>
-                                        <IncludeInCompile>Yes</IncludeInCompile>
-                                        <CustomMetaData>
-                                            <MetaDataItem>
-                                                <FieldID>customid</FieldID>
-                                                <Value>AppendixReconstruction</Value>
-                                            </MetaDataItem>
-                                        </CustomMetaData>
-                                    </MetaData>
-                                    <TextSettings>
-                                        <TextSelection>244,0</TextSelection>
-                                    </TextSettings>
-                                </BinderItem>
-                                <BinderItem UUID="3595D8FE-749A-4AED-BBAF-7FDFA16280A3" Type="Text" Created="2017-11-09 13:08:32 +0000" Modified="2018-04-09 06:01:32 +0100">
-                                    <Title>[][SEUMatching], list of matched pairs</Title>
-                                    <MetaData>
-                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
-                                        <LabelID>1</LabelID>
-                                        <IncludeInCompile>Yes</IncludeInCompile>
-                                        <CustomMetaData>
-                                            <MetaDataItem>
-                                                <FieldID>customid</FieldID>
-                                                <Value>AppendixMatchingNames</Value>
-                                            </MetaDataItem>
-                                        </CustomMetaData>
-                                    </MetaData>
-                                    <TextSettings>
-                                        <TextSelection>160,0</TextSelection>
-                                    </TextSettings>
-                                </BinderItem>
-                                <BinderItem UUID="A93AC44A-82E5-4444-B6C0-9ADC63CB55A5" Type="Text" Created="2017-10-31 15:46:34 +0000" Modified="2018-04-09 06:01:36 +0100">
-                                    <Title>[](#table10), male effects, [](#equation12) and Condition 1</Title>
-                                    <MetaData>
-                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
-                                        <LabelID>1</LabelID>
-                                        <IncludeInCompile>Yes</IncludeInCompile>
-                                        <CustomMetaData>
-                                            <MetaDataItem>
-                                                <FieldID>customid</FieldID>
-                                                <Value>AppendixConservative</Value>
-                                            </MetaDataItem>
-                                        </CustomMetaData>
-                                    </MetaData>
-                                    <TextSettings>
-                                        <TextSelection>497,0</TextSelection>
-                                    </TextSettings>
-                                </BinderItem>
-                                <BinderItem UUID="E4E41B8C-CCB7-4324-AD59-21BB8D756BBE" Type="Text" Created="2018-03-18 19:16:09 +0000" Modified="2018-04-09 06:01:40 +0100">
-                                    <Title>[][SEUMatching], Mahalanobis matching</Title>
-                                    <MetaData>
-                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
-                                        <IncludeInCompile>Yes</IncludeInCompile>
-                                        <CustomMetaData>
-                                            <MetaDataItem>
-                                                <FieldID>customid</FieldID>
-                                                <Value>AppendixMahalanobis</Value>
-                                            </MetaDataItem>
-                                        </CustomMetaData>
-                                    </MetaData>
-                                    <TextSettings>
-                                        <TextSelection>318,0</TextSelection>
-                                    </TextSettings>
-                                </BinderItem>
-                            </Children>
-                        </BinderItem>
-                        <BinderItem UUID="3A0100A1-0A5D-47DB-B485-BA27DDE45FDC" Type="Folder" Created="2018-04-06 15:39:51 +0100" Modified="2018-04-06 18:29:16 +0100">
-                            <Title>Male effects</Title>
-                            <MetaData>
-                                <SectionType>53F8322E-F0AD-4A73-8B6B-DD79B4D66754</SectionType>
-                                <IncludeInCompile>Yes</IncludeInCompile>
-                            </MetaData>
-                            <TextSettings>
-                                <TextSelection>0,0</TextSelection>
-                            </TextSettings>
-                            <Children>
-                                <BinderItem UUID="DB8440E8-09C5-4474-9FA1-86524D10260C" Type="Text" Created="2016-09-05 07:34:45 +0100" Modified="2018-04-08 20:36:49 +0100">
-                                    <Title>[](#table4), journal and male effects</Title>
-                                    <MetaData>
-                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
-                                        <LabelID>1</LabelID>
-                                        <IncludeInCompile>Yes</IncludeInCompile>
-                                        <NotesTextSelection>17,0</NotesTextSelection>
-                                        <CustomMetaData>
-                                            <MetaDataItem>
-                                                <FieldID>customid</FieldID>
-                                                <Value>AppendixArticleMale</Value>
-                                            </MetaDataItem>
-                                        </CustomMetaData>
-                                    </MetaData>
-                                    <TextSettings>
-                                        <TextSelection>614,7</TextSelection>
-                                    </TextSettings>
-                                </BinderItem>
-                                <BinderItem UUID="D83425EA-5CA9-430A-8213-250CBC4D6C67" Type="Text" Created="2016-09-07 03:27:22 +0100" Modified="2018-04-08 20:36:49 +0100">
-                                    <Title>[](#table5), male effects</Title>
-                                    <MetaData>
-                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
-                                        <LabelID>1</LabelID>
-                                        <IncludeInCompile>Yes</IncludeInCompile>
-                                        <CustomMetaData>
-                                            <MetaDataItem>
-                                                <FieldID>customid</FieldID>
-                                                <Value>AppendixAuthorMale</Value>
-                                            </MetaDataItem>
-                                        </CustomMetaData>
-                                    </MetaData>
-                                    <TextSettings>
-                                        <TextSelection>385,86</TextSelection>
-                                    </TextSettings>
-                                </BinderItem>
-                                <BinderItem UUID="908E044B-E27B-4AEC-934D-FE4BF8C2FC1D" Type="Text" Created="2018-04-06 15:49:09 +0100" Modified="2018-04-08 20:36:49 +0100">
-                                    <Title>[](#table10), male effects</Title>
-                                    <MetaData>
-                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
-                                        <IncludeInCompile>Yes</IncludeInCompile>
-                                    </MetaData>
-                                    <TextSettings>
-                                        <TextSelection>266,2</TextSelection>
-                                    </TextSettings>
-                                </BinderItem>
-                                <BinderItem UUID="69BF07BE-F69B-411E-AA52-CEA9BE2D00E9" Type="Text" Created="2018-04-06 15:55:39 +0100" Modified="2018-04-08 20:36:49 +0100">
-                                    <Title>[](#table8), male effects</Title>
-                                    <MetaData>
-                                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
-                                        <IncludeInCompile>Yes</IncludeInCompile>
-                                    </MetaData>
-                                    <TextSettings>
-                                        <TextSelection>116,0</TextSelection>
+                                        <TextSelection>373,0</TextSelection>
                                     </TextSettings>
                                 </BinderItem>
                             </Children>
@@ -1030,7 +1297,7 @@
             <Title>Supplemental analysis</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
-                <IconFileName>Information.tiff</IconFileName>
+                <IconFileName>Information</IconFileName>
             </MetaData>
             <TextSettings>
                 <TextSelection>0,0</TextSelection>
@@ -1128,22 +1395,22 @@
             <Title>Notes</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
-                <IconFileName>Notes (Blue Notepad).tiff</IconFileName>
+                <IconFileName>Notes (Blue Notepad)</IconFileName>
             </MetaData>
             <TextSettings>
                 <TextSelection>0,0</TextSelection>
             </TextSettings>
             <Children>
-                <BinderItem UUID="3F925459-8380-4EC0-991B-304A205B43D8" Type="Text" Created="2016-09-02 02:24:18 +0100" Modified="2018-06-06 14:51:12 +0100">
+                <BinderItem UUID="3F925459-8380-4EC0-991B-304A205B43D8" Type="Text" Created="2016-09-02 02:24:18 +0100" Modified="2021-06-27 14:15:14 +0100">
                     <Title>Scratch: Publishing Female</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>251,0</TextSelection>
+                        <TextSelection>3366,0</TextSelection>
                     </TextSettings>
                     <Bookmarks>
-                        <Bookmark BinderUUID="7B75AF10-D60E-4946-A17B-AA58B5A61C3F"></Bookmark>
+                        <Bookmark BinderUUID="7B75AF10-D60E-4946-A17B-AA58B5A61C3F"/>
                     </Bookmarks>
                 </BinderItem>
                 <BinderItem UUID="C1E5A10A-F292-4EE1-A8AA-E29E36962741" Type="Text" Created="2017-10-12 15:43:05 +0100" Modified="2017-10-21 13:19:50 +0100">
@@ -1176,13 +1443,29 @@
                         <TextSelection>494,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
+                <BinderItem UUID="17818161-DA57-4FCE-8C30-68D0C68AC96D" Type="Text" Created="2020-02-10 16:46:29 +0000" Modified="2021-07-10 15:55:05 +0100">
+                    <Title>Time-cost theoretical framework</Title>
+                    <MetaData>
+                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <CustomMetaData>
+                            <MetaDataItem>
+                                <FieldID>customid</FieldID>
+                                <Value>AppendixDurationFramework</Value>
+                            </MetaDataItem>
+                        </CustomMetaData>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>815,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
             </Children>
         </BinderItem>
         <BinderItem UUID="462F4C77-ADD6-4646-97AC-3C2648409855" Type="Folder" Created="2010-10-30 07:14:01 +0100" Modified="2010-10-30 07:14:04 +0100">
             <Title>Ideas</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
-                <IconFileName>Light Bulb.tiff</IconFileName>
+                <IconFileName>Light Bulb</IconFileName>
             </MetaData>
             <TextSettings>
                 <TextSelection>0,0</TextSelection>
@@ -1304,7 +1587,7 @@
                     <Title>Tables</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
-                        <IconFileName>Tables.tiff</IconFileName>
+                        <IconFileName>Tables</IconFileName>
                         <CustomMetaData>
                             <MetaDataItem>
                                 <FieldID>customid</FieldID>
@@ -1353,7 +1636,7 @@
                     <Title>Article-level analysis</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
-                        <IconFileName>To Do (Ticked).tiff</IconFileName>
+                        <IconFileName>To Do (Ticked)</IconFileName>
                         <CustomMetaData>
                             <MetaDataItem>
                                 <FieldID>customid</FieldID>
@@ -2546,7 +2829,7 @@
                     <Title>Recovered Files (3 Dec 2017 at 16:59)</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
-                        <IconFileName>Warning.tiff</IconFileName>
+                        <IconFileName>Warning</IconFileName>
                     </MetaData>
                     <TextSettings>
                         <TextSelection>0,0</TextSelection>
@@ -2556,7 +2839,7 @@
                     <Title>Front Matter</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
-                        <IconFileName>Front Matter.tiff</IconFileName>
+                        <IconFileName>Front Matter</IconFileName>
                     </MetaData>
                     <TextSettings>
                         <TextSelection>0,0</TextSelection>
@@ -2677,7 +2960,7 @@
                     <MetaData>
                         <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
                         <IncludeInCompile>Yes</IncludeInCompile>
-                        <IconFileName>To Do (Unticked).tiff</IconFileName>
+                        <IconFileName>To Do (Unticked)</IconFileName>
                         <CustomMetaData>
                             <MetaDataItem>
                                 <FieldID>customid</FieldID>
@@ -2694,7 +2977,7 @@
                     <MetaData>
                         <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
                         <IncludeInCompile>Yes</IncludeInCompile>
-                        <IconFileName>To Do (Unticked).tiff</IconFileName>
+                        <IconFileName>To Do (Unticked)</IconFileName>
                         <CustomMetaData>
                             <MetaDataItem>
                                 <FieldID>customid</FieldID>
@@ -2811,7 +3094,7 @@
                     <MetaData>
                         <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
                         <IncludeInCompile>Yes</IncludeInCompile>
-                        <IconFileName>To Do (Unticked).tiff</IconFileName>
+                        <IconFileName>To Do (Unticked)</IconFileName>
                         <CustomMetaData>
                             <MetaDataItem>
                                 <FieldID>customid</FieldID>
@@ -2828,7 +3111,7 @@
                     <MetaData>
                         <SectionType>53F8322E-F0AD-4A73-8B6B-DD79B4D66754</SectionType>
                         <IncludeInCompile>Yes</IncludeInCompile>
-                        <IconFileName>Statistics.tiff</IconFileName>
+                        <IconFileName>Statistics</IconFileName>
                         <CustomMetaData>
                             <MetaDataItem>
                                 <FieldID>customid</FieldID>
@@ -2856,11 +3139,503 @@
                         <TextSelection>0,1567</TextSelection>
                     </TextSettings>
                 </BinderItem>
+                <BinderItem UUID="3A0100A1-0A5D-47DB-B485-BA27DDE45FDC" Type="Folder" Created="2018-04-06 15:39:51 +0100" Modified="2018-04-06 18:29:16 +0100">
+                    <Title>Male effects</Title>
+                    <MetaData>
+                        <SectionType>53F8322E-F0AD-4A73-8B6B-DD79B4D66754</SectionType>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                    <Children>
+                        <BinderItem UUID="D83425EA-5CA9-430A-8213-250CBC4D6C67" Type="Text" Created="2016-09-07 03:27:22 +0100" Modified="2018-04-08 20:36:49 +0100">
+                            <Title>[](#table5), male effects</Title>
+                            <MetaData>
+                                <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                <LabelID>1</LabelID>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <CustomMetaData>
+                                    <MetaDataItem>
+                                        <FieldID>customid</FieldID>
+                                        <Value>AppendixAuthorMale</Value>
+                                    </MetaDataItem>
+                                </CustomMetaData>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>385,86</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="908E044B-E27B-4AEC-934D-FE4BF8C2FC1D" Type="Text" Created="2018-04-06 15:49:09 +0100" Modified="2018-04-08 20:36:49 +0100">
+                            <Title>[](#table10), male effects</Title>
+                            <MetaData>
+                                <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>266,2</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="69BF07BE-F69B-411E-AA52-CEA9BE2D00E9" Type="Text" Created="2018-04-06 15:55:39 +0100" Modified="2018-04-08 20:36:49 +0100">
+                            <Title>[](#table8), male effects</Title>
+                            <MetaData>
+                                <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>116,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+                <BinderItem UUID="DB8440E8-09C5-4474-9FA1-86524D10260C" Type="Text" Created="2016-09-05 07:34:45 +0100" Modified="2018-07-05 14:27:32 +0100">
+                    <Title>[](#table4), journal and male effects</Title>
+                    <MetaData>
+                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                        <LabelID>1</LabelID>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <NotesTextSelection>17,0</NotesTextSelection>
+                        <CustomMetaData>
+                            <MetaDataItem>
+                                <FieldID>customid</FieldID>
+                                <Value>AppendixArticleMale</Value>
+                            </MetaDataItem>
+                        </CustomMetaData>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="EC2E294F-C3F2-433B-A6E8-370BCF7BF00C" Type="Folder" Created="2018-07-05 14:00:44 +0100" Modified="2018-07-07 13:39:31 +0100">
+                    <Title>[][SEUEmpirical], supplemental output</Title>
+                    <MetaData>
+                        <SectionType>53F8322E-F0AD-4A73-8B6B-DD79B4D66754</SectionType>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <CustomMetaData>
+                            <MetaDataItem>
+                                <FieldID>customid</FieldID>
+                                <Value>AppendixSEUEmpirical</Value>
+                            </MetaDataItem>
+                        </CustomMetaData>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="B30AEF02-62BB-4CAF-A417-1D257EA9867E" Type="Text" Created="2016-10-08 09:29:58 +0100" Modified="2018-04-08 20:36:49 +0100">
+                    <Title>Average first, mean and final paper scores</Title>
+                    <MetaData>
+                        <SectionType>53F8322E-F0AD-4A73-8B6B-DD79B4D66754</SectionType>
+                        <LabelID>1</LabelID>
+                        <CustomMetaData>
+                            <MetaDataItem>
+                                <FieldID>customid</FieldID>
+                                <Value>AppendixFirstLast</Value>
+                            </MetaDataItem>
+                        </CustomMetaData>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,296</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="CACF615D-68B0-4551-8F20-FBCBC9562504" Type="Text" Created="2018-07-07 14:45:03 +0100" Modified="2018-07-07 14:45:12 +0100">
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>648,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="0E445C7C-DD2B-439E-AF7B-5D6776E40B57" Type="Text" Created="2018-06-13 13:10:03 +0100" Modified="2018-08-24 17:00:27 +0100">
+                    <Title>Distribution of female ratio</Title>
+                    <MetaData>
+                        <SectionType>53F8322E-F0AD-4A73-8B6B-DD79B4D66754</SectionType>
+                        <CustomMetaData>
+                            <MetaDataItem>
+                                <FieldID>customid</FieldID>
+                                <Value>AppendixFemRatio</Value>
+                            </MetaDataItem>
+                        </CustomMetaData>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>775,88</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="10509EE0-ABB1-4A34-A3A1-D0A5E16F82A1" Type="Text" Created="2018-07-23 15:44:36 +0100" Modified="2018-08-24 17:00:27 +0100">
+                    <Title>Do referees care about readability?</Title>
+                    <MetaData>
+                        <SectionType>53F8322E-F0AD-4A73-8B6B-DD79B4D66754</SectionType>
+                        <CustomMetaData>
+                            <MetaDataItem>
+                                <FieldID>customid</FieldID>
+                                <Value>AppendixSMRS</Value>
+                            </MetaDataItem>
+                        </CustomMetaData>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>252,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="7B75AF10-D60E-4946-A17B-AA58B5A61C3F" Type="Text" Created="2017-12-15 13:42:33 +0000" Modified="2018-08-05 14:44:45 +0100">
+                    <Title>Discrimination in equilibrium</Title>
+                    <MetaData>
+                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                        <LabelID>1</LabelID>
+                        <CustomMetaData>
+                            <MetaDataItem>
+                                <FieldID>customid</FieldID>
+                                <Value>IdentificationImpact</Value>
+                            </MetaDataItem>
+                        </CustomMetaData>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>6099,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="E4E41B8C-CCB7-4324-AD59-21BB8D756BBE" Type="Text" Created="2018-03-18 19:16:09 +0000" Modified="2018-08-24 17:00:27 +0100">
+                    <Title>Mahalanobis matching</Title>
+                    <MetaData>
+                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                        <CustomMetaData>
+                            <MetaDataItem>
+                                <FieldID>customid</FieldID>
+                                <Value>AppendixMahalanobis</Value>
+                            </MetaDataItem>
+                        </CustomMetaData>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>230,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="C17ED5AA-791B-418B-A8AF-022A6F9AF7B0" Type="Text" Created="2018-03-04 15:24:50 +0000" Modified="2018-07-09 16:41:17 +0100">
+                    <Title>NBER working paper release dates vis-à-vis Journal submission dates</Title>
+                    <MetaData>
+                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                        <IconFileName>To Do (Unticked)</IconFileName>
+                        <CustomMetaData>
+                            <MetaDataItem>
+                                <FieldID>customid</FieldID>
+                                <Value>AppendixSubmitRelease</Value>
+                            </MetaDataItem>
+                        </CustomMetaData>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>409,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="B9E300B1-D65F-4BB3-9E9D-20DC5718ABCA" Type="Text" Created="2018-12-03 15:50:36 +0000" Modified="2018-12-04 12:00:01 +0000">
+                    <Title>Econometrica</Title>
+                    <MetaData>
+                        <SectionType>42ADD088-5C1D-4C60-8B56-7D60C9F425F9</SectionType>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <CustomMetaData>
+                            <MetaDataItem>
+                                <FieldID>customid</FieldID>
+                                <Value>Econometrica</Value>
+                            </MetaDataItem>
+                        </CustomMetaData>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="F5274F0F-D718-4CC4-9BE7-CB3C55C847FC" Type="Text" Created="2018-12-03 15:51:32 +0000" Modified="2018-12-04 11:12:24 +0000">
+                    <Title>Restud</Title>
+                    <MetaData>
+                        <SectionType>42ADD088-5C1D-4C60-8B56-7D60C9F425F9</SectionType>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <CustomMetaData>
+                            <MetaDataItem>
+                                <FieldID>customid</FieldID>
+                                <Value>Restud</Value>
+                            </MetaDataItem>
+                        </CustomMetaData>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,972</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="36E230FA-12D1-411C-A211-AB71950AFFEE" Type="Folder" Created="2019-05-31 12:32:14 +0100" Modified="2019-05-31 12:32:14 +0100">
+                    <Title>New Folder</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="B4274C52-4B25-452A-92C4-11AB5031CDD2" Type="Text" Created="2015-05-28 07:43:33 +0100" Modified="2019-08-15 01:42:13 +0100">
+                    <Title>Introduction</Title>
+                    <MetaData>
+                        <SectionType>53F8322E-F0AD-4A73-8B6B-DD79B4D66754</SectionType>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <IconFileName>Reviewer Comments</IconFileName>
+                        <CustomMetaData>
+                            <MetaDataItem>
+                                <FieldID>customid</FieldID>
+                                <Value>Introduction</Value>
+                            </MetaDataItem>
+                        </CustomMetaData>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,973</TextSelection>
+                    </TextSettings>
+                    <Bookmarks>
+                        <Bookmark BinderUUID="7F311019-A771-4CA6-82C1-66C7C5C6EC4F">publishing_female</Bookmark>
+                    </Bookmarks>
+                </BinderItem>
+                <BinderItem UUID="2D388486-9B1B-481D-8613-4488645916E0" Type="Text" Created="2017-11-06 15:39:51 +0000" Modified="2018-12-09 11:07:54 +0000">
+                    <Title>Open review</Title>
+                    <MetaData>
+                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <CustomMetaData>
+                            <MetaDataItem>
+                                <FieldID>customid</FieldID>
+                                <Value>OpenReview</Value>
+                            </MetaDataItem>
+                        </CustomMetaData>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>136,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="0AA73007-2541-415F-A159-0C285887C000" Type="Text" Created="2017-11-13 14:47:38 +0000" Modified="2019-11-11 18:19:40 +0000">
+                    <Title>Introduction-1</Title>
+                    <MetaData>
+                        <SectionType>5A4CC707-C8B9-49CC-8769-6D2499D10EDE</SectionType>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <IconFileName>Reviewer Comments</IconFileName>
+                        <CustomMetaData>
+                            <MetaDataItem>
+                                <FieldID>customid</FieldID>
+                                <Value>Introduction2</Value>
+                            </MetaDataItem>
+                        </CustomMetaData>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,6936</TextSelection>
+                    </TextSettings>
+                    <Bookmarks>
+                        <Bookmark BinderUUID="7F311019-A771-4CA6-82C1-66C7C5C6EC4F">publishing_female</Bookmark>
+                    </Bookmarks>
+                </BinderItem>
+                <BinderItem UUID="F62E35A4-0A8E-4694-884A-B07FD59166D5" Type="Folder" Created="2019-12-09 17:10:32 +0000" Modified="2019-12-09 17:10:32 +0000">
+                    <Title>New Folder</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="AFBB5973-031A-40E0-8A4F-DB041B3876A3" Type="Text" Created="2020-01-04 19:02:03 +0000" Modified="2020-01-04 20:17:09 +0000">
+                    <Title>Summary statistics</Title>
+                    <MetaData>
+                        <SectionType>A905BA4D-55C0-421A-9C19-8ACF9997FD14</SectionType>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <CustomMetaData>
+                            <MetaDataItem>
+                                <FieldID>customid</FieldID>
+                                <Value>DurationStats</Value>
+                            </MetaDataItem>
+                        </CustomMetaData>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="D381DEFB-0D28-48AE-A520-9886F09628F7" Type="Text" Created="2018-07-07 13:49:58 +0100" Modified="2020-01-06 15:21:20 +0000">
+                    <Title>Junior women undergo the longest review</Title>
+                    <MetaData>
+                        <SectionType>A905BA4D-55C0-421A-9C19-8ACF9997FD14</SectionType>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <CustomMetaData>
+                            <MetaDataItem>
+                                <FieldID>customid</FieldID>
+                                <Value>JuniorSenior</Value>
+                            </MetaDataItem>
+                        </CustomMetaData>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="7EC30A3C-D3B1-4696-8D15-77F10174FB53" Type="Text" Created="2016-05-20 04:46:49 +0100" Modified="2019-05-28 19:23:17 +0100">
+                    <Title>Conclusion</Title>
+                    <MetaData>
+                        <SectionType>53F8322E-F0AD-4A73-8B6B-DD79B4D66754</SectionType>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <CustomMetaData>
+                            <MetaDataItem>
+                                <FieldID>customid</FieldID>
+                                <Value>Conclusion</Value>
+                            </MetaDataItem>
+                        </CustomMetaData>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>469,2330</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="FC7BF06E-B752-4791-B4CA-8CB9E0DF0741" Type="Text" Created="2019-10-08 16:53:26 +0100" Modified="2019-12-09 14:42:33 +0000">
+                    <Title>Higher standards beyond academia</Title>
+                    <MetaData>
+                        <SectionType>53F8322E-F0AD-4A73-8B6B-DD79B4D66754</SectionType>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <CustomMetaData>
+                            <MetaDataItem>
+                                <FieldID>customid</FieldID>
+                                <Value>AppendixHigherStandards</Value>
+                            </MetaDataItem>
+                        </CustomMetaData>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>1826,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="E0973260-0CFF-4E86-9842-51C4C2604B5F" Type="Folder" Created="2021-04-04 14:44:58 +0100" Modified="2021-04-04 14:44:58 +0100">
+                    <Title>New Folder</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="13474993-1A32-496D-A5D5-6E852669517B" Type="Text" Created="2017-10-16 15:31:40 +0100" Modified="2021-04-05 14:46:44 +0100">
+                    <Title>Measuring higher standards</Title>
+                    <MetaData>
+                        <SectionType>42ADD088-5C1D-4C60-8B56-7D60C9F425F9</SectionType>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <CustomMetaData>
+                            <MetaDataItem>
+                                <FieldID>customid</FieldID>
+                                <Value>MatchingIdentificaiton</Value>
+                            </MetaDataItem>
+                        </CustomMetaData>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,2456</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="0F42141D-7EF3-42ED-8A99-7BA16F18625B" Type="Text" Created="2018-02-27 14:49:31 +0000" Modified="2021-05-01 14:09:40 +0100">
+                    <Title>Double-blind review</Title>
+                    <MetaData>
+                        <SectionType>42ADD088-5C1D-4C60-8B56-7D60C9F425F9</SectionType>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <CustomMetaData>
+                            <MetaDataItem>
+                                <FieldID>customid</FieldID>
+                                <Value>DoubleBlind</Value>
+                            </MetaDataItem>
+                        </CustomMetaData>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="D61D4703-AFC6-424B-BADE-B0F242136E96" Type="Text" Created="2018-05-30 13:37:27 +0100" Modified="2021-06-13 14:35:29 +0100">
+                    <Title>Summary statistics</Title>
+                    <MetaData>
+                        <SectionType>A905BA4D-55C0-421A-9C19-8ACF9997FD14</SectionType>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <CustomMetaData>
+                            <MetaDataItem>
+                                <FieldID>customid</FieldID>
+                                <Value>NBERSummary</Value>
+                            </MetaDataItem>
+                        </CustomMetaData>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,1239</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="3DD332CF-27D4-4597-9B28-44889B1A7427" Type="Text" Created="2020-01-01 13:33:25 +0000" Modified="2021-06-19 17:14:46 +0100">
+                    <Title>Descriptive evidence</Title>
+                    <MetaData>
+                        <SectionType>A905BA4D-55C0-421A-9C19-8ACF9997FD14</SectionType>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <CustomMetaData>
+                            <MetaDataItem>
+                                <FieldID>customid</FieldID>
+                                <Value>SEUDescriptive</Value>
+                            </MetaDataItem>
+                        </CustomMetaData>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="C9F7934E-6FC3-4EEC-8282-D201AFCD6308" Type="Text" Created="2020-01-06 14:52:11 +0000" Modified="2021-07-04 15:16:16 +0100">
+                    <Title>Results</Title>
+                    <MetaData>
+                        <SectionType>42ADD088-5C1D-4C60-8B56-7D60C9F425F9</SectionType>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <CustomMetaData>
+                            <MetaDataItem>
+                                <FieldID>customid</FieldID>
+                                <Value>IndirectEffectResults</Value>
+                            </MetaDataItem>
+                        </CustomMetaData>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="A93AC44A-82E5-4444-B6C0-9ADC63CB55A5" Type="Text" Created="2017-10-31 15:46:34 +0000" Modified="2021-07-18 19:02:08 +0100">
+                    <Title>[](#table8_base), Condition 3</Title>
+                    <MetaData>
+                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                        <LabelID>1</LabelID>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <CustomMetaData>
+                            <MetaDataItem>
+                                <FieldID>customid</FieldID>
+                                <Value>AppendixConservative</Value>
+                            </MetaDataItem>
+                        </CustomMetaData>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>421,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="28B4E2C9-F726-4822-A245-EF9F1C2B7CDE" Type="Folder" Created="2017-10-09 16:14:33 +0100" Modified="2021-07-21 11:49:56 +0100">
+                    <Title>Empirical evidence</Title>
+                    <MetaData>
+                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <CustomMetaData>
+                            <MetaDataItem>
+                                <FieldID>customid</FieldID>
+                                <Value>SEUMatching</Value>
+                            </MetaDataItem>
+                        </CustomMetaData>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="2416FA7C-EC60-4A59-894E-511C6F249ADF" Type="Text" Created="2019-09-07 17:17:11 +0100" Modified="2021-08-01 15:19:07 +0100">
+                    <Title>Descriptive statistics</Title>
+                    <MetaData>
+                        <SectionType>26D4FE5E-2303-436B-B293-425787FA5C19</SectionType>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <CustomMetaData>
+                            <MetaDataItem>
+                                <FieldID>customid</FieldID>
+                                <Value>AppendixReadStats</Value>
+                            </MetaDataItem>
+                        </CustomMetaData>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>136,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
             </Children>
         </BinderItem>
     </Binder>
     <Collections>
-        <Collection Type="Binder" ID="6F532F1E-3703-4D31-AE02-488EAA47B620" Color="0.924849 0.924014 0.949681">
+        <Collection Type="Binder" ID="6F532F1E-3703-4D31-AE02-488EAA47B620" Color="1.0 1.0 1.0">
             <Title>Binder</Title>
         </Collection>
         <Collection Type="RecentSearch" ID="6DCC1F7F-8BE6-4E7A-8A6A-CB9F450F99C6" Color="0.922176 0.818589 0.999618">
@@ -2917,14 +3692,14 @@
     </CustomMetaDataSettings>
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2014-05-29 14:13:19 +0100" IgnoreDeadline="Yes">0</DraftTarget>
-        <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="Yes" ResetType="Time" ResetTime="00:00" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
-        <PreviousSession Words="0" Characters="0" Date="2018-06-09 10:18:11 +0100"></PreviousSession>
+        <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="Yes" NextResetDate="2021-08-15 01:00:00 +0100" ResetType="Time" ResetTime="00:00" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
+        <PreviousSession Words="-71" Characters="-513" Date="2021-08-14 15:54:39 +0100"/>
     </ProjectTargets>
-    <RecentWritingHistory Date="2018-06-09 00:00:00 +0100">
-        <DraftWordCount>0</DraftWordCount>
-        <DraftCharCount>0</DraftCharCount>
+    <RecentWritingHistory Date="2021-08-14 00:00:00 +0100">
+        <DraftWordCount>-71</DraftWordCount>
+        <DraftCharCount>-513</DraftCharCount>
         <OtherWordCount>0</OtherWordCount>
         <OtherCharCount>0</OtherCharCount>
     </RecentWritingHistory>
-    <PrintSettings PaperSize="595.000027,842.0" LeftMargin="72.000099" RightMargin="72.000099" TopMargin="90.000198" BottomMargin="90.000198" PaperType="iso-a4" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="No" ReverseOrder="No" PagesAcross="1" PagesDown="1"></PrintSettings>
+    <PrintSettings PaperSize="595.0,842.0" LeftMargin="72.000099" RightMargin="72.000099" TopMargin="90.000198" BottomMargin="90.000198" PaperType="iso-a4" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="No" ReverseOrder="No" PagesAcross="1" PagesDown="1"/>
 </ScrivenerProject>

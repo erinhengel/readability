@@ -1,42 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Comments>
-    <Comment ID="1CACB43D-15A1-4FA6-A716-39595C6699A3" Footnote="Yes" Number="67" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
-{\fonttbl\f0\fnil\fcharset0 Verdana;}
+    <Comment ID="023060DF-8A00-4D72-86BE-69A7995FE699" Author="Erin Hengel" Footnote="Yes" Color="0.949769 0.949769 0.949769"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
 {\colortbl;\red255\green255\blue255;}
 {\*\expandedcolortbl;;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
-\f0\fs20 \cf0 Should $s$ review a future paper by $i$, $i$ would recognise it as the same (anonymous) group that reviewed his earlier paper. This does not imply that the report reveals individual referees' identities.}]]></Comment>
-    <Comment ID="15D6511A-2A14-4AAA-9377-7EDFB709588C" Footnote="Yes" Number="68" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
-{\fonttbl\f0\fnil\fcharset0 Verdana;}
+\f0\fs20 \cf0 See [#Hengel2017;] for a version of the model with a two stage refereeing process, where papers are either rejected or offered a revise and resubmit in the first stage and rejected or accepted in the second.}]]></Comment>
+    <Comment ID="5D09D13A-7AFB-4E42-8E28-E71D957FD055" Author="Erin Hengel" Footnote="Yes" Color="0.949769 0.949769 0.949769"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs20 \cf0 Effectively, this assumption rules out systematic mistakes in beliefs that are only corrected at the limit.}]]></Comment>
+    <Comment ID="A27FC775-12CC-4273-94F7-2D584E3EDA4C" Author="Erin Hengel" Footnote="Yes" Color="0.949769 0.949769 0.949769"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Oblique;}
 {\colortbl;\red255\green255\blue255;}
 {\*\expandedcolortbl;;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
 \f0\fs20 \cf0 Authors probably care about getting their papers accepted and they may care about writing well, but their marginal utility from the intersection of the two events---*i.e.*, higher utility from writing well *
-\i only
-\i0 * because the paper is published in a top-four journal (as opposed to a top field journal or second-tier general interest journal)---is assumed to be negligible.}]]></Comment>
-    <Comment ID="C27E30B8-EB40-4A1D-9AB9-1F15FBC2F787" Footnote="Yes" Number="69" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
-{\fonttbl\f0\fnil\fcharset0 Verdana;}
+\f1\i only
+\f0\i0 * because the paper is published in a top-four journal (as opposed to a top field journal or second-tier general interest journal)---is assumed to be negligible.}]]></Comment>
+    <Comment ID="22497AD2-3FCC-4415-8798-E76C6C87EE07" Author="Erin Hengel" Footnote="Yes" Color="0.949769 0.949769 0.949769"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
 {\colortbl;\red255\green255\blue255;}
 {\*\expandedcolortbl;;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
-\f0\fs20 \cf0 <!--\\label\{Footnote64\}-->Specifically, if $i$ observes with probability 1 that in state $s$ an equivalent author $k$ receives an R&R at $r_\{0k\}$, then $\\Pi_\{0it\}^s(r)=1$ for all $r\\ge r_\{0k\}$. Similarly, if $i$ observes with probability 1 that in state $s$, $k$ is accepted at $R_k$, then $\\Pi_\{1it\}^s(R)=1$ for all $R\\ge R_k$.}]]></Comment>
-    <Comment ID="DD042BE4-81F4-428D-B1D6-2067A3376D39" Footnote="Yes" Number="70" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
-{\fonttbl\f0\fnil\fcharset0 Verdana;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
-
-\f0\fs20 \cf0 <!--\\label\{Footnote70\}-->If $i$ is accepted at stage 1 in time $t'$ for review group $s$, then $\\Pi_\{1it\}^s(R)=1$ for all $t>t'$ and $R\\ge R_\{it'\}$; otherwise, $\\Pi_\{1it\}^s(R)=0$ for all $t>t'$ and $R\\le R_\{it'\}$. Similarly, if $i$ receives an R&R at stage 0 in time $t'$ for review group $s$, then $\\Pi_\{0it\}^s(r)=1$ for all $t>t'$ and $r\\ge r_\{0it'\}$; otherwise, $\\Pi_\{it\}^s(r)\\,\\le\\Pi_\{it'\}^s(r)$ for all $t>t'$, $r\\le r_\{0it'\}$ and $s\\in\\Sigma$.}]]></Comment>
-    <Comment ID="5A9FFD3F-86C8-40FA-A63D-672CB5378308" Footnote="Yes" Number="71" Color="0.85 0.85 0.85"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
-{\fonttbl\f0\fnil\fcharset0 Verdana;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
-
-\f0\fs20 \cf0 The analysis in [][NBER] similarly establishes that (b) and/or (c) are significant factors driving the choice of $R_\{it\}$. It cannot, however, distinguish *
-\i between
-\i0 * (b) and (c).}]]></Comment>
+\f0\fs20 \cf0 See [#Hengel2020;] for a version of the model where $c_\{it\}$ changes over time, *e.g.*, due to learning-by-doing.}]]></Comment>
 </Comments>

@@ -1,0 +1,21 @@
+
+\begin{figure}[H]
+	\floatbox{figure}[\FBwidth]
+	{
+		\caption{Gender differences in readability, by \textit{JEL} classification}\label{figureE1}
+	}
+	{
+	\includegraphics[trim=0cm 2.05cm 0cm 2cm, clip, width=0.95\linewidth]{0-images/generated/{Figure-F.1}.pdf}
+		\floatfoot{
+			\begin{minipage}{1.0\linewidth}
+				\setlength{\belowdisplayskip}{2pt}
+				\setlength{\belowdisplayshortskip}{0pt}
+				\setlength{\abovedisplayskip}{2pt}
+				\setlength{\abovedisplayshortskip}{0pt}
+				\tiny\textit{Notes}. Estimates from an OLS regression of:
+				$$R_j=\,\beta_0+\beta_1\text{female ratio}_j + \bm\upbeta_2\,\vect J_j + \bm\upbeta_3\,\text{female ratio}_j\times\vect J_j + \bm\uptheta\,\vect X_j + \vep_j,$$
+				where $R_j$ is the readability score for article $j$; $\text{female ratio}_j$ is paper $j$'s ratio of female authors to total authors (papers with fewer than 50 percent female authors are classified as male, see~\autoref{gender}); $\vect J_j$ is a $15\times1$ column vector with $k$th entry a binary variable equal to one if article $j$ is classified as the $k$th \textit{JEL} code; $\vect X_j$ is a vector of editor, journal, year, institution and English language dummies, $N_j$ (number of co-authors on paper $j$) and quality controls (citation count (asinh), \(\text{max. }T\) fixed effects (author prominence) and \(\text{max. }t\) (author seniority)); $\vep_j$ is the error term. Left-hand graph shows marginal effects of female ratio for each \textit{JEL} code ($\beta_1+\beta_3^k$). Right-hand graph displays interaction terms ($\beta_3^k$). Horizontal lines represent 90 percent confidence intervals from standard errors adjusted for clustering on editor.
+			\end{minipage}
+		}
+	}
+\end{figure}
