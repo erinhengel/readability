@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    178322,       3509]
-NotebookOptionsPosition[    177562,       3488]
-NotebookOutlinePosition[    177961,       3504]
-CellTagsIndexPosition[    177918,       3501]
+NotebookDataLength[    178343,       3509]
+NotebookOptionsPosition[    177583,       3488]
+NotebookOutlinePosition[    177982,       3504]
+CellTagsIndexPosition[    177939,       3501]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -71,7 +71,7 @@ Cell[BoxData[
    3.8375086317474117`*^9, 3.837508655454769*^9}, {3.837508729432094*^9, 
    3.837508940915264*^9}, {3.837513398111005*^9, 3.837513398334701*^9}, {
    3.837522177514779*^9, 3.837522178356304*^9}},
- CellLabel->"In[18]:=",ExpressionUUID->"ef78c9c4-d672-4e26-9f96-45536676b92f"],
+ CellLabel->"In[7]:=",ExpressionUUID->"ef78c9c4-d672-4e26-9f96-45536676b92f"],
 
 Cell[BoxData[{
  RowBox[{"Clear", "[", "sql", "]"}], "\[IndentingNewLine]", 
@@ -293,7 +293,7 @@ ILH6FSybfkIcaXfpe2tpanrK9BrGbuC/h/nXHw/CxMNsKwwObxqHMTdLbTC7
 hFjOKKuyERcUUrqD0UOlLcELnGt+GHRPEpfqPpiSmmhq7GFcP5Qr1RNQFS/7
 CC2bFcHjjGaFlvgfNwmn+A==
   "],
- CellLabel->"In[24]:=",ExpressionUUID->"78246950-440f-46f0-8b7b-adc796b41d5c"],
+ CellLabel->"In[13]:=",ExpressionUUID->"78246950-440f-46f0-8b7b-adc796b41d5c"],
 
 Cell[BoxData[
  TagBox[
@@ -3482,8 +3482,8 @@ bBxh3pjqaj3D8meaYGTJYJo/6o3/939Uv4zLTz80+vw/+38ACRZSyA==
    3.8375134046535053`*^9, 3.8375221862230053`*^9, {3.837601643101557*^9, 
    3.837601652395115*^9}, 3.8376017128688726`*^9, 3.837782378485009*^9, 
    3.8378733867860622`*^9, 3.837873646640818*^9, 3.837873692515471*^9, 
-   3.8378737892089252`*^9, 3.837941720677657*^9},
- CellLabel->"Out[26]=",ExpressionUUID->"71cf761b-e76b-43ed-8d72-dc1de8108ed8"]
+   3.8378737892089252`*^9, 3.837941720677657*^9, 3.837948591663225*^9},
+ CellLabel->"Out[15]=",ExpressionUUID->"eb7a1695-47e9-4682-af37-734bc1be7e2e"]
 }, Open  ]]
 },
 WindowSize->{1589, 1282},
@@ -3505,11 +3505,11 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 359, 11, 69, "Chapter",ExpressionUUID->"44b68565-7485-4df6-9828-49b2a0dd8895"],
-Cell[942, 35, 1686, 38, 173, "Input",ExpressionUUID->"ef78c9c4-d672-4e26-9f96-45536676b92f",
+Cell[942, 35, 1685, 38, 173, "Input",ExpressionUUID->"ef78c9c4-d672-4e26-9f96-45536676b92f",
  InitializationCell->True],
-Cell[2631, 75, 9562, 220, 1060, "Input",ExpressionUUID->"78246950-440f-46f0-8b7b-adc796b41d5c",
+Cell[2630, 75, 9562, 220, 1060, "Input",ExpressionUUID->"78246950-440f-46f0-8b7b-adc796b41d5c",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
-Cell[12196, 297, 165350, 3188, 259, "Output",ExpressionUUID->"71cf761b-e76b-43ed-8d72-dc1de8108ed8"]
+Cell[12195, 297, 165372, 3188, 259, "Output",ExpressionUUID->"eb7a1695-47e9-4682-af37-734bc1be7e2e"]
 }, Open  ]]
 }
 ]

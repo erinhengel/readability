@@ -9,18 +9,18 @@ mata: mata set matafavor speed // Set Mata to favour space over speed.
 set matsize 5000
 set maxvar 32767
 
-// * Install third-party packages.
-// ssc install ftools
-// ssc install estout
-// ssc install psmatch2
-// ssc install xtabond2
-// ssc install listtex
-// ssc install reghdfe
-// ssc install binscatter
-// ssc install distinct
-// ssc install labutil
-// ssc install coefplot
-// net install "https://mloeffler.github.io/stata/wordwrap"
+* Install third-party packages.
+ssc install ftools
+ssc install estout
+ssc install psmatch2
+ssc install xtabond2
+ssc install listtex
+ssc install reghdfe
+ssc install binscatter
+ssc install distinct
+ssc install labutil
+ssc install coefplot
+net install "https://mloeffler.github.io/stata/wordwrap"
 
 * Install personal ado files by copying them to your personal ado directory.
 local files : dir `"0-code/programs/stata"' files "*"
@@ -84,35 +84,35 @@ display as error "{title:Publishing while Female: Are women held to higher stand
 * Create datasets.
 include "0-code/output/Data.do"
 
-// * Run analyses.
+* Run analyses.
 include "0-code/output/Figure-1.do"
 include "0-code/output/Figure-2.do"
-// include "0-code/output/Table-2.do"
-// include "0-code/output/Table-3.do"
-// include "0-code/output/Table-4.do"
-// include "0-code/output/Table-5.do"
-// include "0-code/output/Table-6.do"
-// include "0-code/output/Table-7.do"
+include "0-code/output/Table-2.do"
+include "0-code/output/Table-3.do"
+include "0-code/output/Table-4.do"
+include "0-code/output/Table-5.do"
+include "0-code/output/Table-6.do"
+include "0-code/output/Table-7.do"
 include "0-code/output/Figure-4.do"
-// include "0-code/output/Table-8.do"
+include "0-code/output/Table-8.do"
 include "0-code/output/Section-4.3.do"
 include "0-code/output/Figure-6.do"
-// include "0-code/output/Table-10.do"
-// include "0-code/output/Table-B.1.do"
-// include "0-code/output/Table-C.1.do"
+include "0-code/output/Table-10.do"
+include "0-code/output/Table-B.1.do"
+include "0-code/output/Table-C.1.do"
 include "0-code/output/Figure-D.1.do"
 include "0-code/output/Figure-D.2.do"
-// include "0-code/output/Table-F.1.do"
+include "0-code/output/Table-F.1.do"
 include "0-code/output/Figure-F.1.do"
-// include "0-code/output/Table-F.2.do"
-// include "0-code/output/Table-G.1.do"
-// include "0-code/output/Table-G.2.do"
+include "0-code/output/Table-F.2.do"
+include "0-code/output/Table-G.1.do"
+include "0-code/output/Table-G.2.do"
 include "0-code/output/Figure-G.1.do"
-// include "0-code/output/Table-G.4.do"
-// include "0-code/output/Table-H.3.do"
-// include "0-code/output/Table-H.4.do"
-// include "0-code/output/Table-I.2.do"
-// include "0-code/output/Table-J.2.do"
+include "0-code/output/Table-G.4.do"
+include "0-code/output/Table-H.3.do"
+include "0-code/output/Table-H.4.do"
+include "0-code/output/Table-I.2.do"
+include "0-code/output/Table-J.2.do"
 include "0-code/output/Figure-K.1.do"
 
 * List timer, close log and exit.
