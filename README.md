@@ -1,7 +1,7 @@
 Overview
 --------
 
-The data and code in this replication package reproduce all tables and figures in Hengel (2021). Raw data are contained in the `0-data/fixed` directory; transformed data are found in the `0-data/generated` directory. Estimation results are found in `0-tex/generated` and `0-images/generated`. The replication code, described in detail below, will take 8--12 hours to run.
+The data and code in this replication package reproduce all tables and figures in Hengel (2021). Raw data are in the `0-data/fixed` directory. Transformed data, estimation results and figures are saved in the `0-data/generated`, `0-tex/genderated` and `0-images/generated` directories, respectively. The replication code, described in detail below, will take 21--22 hours to run.
 
 The data in this replication package are publicly available and licensed under a Creative Commons Attribution 4.0 International License. See [LICENSE.txt](LICENSE.txt) for details.
 
@@ -10,13 +10,15 @@ Data
 
 ### Main dataset: `read.db`
 
-Almost all figures and tables in Hengel (2021) were generated using the raw data in `0-data/fixed/read.db`. `read.db` is an SQLite database of bibliographic and author information for articles published in top-five economics journals. It contains 11 tables. Their contents and provenance are described below; Table 1 describes each column; Figure 1 displays `read.db`'s entity-relationship diagram. Please see Hengel (2021), Section 2 and Appendices C and D for additional information on data provenance and variable construction.
+Almost all figures and tables in Hengel (2021) were generated using the raw data in `0-data/fixed/read.db`. `read.db` is an SQLite database of biblio- and biographic data on articles and authors published in the *American Economic Review* (*AER*), *Econometrica*, *Journal of Political Economy* (*JPE*), *Quarterly Journal of Economics* (*QJE*) and the *Review of Economic Studies* (*REStud*). `read.db` contains 11 tables. Their contents and provenance are described below. Figure 1 displays `read.db`'s entity-relationship diagram; Table 1 describes each column. Please see Hengel (2021), Section 2 and Appendices C and D for additional details on data provenance and variable construction.
 
 ![Entity-relationship diagram for `read.db`](./0-images/fixed/database-diagram.pdf)
 
-*	**Article**. The Article table contains bibliographic information from every English-language article published with an abstract in the *American Economic Review*, *Econometrica*, *Journal of Political Economy* and the *Quarterly Journal of Economics* between January 1950 and December 2015 (inclusive) and *Review of Economic Studies* articles published with submit and accept dates.
+*	**Article**. The Article table contains bibliographic information from every English-language article published with an abstract in the *AER*, *Econometrica*, *JPE* and *QJE* between January 1950 and December 2015 (inclusive). It also contains data on *REStud* articles published with their submission and acceptance dates.
 	
-	All data were collected from publicly available sources (*e.g.*, publishers' websites and JSTOR). The exception is citations which were obtained from [Web of Science](https://login.webofknowledge.com) in September 2017 and January 2018. Data on submit-accept times and institutions were collected from journals' online archives, extracted from digitised articles using the open source command utility `pdftotext` or entered manually by me or a research assistant.
+	All data were collected from publicly available sources (*e.g.*, publishers' websites and JSTOR). The exception is citations which were obtained from [Web of Science](https://login.webofknowledge.com) in September 2017 and January 2018. (***Citation data are proprietary to Web of Science and are included here for replication purposes only; please do not distribute these data or publish online.***) Data on submit-accept times and institutions were collected from journals' online archives, extracted from digitised articles using the open source command utility `pdftotext` or entered manually by me or a research assistant.
+	
+	The column `Abstract` contains unicode textual data of articles' abstracts. When using the data, please ensure it is imported with the proper encoding (*e.g.*, `encoding("utf-8")` in Stata (14+) or `iconv(, from="macintosh", to="UTF-8")` in R).
 
 *	**Author**. The Author table contains biographic details on authors. Gender was initially assigned using [GenderChecker.com](https://genderchecker.com)'s database of male and female names. Three separate Mechanical Turk workers, a research assistant or I then manually verified them based on photos and other information found on faculty websites, Wikipedia articles, *etc.* In situations where the author could not be found, I emailed or telephoned colleagues and institutions associated with the author.
 
@@ -26,7 +28,7 @@ Almost all figures and tables in Hengel (2021) were generated using the raw data
 
 *	**Children**. The Children table contains data on the year female authors with at least one exclusively female-authored paper published in *Econometrica* gave birth. This information was obtained from authors' published profiles, CVs, acknowledgements, Wikipedia, personal websites, Facebook pages, background checks and by consulting local school district/popular extra-curricular activity websites. Exact years were recorded whenever found; otherwise, they were approximated by subtracting a child's actual or estimated age from the date the source material was posted online. In several instances, I obtained or verified this information from acquaintances, friends and colleagues or by asking the woman directly. If an exhaustive search turned up no reference to children, I assumed the woman in question did not have any. Data only systematically collected for children potentially born during the time a woman had an exclusively female-authored paper under review at *Econometrica*.
 
-*	**EditorBoard**. The EditorBoard table contains the `AuthorID` of each editor for every issue of a top-five journal. I recorded editor/editorial board member names from issue mastheads.
+*	**EditorBoard**. The EditorBoard table contains the `AuthorID` for every editor and each issue of a journal. Editors were identified from issue mastheads.
 
 *	**Inst**. The Inst table maps each unique `InstID` to an institution name.
 
@@ -36,7 +38,7 @@ Almost all figures and tables in Hengel (2021) were generated using the raw data
 
 *	**NBER**. The NBER table contains basic bibliographic data on the NBER working papers that were eventually published in a top-four journal. Data were scraped from the [NBER website](https://www.nber.org/) or extracted from digitised working papers.
 
-*	**NBERCorr**. The NBERCorr table maps each `NberID` in NBER to at least one `ArticleID` in Article. Matches were identified using citation data from [RePEc](http://repec.org/) and by searching NBER's database directly for unmatched papers authored by NBER family members.
+*	**NBERCorr**. The NBERCorr table maps each `NberID` in NBER to at least one `ArticleID` in Article. (The mapping is not one-for-one because a small number of working papers were eventually published as multiple articles or combined into one.) Matches were identified using citation data from [RePEc](http://repec.org/) and by searching NBER's database directly for unmatched papers authored by NBER family members. The column `Note` contains notes in situations where the matching process involved some degree of ambiguity (*e.g.*, because of title changes between draft and final versions of the paper).
 
 *	**ReadStat**. The ReadStat table contains readability statistics for every article with an abstract in Article. Readability scores were generated with the Python module `Textatistic` using the text in the `Abstract` column of the Article table. `Textatistic`'s code and documentation are available on [GitHub](https://github.com/erinhengel/Textatistic); a brief description is provided in Hengel (2021), Appendix D.3. 
 
@@ -48,7 +50,7 @@ Table:	Description of variables in `read.db`
 |-------------|------------------|---------------------------------------------------------------------------|
 | Article     | `ArticleID`      | Unique ID for each article                                                |
 | Article     | `Journal`        | Journal                                                                   |
-| Article     | `PubDate`        | Year of publication (YYYY-08-01)                                          |
+| Article     | `PubDate`        | Date of publication (YYYY-MM-DD)                                          |
 | Article     | `Title`          | Title                                                                     |
 | Article     | `Abstract`       | Abstract                                                                  |
 | Article     | `Language`       | Language (*e.g.*, English or French)                                      |
@@ -60,7 +62,6 @@ Table:	Description of variables in `read.db`
 | Article     | `FirstPage`      | First page                                                                |
 | Article     | `LastPage`       | Last page                                                                 |
 | Article     | `CiteCount`      | Citation count (Web of Science)                                           |
-| Article     | `Note`           | Note on observation                                                       |
 | Author      | `AuthorID`       | Unique ID for each author                                                 |
 | Author      | `AuthorName`     | Author name                                                               |
 | Author      | `Sex`            | Gender                                                                    |
@@ -75,19 +76,18 @@ Table:	Description of variables in `read.db`
 | EditorBoard | `Part`           | Part                                                                      |
 | EditorBoard | `Volume`         | Volume                                                                    |
 | EditorBoard | `Issue`          | Issue                                                                     |
-| EditorBoard | `Part`           | Part                                                                      |
 | Inst        | `InstID`         | Unique ID for each institution                                            |
 | Inst        | `InstName`       | Institution name                                                          |
 | InstCorr    | `InstID`         | Unique ID for each institution (maps to Inst table)                       |
 | InstCorr    | `ArticleID`      | Unique ID for each article (maps to Article table)                        |
 | InstCorr    | `AuthorID`       | Unique ID for each editor (maps to Author table)                          |
 | JEL         | `ArticleID`      | Unique ID for each article (maps to Article table)                        |
-| JEL         | `JEL`            | *JEL* code                                                                |
+| JEL         | `JEL`            | Tertiary *JEL* code                                                       |
 | NBER        | `NberID`         | Unique ID for each NBER working paper                                     |
 | NBER        | `WPDate`         | Date manuscript was released as a working paper (YYYY-MM-DD)              |
 | NBER        | `Title`          | Title                                                                     |
 | NBER        | `Abstract`       | Abstract                                                                  |
-| NBER        | `Note`           | Note on observation                                                       |
+| NBER        | `Note`           | Note on observation and/or matching process with `ArticleID`              |
 | NBERCorr    | `NberID`         | Unique ID for each NBER working paper (maps to NBER table)                |
 | NBERCorr    | `ArticleID`      | Unique ID for each article (maps to Article table)                        |
 | ReadStat    | `ArticleID`      | Unique ID for each article (maps to Article table)                        |
@@ -99,27 +99,27 @@ Table:	Description of variables in `read.db`
 
 ### Other datasets
 
-A small number of figures and tables are generated from data contained in introduction_text.txt, correlations.txt and JEL.csv. Their contents and provenance are described below and in Table 2.
+A small number of figures and tables are generated from data contained in `introduction_text.txt`, `correlations.txt` and `JEL.csv`. Their contents and provenance are described below and in Table 2.
 
-* **introduction\_text.txt**. The file introduction\_text.txt contains the first paragraph of text to come after a heading explicitly titled "Introduction" in NBER working papers eventually published in a top-four journal. Data are used to generate Figure D.2 in Appendix D.2 in Hengel (2021). Textual data were transcribed from pdfs by Henrik Kleven and Data Scott.
-* **correlations.txt**. The file correlations.txt contains coefficients of correlations between the five readability scores used in Hengel (2021) and alternative measures of text difficulty. These figures were identified by me or a research assistant in the studies listed in Appendix D.4 and are used to produce the top graphic of Figure D.1 in Appendix D.1.
-* **JEL.csv**. The file JEL.csv contains a list of 859 tertiary *JEL* codes manually classified by me as either theory/methodology, empirical or other. It is used to generate Table C.1 and construct the theory/methodology, empirical and other dummies described in Appendix C.
+* **`introduction_text.txt`**. This file contains the first paragraph of text to come after a heading explicitly titled "Introduction" in NBER working papers eventually published in top-four journals. Data are used to generate Figure D.2 in Appendix D.2 in Hengel (2021). Textual data kindly provided by Henrik Kleven and Data Scott.
+* **`correlations.txt`**. This file contains coefficients of correlations between the five readability scores used in Hengel (2021) and alternative measures of text difficulty. These figures are from the studies listed in Appendix D.4. They are used to produce the top graphic of Figure D.1 in Appendix D.1.
+* **`JEL.csv`**. The file `JEL.csv` categorises all tertiary *JEL* codes as either theory/methodology, empirical or other. Categorisation was done manually by me. Data in `JEL.csv` are used to generate Table C.1 and construct the theory/methodology, empirical and other dummies described in Appendix C.
 
 Table:	Description of variables in other datasets
 
-| File name             | Column name   | Description                                                        |
-|-----------------------|---------------|--------------------------------------------------------------------|
-| introduction_text.txt | `NberID`      | Unique ID for each NBER working paper                              |
-| introduction_text.txt | `Text`        | First paragraph of text                                            |
-| correlations.txt      | `StatName`    | Name of readability statistic                                      |
-| correlations.txt      | `Correlation` | Coefficient of correlation                                         |
-| correlations.txt      | `Test`        | Name of alternative measure of text difficulty                     |
-| correlations.txt      | `TestType`    | Type of alternative measure                                        |
-| correlations.txt      | `Source`      | Label of source study                                              |
-| correlations.txt      | `Note`        | Notes on calculations, etc.                                        |
-| JEL.csv               | `JEL`         | Tertiary *JEL* code                                                |
-| JEL.csv               | `Description` | Long name of *JEL* code                                            |
-| JEL.csv               | `Type`        | Classification (empirical, theory/methodology or other)            |
+| File name               | Column name   | Description                                                      |
+|-------------------------|---------------|------------------------------------------------------------------|
+| `introduction_text.txt` | `NberID`      | Unique ID for each NBER working paper                            |
+| `introduction_text.txt` | `Text`        | First paragraph of text                                          |
+| `correlations.txt`      | `StatName`    | Name of readability statistic                                    |
+| `correlations.txt`      | `Correlation` | Coefficient of correlation                                       |
+| `correlations.txt`      | `Test`        | Name of alternative measure of text difficulty                   |
+| `correlations.txt`      | `TestType`    | Type of alternative measure                                      |
+| `correlations.txt`      | `Source`      | BibTeX label for source study (*e.g.*, SurnameYYYY)              |
+| `correlations.txt`      | `Note`        | Notes on calculations, *etc.*                                    |
+| `JEL.csv`               | `JEL`         | Tertiary *JEL* code                                              |
+| `JEL.csv`               | `Description` | Long name of *JEL* code                                          |
+| `JEL.csv`               | `Type`        | Classification (empirical, theory/methodology or other)          |
 
 
 Code
@@ -132,7 +132,9 @@ To generate all figures and tables in Hengel (2021), first download the replicat
 3. Run `3-master.do` in Stata.
 4. Execute `Figure-3.nb` and `Figure-G.2.nb` (both in the `0-code/output` directory) in Mathematica.
 
-Each step can be executed individually by following the steps outlined below. Alternatively, the Bash script `4-master.sh` will execute all four steps for you. To run it, install `Textatistic` and an SQLite Driver (see instructions under the `1-update-textatistic.py` and `3-master.do headings` below) as well as the latest version of [WolframScript](https://www.wolfram.com/wolframscript/). Then navigate to the project's root directory and issue the following command in a Bash shell:
+Each step can be executed individually by following the steps outlined below. Alternatively, the Bash script `4-master.sh` completes all four steps automatically.
+
+To run `4-master.sh`, install the latest version of [WolframScript](https://www.wolfram.com/wolframscript/) and follow the instructions under the `1-update-textatistic.py` and `3-master.do` headings for installing `Textatistic` and an SQLite driver. Then, navigate to the project's root directory and issue the following command in a Bash shell:
 
 ```bash
 sh 4-master.sh
@@ -144,13 +146,15 @@ sh 4-master.sh
 
 The Python script `1-update-textatistic.py` calculates readability scores for every article and NBER working paper with an abstract in `read.db` and updates its ReadStat and NBERStat tables with the results. More details on the `Textatistic` program are available on [GitHub](https://github.com/erinhengel/Textatistic). Documentation on how it calculates readability scores are available at [erinhengel.com](http://www.erinhengel.com/software/textatistic/).
 
-For `1-update-textatistic.py` to work, you must first install the Python package `Textatistic`. If you're lucky, this can be done by issuing the following command in your terminal application:
+For `1-update-textatistic.py` to work, you must first install the Python package `Textatistic`. If you're lucky, this can be done in a single step by issuing the following command in your terminal application:
 
 ```Bash
 pip install textatistic
 ```
 
-But you probably won't be lucky. `Textatistic` requires the `PyHyphen` dependency, which, for reasons I do not understand, `pip` does not always properly download before installing `textatistic`. So if you can't get `textatistic` to install with `pip`, then you'll need to install both `PyHyphen` and `Textatistic` from source. To do this, navigate to the project's root directory and issue the following sequence of commands in your terminal application.
+But you're probably not lucky. The problem is the `PyHyphen` dependency; for reasons I do not fully understand, `pip` does not always properly install it before trying to install `Textatistic`.
+
+If you encounter this error, you will need to install both `PyHyphen` and `Textatistic` from source. But don't panic; it's not that hard. Just navigate to the project's root directory and issue the following sequence of commands in your terminal application.
 
 ```bash
 cd "0-code/programs/Textatistic/required_packages/PyHyphen-2.0.5/"
@@ -164,7 +168,7 @@ Once `Textatistic` has been properly installed, navigate back to the project's r
 ```bash
 python 1-update-textatistic.py
 ```
-You will be alerted when the ReadStat and NBERStat tables in `read.db` have been successfully updated.
+You will be alerted when the ReadStat and NBERStat tables in `read.db` have been successfully updated with the newly calculated readability statistics.
 
 `1-update-textatistic.py` was last run on 13 August 2021 on a 4-core Intel-based iMac running MacOS version 11.5. Computation took 1 minute and 59 seconds to run.
 
@@ -190,17 +194,17 @@ To run `master.do`, first install an SQLite driver---I use the open source drive
 do 3-master.do
 ```
 
-`3-master.do` first installs several third-party packages from SSC (`ftools`, `estout`, `psmatch2`, `xtabond2`, `listtex`, `reghdfe`, `binscatter`, `distinct` `labutil` and `coefplot`) and `wordwrap` from [GitHub](https://mloeffler.github.io/stata/wordwrap). It then copies the ado, scheme, colors and `estout` definition files in the `0-code/programs/stata` directory into your Stata personal ado directory. (Alternatively, you can simply manually load these files into Stata before running `3-master.do` and comment out lines 26--29.) It then transforms the raw data (results are saved in `0-data/generated`) and executes the Stata do files in the `0-code/output` directory. Estimation results are either saved as LaTeX output in the `0-tex/generated` directory or as image files in the `0-images/generated` directory. A log of all output is saved in the `0-log` directory as `YYYY-MM-DD-HH-MM-SS.smcl`.
+`3-master.do` first installs several third-party packages from SSC (`ftools`, `estout`, `psmatch2`, `xtabond2`, `listtex`, `reghdfe`, `binscatter`, `distinct` `labutil` and `coefplot`) and `wordwrap` from [GitHub](https://mloeffler.github.io/stata/wordwrap). It then copies the ado, scheme, colors and `estout` definition files in the `0-code/programs/stata` directory into your Stata personal ado directory. (Alternatively, manually load these files into Stata before running `3-master.do` and comment out lines 26--29.) It then transforms the raw data (results are saved in `0-data/generated`) and executes the Stata do files in the `0-code/output` directory. Estimation results are either saved as LaTeX output in the `0-tex/generated` directory or as image files in the `0-images/generated` directory. A log of all output is saved in the `0-log` directory as `YYYY-MM-DD-HH-MM-SS.smcl`.
 
-`3-master.do` was last run on X August 2021 on a 4-core Intel-based iMac running MacOS version 11.5. Computation took X hours, X minutes and X seconds to run.
+`3-master.do` was last run on 15 August 2021 on a 4-core Intel-based iMac running MacOS version 11.5. Computation took 21 hours, 1 minute and 19 seconds to run.
 
 ### Create Mathematica graphs
 
-Figures 3 and G.2 in Hengel (2021) were created using Mathematica (version 12.1.0.0). To generate them, follow the three steps below:
+Figures 3 and G.2 in Hengel (2021) were created using Mathematica (version 12.1). To generate them, follow the three steps below:
 
 1. Navigate to the `0-code/output` directory and open the files `Figure-3.nb` and `Figure-G.2.nb` in Mathematica.
-2. Change the `fpath` variable in the grey box at the top of each notebook to point to the project's root directory.
-3. Select "Evaluate Notebook" from the Evaluation dropdown menu. (Be sure to click "Yes" to run the initialisation cells.)
+2. Select "Evaluate Notebook" from the Evaluation dropdown menu.
+3. Click "Yes" to run the initialisation cells.
 
 `Figure-3.nb` generates `Figure-3.png`; `Figure-G.2.nb` generates `Figure-G.2.png`. Both files are saved in the `0-images/generated` directory.
 
