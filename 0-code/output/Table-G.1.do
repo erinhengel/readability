@@ -14,7 +14,7 @@ foreach stat in flesch fleschkincaid gunningfog smog dalechall {
 estout ols_* using "0-tex/generated/Table-G.1.tex", style(publishing-female_latex) ///
   cells(b(star fmt(3)) se(fmt(3))) ///
   stats(N_full editor jnlyr, labels("No. observations" "\midrule${n}Editor effects" "Year#Journal effects")) ///
-  varlabels(1.NativeEnglish "Native speaker" nber_score "\(R_{jW}\)" 1.Blind "Blind review" 1.Blind#c.FemRatio "Blind\(\times\)female ratio" _cons "Constant", prefix("\mrow{4cm}{") ///
+  varlabels(1.NativeEnglish "Native speaker" nber_score "\(R_{jW}\)" 1.Blind#c.FemRatio "Blind\(\times\)female ratio" 1.Blind "Blind review" _cons "Constant", prefix("\mrow{4cm}{") ///
     suffix("}")) ///
   prefoot("\midrule")
 create_latex using "`r(fn)'", tablename("table6") type("full")

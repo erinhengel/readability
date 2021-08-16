@@ -1,7 +1,7 @@
 Overview
 --------
 
-The data and code in this replication package reproduce all tables and figures in Hengel (2021). Raw data are in the `0-data/fixed` directory. Transformed data, estimation results and figures are saved in the `0-data/generated`, `0-tex/genderated` and `0-images/generated` directories, respectively. The replication code, described in detail below, will take 21--22 hours to run.
+The data and code in this replication package reproduce all tables and figures in Hengel (2021). Raw data are in the `0-data/fixed` directory. Transformed data, estimation results and figures are saved in the `0-data/generated`, `0-tex/genderated` and `0-images/generated` directories, respectively. The replication code, described in detail below, will take 7--8 hours to run.
 
 The data in this replication package are publicly available and licensed under a Creative Commons Attribution 4.0 International License. See [LICENSE.txt](LICENSE.txt) for details.
 
@@ -14,7 +14,7 @@ Almost all figures and tables in Hengel (2021) were generated using the raw data
 
 ![Entity-relationship diagram for `read.db`](./0-images/fixed/database-diagram.pdf)
 
-*	**Article**. The Article table contains bibliographic information from every English-language article published with an abstract in the *AER*, *Econometrica*, *JPE* and *QJE* between January 1950 and December 2015 (inclusive). It also contains data on *REStud* articles published with their submission and acceptance dates.
+*	**Article**. The Article table contains bibliographic information from every English-language article published with an abstract in the *AER*, *Econometrica*, *JPE* and *QJE* between January 1950 and December 2015 (inclusive). It also contains data on *REStud* articles published during that same period with their submission and acceptance dates.
 	
 	All data were collected from publicly available sources (*e.g.*, publishers' websites and JSTOR). The exception is citations which were obtained from [Web of Science](https://login.webofknowledge.com) in September 2017 and January 2018. (***Citation data are proprietary to Web of Science and are included here for replication purposes only; please do not distribute these data or publish online.***) Data on submit-accept times and institutions were collected from journals' online archives, extracted from digitised articles using the open source command utility `pdftotext` or entered manually by me or a research assistant.
 	
@@ -22,11 +22,11 @@ Almost all figures and tables in Hengel (2021) were generated using the raw data
 
 *	**Author**. The Author table contains biographic details on authors. Gender was initially assigned using [GenderChecker.com](https://genderchecker.com)'s database of male and female names. Three separate Mechanical Turk workers, a research assistant or I then manually verified them based on photos and other information found on faculty websites, Wikipedia articles, *etc.* In situations where the author could not be found, I emailed or telephoned colleagues and institutions associated with the author.
 
-	Authors were assumed to be native-English speakers if one or more of the following criteria were satisfied: (i) they were raised in an English-speaking country; (ii) they obtained all post-secondary education from English speaking institutions; or (iii) they spoke with no discernible non-native accent. This information was almost always found in authors' CVs, websites, Wikipedia articles, faculty bios or obituaries. In a small number of cases the criteria were ambiguously satisfied or not available; in these instances I asked friends and colleagues of the author or inferred English fluency form the author's first name, country of residence or surname (in that order). If one co-author on a paper was found to be a native English speaker, I did not necessarily check whether any of the other co-authors were also native English speakers.
+	Authors were assumed to be native-English speakers if one or more of the following criteria were satisfied: (i) they were raised in an English-speaking country; (ii) they obtained all post-secondary education from English speaking institutions; or (iii) they spoke with no discernible non-native accent. This information was almost always found in authors' CVs, websites, Wikipedia articles, faculty bios or obituaries. In a small number of cases the criteria were ambiguously satisfied or not available; in these instances I asked friends and colleagues of the author or inferred English fluency from the author's first name, country of residence or surname (in that order). If one co-author on a paper was found to be a native English speaker, I did not necessarily check whether any of the other co-authors were also native English speakers.
 
 *	**AuthorCorr**. The AuthorCorr table maps `AuthorID` in Author to `ArticleID` in Article.
 
-*	**Children**. The Children table contains data on the year female authors with at least one exclusively female-authored paper published in *Econometrica* gave birth. This information was obtained from authors' published profiles, CVs, acknowledgements, Wikipedia, personal websites, Facebook pages, background checks and by consulting local school district/popular extra-curricular activity websites. Exact years were recorded whenever found; otherwise, they were approximated by subtracting a child's actual or estimated age from the date the source material was posted online. In several instances, I obtained or verified this information from acquaintances, friends and colleagues or by asking the woman directly. If an exhaustive search turned up no reference to children, I assumed the woman in question did not have any. Data only systematically collected for children potentially born during the time a woman had an exclusively female-authored paper under review at *Econometrica*.
+*	**Children**. The Children table contains data on the year female authors with at least one exclusively female-authored paper published in *Econometrica* gave birth. (Data only systematically collected for children potentially born during the time a woman had an exclusively female-authored paper under review at *Econometrica*.) This information was obtained from authors' published profiles, CVs, acknowledgements, Wikipedia, personal websites, Facebook pages, background checks and by consulting local school district/popular extra-curricular activity websites. Exact years were recorded whenever found; otherwise, they were approximated by subtracting a child's actual or estimated age from the date the source material was posted online. In several instances, I obtained or verified this information from acquaintances, friends and colleagues or by asking the woman directly. If an exhaustive search turned up no reference to children, I assumed the woman in question did not have any.
 
 *	**EditorBoard**. The EditorBoard table contains the `AuthorID` for every editor and each issue of a journal. Editors were identified from issue mastheads.
 
@@ -42,35 +42,35 @@ Almost all figures and tables in Hengel (2021) were generated using the raw data
 
 *	**ReadStat**. The ReadStat table contains readability statistics for every article with an abstract in Article. Readability scores were generated with the Python module `Textatistic` using the text in the `Abstract` column of the Article table. `Textatistic`'s code and documentation are available on [GitHub](https://github.com/erinhengel/Textatistic); a brief description is provided in Hengel (2021), Appendix D.3. 
 
-*	**NberStat**. The NberStat table contains the readability statistics using `Abstract` text for every working paper in the NBER table. Statistics were generated using the Python module `Textatistic`.
+*	**NberStat**. The NberStat table contains readability statistics calculated from the `Abstract` text of every working paper in the NBER table. Statistics were generated using the Python module `Textatistic`.
 
 Table:	Description of variables in `read.db`
 
 | Table       | Column name      | Description                                                               |
 |-------------|------------------|---------------------------------------------------------------------------|
 | Article     | `ArticleID`      | Unique ID for each article                                                |
-| Article     | `Journal`        | Journal                                                                   |
+| Article     | `Journal`        | Journal (AER, ECA, JPE, QJE RES, P&P)                                     |
 | Article     | `PubDate`        | Date of publication (YYYY-MM-DD)                                          |
 | Article     | `Title`          | Title                                                                     |
 | Article     | `Abstract`       | Abstract                                                                  |
 | Article     | `Language`       | Language (*e.g.*, English or French)                                      |
-| Article     | `Received`       | Date (YYYY-MM-01) submission received by the editorial office             |
-| Article     | `Accepted`       | Date (YYYY-MM-01) manuscript accepted by the editorial office             |
+| Article     | `Received`       | Date (YYYY-MM-01) manuscript first received by the editorial office       |
+| Article     | `Accepted`       | Date (YYYY-MM-01) manuscript finally accepted by the editorial office     |
 | Article     | `Volume`         | Volume                                                                    |
 | Article     | `Issue`          | Issue                                                                     |
 | Article     | `Part`           | Part                                                                      |
-| Article     | `FirstPage`      | First page                                                                |
-| Article     | `LastPage`       | Last page                                                                 |
+| Article     | `FirstPage`      | First page number                                                         |
+| Article     | `LastPage`       | Last page number                                                          |
 | Article     | `CiteCount`      | Citation count (Web of Science)                                           |
 | Author      | `AuthorID`       | Unique ID for each author                                                 |
 | Author      | `AuthorName`     | Author name                                                               |
-| Author      | `Sex`            | Gender                                                                    |
-| Author      | `NativeLanguage` | English or non-English native speaker                                     |
+| Author      | `Sex`            | Author gender m                                                           |
+| Author      | `NativeLanguage` | Native-English speaking indicator (English, Non-English, Unknown)         |
 | AuthorCorr  | `AuthorID`       | Unique ID for each author (maps to Author table)                          |
 | AuthorCorr  | `ArticleID`      | Unique ID for each article (maps to Article table)                        |
 | Children    | `AuthorID`       | Unique ID for each author (maps to Author table)                          |
 | Children    | `Year`           | Year a child was born                                                     |
-| Children    | `BirthOrder`     | Order of birth for children born in the same year                         |
+| Children    | `BirthOrder`     | Order of birth[^twins]                                                    |
 | EditorBoard | `AuthorID`       | Unique ID for each editor (maps to Author table)                          |
 | EditorBoard | `Journal`        | Journal                                                                   |
 | EditorBoard | `Part`           | Part                                                                      |
@@ -84,10 +84,10 @@ Table:	Description of variables in `read.db`
 | JEL         | `ArticleID`      | Unique ID for each article (maps to Article table)                        |
 | JEL         | `JEL`            | Tertiary *JEL* code                                                       |
 | NBER        | `NberID`         | Unique ID for each NBER working paper                                     |
-| NBER        | `WPDate`         | Date manuscript was released as a working paper (YYYY-MM-DD)              |
-| NBER        | `Title`          | Title                                                                     |
-| NBER        | `Abstract`       | Abstract                                                                  |
-| NBER        | `Note`           | Note on observation and/or matching process with `ArticleID`              |
+| NBER        | `WPDate`         | Date (YYYY-MM-DD) manuscript was released as a working paper              |
+| NBER        | `Title`          | Working paper title                                                       |
+| NBER        | `Abstract`       | Working paper abstract                                                    |
+| NBER        | `Note`           | Notes on observation and/or matching process to `ArticleID` in Article    |
 | NBERCorr    | `NberID`         | Unique ID for each NBER working paper (maps to NBER table)                |
 | NBERCorr    | `ArticleID`      | Unique ID for each article (maps to Article table)                        |
 | ReadStat    | `ArticleID`      | Unique ID for each article (maps to Article table)                        |
@@ -97,11 +97,13 @@ Table:	Description of variables in `read.db`
 | NBERStat    | `StatName`       | Name of statistic                                                         |
 | NBERStat    | `StatValue`      | Value of statistic                                                        |
 
+[^twins]: This is required to uniquely identify each table record in instances where a woman had more than one child in a year (*e.g.*, twins).
+
 ### Other datasets
 
 A small number of figures and tables are generated from data contained in `introduction_text.txt`, `correlations.txt` and `JEL.csv`. Their contents and provenance are described below and in Table 2.
 
-* **`introduction_text.txt`**. This file contains the first paragraph of text to come after a heading explicitly titled "Introduction" in NBER working papers eventually published in top-four journals. Data are used to generate Figure D.2 in Appendix D.2 in Hengel (2021). Textual data kindly provided by Henrik Kleven and Data Scott.
+* **`introduction_text.txt`**. This file contains the first paragraph of text to come after a heading explicitly titled "Introduction" in NBER working papers eventually published in top-four journals. Data are used to generate Figure D.2 in Appendix D.2 in Hengel (2021). Textual data kindly provided by Henrik Kleven and Dana Scott.
 * **`correlations.txt`**. This file contains coefficients of correlations between the five readability scores used in Hengel (2021) and alternative measures of text difficulty. These figures are from the studies listed in Appendix D.4. They are used to produce the top graphic of Figure D.1 in Appendix D.1.
 * **`JEL.csv`**. The file `JEL.csv` categorises all tertiary *JEL* codes as either theory/methodology, empirical or other. Categorisation was done manually by me. Data in `JEL.csv` are used to generate Table C.1 and construct the theory/methodology, empirical and other dummies described in Appendix C.
 
@@ -134,13 +136,13 @@ To generate all figures and tables in Hengel (2021), first download the replicat
 
 Each step can be executed individually by following the steps outlined below. Alternatively, the Bash script `4-master.sh` completes all four steps automatically.
 
-To run `4-master.sh`, install the latest version of [WolframScript](https://www.wolfram.com/wolframscript/) and follow the instructions under the `1-update-textatistic.py` and `3-master.do` headings for installing `Textatistic` and an SQLite driver. Then, navigate to the project's root directory and issue the following command in a Bash shell:
+To run `4-master.sh`, install the latest version of [WolframScript](https://www.wolfram.com/wolframscript/) and follow the instructions under the `1-update-textatistic.py` and `3-master.do` headings for installing `Textatistic` and an SQLite driver, respectively. Then, navigate to the project's root directory and issue the following command in a Bash shell:
 
 ```bash
 sh 4-master.sh
 ```
 
-`4-master.sh` was last run on X August 2021 on a 4-core Intel-based iMac running MacOS version 11.5. Computation took X hours, X minutes and X seconds to run.
+`4-master.sh` was last run on 16 August 2021 on a 4-core Intel-based iMac running MacOS version 11.5. Computation took 7 hours, 54 minutes and 30 seconds to run.
 
 ### `1-update-textatistic.py`
 
@@ -170,7 +172,7 @@ python 1-update-textatistic.py
 ```
 You will be alerted when the ReadStat and NBERStat tables in `read.db` have been successfully updated with the newly calculated readability statistics.
 
-`1-update-textatistic.py` was last run on 13 August 2021 on a 4-core Intel-based iMac running MacOS version 11.5. Computation took 1 minute and 59 seconds to run.
+`1-update-textatistic.py` was last run on 16 August 2021 on a 4-core Intel-based iMac running MacOS version 11.5. Computation took 1 minute and 59 seconds to run.
 
 ### `2-update-readability.R`
 
@@ -182,7 +184,7 @@ source("2-update-readability.R")
 
 `2-update-readability.R` first installs the latest version of `RSQLite` (version 2.2.7), `tidyverse` (version 1.3.1), `haven` (version 2.4.3) and `pacman` (version 0.5.1) from CRAN and `readability` from [GitHub](https://github.com/trinker/readability). It then connects to the `read.db` database, fetches published article and NBER abstracts, calculates readability scores and exports the results to `readstat.dta` and `nberstat.dta` in the `0-data/generated` directory. Finally, it reads in `introduction_text.txt`, calculates readability scores and exports the result to `articlestat.dta`, also in the `0-data/generated` directory. 
 
-`2-update-readability.R` was last run on 13 August 2021 on a 4-core Intel-based iMac running MacOS version 11.5. Computation took 1 minute and 26 seconds to run.
+`2-update-readability.R` was last run on 16 August 2021 on a 4-core Intel-based iMac running MacOS version 11.5. Computation took 1 minute and 26 seconds to run.
 
 ### `3-master.do`
 
@@ -196,7 +198,7 @@ do 3-master.do
 
 `3-master.do` first installs several third-party packages from SSC (`ftools`, `estout`, `psmatch2`, `xtabond2`, `listtex`, `reghdfe`, `binscatter`, `distinct` `labutil` and `coefplot`) and `wordwrap` from [GitHub](https://mloeffler.github.io/stata/wordwrap). It then copies the ado, scheme, colors and `estout` definition files in the `0-code/programs/stata` directory into your Stata personal ado directory. (Alternatively, manually load these files into Stata before running `3-master.do` and comment out lines 26--29.) It then transforms the raw data (results are saved in `0-data/generated`) and executes the Stata do files in the `0-code/output` directory. Estimation results are either saved as LaTeX output in the `0-tex/generated` directory or as image files in the `0-images/generated` directory. A log of all output is saved in the `0-log` directory as `YYYY-MM-DD-HH-MM-SS.smcl`.
 
-`3-master.do` was last run on 15 August 2021 on a 4-core Intel-based iMac running MacOS version 11.5. Computation took 21 hours, 1 minute and 19 seconds to run.
+`3-master.do` was last run on 16 August 2021 on a 4-core Intel-based iMac running MacOS version 11.5. Computation took 7 hours, 49 minutes and 54 seconds to run.
 
 ### Create Mathematica graphs
 
@@ -208,7 +210,7 @@ Figures 3 and G.2 in Hengel (2021) were created using Mathematica (version 12.1)
 
 `Figure-3.nb` generates `Figure-3.png`; `Figure-G.2.nb` generates `Figure-G.2.png`. Both files are saved in the `0-images/generated` directory.
 
-`Figure-3.nb` and `Figure-G.2.nb` were last run on 13 August 2021 on a 4-core Intel-based iMac running MacOS version 11.5. Combined computation took less than 4 seconds.
+`Figure-3.nb` and `Figure-G.2.nb` were last run on 16 August 2021 on a 4-core Intel-based iMac running MacOS version 11.5. Combined computation took less than 4 seconds.
 
 ## References
 
