@@ -1,8 +1,8 @@
 #!/bin/bash
-# This script generates all figures and tables in Hengel (2021).
+# This script generates all figures and tables in Hengel (2022).
 
 # Create Textatistic readability scores.
-python 1-update-textatistic.py
+python3.9 1-update-textatistic.py
 
 # Create Readability readability scores.
 Rscript 2-update-readability.R

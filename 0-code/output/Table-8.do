@@ -66,7 +66,7 @@ program define tth_pub, eclass
   }
   matrix `b' = `B'[`=rowsof(`B')', 1...]
   matrix `se' = `S'[`=rowsof(`B')', 1...]
-  ereturn_post `b', se(`se') obs(`e(N)') scalar(obs `n6') local(Nj ✓ editor ✓ jnlyr ✓ inst ✓ qual ✓¹ native ✓) store(reg_all) colnames(`colnames')
+  ereturn_post `b', se(`se') obs(`e(N)') scalar(obs `n6') local(Nj ✓ editor ✓ blind ✓ jnlyr ✓ inst ✓ qual ✓¹ native ✓) store(reg_all) colnames(`colnames')
 end
 
 capture program drop tth_pub_table

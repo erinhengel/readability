@@ -12,14 +12,14 @@ foreach qtile in 25 50 75 {
 	local qfrac = `qtile'/100
 
 	* Table 6, column (5)
-	eststo q1_`qtile': qreg ReviewLength FemRatio Mother Birth Maxt PageN N PubOrder _flesch_score asinhCiteCount Type_* i.MaxInst i.AcceptedYear i.Editor, vce(robust) quantile(`qfrac')
+	eststo q1_`qtile': qreg ReviewLength FemRatio Mother Birth Maxt PageN N PubOrder _flesch_score asinhCiteCount Type_* i.MaxInst i.AcceptedYear i.Editor, vce(robust) quantile(`qfrac') iterate(1000)
 	estadd scalar r2 = 1- (`=e(sum_adev)'/`=e(sum_rdev)')
 	estadd local year = "✓" : q1_`qtile'
 	estadd local inst = "✓" : q1_`qtile'
 	estadd local editor = "✓" : q1_`qtile'
 
 	* Table 7, third column
-	eststo q2_`qtile': qreg ReviewLength FemRatio Maxt PageN N PubOrder asinhCiteCount Type_* i.MaxInst i.AcceptedYear##i.Journal i.Editor, vce(robust) quantile(`qfrac')
+	eststo q2_`qtile': qreg ReviewLength FemRatio Maxt PageN N PubOrder asinhCiteCount Type_* i.MaxInst i.AcceptedYear##i.Journal i.Editor, vce(robust) quantile(`qfrac') iterate(1500)
 	estadd scalar r2 = 1- (`=e(sum_adev)'/`=e(sum_rdev)')
 	estadd local editor = "✓" : q2_`qtile'
 	estadd local jnlyr = "✓" : q2_`qtile'

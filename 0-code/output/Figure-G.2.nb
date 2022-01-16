@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     79936,       1924]
-NotebookOptionsPosition[     79200,       1902]
-NotebookOutlinePosition[     79598,       1918]
-CellTagsIndexPosition[     79555,       1915]
+NotebookDataLength[     80025,       1927]
+NotebookOptionsPosition[     79291,       1905]
+NotebookOutlinePosition[     79687,       1921]
+CellTagsIndexPosition[     79644,       1918]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -114,7 +114,7 @@ Cell[BoxData[
    3.83750897367019*^9}, {3.837513471319909*^9, 3.837513471531437*^9}, {
    3.837522230021427*^9, 3.837522230805257*^9}, {3.838034539372463*^9, 
    3.83803455764189*^9}},
- CellLabel->"In[22]:=",ExpressionUUID->"79e04f62-137c-4f5b-8015-a60d3e22ee9f"],
+ CellLabel->"In[21]:=",ExpressionUUID->"79e04f62-137c-4f5b-8015-a60d3e22ee9f"],
 
 Cell[CellGroupData[{
 
@@ -387,7 +387,7 @@ submission\>\"", ",", "Gray", ",",
    3.837433894513644*^9}, {3.837873655735157*^9, 3.837873665861085*^9}, {
    3.837873793527275*^9, 3.837873834862363*^9}, {3.837941701190343*^9, 
    3.837941702376629*^9}},
- CellLabel->"In[27]:=",ExpressionUUID->"f8fcaf7b-cfc8-4c5e-90ab-61aa4b5f522d"],
+ CellLabel->"In[26]:=",ExpressionUUID->"f8fcaf7b-cfc8-4c5e-90ab-61aa4b5f522d"],
 
 Cell[BoxData[
  TagBox[
@@ -1262,8 +1262,9 @@ Cell[BoxData[
                     0.20392156862745098`], FrameTicks -> None, 
                    PlotRangePadding -> None, ImageSize -> 
                    Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
+                    Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], 
                   StyleBox[
                    RowBox[{"RGBColor", "[", 
                     RowBox[{
@@ -1316,8 +1317,9 @@ Cell[BoxData[
                     0.25882352941176473`], FrameTicks -> None, 
                    PlotRangePadding -> None, ImageSize -> 
                    Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
+                    Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], 
                   StyleBox[
                    RowBox[{"RGBColor", "[", 
                     RowBox[{
@@ -1371,8 +1373,9 @@ Cell[BoxData[
                     FrameStyle -> GrayLevel[0.33333333333333337`], FrameTicks -> 
                     None, PlotRangePadding -> None, ImageSize -> 
                     Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
+                    Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], 
                     StyleBox[
                     RowBox[{"GrayLevel", "[", "0.5`", "]"}], NumberMarks -> 
                     False]], Appearance -> None, BaseStyle -> {}, 
@@ -1895,14 +1898,14 @@ journal submission\"",
    3.8375109165375137`*^9, 3.8375134748244658`*^9, 3.837522236817408*^9, 
    3.83778234406468*^9, 3.8378734292176123`*^9, 3.837873660214794*^9, 
    3.837873700664762*^9, 3.837873793980249*^9, 3.837873830071179*^9, 
-   3.83794170681647*^9, 3.838034564457367*^9},
- CellLabel->"Out[36]=",ExpressionUUID->"c3881316-22cf-4aec-a969-b60b200ffc0a"]
+   3.83794170681647*^9, 3.838034564457367*^9, 3.851265537653154*^9},
+ CellLabel->"Out[35]=",ExpressionUUID->"eb6da6d1-845a-45cd-9345-7a1827b2f4d5"]
 }, Open  ]]
 }, Open  ]]
 },
 WindowSize->{1685, 1282},
 WindowMargins->{{Automatic, -2551}, {Automatic, 0}},
-FrontEndVersion->"12.1 for Mac OS X x86 (64-bit) (March 13, 2020)",
+FrontEndVersion->"12.3 for Mac OS X x86 (64-bit) (July 9, 2021)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"bed915ea-1b52-4853-9b02-8c59862ce4be"
 ]
@@ -1923,7 +1926,7 @@ Cell[814, 29, 5173, 87, 152, "Input",ExpressionUUID->"79e04f62-137c-4f5b-8015-a6
  InitializationCell->True],
 Cell[CellGroupData[{
 Cell[6012, 120, 12167, 269, 976, "Input",ExpressionUUID->"f8fcaf7b-cfc8-4c5e-90ab-61aa4b5f522d"],
-Cell[18182, 391, 60990, 1507, 958, "Output",ExpressionUUID->"c3881316-22cf-4aec-a969-b60b200ffc0a"]
+Cell[18182, 391, 61081, 1510, 958, "Output",ExpressionUUID->"eb6da6d1-845a-45cd-9345-7a1827b2f4d5"]
 }, Open  ]]
 }, Open  ]]
 }

@@ -2,13 +2,12 @@
 ******************** Figure D.1: Readability score validity. *******************
 ********************************************************************************
 * Meta analysis of readability score validity.
-import delimited "0-data/fixed/correlations.txt", clear case(preserve) varnames(1) encoding("utf-8")
+import delimited "0-data/fixed/readability_corr.txt", clear case(preserve) varnames(1) encoding("utf-8")
 
 * Save data on numbers of correlation coefficients and studies.
 preserve
 	by TestType Source, sort: generate Study = cond(_n==1, 1, 0)
-	table TestType, contents(median Correlation freq sum Study) replace
-	rename (table*) (median corrs studies)
+	collapse (median) median=Correlation (count) corrs=Correlation (sum) studies=Study, by(TestType)
 	sort median
 	tempname bd
 	mkmat median corrs studies, matrix(`bd') rownames(TestType)

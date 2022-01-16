@@ -29,7 +29,7 @@ program define article_level, eclass
   foreach jel of varlist JEL3_* {
     local jcode3 "`jcode3' `jel'"
   }
-  
+
   tempname b1 b2 b3 b4 b5 b6 b7 b8 b9 se1 se2 se3 se4 se5 se6 se7 se8 se9
   foreach stat in `stats' {
 

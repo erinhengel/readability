@@ -1,0 +1,268 @@
+% Set margins.
+\geometry{
+	a4paper,
+	left=27mm,
+	right=27mm,
+	top=27mm,
+	bottom=27mm
+}
+
+% Colors
+\definecolor{webgreen}{rgb}{0, 0.5, 0}
+\definecolor{boyblue}{rgb}{0.102, 0.157, 0.306}
+
+% Bibliography.
+\addbibresource{/Users/erinhengel/Dropbox/Readability/draft/0-bib/publishing_female.bib}
+\addbibresource{/Users/erinhengel/Dropbox/Readability/draft/0-bib/online-appendix.bib}
+
+\usepackage[	colorlinks=true,
+				pdfstartpage=1,
+				pdfstartview=FitV,
+				pdfpagemode=FullScreen,
+				bookmarksnumbered,
+				hypertexnames=true,
+				urlcolor=webgreen,
+				anchorcolor=black,
+				filecolor=black,
+				menucolor=black,
+				runcolor=webgreen,
+				linkcolor=boyblue,
+				citecolor=black,
+				plainpages=false,
+				pdfpagelabels,
+				pdftitle={\myshorttitle},
+				pdfauthor={\myauthor, \affiliation},
+				pdfproducer={XeLaTeX},
+				pdfcreator={LaTeX}
+			]{hyperref}
+\usepackage{appendix}
+\usepackage{memhfixc}
+\usepackage{fontspec}
+\usepackage[capitalise]{cleveref}
+\let\footruleskip\undefined
+\usepackage{fancyhdr}
+\usepackage{setspace}
+
+% Fonts
+\newcommand{\nfont}{Adobe Caslon Pro}
+\newcommand{\ttfont}{Envy Code R}
+\newcommand{\sffont}{Optima Regular}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Ligatures={Common}]{\nfont}
+\setmonofont[Scale=0.8]{\ttfont}
+\setsansfont[Scale=0.9]{\sffont}
+
+% Hypenations
+\hyphenation{econ-omists}
+\hyphenation{dum-my}
+\hyphenation{a-g-ainst}
+\hyphenation{work-outs}
+
+% Set British date format.
+\cleanlookdateon
+
+% Paragraph spacing.
+\def\myindent{1.5em}
+\setlength{\parindent}{\myindent}
+
+% Thanks footnote.
+\makeatletter
+	\def\thanksnote{\gdef\@thefnmark{}\@footnotetext}
+\makeatother
+
+% Footnote symbols.
+\makeatletter
+\renewcommand*{\@fnsymbol}[1]{\ensuremath{\ifcase#1\or *\or \dagger\or \ddagger\or
+	\mathsection\or \mathparagraph\or \|\or **\or \dagger\dagger
+	\or \ddagger\ddagger \else\@ctrerr\fi}}
+\makeatother
+\newenvironment{symfootnotes}{
+	\par\edef\savedfootnotenumber{\number\value{footnote}}
+	\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+	\setcounter{footnote}{0}}
+	{\par\setcounter{footnote}{\savedfootnotenumber}
+}
+
+% Title page layout.
+\makeatletter
+	\title{\Large\myshorttitle\\\large\mysubtitle\footnote{\affiliation, \department, \address. Email: \href{mailto:\email}{\texttt{\email}}}
+	\author{
+		\myauthor\thanks{\thankyous}
+	}\\\mydate
+	}
+	\renewcommand{\maketitle}{
+		\bgroup
+		\let\newpage\relax
+		\begin{center}
+			\begin{symfootnotes}
+				\@title\\[0.5cm]
+				\@author\@thanks\\\hfill
+			\end{symfootnotes}
+		\end{center}
+		\egroup
+	}
+\makeatother
+
+% Chapter style.
+\makeatletter
+	\makechapterstyle{paperbody}{
+
+		% Section numering depth.
+		\maxsecnumdepth{subsubsection}
+	
+		\renewcommand\thesection{\arabic{section}}
+		\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+		\renewcommand\thechapter{\arabic{chapter}}
+
+		% Section header formatting.
+		\titleformat{\section}{\normalfont\large\bfseries}{\thesection}{1em}{}
+		\titleformat{\subsection}{\normalfont\itshape}{\thesubsection}{1em}{}
+		\titleformat{\subsubsection}[runin]{\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{\addperiod}
+		\titleformat{\subsubsubsection}[runin]{\normalfont\normalsize\textit}{}{1em}{\addperiod}
+		\titlespacing*{\paragraph}{\indent}{10pt}{0.4em}
+		\titleformat{\paragraph}[runin]{\normalfont\normalsize\itshape}{}{0em}{\addperiod}
+		\titlespacing*{\paragraph}{\myindent}{10pt}{0.4em}
+
+		% Autoref.
+		\renewcommand{\chapterautorefname}{Chapter}
+		\renewcommand{\sectionautorefname}{Section}
+		\renewcommand{\footnoteautorefname}{Footnote}
+		\let\subsectionautorefname\sectionautorefname
+		\let\subsubsectionautorefname\sectionautorefname
+		\let\subsubsubsectionautorefname\sectionautorefname
+
+		% Equation numbering (1), (2), ....
+		\def\theequation{\thechapter.\arabic{equation}}
+		\def\tagform@##1{\maketag@@@{\ignorespaces##1\unskip\@@italiccorr}}
+		\renewcommand{\theequation}{(\arabic{equation})}
+
+		% Figure numbering.
+		\renewcommand{\thefigure}{\arabic{figure}}
+		\renewcommand{\fnum@figure}{\textsc{Figure~\thefigure}}
+	
+		% Table numbering.
+		\renewcommand{\thetable}{\arabic{table}}
+	
+		% Quote environment.
+		\patchcmd{\quote}{\rightmargin}{\small\leftmargin 4em \rightmargin}{}{}
+	
+		\pagestyle{plain}
+	}
+\makeatother
+
+% Appendix.
+\AtBeginEnvironment{subappendices}{%
+	\chapter*{Appendices}
+}
+\renewcommand{\setthesection}{\Alph{section}}
+
+% Online appendix.
+\renewenvironment{appendices}{%
+	\renewcommand\appendixname{Online appendices}
+
+	\clearpage
+	\setcounter{subsection}{0}
+	\begin{center}
+		\Large\myshorttitle
+		
+		\large\myauthor
+		
+		\large\mydate
+		
+		\LARGE\textbf{\appendixname}
+		
+	\end{center}
+	\vfill
+	\renewcommand{\thesection}{\Alph{section}}
+	\renewcommand{\thesubsection}{\Alph{section}.\arabic{subsection}}
+	\renewcommand{\theequation}{(\thesection.\arabic{equation})}
+
+	\pagenumbering{gobble}
+	\startcontents[annexes]
+	\printcontents[annexes]{l}{0}{\setcounter{tocdepth}{3}}
+	\vfill
+	\stopcontents[corpstexte]
+	\clearpage
+	\pagenumbering{arabic}
+
+	\setcounter{footnote}{0}
+	\setcounter{figure}{0}
+	\setcounter{table}{0}
+	\setcounter{equation}{0}
+	\counterwithin*{table}{section}
+	\counterwithin*{figure}{section}
+	\counterwithin*{equation}{section}
+	\renewcommand{\theequation}{(\thesection.\arabic{equation})}
+	\renewcommand{\thetable}{\thesection.\arabic{table}}
+	\renewcommand{\thefigure}{\thesection.\arabic{figure}}
+
+	\pagenumbering{arabic}
+	\setcounter{page}{1}
+}{\setcounter{subsection}{0}}%
+
+% Theorems, lemmas and corollaries.
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\providecommand*{\lemmaautorefname}{Lemma}
+\newtheorem{corollary}{Corollary}
+\providecommand*{\corollaryautorefname}{Corollary}
+
+% Table style.
+\captionsetup[table]{
+	position=top,
+	justification=centering,
+	labelfont=sc,
+}
+\renewcommand{\arraystretch}{1.1}
+\sisetup{
+	input-symbols = (),
+	table-align-text-post = false,
+	input-decimal-markers = {.},
+	group-digits = integer,
+	round-mode = places,
+	round-precision = 2,
+	tight-spacing = true,
+	group-separator = {,},
+	group-minimum-digits=4,
+	table-format = 4.4,
+}
+\floatsetup[table]{capposition=top}
+
+% Shortcut commands
+\newcommand{\wt}{\widetilde}
+\newcommand{\vect}[1]{\mathbf{#1}}
+\newcommand{\mrow}[2]{\multirow{2}{*}{\parbox[t][1cm][t]{#1}{\raggedright #2}}}
+\newcommand{\mcol}[1]{\multicolumn{6}{l}{#1}}
+\newcommand{\vep}{\varepsilon}
+\newcommand{\crcell}[2][c]{
+	\begin{tabular}[#1]{@{}c@{}}#2\end{tabular}
+}
+\newcommand{\aref}[1]{\hyperref[#1]{Appendix~\ref{#1}}}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+% Graphics path.
+\graphicspath{{/Users/erinhengel/Dropbox/Readability/draft}}
+
+% Gracphics rule.
+\DeclareGraphicsRule{*}{pdf}{*}{}
+
+\begin{document}
+\mainmatter
+\chapterstyle{paperbody}
+
+\begin{vplace}[0.7]
+	\maketitle
+	\begin{quote}
+		\input{0-tex/abstract}
+		
+		Keywords. \keywords
+		
+		\textit{JEL} codes. \jel
+	\end{quote}
+\end{vplace}
+\thispagestyle{empty}
+\clearpage
+
+\pagenumbering{gobble}
+\pagenumbering{arabic}

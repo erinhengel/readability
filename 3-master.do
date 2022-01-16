@@ -3,9 +3,9 @@
 ********************************************************************************
 * Set version, seed, mata and matrix settings
 clear all
-version 15.1
+version 17.0
 set seed 677275986 // French mobile number
-mata: mata set matafavor speed // Set Mata to favour space over speed.
+mata: mata set matafavor speed
 set matsize 5000
 set maxvar 32767
 
@@ -35,7 +35,7 @@ foreach file of local files {
 local driver_path "/Library/ODBC/Actual Open Source Databases.bundle/Contents/MacOS/atopnsrc.so"
 local connstr "Driver={`driver_path'};Type=SQLite;DBQ=0-data/fixed/read.db;WideAPI=Yes;MultiByteEncoding=UTF-8;"
 
-* Custom program to create LaTeX tabl
+* Custom program to create LaTeX table.
 capture program drop create_latex
 program define create_latex
 	syntax using/, tablename(string) [type(string)]
