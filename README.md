@@ -18,13 +18,15 @@ Almost all figures and tables in Hengel (2022) were generated using the raw data
 	
 	The column `Abstract` contains unicode textual data of articles' abstracts. When using the data, please ensure it is imported with the proper encoding (*e.g.*, `encoding("utf-8")` in Stata (14+) or `iconv(, from="macintosh", to="UTF-8")` in R).
 
-*	**Author**. The Author table contains biographic details on authors. Gender was initially assigned using [GenderChecker.com](https://genderchecker.com)'s database of male and female names. Three separate Mechanical Turk workers, a research assistant or I then manually verified them based on photos and other information found on faculty websites, Wikipedia articles, *etc.* In situations where the author could not be found, I emailed or telephoned colleagues and institutions associated with the author.
+*	**Author**. The Author table contains biographic details on authors. Gender was initially assigned using [GenderChecker.com](https://genderchecker.com)'s database of male and female names. Three separate Mechanical Turk workers, a research assistant or I then manually verified them based on photos and other information found on faculty websites, Wikipedia articles, *etc.* In situations where the author could not be found, I emailed or telephoned colleagues and associated institutions.
 
-	Authors were assumed to be native-English speakers if one or more of the following criteria were satisfied: (i) they were raised in an English-speaking country; (ii) they obtained all post-secondary education from English speaking institutions; or (iii) they spoke with no discernible non-native accent. This information was almost always found in authors' CVs, websites, Wikipedia articles, faculty bios or obituaries. In a small number of cases the criteria were ambiguously satisfied or not available; in these instances I asked friends and colleagues of the author or inferred English fluency from the author's first name, country of residence or surname (in that order). If one co-author on a paper was found to be a native English speaker, I did not necessarily check whether any of the other co-authors were also native English speakers.
+	Authors were assumed to be native-English speakers if one or more of the following criteria were satisfied: (i) they were raised in an English-speaking country; (ii) they obtained all post-secondary education from English speaking institutions; or (iii) they spoke with no discernible non-native accent. This information was almost always found on authors' CVs, websites, Wikipedia articles, faculty bios or obituaries. In a small number of cases the criteria were ambiguously satisfied or not available; in these instances I asked friends and colleagues of the author or inferred English fluency from the author's first name, country of residence or surname (in that order). If one co-author on a paper was found to be a native English speaker, I did not necessarily check whether any of the other co-authors were also native English speakers.
 
 *	**AuthorCorr**. The AuthorCorr table maps `AuthorID` in Author to `ArticleID` in Article.
 
-*	**Children**. The Children table contains data on the year female authors with at least one exclusively female-authored paper published in *Econometrica* gave birth. (Data only systematically collected for children potentially born during the time a woman had an exclusively female-authored paper under review at *Econometrica*.) This information was obtained from authors' published profiles, CVs, acknowledgements, Wikipedia, personal websites, Facebook pages, background checks and by consulting local school district/popular extra-curricular activity websites. Exact years were recorded whenever found; otherwise, they were approximated by subtracting a child's actual or estimated age from the date the source material was posted online. In several instances, I obtained or verified this information from acquaintances, friends and colleagues or by asking the woman directly. If an exhaustive search turned up no reference to children, I assumed the woman in question did not have any.
+*	**Children**. The Children table contains data on the year female authors with at least one exclusively female-authored paper published in *Econometrica* gave birth. This information was obtained from authors' published profiles, CVs, acknowledgements, Wikipedia, personal websites, Facebook pages, background checks and by consulting local school district/popular extra-curricular activity websites. Exact years were recorded whenever found; otherwise, they were approximated by subtracting a child's actual or estimated age from the date the source material was posted online. In several instances, I obtained or verified this information from acquaintances, friends and colleagues or by asking the woman directly. If an exhaustive search turned up no reference to children, I assumed the woman in question did not have any.
+
+	Please note that data on children's birth years were only systematically collected for children potentially born during the time a woman had an exclusively female-authored paper under review at *Econometrica*.
 
 *	**EditorBoard**. The EditorBoard table contains the `AuthorID` for every editor and each issue of a journal. Editors were identified from issue mastheads.
 
@@ -38,7 +40,7 @@ Almost all figures and tables in Hengel (2022) were generated using the raw data
 
 *	**NBERCorr**. The NBERCorr table maps each `NberID` in NBER to at least one `ArticleID` in Article. (The mapping is not one-for-one because a small number of working papers were eventually published as multiple articles or combined into one.) Matches were identified using citation data from [RePEc](http://repec.org/) and by searching NBER's database directly for unmatched papers authored by NBER family members. The column `Note` contains notes in situations where the matching process involved some degree of ambiguity (*e.g.*, because of title changes between draft and final versions of the paper).
 
-*	**ReadStat**. The ReadStat table contains readability statistics for every article with an abstract in Article. Readability scores were generated with the Python module `Textatistic` using the text in the `Abstract` column of the Article table. `Textatistic`'s code and documentation are available on [GitHub](https://github.com/erinhengel/Textatistic); a brief description is provided in Hengel (2021), Appendix D.3. 
+*	**ReadStat**. The ReadStat table contains readability statistics for every article with an abstract in Article. Readability scores were generated with the Python module `Textatistic` using the text in the `Abstract` column of the Article table. `Textatistic`'s code and documentation are available on [GitHub](https://github.com/erinhengel/Textatistic); a brief description is provided in Hengel (2022), Appendix D.3. 
 
 *	**NberStat**. The NberStat table contains readability statistics calculated from the `Abstract` text of every working paper in the NBER table. Statistics were generated using the Python module `Textatistic`.
 
@@ -98,27 +100,27 @@ Table:	Description of variables in `read.db`
 
 ## Other datasets
 
-A small number of figures and tables are generated from data contained in `introduction_text.txt`, `readability_corr.txt` and `JEL.csv`. Their contents and provenance are described below and in Table 2.
+A small number of figures and tables in Hengel (2022) are generated from data contained in `introduction_text.txt`, `readability_corr.txt` and `JEL.csv`. Their contents and provenance are described below and in Table 2.
 
 * **`introduction_text.txt`**. This file contains the first paragraph of text to come after a heading explicitly titled "Introduction" in NBER working papers eventually published in top-four journals. Data are used to generate Figure D.2 in Appendix D.2 in Hengel (2022). Textual data kindly provided by Henrik Kleven and Dana Scott.
-* **`readability_corr.txt`**. This file contains coefficients of correlations between the five readability scores used in Hengel (2021) and alternative measures of text difficulty. These figures are from the studies listed in Appendix D.4. They are used to produce the top graphic of Figure D.1 in Appendix D.1.
+* **`readability_corr.txt`**. This file contains coefficients of correlations between the five readability scores used in Hengel (2022) and alternative measures of text difficulty. These figures are from the studies listed in Appendix D.4. They are used to produce the top graphic of Figure D.1 in Appendix D.1.
 * **`JEL.csv`**. The file `JEL.csv` categorises all tertiary *JEL* codes as either theory/methodology, empirical or other. Categorisation was done manually by me. Data in `JEL.csv` are used to generate Table C.1 and construct the theory/methodology, empirical and other dummies described in Appendix C.
 
 Table:	Description of variables in other datasets
 
-| File name              | Column name   | Description                                                       |
-|------------------------|---------------|-------------------------------------------------------------------|
-| `introduction_text.txt`| `NberID`      | Unique ID for each NBER working paper                             |
-| `introduction_text.txt`| `Text`        | First paragraph of text                                           |
-| `readability_corr.txt` | `StatName`    | Name of readability statistic                                     |
-| `readability_corr.txt` | `Correlation` | Coefficient of correlation                                        |
-| `readability_corr.txt` | `Test`        | Name of alternative measure of text difficulty                    |
-| `readability_corr.txt` | `TestType`    | Type of alternative measure                                       |
-| `readability_corr.txt` | `Source`      | BibTeX label for source study (*e.g.*, SurnameYYYY)               |
-| `readability_corr.txt` | `Note`        | Notes on calculations, *etc.*                                     |
-| `JEL.csv`              | `JEL`         | Tertiary *JEL* code                                               |
-| `JEL.csv`              | `Description` | Long name of *JEL* code                                           |
-| `JEL.csv`              | `Type`        | Classification (empirical, theory or other)                       |
+| File name                 | Column name   | Description                                                    |
+|---------------------------|---------------|----------------------------------------------------------------|
+| `introduction_text.txt`   | `NberID`      | Unique ID for each NBER working paper                          |
+| `introduction_text.txt`   | `Text`        | First paragraph of text                                        |
+| `readability_corr.txt`    | `StatName`    | Name of readability statistic                                  |
+| `readability_corr.txt`    | `Correlation` | Coefficient of correlation                                     |
+| `readability_corr.txt`    | `Test`        | Name of alternative measure of text difficulty                 |
+| `readability_corr.txt`    | `TestType`    | Type of alternative measure                                    |
+| `readability_corr.txt`    | `Source`      | BibTeX label for source study (*e.g.*, SurnameYYYY)            |
+| `readability_corr.txt`    | `Note`        | Notes on calculations, *etc.*                                  |
+| `JEL.csv`                 | `JEL`         | Tertiary *JEL* code                                            |
+| `JEL.csv`                 | `Description` | Long name of *JEL* code                                        |
+| `JEL.csv`                 | `Type`        | Classification (empirical, theory or other)                    |
 
 
 # Code
@@ -153,24 +155,22 @@ Optional portions of the code use bash scripting and WolframScript; instructions
 
 ## Instructions to replicators
 
-To generate all figures and tables in Hengel (2022), first navigate to project's root directory and then copy `4-confidential-data-not-for-publication/read.db` to `data/fixed/read.db`.[^CiteCount] Once that's done, execute the following four steps.
+To generate all figures and tables in Hengel (2022), first navigate to project's root directory and then copy `4-confidential-data-not-for-publication/read.db` to `data/fixed/read.db`.[^CiteCount] Next, execute the following four steps.
 
 1. Run `1-update-textatistic.py` in Python.
 2. Run `2-update-readability.R` in R.
 3. Run `3-master.do` in Stata.
 4. Execute `Figure-3.nb` and `Figure-G.2.nb` (both in the `0-code/output` directory) in Mathematica.
 
-Each step can be executed individually by following the steps outlined below. Alternatively, the Bash script `4-master.sh` completes all four steps automatically.
-
-To run `4-master.sh`, install the latest version of [WolframScript](https://www.wolfram.com/wolframscript/) and follow the instructions under the `1-update-textatistic.py` and `3-master.do` headings for installing `Textatistic` and an SQLite driver, respectively. Then, navigate to the project's root directory and issue the following command in a Bash shell:
+Each step can be executed individually by following the steps outlined below. Alternatively, the Bash script `4-master.sh` completes all four steps automatically. To run `4-master.sh`, install the latest version of [WolframScript](https://www.wolfram.com/wolframscript/) and follow the instructions under the `1-update-textatistic.py` and `3-master.do` headings for installing `Textatistic` and an SQLite driver, respectively. Then, navigate to the project's root directory and issue the following command in a Bash shell:
 
 ```bash
 sh 4-master.sh
 ```
 
-`4-master.sh` was last run on 16 August 2021 on a 4-core Intel-based iMac running MacOS version 11.5. Computation took 7 hours, 54 minutes and 30 seconds.
+`4-master.sh` was last run on 17 January 2022 on a 4-core Intel-based iMac running MacOS version 11.6.3. Computation took 14 hours, 58 minutes and 28 seconds.
 
-[^CiteCount]: This replaces the version of `read.db` that does not contain the column `CiteCount` in the Article table with the version that does. ***`CiteCount` are proprietary to Web of Science and are included here for replication purposes only; please do not distribute these data or publish online.***
+[^CiteCount]: This replaces the version of `read.db` that does not contain the column `CiteCount` in the Article table with the version that does. ***`CiteCount` is proprietary to Web of Science and are included here for replication purposes only; please do not distribute these data or publish online.***
 
 ### `1-update-textatistic.py`
 
@@ -202,7 +202,7 @@ You will be alerted when the ReadStat and NBERStat tables in `read.db` have been
 
 `1-update-textatistic.py` was last run on 16 January 2022 on a 4-core Intel-based iMac running MacOS version 11.6.3. Computation took 2 minutes and 7 seconds.
 
-[^PyHyphen]: You may need to install `PyHyphen` using Python 3.7.
+[^PyHyphen]: `PyHyphen` may need to be installed using Python 3.7 or earlier.
 
 ### `2-update-readability.R`
 
@@ -212,7 +212,7 @@ The R script `2-update-readability.R` (R version 4.1.0) calculates readability s
 source("2-update-readability.R")
 ```
 
-`2-update-readability.R` first installs the latest version of `RSQLite` (version 2.2.7), `tidyverse` (version 1.3.1), `haven` (version 2.4.3) and `pacman` (version 0.5.1) from CRAN and `readability` from [GitHub](https://github.com/trinker/readability). It then connects to the `read.db` database, fetches published article and NBER abstracts, calculates readability scores and exports the results to `readstat.dta` and `nberstat.dta` in the `0-data/generated` directory. Finally, it reads in `introduction_text.txt`, calculates readability scores and exports the result to `articlestat.dta`, also in the `0-data/generated` directory. 
+`2-update-readability.R` first installs the latest version of `RSQLite`, `tidyverse`, `haven` and `pacman` from CRAN and `readability` from [GitHub](https://github.com/trinker/readability). It then connects to the `read.db` database, fetches published article and NBER abstracts, calculates readability scores and exports the results to `readstat.dta` and `nberstat.dta` in the `0-data/generated` directory. Finally, it reads in `introduction_text.txt`, calculates readability scores and exports the result to `articlestat.dta`, also in the `0-data/generated` directory. 
 
 `2-update-readability.R` was last run on 16 January 2022 on a 4-core Intel-based iMac running MacOS version 11.6.3 Computation took 1 minute and 25 seconds to run.
 
@@ -226,9 +226,9 @@ To run `master.do`, first install an SQLite driver---I use the open source drive
 do 3-master.do
 ```
 
-`3-master.do` first installs several third-party packages from SSC (`ftools`, `estout`, `psmatch2`, `xtabond2`, `listtex`, `reghdfe`, `binscatter`, `distinct` `labutil` and `coefplot`) and `wordwrap` from [GitHub](https://mloeffler.github.io/stata/wordwrap). It then copies the ado, scheme, colors and `estout` definition files in the `0-code/programs/stata` directory into your Stata personal ado directory. (Alternatively, manually load these files into Stata before running `3-master.do` and comment out lines 26--29.) It then transforms the raw data (results are saved in `0-data/generated`) and executes the Stata do files in the `0-code/output` directory. Estimation results are either saved as LaTeX output in the `0-tex/generated` directory or as image files in the `0-images/generated` directory. A log of all output is saved in the `0-log` directory as `YYYY-MM-DD-HH-MM-SS.smcl`.
+`3-master.do` first installs several third-party packages from SSC (`ftools`, `estout`, `psmatch2`, `xtabond2`, `listtex`, `reghdfe`, `binscatter`, `distinct`, `labutil` and `coefplot`) and `wordwrap` from [GitHub](https://mloeffler.github.io/stata/wordwrap). It then copies the ado, scheme, colors and `estout` definition files in the `0-code/programs/stata` directory into your Stata personal ado directory. (Alternatively, manually load these files into Stata before running `3-master.do` and comment out lines 26--29.) It then transforms the raw data (results are saved in `0-data/generated`) and executes the Stata do files in the `0-code/output` directory. Estimation results are either saved as LaTeX output in the `0-tex/generated` directory or as image files in the `0-images/generated` directory. A log of all output is saved in the `0-log` directory as `YYYY-MM-DD-HH-MM-SS.smcl`.
 
-`3-master.do` was last run on 16 January 2022 on a 4-core Intel-based iMac running MacOS version 11.6.3 Computation took 11 hours, 15 minutes and 17 seconds.
+`3-master.do` was last run on 18 January 2022 on a 4-core Intel-based iMac running MacOS version 11.6.3 Computation took 15 hours 20 minutes and 52 seconds.
 
 ### Create Mathematica graphs
 
@@ -240,7 +240,7 @@ Figures 3 and G.2 in Hengel (2022) were created using Mathematica (version 12.3.
 
 `Figure-3.nb` generates `Figure-3.png`; `Figure-G.2.nb` generates `Figure-G.2.png`. Both files are saved in the `0-images/generated` directory.
 
-`Figure-3.nb` and `Figure-G.2.nb` were last run on 15 August 2022 on a 4-core Intel-based iMac running MacOS version 11.6.3. Combined computation took less than a minute.
+`Figure-3.nb` and `Figure-G.2.nb` were last run on 16 January 2022 on a 4-core Intel-based iMac running MacOS version 11.6.3. Combined computation took less than a minute.
 
 # References
 

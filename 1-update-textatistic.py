@@ -4,7 +4,6 @@ import sqlite3
 import re
 import sys
 from textatistic import Textatistic
-from pprint import pprint
 
 # Establish database connection.
 conn = sqlite3.connect('0-data/fixed/read.db')

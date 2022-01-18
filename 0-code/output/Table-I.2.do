@@ -22,8 +22,17 @@ matrix rownames `B' = Mean:Women Mean:Men Last:Women Last:Men
 estout firstlast_* using "0-tex/generated/Table-I.2.tex", style(publishing-female_latex) ///
 	cells(b(nostar fmt(2)) se(par fmt(2))) ///
   stats(N, labels("No. observations")) prefoot("\midrule") ///
-	eqlabels("Average first paper score" "Average mean score" "Average final paper score", ///
-    span prefix("\multicolumn{6}{l}{\textbf{") suffix("}}")) ///
-	varlabels(, elist(First:Women "${n}\midrule" Mean:Women "${n}\midrule") prefix("\quad "))
+	varlabels( ///
+		c.First@0.Female "Men" ///
+		c.First@1.Female "Women" ///
+		c.Mean@0.Female "Men" ///
+		c.Mean@1.Female "Women" ///
+		c.Last@0.Female "Men" ///
+		c.Last@1.Female "Women", ///
+			elist( ///
+				c.First@1.Female "${n}\midrule${n}\multicolumn{6}{l}{\textbf{Average mean paper score}}\\" ///
+				c.Mean@1.Female "${n}\midrule${n}\multicolumn{6}{l}{\textbf{Average final paper score}}\\") ///
+			prefix("\quad ") ///
+			blist(c.First@0.Female "\multicolumn{6}{l}{\textbf{Average first paper score}}\\\${n}"))
 create_latex using "`r(fn)'", tablename("tableH1")
 ********************************************************************************
