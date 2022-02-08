@@ -12,7 +12,7 @@ Almost all figures and tables in Hengel (2022) were generated using the raw data
 
 ![Entity-relationship diagram for `read.db`](./0-images/fixed/database-diagram.pdf)
 
-*	**Article**. The Article table contains bibliographic information from every English-language article published with an abstract in the *AER*, *Econometrica*, *JPE* and *QJE* between January 1950 and December 2015 (inclusive). It also contains data on *REStud* articles published during that same period with their submission and acceptance dates.
+*	**Article**. The Article table contains bibliographic information from every English-language article published with an abstract in the *AER*, *Econometrica*, *JPE* and *QJE* between January 1950 and December 2015 (inclusive). It also contains data on *REStud* articles published with submission and acceptance dates during that same period.
 	
 	All data were collected from publicly available sources (*e.g.*, publishers' websites and JSTOR). The exception is citations which were obtained from [Web of Science](https://login.webofknowledge.com) in September 2017 and January 2018. (***Citation data are proprietary to Web of Science and are included here for replication purposes only; please do not distribute these data or publish online.***) Data on submit-accept times and institutions were collected from journals' online archives, extracted from digitised articles using the open source command utility `pdftotext` or entered manually by me or a research assistant.
 	
@@ -129,12 +129,17 @@ Table:	Description of variables in other datasets
 
 - Python 3.9.0
 	- `Textatistic` 0.0.1
-	- Please see below for instructions on how to install this dependency.
-- R 4.1.0
+	- Please see below for instructions on how to install this package.
+- R 4.1.2
 	- `RSQLite` (2.2.9)
 	- `tidyverse` (1.3.1)
 	- `haven` (2.4.3)
-	- `pacman` (0.5.1)
+	- `remotes` (2.4.2)
+	- `lexicon` (1.3.1, from https://github.com/trinker/readability)
+	- `textclean` (0.9.7, from https://github.com/trinker/readability)
+	- `textshape` (1.7.4, from https://github.com/trinker/readability)
+	- `syllable` (0.2.0, from https://github.com/trinker/readability)
+	- `readability` (0.1.2, from https://github.com/trinker/readability)
 	- The file `2-update-readability.R` installs the latest version of all dependencies.
 - Stata 17.0
 	- `ftools` (2.37.0)
@@ -147,7 +152,7 @@ Table:	Description of variables in other datasets
 	- `distinct` (1.2.1)
 	- `labutil` (1.0.0)
 	- `coefplot` (1.8.5)
-	- `wordwrap` (0.2)
+	- `wordwrap` (0.2, from https://mloeffler.github.io/stata/wordwrap)
 	- The file `3-master.do` locally installs the latest version of all dependencies.
 - Mathematica 12.3.1
 
@@ -155,7 +160,7 @@ Optional portions of the code use bash scripting and WolframScript; instructions
 
 ## Instructions to replicators
 
-To generate all figures and tables in Hengel (2022), first navigate to project's root directory and then copy `4-confidential-data-not-for-publication/read.db` to `data/fixed/read.db`.[^CiteCount] Next, execute the following four steps.
+To generate all figures and tables in Hengel (2022), first navigate to the project's root directory and then copy `4-confidential-data-not-for-publication/read.db` to `data/fixed/read.db`.[^CiteCount] Next, execute the following four steps.
 
 1. Run `1-update-textatistic.py` in Python.
 2. Run `2-update-readability.R` in R.
@@ -170,7 +175,7 @@ sh 4-master.sh
 
 `4-master.sh` was last run on 17 January 2022 on a 4-core Intel-based iMac running MacOS version 11.6.3. Computation took 14 hours, 58 minutes and 28 seconds.
 
-[^CiteCount]: This replaces the version of `read.db` that does not contain the column `CiteCount` in the Article table with the version that does. ***`CiteCount` is proprietary to Web of Science and are included here for replication purposes only; please do not distribute these data or publish online.***
+[^CiteCount]: ***`CiteCount` is proprietary to Web of Science and are included here for replication purposes only; please do not distribute these data or publish online.***
 
 ### `1-update-textatistic.py`
 
@@ -206,21 +211,21 @@ You will be alerted when the ReadStat and NBERStat tables in `read.db` have been
 
 ### `2-update-readability.R`
 
-The R script `2-update-readability.R` (R version 4.1.0) calculates readability scores using the R [`readability` package](https://github.com/trinker/readability). To run it, open R, set the current working directory as the project directory and issue the following command:
+The R script `2-update-readability.R` (R version 4.1.2) calculates readability scores using the R [`readability` package](https://github.com/trinker/readability). To run it, open R, set the current working directory as the project directory and issue the following command:
 
 ```R
 source("2-update-readability.R")
 ```
 
-`2-update-readability.R` first installs the latest version of `RSQLite`, `tidyverse`, `haven` and `pacman` from CRAN and `readability` from [GitHub](https://github.com/trinker/readability). It then connects to the `read.db` database, fetches published article and NBER abstracts, calculates readability scores and exports the results to `readstat.dta` and `nberstat.dta` in the `0-data/generated` directory. Finally, it reads in `introduction_text.txt`, calculates readability scores and exports the result to `articlestat.dta`, also in the `0-data/generated` directory. 
+`2-update-readability.R` first installs the latest version of `RSQLite`, `tidyverse`, `haven` and `remotes` from CRAN. It then installs `readability`, `syllable`, `textshape`, `textclean` and `lexicon` from [GitHub](https://github.com/trinker/readability). Once these packages are installed and loaded, it connects to the `read.db` SQLite database, fetches published article and NBER abstracts, calculates readability scores and exports the results to `readstat.dta` and `nberstat.dta` in the `0-data/generated` directory. Finally, it reads in `introduction_text.txt`, calculates readability scores and exports the result to `articlestat.dta`, also in the `0-data/generated` directory. 
 
-`2-update-readability.R` was last run on 16 January 2022 on a 4-core Intel-based iMac running MacOS version 11.6.3 Computation took 1 minute and 25 seconds to run.
+`2-update-readability.R` was last run on 7 February 2022 on a 4-core Intel-based iMac running MacOS version 11.6.4 Computation took 2 minutes and 14 seconds to run.
 
 ### `3-master.do`
 
 The Stata script `master.do` (Stata version 17.0) generates all figures and tables in Hengel (2022) with the exception of Figure 3 and Figure G.2 (see below).
 
-To run `master.do`, first install an SQLite driver---I use the open source driver from [Actual Technologies](http://www.actualtech.com/)---and update the file path in line 35 accordingly. Then, open a Stata terminal, navigate to the project's root directory and issue the following command:
+To run `master.do`, first install an SQLite driver---I use a driver from [Actual Technologies](http://www.actualtech.com/)---and update the file path in line 35 accordingly. Then, open a Stata terminal, navigate to the project's root directory and issue the following command:
 
 ```Stata
 do 3-master.do
@@ -228,7 +233,7 @@ do 3-master.do
 
 `3-master.do` first installs several third-party packages from SSC (`ftools`, `estout`, `psmatch2`, `xtabond2`, `listtex`, `reghdfe`, `binscatter`, `distinct`, `labutil` and `coefplot`) and `wordwrap` from [GitHub](https://mloeffler.github.io/stata/wordwrap). It then copies the ado, scheme, colors and `estout` definition files in the `0-code/programs/stata` directory into your Stata personal ado directory. (Alternatively, manually load these files into Stata before running `3-master.do` and comment out lines 26--29.) It then transforms the raw data (results are saved in `0-data/generated`) and executes the Stata do files in the `0-code/output` directory. Estimation results are either saved as LaTeX output in the `0-tex/generated` directory or as image files in the `0-images/generated` directory. A log of all output is saved in the `0-log` directory as `YYYY-MM-DD-HH-MM-SS.smcl`.
 
-`3-master.do` was last run on 18 January 2022 on a 4-core Intel-based iMac running MacOS version 11.6.3 Computation took 15 hours 20 minutes and 52 seconds.
+`3-master.do` was last run on 8 February 2022 on a 4-core Intel-based iMac running MacOS version 11.6.4 Computation took 11 hours 14 minutes and 29 seconds.
 
 ### Create Mathematica graphs
 

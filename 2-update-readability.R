@@ -6,28 +6,38 @@
 # Author: Erin Hengel
 # Date: 9 August 2021
 
-# Load required packages (downloading them if necessary).
-packages = c("RSQLite", "tidyverse","haven", "pacman")
-package.check <- lapply(
-  packages,
-  FUN = function(x) {
-    if (!require(x, character.only = TRUE)) {
-      install.packages(x, dependencies = TRUE)
-      library(x, character.only = TRUE)
-    }
-  }
-)
+# Set working directory.
+setwd(".")
 
-# Load readability package (https://github.com/trinker/readability)
-p_load_gh(c('trinker/lexicon','trinker/textclean','trinker/textshape','trinker/syllable', 'trinker/readability'))
-p_load(syllable, readability)
+# Download and load required packages from CRAN.
+list.of.packages <- c("RSQLite", "tidyverse", "haven", "remotes")
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages, dependencies=TRUE, repos='https://cloud.r-project.org')
+library(RSQLite)
+library(tidyverse)
+library(haven)
+library(remotes)
+
+# Download and load readability package (https://github.com/trinker/readability).
+install_github(c('trinker/lexicon','trinker/textclean','trinker/textshape','trinker/syllable', 'trinker/readability'))
+library(syllable)
+library(readability)
 
 # Create database connection.
-con <- dbConnect(RSQLite::SQLite(), "0-data/fixed/read.db")
+con <- dbConnect(SQLite(), "0-data/fixed/read.db")
 
 # Fetch article-level data.
-query <- dbSendQuery(con, "SELECT ArticleID, Abstract FROM Article WHERE Language='English' AND Title NOT LIKE '%corrigendum%' AND Title NOT LIKE '%erratum%' AND Title NOT LIKE '%: a correction%' AND Title NOT LIKE '%: correction%';")
-abstract = dbFetch(query)
+query <- "
+  SELECT ArticleID, Abstract
+    FROM Article
+  WHERE
+    Language='English' AND
+      Title NOT LIKE '%corrigendum%' AND
+      Title NOT LIKE '%erratum%' AND
+      Title NOT LIKE '%: a correction%' AND
+      Title NOT LIKE '%: correction%';
+"
+abstract = dbGetQuery(con, query)
 (readstat <- with(abstract, readability(Abstract, ArticleID)))
 readstat <- subset(readstat, subset=!is.na(Flesch_Kincaid)&!is.na(Gunning_Fog_Index)&!is.na(SMOG), select=c("ArticleID", "Flesch_Kincaid", "Gunning_Fog_Index", "SMOG"))
 names(readstat) <- c("ArticleID", "_r_fleschkincaid_score", "_r_gunningfog_score", "_r_smog_score")
@@ -41,8 +51,8 @@ readstat$"_r_smog_score" <- readstat$"_r_smog_score" * (-1)
 write_dta(readstat, "0-data/generated/readstat.dta")
 
 # Fetch and generate NBER readability statistics.
-query <- dbSendQuery(con, "SELECT NberID, Abstract FROM NBER;")
-nber = dbFetch(query)
+query <- "SELECT NberID, Abstract FROM NBER;"
+nber = dbGetQuery(con, query)
 (nberstat <- with(nber, readability(Abstract, NberID)))
 nberstat <- subset(nberstat, select=c("NberID", "Flesch_Kincaid", "Gunning_Fog_Index", "SMOG"))
 names(nberstat) <- c("NberID", "nber_r_fleschkincaid_score", "nber_r_gunningfog_score", "nber_r_smog_score")
