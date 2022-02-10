@@ -1,6 +1,6 @@
 # Overview
 
-The data and code in this replication package reproduce all tables and figures in Hengel (2022). Raw data are in the `0-data/fixed` directory. Transformed data, estimation results and figures are saved in the `0-data/generated`, `0-tex/genderated` and `0-images/generated` directories, respectively. The replication code, described in detail below, will take 10--11 hours to run.
+The data and code in this replication package reproduce all tables and figures in Hengel (2022). Raw data are in the `0-data/fixed` directory. Transformed data, estimation results and figures are saved in the `0-data/generated`, `0-tex/genderated` and `0-images/generated` directories, respectively. The replication code, described in detail below, will take about 11 hours to run.
 
 The data in this replication package are publicly available and licensed under a Creative Commons Attribution 4.0 International License. See [LICENSE.txt](LICENSE.txt) for details.
 
@@ -233,7 +233,7 @@ do 3-master.do
 
 `3-master.do` first installs several third-party packages from SSC (`ftools`, `estout`, `psmatch2`, `xtabond2`, `listtex`, `reghdfe`, `binscatter`, `distinct`, `labutil` and `coefplot`) and `wordwrap` from [GitHub](https://mloeffler.github.io/stata/wordwrap). It then copies the ado, scheme, colors and `estout` definition files in the `0-code/programs/stata` directory into your Stata personal ado directory. (Alternatively, manually load these files into Stata before running `3-master.do` and comment out lines 26--29.) It then transforms the raw data (results are saved in `0-data/generated`) and executes the Stata do files in the `0-code/output` directory. Estimation results are either saved as LaTeX output in the `0-tex/generated` directory or as image files in the `0-images/generated` directory. A log of all output is saved in the `0-log` directory as `YYYY-MM-DD-HH-MM-SS.smcl`.
 
-`3-master.do` was last run on 8 February 2022 on a 4-core Intel-based iMac running MacOS version 11.6.4 Computation took 11 hours 14 minutes and 29 seconds.
+`3-master.do` was last run on 10 February 2022 on a 4-core Intel-based iMac running MacOS version 11.6.4 Computation took 11 hours 7 minutes and 0 seconds.
 
 ### Create Mathematica graphs
 
