@@ -173,7 +173,7 @@ Each step can be executed individually by following the steps outlined below. Al
 sh 4-master.sh
 ```
 
-`4-master.sh` was last run on 17 January 2022 on a 4-core Intel-based iMac running MacOS version 11.6.3. Computation took 14 hours, 58 minutes and 28 seconds.
+`4-master.sh` was last run on 11 February 2022 2022 on a 4-core Intel-based iMac running MacOS version 11.6.4. Computation took 11 hours, 57 minutes and 59 seconds.
 
 [^CiteCount]: ***`CiteCount` is proprietary to Web of Science and are included here for replication purposes only; please do not distribute these data or publish online.***
 
