@@ -1,6 +1,6 @@
 # Overview
 
-The data and code in this replication package reproduce all tables and figures in Hengel (2022). Raw data are in the `0-data/fixed` directory. Transformed data, estimation results and figures are saved in the `0-data/generated`, `0-tex/genderated` and `0-images/generated` directories, respectively. The replication code, described in detail below, will take about 11 hours to run.
+The data and code in this replication package reproduce all tables and figures in Hengel (2022). Raw data are in the `0-data/fixed` directory. Transformed data, estimation results and figures are saved in the `0-data/generated`, `0-tex/genderated` and `0-images/generated` directories, respectively. The replication code, described in detail below, will take about 10--11 hours to run.
 
 The data in this replication package are publicly available and licensed under a Creative Commons Attribution 4.0 International License. See [LICENSE.txt](LICENSE.txt) for details.
 
@@ -98,6 +98,10 @@ Table:	Description of variables in `read.db`
 | NBERStat    | `StatName`       | Name of statistic                                                         |
 | NBERStat    | `StatValue`      | Value of statistic                                                        |
 
+### CSV files
+
+To facilitate future third-party research, all tables and data in `read.db`---with the exception of citation counts, which are proprietary to Web of Science---have also been saved as CSV files in the `0-data/fixed/read_excluding_confidential-csv` directory.
+
 ## Other datasets
 
 A small number of figures and tables in Hengel (2022) are generated from data contained in `introduction_text.txt`, `readability_corr.txt` and `JEL.csv`. Their contents and provenance are described below and in Table 2.
@@ -128,8 +132,9 @@ Table:	Description of variables in other datasets
 ## Software requirements
 
 - Python 3.9.0
-	- `Textatistic` 0.0.1
-	- Please see below for instructions on how to install this package.
+	- `pandas` (1.2.3)
+	- `Textatistic` (0.0.1)
+	- Please see below for instructions on how to install these packages.
 - R 4.1.2
 	- `RSQLite` (2.2.9)
 	- `tidyverse` (1.3.1)
@@ -153,27 +158,28 @@ Table:	Description of variables in other datasets
 	- `labutil` (1.0.0)
 	- `coefplot` (1.8.5)
 	- `wordwrap` (0.2, from https://mloeffler.github.io/stata/wordwrap)
-	- The file `3-master.do` locally installs the latest version of all dependencies.
+	- The file `4-master.do` locally installs the latest version of all dependencies.
 - Mathematica 12.3.1
 
 Optional portions of the code use bash scripting and WolframScript; instructions for installing the latter are provided below.
 
 ## Instructions to replicators
 
-To generate all figures and tables in Hengel (2022), first navigate to the project's root directory and then copy `4-confidential-data-not-for-publication/read.db` to `data/fixed/read.db`.[^CiteCount] Next, execute the following four steps.
+To generate all figures and tables in Hengel (2022), first navigate to the project's root directory and then copy `4-confidential-data-not-for-publication/read.db` to `data/fixed/read.db`.[^CiteCount] Next, execute the following five steps.
 
 1. Run `1-update-textatistic.py` in Python.
 2. Run `2-update-readability.R` in R.
-3. Run `3-master.do` in Stata.
+3. Run `3-export-raw-data.py` in Python.
+3. Run `4-master.do` in Stata.
 4. Execute `Figure-3.nb` and `Figure-G.2.nb` (both in the `0-code/output` directory) in Mathematica.
 
-Each step can be executed individually by following the steps outlined below. Alternatively, the Bash script `4-master.sh` completes all four steps automatically. To run `4-master.sh`, install the latest version of [WolframScript](https://www.wolfram.com/wolframscript/) and follow the instructions under the `1-update-textatistic.py` and `3-master.do` headings for installing `Textatistic` and an SQLite driver, respectively. Then, navigate to the project's root directory and issue the following command in a Bash shell:
+Each step can be executed individually by following the steps outlined below. Alternatively, the Bash script `5-master.sh` completes all five steps automatically. To run `5-master.sh`, install the latest version of [WolframScript](https://www.wolfram.com/wolframscript/) and follow the instructions under the `1-update-textatistic.py` and `4-master.do` headings for installing `Textatistic` and an SQLite driver, respectively. Then, navigate to the project's root directory and issue the following command in a Bash shell:
 
 ```bash
-sh 4-master.sh
+sh 5-master.sh
 ```
 
-`4-master.sh` was last run on 11 February 2022 on a 4-core Intel-based iMac running MacOS version 11.6.4. Computation took 11 hours, 57 minutes and 59 seconds.
+`5-master.sh` was last run on 12 March 2022 on a 4-core Intel-based iMac running MacOS version 11.6.5. Computation took 10 hours, 12 minutes and 20 seconds.
 
 [^CiteCount]: ***`CiteCount` is proprietary to Web of Science and are included here for replication purposes only; please do not distribute these data or publish online.***
 
@@ -181,7 +187,7 @@ sh 4-master.sh
 
 The Python script `1-update-textatistic.py` calculates readability scores for every article and NBER working paper with an abstract in `read.db` and updates its ReadStat and NBERStat tables with the results. More details on the `Textatistic` program are available on [GitHub](https://github.com/erinhengel/Textatistic). Documentation on how it calculates readability scores are available at [erinhengel.com](http://www.erinhengel.com/software/textatistic/).
 
-For `1-update-textatistic.py` to work, you must first install the Python package `Textatistic`. If you're lucky, this can be done in a single step by issuing the following command in your terminal application:
+For `1-update-textatistic.py` to work, you must first install the Python package `Textatistic`.[^OtherModules1] If you're lucky, this can be done in a single step by issuing the following command in your terminal application:
 
 ```Bash
 pip install textatistic
@@ -207,6 +213,8 @@ You will be alerted when the ReadStat and NBERStat tables in `read.db` have been
 
 `1-update-textatistic.py` was last run on 16 January 2022 on a 4-core Intel-based iMac running MacOS version 11.6.3. Computation took 2 minutes and 7 seconds.
 
+[^OtherModules1]: `1-update-textatistic.py` also requires the `re`, `sys` and `sqlite3` (3.32.3) libraries, which are automatically installed with Python 3.9.0.
+
 [^PyHyphen]: `PyHyphen` may need to be installed using Python 3.7 or earlier.
 
 ### `2-update-readability.R`
@@ -221,19 +229,39 @@ source("2-update-readability.R")
 
 `2-update-readability.R` was last run on 7 February 2022 on a 4-core Intel-based iMac running MacOS version 11.6.4 Computation took 2 minutes and 14 seconds to run.
 
-### `3-master.do`
+### `3-export-raw-data.py`
+
+The Python script `3-export-raw-data.py` (Python version 3.9.0) exports raw data from `read.db` as csv files for futher processing in Stata. To run it, you will need to install the `pandas` module (version 1.2.3). Usually, this can be done with `pip` by issuing the following command in your terminal application.[^OtherModules2]
+
+```bash
+pip install pandas
+```
+
+Once `pandas` has been properly installed, navigate to the project's root directory and run the following command in the terminal application.
+
+```bash
+python 3-export-raw-data.py
+```
+
+The raw data generated by `3-export-raw-data.py` are saved in the `0-data/generated` directory.
+
+`3-export-raw-data.py` was last run on 10 March 2022 on a 4-core Intel-based iMac running MacOS version 11.6.5. Computation took less than a minute.
+
+[^OtherModules2]: `3-export-raw-data.py` also requires the `sqlite3` (3.32.3) library, which is automatically installed with Python 3.9.0.
+
+### `4-master.do`
 
 The Stata script `master.do` (Stata version 17.0) generates all figures and tables in Hengel (2022) with the exception of Figure 3 and Figure G.2 (see below).
 
-To run `master.do`, first install an SQLite driver---I use a driver from [Actual Technologies](http://www.actualtech.com/)---and update the file path in line 35 accordingly. Then, open a Stata terminal, navigate to the project's root directory and issue the following command:
+To run `4-master.do`, open a Stata terminal, navigate to the project's root directory and issue the following command:
 
 ```Stata
-do 3-master.do
+do 4-master.do
 ```
 
-`3-master.do` first installs several third-party packages from SSC (`ftools`, `estout`, `psmatch2`, `xtabond2`, `listtex`, `reghdfe`, `binscatter`, `distinct`, `labutil` and `coefplot`) and `wordwrap` from [GitHub](https://mloeffler.github.io/stata/wordwrap). It then copies the ado, scheme, colors and `estout` definition files in the `0-code/programs/stata` directory into your Stata personal ado directory. (Alternatively, manually load these files into Stata before running `3-master.do` and comment out lines 26--29.) It then transforms the raw data (results are saved in `0-data/generated`) and executes the Stata do files in the `0-code/output` directory. Estimation results are either saved as LaTeX output in the `0-tex/generated` directory or as image files in the `0-images/generated` directory. A log of all output is saved in the `0-log` directory as `YYYY-MM-DD-HH-MM-SS.smcl`.
+`4-master.do` first installs several third-party packages from SSC (`ftools`, `estout`, `psmatch2`, `xtabond2`, `listtex`, `reghdfe`, `binscatter`, `distinct`, `labutil` and `coefplot`) and `wordwrap` from [GitHub](https://mloeffler.github.io/stata/wordwrap). It then copies the ado, scheme, colors and `estout` definition files in the `0-code/programs/stata` directory into your Stata personal ado directory. (Alternatively, manually load these files into Stata before running `4-master.do` and comment out lines 25--29.) It then transforms the raw data (results are saved in `0-data/generated`) and executes the Stata do files in the `0-code/output` directory. Estimation results are either saved as LaTeX output in the `0-tex/generated` directory or as image files in the `0-images/generated` directory. A log of all output is saved in the `0-log` directory as `YYYY-MM-DD-HH-MM-SS.smcl`.
 
-`3-master.do` was last run on 10 February 2022 on a 4-core Intel-based iMac running MacOS version 11.6.4 Computation took 11 hours 7 minutes and 0 seconds.
+`4-master.do` was last run on 11 March 2022 on a 4-core Intel-based iMac running MacOS version 11.6.5 Computation took 11 hours 13 minutes and 16 seconds.
 
 ### Create Mathematica graphs
 

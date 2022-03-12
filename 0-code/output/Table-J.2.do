@@ -1,11 +1,6 @@
 ********************************************************************************
 *************************** Table J.2: Matched pairs ***************************
 ********************************************************************************
-* Get author names.
-odbc_compress, exec("SELECT AuthorID, AuthorName FROM Author;") conn(`"`connstr'"')
-tempfile names
-save `names'
-
 * Match AuthorIDs to male names then to female names.
 use "0-data/generated/author_matching", clear
 keep AuthorID*

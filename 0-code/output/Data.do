@@ -16,36 +16,25 @@ tempfile vallabels
 label save using `vallabels', replace
 
 * Generate editorial clusters.
-odbc_compress, exec("SELECT * FROM EditorBoard;") conn(`"`connstr'"')
+import delimited "0-data/generated/editors.csv", clear varnames(1) case(preserve) encoding("utf-8") bindquotes(strict)
 by Journal Volume Issue Part (AuthorID), sort: generate j = _n
 reshape wide AuthorID, i(Journal Volume Issue Part) j(j)
 egen Editor = group(AuthorID*), missing
 drop AuthorID*
 tempfile cluster
 save `cluster'
-odbc_compress, exec("SELECT ArticleID, Journal, Volume, Issue, Part FROM Article;") conn(`"`connstr'"')
+import delimited "0-data/generated/article_editors.csv", clear varnames(1) case(preserve) encoding("utf-8") bindquotes(strict)
 merge m:1 Journal Volume Issue Part using `cluster', keep(match) nogenerate
 save `cluster', replace
 
 * Generate article and author characteristic data.
-#delimit ;
-local sql "
-SELECT ArticleID, Journal, FirstPage, PubDate
-	FROM Article
-	WHERE Journal <> 'P&P'
-			AND Title NOT LIKE '%corrigendum%'
-			AND Title NOT LIKE '%erratum%'
-			AND Title NOT LIKE '%: a correction%'
-			AND Title NOT LIKE '%: correction%';
-";
-#delimit cr
-odbc_compress, exec("`sql';") conn(`"`connstr'"')
+import delimited "0-data/generated/article_main.csv", clear varnames(1) case(preserve) encoding("utf-8") bindquotes(strict)
 date_replace PubDate, mask("YMD")
 label define Journal 1 "AER" 2 "ECA" 3 "JPE" 4 "QJE" 5 "P&P" 6 "RES"
 encode_replace Journal
 tempfile article_tmp
 save `article_tmp'
-odbc_compress, exec("SELECT ArticleID, AuthorID FROM Author NATURAL JOIN AuthorCorr;") conn(`"`connstr'"')
+import delimited "0-data/generated/authorcorr.csv", clear varnames(1) case(preserve) encoding("utf-8") bindquotes(strict)
 merge m:1 ArticleID using `article_tmp', assert(master match) keep(match) nogenerate
 * Sort order determines how articles published in the same month are ordered.
 * Articles published in the QJE and earlier in an issue assumed to be "newer"
@@ -54,14 +43,7 @@ gsort AuthorID PubDate -Journal -FirstPage
 by AuthorID: generate t5 = _n
 tempfile author_tmp
 save `author_tmp'
-#delimit ;
-local sql "
-SELECT ArticleID, AuthorID, Journal, FirstPage, PubDate, Female
-	FROM Article
-	NATURAL JOIN (SELECT ArticleID, AuthorID, CASE WHEN Sex='Female' THEN 1 ELSE 0 END AS Female FROM Author NATURAL JOIN AuthorCorr);
-";
-#delimit cr
-odbc_compress, exec("`sql'") conn(`"`connstr'"')
+import delimited "0-data/generated/article_gender.csv", clear varnames(1) case(preserve) encoding("utf-8") bindquotes(strict)
 label define gender 1 "Female" 0 "Male"
 label values Female gender
 date_replace PubDate, mask("YMD")
@@ -129,20 +111,7 @@ save `article_chars'
 save "0-data/generated/article_chars", replace
 
 * Generate institutional rank.
-#delimit ;
-local sql "
-SELECT InstID, CAST(SUBSTR(PubDate, 1, 4) AS INTEGER) AS Year, COUNT(DISTINCT(ArticleID)) AS ArticleN
-FROM Article
-	NATURAL JOIN InstCorr
-	WHERE Journal <> 'P&P'
-		AND Title NOT LIKE '%corrigendum%'
-		AND Title NOT LIKE '%erratum%'
-		AND Title NOT LIKE '%: a correction%'
-		AND Title NOT LIKE '%: correction%'
-GROUP BY InstID, Year
-";
-#delimit cr
-odbc_compress, exec("`sql'") conn(`"`connstr'"')
+import delimited "0-data/generated/inst_rank.csv", clear varnames(1) case(preserve) bindquotes(strict) encoding("utf-8")
 xtset InstID Year
 tssmooth ma maArticleN=ArticleN, window(5)
 replace maArticleN = ArticleN if missing(maArticleN)
@@ -151,14 +120,7 @@ summarize rankArticleN
 egen InstRank = cut(rankArticleN), at(0(1)9, 10(10)60, `=r(max)+1')
 tempfile instrank
 save `instrank'
-#delimit ;
-local sql "
-SELECT InstID, ArticleID, AuthorID, CAST(SUBSTR(PubDate, 1, 4) AS INTEGER) AS Year
-	FROM InstCorr
-	NATURAL JOIN Article
-";
-#delimit cr
-odbc_compress, exec("`sql'") conn(`"`connstr'"')
+import delimited "0-data/generated/inst_rank_author.csv", clear varnames(1) case(preserve) bindquotes(strict) encoding("utf-8")
 merge m:m InstID Year using `instrank', assert(master match) nogenerate
 replace InstRank = 60 if missing(InstRank) // P&P articles involving an unranked affiliation
 save `instrank', replace
@@ -173,7 +135,7 @@ tempfile author_instrank
 save `author_instrank'
 
 * Generate publication order.
-odbc_compress, exec("SELECT ArticleID, Journal, Volume, Issue, FirstPage FROM Article;") conn(`"`connstr'"')
+import delimited "0-data/generated/pub_order.csv", clear varnames(1) case(preserve) bindquotes(strict) encoding("utf-8")
 by Journal Volume Issue (FirstPage), sort: generate PubOrder = _n
 keep ArticleID PubOrder
 compress
@@ -181,15 +143,7 @@ tempfile order
 save `order'
 
 * Generate native English.
-#delimit ;
-local sql "
-	SELECT ArticleID, MAX(CASE WHEN nativelanguage='English' THEN 1 ELSE 0 END) AS NativeEnglish
-		FROM AuthorCorr
-		NATURAL JOIN Author
-		GROUP BY ArticleID
-";
-#delimit cr
-odbc_compress, exec("`sql'") conn(`"`connstr'"')
+import delimited "0-data/generated/english.csv", clear varnames(1) case(preserve) bindquotes(strict) encoding("utf-8")
 tempfile english
 save `english'
 
@@ -198,8 +152,7 @@ import delimited "0-data/fixed/JEL.csv", clear varnames(1) case(preserve) encodi
 drop Description
 tempfile type
 save `type'
-
-odbc_compress, exec("SELECT Article.ArticleID AS ArticleID, JEL FROM Article LEFT JOIN JEL ON Article.ArticleID=JEL.ArticleID;") conn(`"`connstr'"')
+import delimited "0-data/generated/theory_emp.csv", clear varnames(1) case(preserve) bindquotes(strict) encoding("utf-8")
 merge m:1 JEL using `type', keep(master match) nogenerate
 replace Type = "Other" if missing(Type)
 keep ArticleID Type
@@ -209,19 +162,10 @@ reshape wide Type_, i(ArticleID) j(Type) string
 foreach var of varlist Type_* {
 	replace `var' = 0 if missing(`var')
 }
-tempfile type
-save `type'
+save `type', replace
 
 * Generate primary JEL data.
-#delimit ;
-local sql "
-SELECT ArticleID, SUBSTR(JEL, 1, 1) AS JEL
-	FROM JEL
-	NATURAL JOIN Article
-	WHERE Language = 'English'
-";
-#delimit cr
-odbc_compress, exec("`sql'") conn(`"`connstr'"')
+import delimited "0-data/generated/primary_jel.csv", clear varnames(1) case(preserve) bindquotes(strict) encoding("utf-8")
 duplicates drop
 encode_replace JEL
 distinct JEL
@@ -235,15 +179,7 @@ save `primary_jel'
 save "0-data/generated/primary_jel", replace
 
 * Generate tertiary JEL data.
-#delimit ;
-local sql "
-SELECT ArticleID, JEL
-	FROM JEL
-	NATURAL JOIN Article
-	WHERE Language = 'English'
-";
-#delimit cr
-odbc_compress, exec("`sql'") conn(`"`connstr'"')
+import delimited "0-data/generated/tertiary_jel.csv", clear varnames(1) case(preserve) bindquotes(strict) encoding("utf-8")
 encode_replace JEL
 distinct JEL
 forvalues i=1/`r(ndistinct)' {
@@ -256,22 +192,7 @@ save `tertiary_jel'
 save "0-data/generated/tertiary_jel", replace
 
 * Generate article-level P&P data.
-#delimit ;
-local sql "
-SELECT ArticleID, Journal, Volume, Issue, FirstPage, StatName, PubDate, CiteCount, LastPage,
-CASE WHEN (StatName='flesch_score' OR StatName LIKE '%_count') THEN StatValue ELSE -1 * StatValue END AS _,
-CAST(STRFTIME('%Y', PubDate) AS INTEGER) AS Year
-	FROM Article
-	NATURAL JOIN ReadStat
-	WHERE
-		Language = 'English'
-		AND Title NOT LIKE '%corrigendum%'
-		AND Title NOT LIKE '%erratum%'
-		AND Title NOT LIKE '%: a correction%'
-		AND Title NOT LIKE '%: correction%';
-";
-#delimit cr
-odbc_compress, exec("`sql'") conn(`"`connstr'"')
+import delimited "0-data/generated/article_pp.csv", clear varnames(1) case(preserve) bindquotes(strict) encoding("utf-8")
 reshape wide _, i(ArticleID) j(StatName) string
 merge 1:1 ArticleID using `article_chars', assert(using match) keep(match) nogenerate
 merge 1:1 ArticleID using `article_instrank', assert(using match) keep(match) nogenerate
@@ -372,15 +293,9 @@ save `author'
 save "0-data/generated/author", replace
 
 * Generate author-level data for all top five journals.
-#delimit ;
-local sql "
-SELECT ArticleID, Journal, Volume, Issue, FirstPage, PubDate, CiteCount,
-LastPage, CAST(STRFTIME('%Y', PubDate) AS INTEGER) AS Year
-	FROM Article;
-";
-#delimit cr
-odbc_compress, exec("`sql'") conn(`"`connstr'"')
+import delimited "0-data/generated/article_top5.csv", clear varnames(1) case(preserve) encoding("utf-8") bindquotes(strict)
 merge 1:m ArticleID using `author_chars', assert(match) nogenerate
+label define Journal 1 "AER" 2 "ECA" 3 "JPE" 4 "QJE" 5 "P&P" 6 "RES"
 encode_replace Journal
 date_replace PubDate, mask("YMD")
 keep if Errata==0 & Journal!=5
@@ -400,16 +315,7 @@ save `author5'
 save "0-data/generated/author5", replace
 
 * Generate NBER data.
-#delimit ;
-local sql "
-SELECT ArticleID, NberID, WPDate, StatName,
-CASE WHEN (StatName='flesch_score' OR StatName LIKE '%_count') THEN StatValue ELSE -1 * StatValue END AS nber_
-	FROM NBER
-	NATURAL JOIN NBERCorr
-	NATURAL JOIN NBERStat
-";
-#delimit cr
-odbc_compress, exec("`sql'") conn(`"`connstr'"')
+import delimited "0-data/generated/nber.csv", clear varnames(1) case(preserve) encoding("utf-8") bindquotes(strict)
 reshape wide nber_, i(ArticleID NberID) j(StatName) string
 merge m:1 ArticleID using `article', keep(match) nogenerate
 generate nber_wps_count = nber_word_count / nber_sent_count
@@ -456,29 +362,7 @@ save `nber_fe_jel'
 save "0-data/generated/nber_fe_jel", replace
 
 * Generate review time data.
-#delimit ;
-local sql "
-SELECT ArticleID, PubDate, AuthorCorr.AuthorID AS AuthorID,
-	CAST(STRFTIME('%Y', PubDate) AS INTEGER) AS Year, Received, Accepted, CiteCount,
-	CAST(STRFTIME('%Y', Received) AS INTEGER) AS ReceivedYear,
-	CAST(STRFTIME('%Y', Accepted) AS INTEGER) AS AcceptedYear, FirstPage, LastPage,
-	LastPage - FirstPage AS PageN, (JULIANDAY(Accepted) - JULIANDAY(Received)) / 30 AS ReviewLength,
-	CASE WHEN Children.Year BETWEEN CAST(STRFTIME('%Y', Received) AS INTEGER) AND CAST(STRFTIME('%Y', Accepted) AS INTEGER) THEN 1 ELSE 0 END AS Birth,
-	CAST(CASE WHEN Received-Children.Year>=0 THEN Received-Children.Year ELSE NULL END AS INTEGER) AS ChildReceived,
-	CASE WHEN Accepted-Children.Year>=0 THEN Accepted-Children.Year ELSE NULL END AS ChildAccepted
-		FROM Article
-		NATURAL JOIN AuthorCorr
-		LEFT OUTER JOIN Children ON AuthorCorr.AuthorID=Children.AuthorID
-	WHERE
-		Received IS NOT NULL
-		AND PubDate < '2016-01-01'
-		AND Title NOT LIKE '%corrigendum%'
-		AND Title NOT LIKE '%erratum%'
-		AND Title NOT LIKE '%: a correction%'
-		AND Title NOT LIKE '%: correction%';
-";
-#delimit cr
-odbc_compress, exec("`sql'") conn(`"`connstr'"')
+import delimited "0-data/generated/time.csv", clear varnames(1) case(preserve) encoding("utf-8") bindquotes(strict)
 merge m:1 ArticleID using `article_chars', assert(using match) keep(match) nogenerate
 merge m:1 ArticleID using `article_instrank', keep(master match) nogenerate
 merge m:1 ArticleID using `order', assert(using match) keep(match) nogenerate
@@ -489,6 +373,7 @@ generate asinhCiteCount = ln(CiteCount + sqrt(1+CiteCount^2))
 date_replace PubDate, mask("YMD")
 date_replace Received, mask("YMD")
 date_replace Accepted, mask("YMD")
+label define Journal 1 "AER" 2 "ECA" 3 "JPE" 4 "QJE" 5 "P&P" 6 "RES"
 encode_replace Journal
 merge m:1 ArticleID using `article', keep(master match) keepusing(_flesch_score) nogenerate
 do `varlabels'
@@ -496,4 +381,9 @@ compress
 tempfile duration
 save `duration'
 save "0-data/generated/duration", replace
+
+* Get author names for matched pair table
+import delimited "0-data/generated/author_names.csv", clear varnames(1) case(preserve) encoding("utf-8") bindquotes(strict)
+tempfile names
+save `names'
 ********************************************************************************

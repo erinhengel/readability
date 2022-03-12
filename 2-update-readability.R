@@ -12,7 +12,7 @@ setwd(".")
 # Download and load required packages from CRAN.
 list.of.packages <- c("RSQLite", "tidyverse", "haven", "remotes")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
-if(length(new.packages)) install.packages(new.packages, dependencies=TRUE, repos='https://cloud.r-project.org')
+if(length(new.packages)) install.packages(new.packages, dependencies=TRUE, repos='https://cloud.r-project.org', INSTALL_opts = '--no-lock')
 library(RSQLite)
 library(tidyverse)
 library(haven)
