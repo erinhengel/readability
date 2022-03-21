@@ -165,7 +165,7 @@ Optional portions of the code use bash scripting and WolframScript; instructions
 
 ## Instructions to replicators
 
-To generate all figures and tables in Hengel (2022), first navigate to the project's root directory and then copy `4-confidential-data-not-for-publication/read.db` to `data/fixed/read.db`.[^CiteCount] Next, execute the following five steps.
+To generate all figures and tables in Hengel (2022), first navigate to the project's root directory and then copy `4-confidential-data-not-for-publication/read.db` to `0-data/fixed/read.db`.[^CiteCount] Next, execute the following five steps.
 
 1. Run `1-update-textatistic.py` in Python.
 2. Run `2-update-readability.R` in R.
@@ -173,7 +173,7 @@ To generate all figures and tables in Hengel (2022), first navigate to the proje
 3. Run `4-master.do` in Stata.
 4. Execute `Figure-3.nb` and `Figure-G.2.nb` (both in the `0-code/output` directory) in Mathematica.
 
-Each step can be executed individually by following the steps outlined below. Alternatively, the Bash script `5-master.sh` completes all five steps automatically. To run `5-master.sh`, install the latest version of [WolframScript](https://www.wolfram.com/wolframscript/) and follow the instructions under the `1-update-textatistic.py` and `4-master.do` headings for installing `Textatistic` and an SQLite driver, respectively. Then, navigate to the project's root directory and issue the following command in a Bash shell:
+Each step can be executed individually by following the steps outlined below. Alternatively, the Bash script `5-master.sh` completes all five steps automatically. To run `5-master.sh`, install the latest version of [WolframScript](https://www.wolfram.com/wolframscript/) and follow the instructions under the `1-update-textatistic.py` heading for installing `Textatistic` and `pandas`. Then, navigate to the project's root directory and issue the following command in a Bash shell:
 
 ```bash
 sh 5-master.sh
@@ -231,7 +231,7 @@ source("2-update-readability.R")
 
 ### `3-export-raw-data.py`
 
-The Python script `3-export-raw-data.py` (Python version 3.9.0) exports raw data from `read.db` as csv files for futher processing in Stata. To run it, you will need to install the `pandas` module (version 1.2.3). Usually, this can be done with `pip` by issuing the following command in your terminal application.[^OtherModules2]
+The Python script `3-export-raw-data.py` (Python version 3.9.0) exports raw data from `read.db` as csv files for further processing in Stata. To run it, you will need to install the `pandas` module (version 1.2.3). Usually, this can be done with `pip` by issuing the following command in your terminal application.[^OtherModules2]
 
 ```bash
 pip install pandas
@@ -259,7 +259,9 @@ To run `4-master.do`, open a Stata terminal, navigate to the project's root dire
 do 4-master.do
 ```
 
-`4-master.do` first installs several third-party packages from SSC (`ftools`, `estout`, `psmatch2`, `xtabond2`, `listtex`, `reghdfe`, `binscatter`, `distinct`, `labutil` and `coefplot`) and `wordwrap` from [GitHub](https://mloeffler.github.io/stata/wordwrap). It then copies the ado, scheme, colors and `estout` definition files in the `0-code/programs/stata` directory into your Stata personal ado directory. (Alternatively, manually load these files into Stata before running `4-master.do` and comment out lines 25--29.) It then transforms the raw data (results are saved in `0-data/generated`) and executes the Stata do files in the `0-code/output` directory. Estimation results are either saved as LaTeX output in the `0-tex/generated` directory or as image files in the `0-images/generated` directory. A log of all output is saved in the `0-log` directory as `YYYY-MM-DD-HH-MM-SS.smcl`.
+`4-master.do` first installs several third-party packages from SSC (`ftools`, `estout`, `psmatch2`, `xtabond2`, `listtex`, `reghdfe`, `binscatter`, `distinct`, `labutil` and `coefplot`) and `wordwrap` from [GitHub](https://mloeffler.github.io/stata/wordwrap). It then copies the ado, scheme, colors and `estout` definition files in the `0-code/programs/stata` directory into your Stata personal ado directory. (Alternatively, manually load these files into Stata before running `4-master.do` and comment out lines 25--29.) It then transforms the raw data (results are saved in `0-data/generated`) and executes the Stata do files in the `0-code/output` directory. A log of all output is saved in the `0-log` directory as `YYYY-MM-DD-HH-MM-SS.smcl`.
+
+Estimation results are either saved as LaTeX output in the `0-tex/generated` directory or as image files in the `0-images/generated` directory. All output (including output for the online appendix) are saved in these directories. Figures in the main body of Hengel (2022) are saved with their table/figure numbers, *e.g.*, `0-tex/generated/Table-2.tex` or `0-images/generated/Figure-1.pdf`. Figures in the online appendix are saved either with their table or figure numbers (*e.g.*, `0-tex/generated/Table-J.1.tex` or `0-images/generated/Figure-G.2.pdf`) or, in instances where they replicate a table in the main body of the paper, as `Figure-X-<<modification>>.pdf` or `Table-X-<<modification>>.tex`, where `X` is the number of the figure or table being replicated and `<<modification>>` is the modification applied to it. For example, Table M.2 in the online appendix replicates Table 4 using only solo-authored papers. It is saved as `0-tex/generated/Table-4-FemSolo.tex`. Figure J.1 replicates Figure 5 controlling for primary *JEL* code; it is saved as `0-images/generated/Figure-4-jel.pdf`. See the Appendix for a table mapping figures and tables in Hengel (2022) to the appropriate output files.
 
 `4-master.do` was last run on 11 March 2022 on a 4-core Intel-based iMac running MacOS version 11.6.5 Computation took 11 hours 13 minutes and 16 seconds.
 
@@ -286,3 +288,98 @@ Hengel, E. (2022). "Publishing while female: Are women held to higher standards?
 Kleven, H. (2018). "Language trends in public economics". https://www.henrikkleven.com/uploads/3/7/3/1/37310663/languagetrends_slides_kleven.pdf (last accessed 2 December 2018).
 
 Kleven, H. and D. Scott (2018). *Language trends in public economics [database]*.
+
+\newpage
+
+# Appendix
+
+Table: Tables and figures in Hengel (2022) mapped to output files
+
+| Table/Figure | Output file                                                                                 |
+|--------------|---------------------------------------------------------------------------------------------|
+| Figure 1     | `0-images/generated/Figure-1.pdf`                                                           |
+| Figure 2     | `0-images/generated/Figure-2-jel.pdf`                                                       |
+|              | `0-images/generated/Figure-2-time.pdf`                                                      |
+| Table 2      | `0-tex/generated/Table-2.tex`                                                               |
+| Table 3      | `0-tex/generated/Table-3-FemRatio.tex`                                                      |
+| Table 4      | `0-tex/generated/Table-4.tex`                                                               |
+| Table 5      | `0-tex/generated/Table-5-FemRatio.tex`                                                      |
+| Figure 3     | `0-tex/generated/Figure-3.png`                                                              |
+| Table 6      | `0-tex/generated/Table-6-FemRatio.tex`                                                      |
+| Table 7      | `0-tex/generated/Table-7-FemRatio.tex`                                                      |
+| Figure 4     | `0-images/generated/Figure-4.pdf`                                                           |
+| Table 8      | `0-tex/generated/Table-8-FemRatio.tex`                                                      |
+| Table 9      | `0-tex/generated/Table-9-base.tex`                                                          |
+| Figure 5     | `0-images/generated/Figure-5-base.pdf`                                                      |
+| Figure 6     | `0-images/generated/Figure-6.pdf`                                                           |
+| Table 10     | `0-tex/generated/Table-10.tex`                                                              |
+| Table B.1    | `0-tex/generated/Table-B.1.tex`                                                             |
+| Table C.1    | `0-tex/generated/Table-C.1.tex`                                                             |
+| Figure D.1   | `0-images/generated/Figure-D.1-meta.pdf`                                                    |
+|              | `0-images/generated/Figure-D.1-early.pdf`                                                   |
+|              | `0-images/generated/Figure-D.1-late.pdf`                                                    |
+| Figure D.2   | `0-images/generated/Figure-D.2-fleschkincaid.pdf`                                           |
+|              | `0-images/generated/Figure-D.2-gunningfog.pdf`                                              |
+| Table F.1    | `0-tex/generated/Table-F.1.tex`                                                             |
+| Figure F.1   | `0-images/generated/Figure-F.1.pdf`                                                         |
+| Table F.2    | `0-tex/generated/Table-F.2-FemRatio.tex`                                                    |
+| Table G.1    | `0-tex/generated/Table-G.1.tex`                                                             |
+| Table G.2    | `0-tex/generated/Table-G.2.tex`                                                             |
+| Table G.3    | `0-tex/generated/Table-5-jel.tex`                                                           |
+| Figure G.1   | `0-images/generated/Figure-G.1-flesch.pdf`                                                  |
+|              | `0-images/generated/Figure-G.1-combo.pdf`                                                   |
+| Table G.4    | `0-tex/generated/Table-G.4.tex`                                                             |
+| Figure G.2   | `0-images/generated/Figure-G.2.png`                                                         |
+| Table G.5    | `0-tex/generated/Table-5-wordlimit.tex`                                                     |
+| Table H.1    | `0-tex/generated/Table-6-subyear.tex`                                                       |
+| Table H.2    | `0-tex/generated/Table-6-pubyear.tex`                                                       |
+| Table H.3    | `0-tex/generated/Table-H.3.tex`                                                             |
+| Table H.4    | `0-tex/generated/Table-H.4.tex`                                                             |
+| Table I.2    | `0-tex/generated/Table-I.2.tex`                                                             |
+| Table I.3    | `0-tex/generated/Table-I.3.tex`                                                             |
+| Table J.1    | `0-tex/generated/Table-J.1.tex`                                                             |
+| Table J.2    | `0-tex/generated/Table-J.2.tex`                                                             |
+| Table J.3    | `0-tex/generated/Table-J.3.tex`                                                             |
+| Table J.4    | `0-tex/generated/Table-9-jel.tex`                                                           |
+| Figure J.1   | `0-images/generated/Figure-5-jel.pdf`                                                       |
+| Table J.5    | `0-tex/generated/Table-9-R.tex`                                                             |
+| Figure J.2   | `0-images/generated/Figure-5-R.pdf`                                                         |
+| Figure K.1   | `0-images/generated/Figure-K.1.pdf`                                                         |
+| Table L.1    | `0-tex/generated/Table-3-R.tex`                                                             |
+| Table L.2    | `0-tex/generated/Table-5-R.tex`                                                             |
+| Table L.3    | `0-tex/generated/Table-8-R.tex`                                                             |
+| Table L.4    | `0-tex/generated/Table-F.2-R.tex`                                                           |
+| Table M.2    | `0-tex/generated/Table-3-FemSolo.tex`                                                       |
+| Table M.3    | `0-tex/generated/Table-5-FemSolo.tex`                                                       |
+| Table M.4    | `0-tex/generated/Table-6-FemSolo.tex`                                                       |
+| Table M.5    | `0-tex/generated/Table-7-FemSolo.tex`                                                       |
+| Table M.6    | `0-tex/generated/Table-8-FemSolo.tex`                                                       |
+| Table M.7    | `0-tex/generated/Table-F.2-FemSolo.tex`                                                     |
+| Table M.8    | `0-tex/generated/Table-3-FemSenior.tex`                                                     |
+| Table M.9    | `0-tex/generated/Table-5-FemSenior.tex`                                                     |
+| Table M.10   | `0-tex/generated/Table-6-FemSenior.tex`                                                     |
+| Table M.11   | `0-tex/generated/Table-7-FemSenior.tex`                                                     |
+| Table M.12   | `0-tex/generated/Table-8-FemSenior.tex`                                                     |
+| Table M.13   | `0-tex/generated/Table-F.2-FemSenior.tex`                                                   |
+| Table M.14   | `0-tex/generated/Table-3-Fem50.tex`                                                         |
+| Table M.15   | `0-tex/generated/Table-5-Fem50.tex`                                                         |
+| Table M.16   | `0-tex/generated/Table-6-Fem50.tex`                                                         |
+| Table M.17   | `0-tex/generated/Table-7-Fem50.tex`                                                         |
+| Table M.18   | `0-tex/generated/Table-8-Fem50.tex`                                                         |
+| Table M.19   | `0-tex/generated/Table-F.2-Fem50.tex`                                                       |
+| Table M.20   | `0-tex/generated/Table-3-Fem1.tex`                                                          |
+| Table M.21   | `0-tex/generated/Table-5-Fem1.tex`                                                          |
+| Table M.22   | `0-tex/generated/Table-6-Fem1.tex`                                                          |
+| Table M.23   | `0-tex/generated/Table-7-Fem1.tex`                                                          |
+| Table M.24   | `0-tex/generated/Table-8-Fem1.tex`                                                          |
+| Table M.25   | `0-tex/generated/Table-F.2-Fem1.tex`                                                        |
+| Table M.26   | `0-tex/generated/Table-3-Fem100.tex`                                                        |
+| Table M.27   | `0-tex/generated/Table-5-Fem100.tex`                                                        |
+| Table M.28   | `0-tex/generated/Table-6-Fem100.tex`                                                        |
+| Table M.29   | `0-tex/generated/Table-7-Fem100.tex`                                                        |
+| Table M.30   | `0-tex/generated/Table-8-Fem100.tex`                                                        |
+| Table M.31   | `0-tex/generated/Table-F.2-Fem100.tex`                                                      |
+| Table M.32   | `0-tex/generated/Table-3-FemJunior.tex`                                                     |
+| Table M.33   | `0-tex/generated/Table-5-FemJunior.tex`                                                     |
+| Table M.34   | `0-tex/generated/Table-6-FemJunior.tex`                                                     |
+| Table M.35   | `0-tex/generated/Table-7-FemJunior.tex`                                                     |
