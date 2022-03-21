@@ -289,8 +289,6 @@ Kleven, H. (2018). "Language trends in public economics". https://www.henrikklev
 
 Kleven, H. and D. Scott (2018). *Language trends in public economics [database]*.
 
-\newpage
-
 # Appendix
 
 Table: Tables and figures in Hengel (2022) mapped to output files
