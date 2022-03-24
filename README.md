@@ -161,7 +161,7 @@ Table:	Description of variables in other datasets
 	- The file `4-master.do` locally installs the latest version of all dependencies.
 - Mathematica 12.3.1
 
-Optional portions of the code use bash scripting and WolframScript; instructions for installing the latter are provided below.
+Optional portions of the code use Bash scripting and WolframScript; instructions for installing the latter are provided below.
 
 ## Instructions to replicators
 
@@ -179,7 +179,7 @@ Each step can be executed individually by following the steps outlined below. Al
 sh 5-master.sh
 ```
 
-`5-master.sh` was last run on 12 March 2022 on a 4-core Intel-based iMac running MacOS version 11.6.5. Computation took 10 hours, 12 minutes and 20 seconds.
+`5-master.sh` was last run on 23 March 2022 on a 4-core Intel-based iMac running MacOS version 11.6.5. Computation took 10 hours, 9 minutes and 25 seconds.
 
 [^CiteCount]: ***`CiteCount` is proprietary to Web of Science and are included here for replication purposes only; please do not distribute these data or publish online.***
 
@@ -261,9 +261,11 @@ do 4-master.do
 
 `4-master.do` first installs several third-party packages from SSC (`ftools`, `estout`, `psmatch2`, `xtabond2`, `listtex`, `reghdfe`, `binscatter`, `distinct`, `labutil` and `coefplot`) and `wordwrap` from [GitHub](https://mloeffler.github.io/stata/wordwrap). It then copies the ado, scheme, colors and `estout` definition files in the `0-code/programs/stata` directory into your Stata personal ado directory. (Alternatively, manually load these files into Stata before running `4-master.do` and comment out lines 25--29.) It then transforms the raw data (results are saved in `0-data/generated`) and executes the Stata do files in the `0-code/output` directory. A log of all output is saved in the `0-log` directory as `YYYY-MM-DD-HH-MM-SS.smcl`.
 
-Estimation results are either saved as LaTeX output in the `0-tex/generated` directory or as image files in the `0-images/generated` directory. All output (including output for the online appendix) are saved in these directories. Figures in the main body of Hengel (2022) are saved with their table/figure numbers, *e.g.*, `0-tex/generated/Table-2.tex` or `0-images/generated/Figure-1.pdf`. Figures in the online appendix are saved either with their table or figure numbers (*e.g.*, `0-tex/generated/Table-J.1.tex` or `0-images/generated/Figure-G.2.pdf`) or, in instances where they replicate a table in the main body of the paper, as `Figure-X-<<modification>>.pdf` or `Table-X-<<modification>>.tex`, where `X` is the number of the figure or table being replicated and `<<modification>>` is the modification applied to it. For example, Table M.2 in the online appendix replicates Table 4 using only solo-authored papers. It is saved as `0-tex/generated/Table-4-FemSolo.tex`. Figure J.1 replicates Figure 5 controlling for primary *JEL* code; it is saved as `0-images/generated/Figure-4-jel.pdf`. See the Appendix for a table mapping figures and tables in Hengel (2022) to the appropriate output files.
+All estimation results (including those in the online appendix) are either saved as LaTeX output in the `0-tex/generated` directory or as image files in the `0-images/generated` directory. Figures in the main body of Hengel (2022) are saved with their table/figure numbers, *e.g.*, `0-tex/generated/Table-2.tex` or `0-images/generated/Figure-1.pdf`. Figures in the online appendix are saved either with their table or figure numbers (*e.g.*, `0-tex/generated/Table-J.1.tex` or `0-images/generated/Figure-G.2.pdf`) or, in instances where they replicate a table in the main body of the paper, as `Figure-X-<<modification>>.pdf` or `Table-X-<<modification>>.tex`, where `X` is the number of the figure or table being replicated and `<<modification>>` is the modification applied to it.[^OutputExample] See the Appendix at the end of this README file for a table mapping figures and tables in Hengel (2022) to the appropriate output files.
 
-`4-master.do` was last run on 11 March 2022 on a 4-core Intel-based iMac running MacOS version 11.6.5 Computation took 11 hours 13 minutes and 16 seconds.
+`4-master.do` was last run on 22 March 2022 on a 4-core Intel-based iMac running MacOS version 11.6.5 Computation took 11 hours 17 minutes and 32 seconds.
+
+[^OutputExample]: For example, Table M.2 in the online appendix replicates Table 4 using only solo-authored papers. It is saved as `0-tex/generated/Table-4-FemSolo.tex`. Figure J.1 replicates Figure 5 controlling for primary *JEL* code; it is saved as `0-images/generated/Figure-4-jel.pdf`.
 
 ### Create Mathematica graphs
 
@@ -302,7 +304,7 @@ Table: Tables and figures in Hengel (2022) mapped to output files
 | Table 3      | `0-tex/generated/Table-3-FemRatio.tex`                                                      |
 | Table 4      | `0-tex/generated/Table-4.tex`                                                               |
 | Table 5      | `0-tex/generated/Table-5-FemRatio.tex`                                                      |
-| Figure 3     | `0-tex/generated/Figure-3.png`                                                              |
+| Figure 3     | `0-images/generated/Figure-3.png`                                                           |
 | Table 6      | `0-tex/generated/Table-6-FemRatio.tex`                                                      |
 | Table 7      | `0-tex/generated/Table-7-FemRatio.tex`                                                      |
 | Figure 4     | `0-images/generated/Figure-4.pdf`                                                           |
